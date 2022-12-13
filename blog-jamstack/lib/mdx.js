@@ -9,7 +9,8 @@ const root = process.cwd();
 
 export const getFiles = () => {
     // La funcion es Sincrona pq se van a llamar en tiempo de building
-    fs.readdirSync(path.join(root, "data"))
+    return fs.readdirSync(path.join(root, "data"))
+
 };
 
 //Nos devolverá un unico fichero por la ruta, utilizara el slug (o endpoint) para buscar el fichero por su id
