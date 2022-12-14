@@ -14,7 +14,7 @@ export const getFiles = () => {
 };
 
 //Nos devolverá un unico fichero por la ruta, utilizara el slug (o endpoint) para buscar el fichero por su id
-export const getFileBySlug = async ({slug}) => {
+export const getFileBySlug = async (slug) => {
     const mdxSource = fs.readFileSync(path.js(root, "data", `${slug}.mdx}`), "utf-8");
 
     //Data seran los "metadatos" y content el contenido del articulo
@@ -41,7 +41,8 @@ export const getAllFilesMetadata = () => {
         const {data} = matter(mdxSource);
 
         return[{...data, slug:postSlug.replace(".mdx","")}, ...allPosts]
-    },[]);
+    },[]); // Hay que inicializarlo con un array vacio
+    
 };
 
 
