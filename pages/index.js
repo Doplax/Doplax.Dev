@@ -22,8 +22,8 @@ export default function Home({posts}) {
 
         <div className={styles.grid}>
         {posts.map(post => (
-          <Link key={post.slug} href={'/${post.slug'} className={styles.card}>
-            <a>
+          <Link href={`/${post.slug}`} passHref legacyBehavior>
+            <a className={styles.card}>
               <h2>{post.title} &rarr;</h2>
               <p>{post.date}</p>
             </a>
