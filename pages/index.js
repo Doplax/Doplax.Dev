@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { getAllFilesMetadata } from '../lib/mdx'
@@ -23,7 +22,7 @@ export default function Home({posts}) {
 
         <div className={styles.grid}>
         {posts.map(post => (
-          <Link href={`/${post.slug}`} passHref legacyBehavior>
+          <Link href={`/${post.slug}`} key={post.slug} passHref legacyBehavior>
             <a className={styles.card}>
               <h2>{post.title} &rarr;</h2>
               <p>{post.date}</p>
