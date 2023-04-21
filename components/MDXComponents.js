@@ -1,7 +1,7 @@
-import CodeBlock from './CodeBlock';
+//import { Podcast} from './Podcast';
 
-const MDXComponents = {
-  code: CodeBlock,
-};
-
-export default MDXComponents;
+//export default {
+//    // En caso de que tuvieramos Chacra UI
+//    //h1: (props) => <Heading as="h1" m={8} size="3x1" {...props}/>,
+//    Podcast, 
+//}
