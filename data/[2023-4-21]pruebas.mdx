@@ -1,0 +1,30 @@
+---
+title: 'Prueba'
+date: '2023-4-21'
+---
+
+
+import { useState, useEffect } from "react"
+
+
+
+export const Counter = () => {
+let count = 0
+  const [value, setValue] = useState(count)
+
+  const handleClick = () => {
+    setValue(value + 1)
+    count++
+  }
+
+  useEffect(() => {
+    console.log(`The count is: ${count}`)
+  }, [count])
+
+  return (
+    <div>
+      <h1>{value}</h1>
+      <button onClick={handleClick}>Click me</button>
+    </div>
+  )
+}
