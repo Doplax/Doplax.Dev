@@ -4,6 +4,10 @@ import styles from '../styles/Home.module.css'
 import { getAllFilesMetadata } from '../lib/mdx'
 import { Footer } from '../components/Footer/Footer'
 
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vs } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+
+
 
 // Recibos los post por props
 export default function Home({posts}) {
