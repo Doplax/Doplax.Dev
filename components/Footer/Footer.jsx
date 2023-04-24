@@ -10,7 +10,8 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Powered by Doplax.Dev
+                    <p className="text-center text-white">© {new Date().getFullYear()} By Doplax.Dev </p>
+
 
                 </a>
             </footer>
