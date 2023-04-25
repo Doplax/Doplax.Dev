@@ -1,13 +1,13 @@
 import React from 'react';
 import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/cjs/styles/hljs'; // Puedes elegir otro tema si prefieres
+import { atomOneDark  } from 'react-syntax-highlighter/dist/cjs/styles/hljs'; // Puedes elegir otro tema si prefieres
 
 const CodeBlock = ({ children, className }) => {
   const language = className ? className.replace(/language-/, '') : 'javascript';
 
   try {
     return (
-      <SyntaxHighlighter language={language} style={docco}>
+      <SyntaxHighlighter language={language} style={atomOneDark }>
         {children.trim()}
       </SyntaxHighlighter>
     );

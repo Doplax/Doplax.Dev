@@ -1,16 +1,21 @@
-import { MDXRemote } from "next-mdx-remote"; // Importa el componente MDXRemote de la librería next-mdx-remote que se utiliza para renderizar código Markdown como componentes JSX
-import { getFileBySlug, getFiles } from "../lib/mdx"; // Importa las funciones getFileBySlug y getFiles del archivo mdx.js de la carpeta lib
-import MDXComponents from "../components/MDXComponents.js"; // Importa los componentes personalizados que se utilizan en los archivos Markdown
+import { MDXRemote } from "next-mdx-remote";
+import { getFileBySlug, getFiles } from "../lib/mdx";
+import MDXComponents from "../components/MDXComponents.js";
+import { Layout } from '../components/Layout';
+import ContentWrapper from '../components/ContentWrapper'; // Importa el componente ContentWrapper
 
-// Define el componente Post que se utiliza para mostrar los archivos Markdown
 export default function Post({ source, frontmatter }) {
-  return <MDXRemote {...source} components={MDXComponents} />;
+  return (
+    <Layout>
+      <ContentWrapper> {/* Envuelve el contenido de MDXRemote con el componente ContentWrapper */}
+        <h1 className="text-center text-3xl font-bold my-8">{frontmatter.title}</h1>
+        <h4 className="text-center">{frontmatter.date}</h4>
+        <MDXRemote {...source} components={MDXComponents} />
+      </ContentWrapper>
+    </Layout>
+  );
 }
-
-// Obtiene el contenido y los metadatos del archivo Markdown
-// Params es el slug que está como parámetro en el nombre del fichero
 export async function getStaticProps({ params }) {
-  // Llama a la función getFileBySlug para obtener el contenido y los metadatos del archivo Markdown
   const { source, frontmatter } = await getFileBySlug(params.slug);
 
   return {
@@ -18,18 +23,16 @@ export async function getStaticProps({ params }) {
   };
 }
 
-// Obtiene los slugs de los archivos Markdown y los utiliza para crear los paths de las rutas
 export async function getStaticPaths() {
-  const posts = await getFiles(); // Llama a la función getFiles para obtener los nombres de los archivos Markdown
+  const posts = await getFiles();
   const paths = posts.map((post) => ({
-    // Crea un objeto para cada archivo con el slug obtenido a partir del nombre del archivo
     params: {
-      slug: post.replace(/\.mdx/, ""), // Remueve la extensión .mdx del nombre del archivo
+      slug: post.replace(/\.mdx/, ""),
     },
   }));
 
   return {
     paths,
-    fallback: false, // Si fallback es false, cuando no encuentre la ruta dará un error 404
+    fallback: false,
   };
 }
