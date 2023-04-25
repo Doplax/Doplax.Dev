@@ -1,0 +1,8 @@
+Header.jsx
+
+Este componente se encarga de mostrar la barra de navegación superior en todas las páginas. Utiliza Tailwind CSS y React Hooks para crear un menú de navegación responsivo que se adapta a diferentes tamaños de pantalla.
+
+Estructura:
+
+El componente Header utiliza el hook useState para controlar el estado del menú en dispositivos móviles.
+La función toggleMenu se utiliza para cambiar la visibilidad del menú en
