@@ -6,7 +6,13 @@ import { Footer } from '../components/Footer/Footer'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vs } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
-
+export async function getStaticProps() {
+  const posts = await getAllFilesMetadata()
+  console.log(posts)
+  return {
+    props: {posts},// Se deben devolver como un objeto
+  }
+}
 
 // Recibos los post por props
 export default function Home({posts}) {
@@ -15,7 +21,7 @@ export default function Home({posts}) {
 
 
     <Header/>
-    
+
       <main className={styles.main}>
         <h1 className={styles.title}>
           
@@ -40,10 +46,3 @@ export default function Home({posts}) {
 }
 
 
-export async function getStaticProps() {
-  const posts = await getAllFilesMetadata()
-  console.log(posts)
-  return {
-    props: {posts},// Se deben devolver como un objeto
-  }
-}
