@@ -28,6 +28,7 @@ export default function Home({posts}) {
         </h1>
         
         <div className={styles.grid}>
+        <h2 className='text-center text-3xl'>Últimos Articulos</h2>
         {posts.map(post => (
           <Link href={`/${post.slug}`} key={post.slug} passHref legacyBehavior>
             <a className={styles.card}>
