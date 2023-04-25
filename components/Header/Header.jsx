@@ -34,14 +34,13 @@ const Header = () => {
               className="block lg:hidden text-white focus:outline-none"
               onClick={toggleMenu}
             >
-             <FontAwesomeIcon icon={faBars} style={{color: "#ffffff",}} />
+              <FontAwesomeIcon icon={faBars} style={{ color: "#ffffff", }} />
             </button>
 
             {/* Menú */}
             <ul
-              className={`${
-                isMenuOpen ? "block" : "hidden"
-              } lg:flex lg:space-x-4 space-y-2 lg:space-y-0`}
+              className={`${isMenuOpen ? "block" : "hidden"
+                } lg:flex lg:space-x-4 space-y-2 lg:space-y-0`}
             >
               <li>
                 <a

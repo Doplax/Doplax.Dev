@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "../../styles/Home.module.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
+
 const Footer = () => {
     return (
         <>
@@ -14,6 +18,8 @@ const Footer = () => {
 
 
                 </a>
+                <FontAwesomeIcon icon={faGithub} style={{ color: "#ffffff" }} />
+
             </footer>
         </>
     );
