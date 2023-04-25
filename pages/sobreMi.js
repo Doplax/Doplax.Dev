@@ -5,6 +5,7 @@ export default function sobreMi() {
     return (
     <>
         <Header/>
+        
         <Footer/>
     </>
         )
