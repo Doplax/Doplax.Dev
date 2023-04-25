@@ -1,7 +1,9 @@
-//import { Podcast} from './Podcast';
+// components/MDXComponents.js
+import CodeBlock from "./CodeBlock";
 
-//export default {
-//    // En caso de que tuvieramos Chacra UI
-//    //h1: (props) => <Heading as="h1" m={8} size="3x1" {...props}/>,
-//    Podcast, 
-//}
+const MDXComponents = {
+  // ...otros componentes personalizados
+  code: CodeBlock,
+};
+
+export default MDXComponents;

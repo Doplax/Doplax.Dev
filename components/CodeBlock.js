@@ -1,25 +1,24 @@
 import React from 'react';
-import Prism from 'prism-react-renderer';
-import theme from 'prism-react-renderer/themes/nightOwl'; // Puedes elegir otro tema si prefieres
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/cjs/styles/hljs'; // Puedes elegir otro tema si prefieres
 
 const CodeBlock = ({ children, className }) => {
-  const language = className.replace(/language-/, '');
+  const language = className ? className.replace(/language-/, '') : 'javascript';
 
-  return (
-    <Prism code={children.trim()} language={language} theme={theme}>
-      {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <pre className={className} style={{ ...style, padding: '20px' }}>
-          {tokens.map((line, i) => (
-            <div {...getLineProps({ line, key: i })}>
-              {line.map((token, key) => (
-                <span {...getTokenProps({ token, key })} />
-              ))}
-            </div>
-          ))}
-        </pre>
-      )}
-    </Prism>
-  );
+  try {
+    return (
+      <SyntaxHighlighter language={language} style={docco}>
+        {children.trim()}
+      </SyntaxHighlighter>
+    );
+  } catch (error) {
+    console.error(`Error highlighting code with language "${language}": ${error}`);
+    return (
+      <pre>
+        <code className={className}>{children.trim()}</code>
+      </pre>
+    );
+  }
 };
 
 export default CodeBlock;
