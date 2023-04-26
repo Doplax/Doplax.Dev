@@ -20,7 +20,7 @@ export default function Home({posts}) {
 
     <Header/>
 
-      <main className={styles.main}>
+      <main className='w-full'>
         <h1 className={styles.title}>
           
         </h1>

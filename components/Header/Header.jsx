@@ -20,7 +20,7 @@ const Header = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="bg-gray-800 py-6">
+      <header className="bg-gray-800 py-6 w-full">
         <div className="container mx-auto flex justify-between items-center px-4">
           <a
             href="/"
