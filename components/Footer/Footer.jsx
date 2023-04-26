@@ -18,7 +18,7 @@ const Footer = () => {
 
 
                 </a>
-                <FontAwesomeIcon icon={faGithub} style={{ color: "#ffffff" }} />
+                {/*<FontAwesomeIcon icon={faGithub} style={{ color: "#ffffff" }} />*/}
 
             </footer>
         </>
