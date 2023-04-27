@@ -3,23 +3,23 @@ import { Footer } from '../components/Footer/Footer'
 
 const projects = [
     {
-        name: "To Do",
+        name: "Reproductor de música",
         description:
             "Una aplicación To-Do con D&D, en ella puedes crear tareas, marcarlas, moverlas a diferentes estados e incluso eliminarlas.",
-        role: "HTML, CSS, JS",
-        imageUrl: "https://github.com/jmontes33/To-Do-D-D/raw/main/to-do.png",
-        netlify: "https://wonderful-babka-974508.netlify.app/",
-        github: "https://github.com/jmontes33/To-Do-D-D",
+            role: "HTML, CSS, JS",
+            imageUrl: "/img/projects/mp3-easy-player.png",
+            netlify: "https://doplax.github.io/MP3-Easy-Player/",
+            github: "https://github.com/Doplax/MP3-Easy-Player",
     },
     {
-        name: "Pomodoro-timer",
+        name: "Mr Cripto",
         description:
-            "Un cronómetro en el que podrás configurar el tiempo de trbajo y descanso como tu desees.",
+            "Consumo de una API",
         role: "HTML, CSS, JS",
         imageUrl:
-            "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/pomodoro-def.png?raw=true",
-        netlify: "https://timely-otter-1b8a49.netlify.app/",
-        github: "https://github.com/jmontes33/Pomodoro-App",
+            "",
+        netlify: "https://doplax.github.io/Mr.Crypto-API-REST/",
+        github: "https://github.com/Doplax/Mr.Crypto-API-REST",
     },
     {
         name: "Fórmula 1",
