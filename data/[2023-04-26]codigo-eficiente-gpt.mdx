@@ -1,0 +1,54 @@
+---
+date: '2023/04/26'
+title: 'Como crear código de manera más eficiente gracias a Chat GPT'
+---
+
+¿Te has pasado horas picando código en Python para tareas repetitivas? ¿Has tenido que buscar en Google cómo hacer algo que no sabías? ¡No estás solo! A todos nos ha pasado. Pero gracias a las inteligencias artificiales como Chat GPT, podemos hacer que el proceso sea más eficiente y menos tedioso.
+
+## **Introducción y descripción**
+
+Hoy en día, ya no hace falta estar horas picando código. Únicamente necesitas conocer las herramientas y cómo usarlas. A partir de ahí, podemos crear prompts que le digan a Chat GPT lo que necesitamos y este nos generará el código en Python. Luego, sólo necesitamos revisar el código generado para asegurarnos de que todo esté bien, y ya tendremos nuestro código listo para usarse.
+
+## **El mensaje que se le pidió a la IA**
+
+Por ejemplo, recientemente, pedí a Chat GPT que me ayudara a crear un programa en Python que buscara imágenes en un directorio y creara una copia de las fotos en formato **`.webp`** con una compresión de imagen del 40%. Sólo tuve que darle a Chat GPT el prompt "Crea un programa en Python en el que se ejecute en un directorio y recorra todos los subdirectorios del mismo buscando imágenes ya sean en .png o .jpg. Una vez las encuentre dentro del subdirectorio en el que se encuentre, crea una copia de las fotos en formato **`.webp`** y con una compresión de imagen del 40%".
+
+## **El Output**
+
+En poco tiempo, Chat GPT me proporcionó el siguiente código:
+
+```python
+import os
+from PIL import Image
+
+def create_webp_image(image_path):
+    """Crea una imagen webp del archivo de imagen dado."""
+    with Image.open(image_path) as im:
+        # Ajusta la calidad de la imagen a 60 (40% de la calidad original)
+        im = im.convert('RGB')
+        im.save(image_path.replace('.jpg', '.webp').replace('.png', '.webp'), 'webp', quality=60)
+
+def main():
+    # Obtiene la ruta del directorio actual
+    directory = os.getcwd()
+
+    # Recorre todos los archivos en el directorio y sus subdirectorios
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            # Comprueba si el archivo es una imagen en formato .jpg o .png
+            if file.endswith('.jpg') or file.endswith('.png'):
+                # Crea la imagen webp
+                image_path = os.path.join(root, file)
+                create_webp_image(image_path)
+
+if __name__ == '__main__':
+    main()
+```
+
+Con sólo unos pocos cambios, el código generado por Chat GPT me permitió hacer lo que necesitaba de manera rápida y eficiente.
+
+## **Conclusión**
+
+En resumen, las inteligencias artificiales como Chat GPT pueden ayudarnos a crear código de manera más eficiente y reducir el tiempo que pasamos picando código. Con sólo un poco de conocimiento sobre las herramientas disponibles y cómo utilizarlas, podemos generar prompts que le digan a Chat GPT lo que necesitamos y éste generará el código por nosotros. Como siempre, es importante revisar el código generado para asegurarnos de que todo está correcto.
+
+#Programación #Tecnología #InteligenciaArtificial #PromptEngineering #Eficiencia #Productividad #Adaptación #CuriosidadIntelectual #AprendizajeContinuo #Actualización #ProgramadorDelFuturo

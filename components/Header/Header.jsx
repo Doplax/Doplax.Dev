@@ -30,12 +30,12 @@ const Header = () => {
           </a>
           <nav>
             {/* Botón hamburguesa */}
-            <button
+            {/*<button
               className="block lg:hidden text-white focus:outline-none"
               onClick={toggleMenu}
             >
               <FontAwesomeIcon icon={faBars} style={{ color: "#ffffff", }} />
-            </button>
+            </button>*/}
 
             {/* Menú */}
             <ul
