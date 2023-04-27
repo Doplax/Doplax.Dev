@@ -3,7 +3,7 @@ import styles from "../../styles/Home.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-
+const linkedinIcon = "/svg/linkedin-in.svg";
 
 const Footer = () => {
     return (
@@ -18,8 +18,15 @@ const Footer = () => {
 
 
                 </a>
-                {/*<FontAwesomeIcon icon={faGithub} style={{ color: "#ffffff" }} />*/}
+                <div 
+                    className=""
+                >
+                    <FontAwesomeIcon icon={faGithub} style={{ color: "#ffffff", width: "50px", height: "50px" }} />
+                    <img src={linkedinIcon} alt="LinkedIn"/>
+                    
+                </div>
 
+                    
             </footer>
         </>
     );
