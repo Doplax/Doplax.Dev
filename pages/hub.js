@@ -1,32 +1,25 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faCodepen, faTwitter, faInstagram, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import './YourComponent.css'; // Asegúrate de mover tu CSS a este archivo
+import React from "react";
+import { Header } from '../components/Header/Header'
+import { Footer } from '../components/Footer/Footer'
+import styles from '../styles/SocialMenu.module.css';
 
-const YourComponent = () => {
-  const socialMedia = [
-    { id: 6, color: '#131212', link: 'https://github.com/Doplax', icon: faGithub, name: 'Github' },
-    { id: 5, color: '#f2a918', link: 'https://codepen.io/doplax-the-scripter', icon: faCodepen, name: 'Components' },
-    { id: 4, color: '#1da1f2', link: 'https://twitter.com/DoplaxDev', icon: faTwitter, name: 'Twitter' },
-    { id: 3, color: '#c32aa3', link: 'https://www.instagram.com/doplax.dev/', icon: faInstagram, name: 'Instagram' },
-    { id: 2, color: '#ff0000', link: 'https://www.youtube.com/channel/UCf0IJU9vXlcUd2CALEBA93A', icon: faYoutube, name: 'Youtube' },
-    { id: 1, color: '#0a66c2', link: 'https://www.linkedin.com/in/pol-valle-montes/', icon: faLinkedin, name: 'Linkedin' },
-  ];
-
-  return (
-    <ul>
-      {socialMedia.map(item => (
-        <li key={item.id} style={{ '--i': item.id, '--clr': item.color }} className="custom-li">
-          <a href={item.link}>
-            <span>
-              <FontAwesomeIcon icon={item.icon} />
-            </span>
-            {item.name}
-          </a>
-        </li>
-      ))}
-    </ul>
-  );
+const SocialMenu = () => {
+    return (
+        <>
+            <Header/>
+                <div className={styles.container}>
+                    <ul>
+                        <li style={{ '--i': 6, '--clr': '#131212' }}><a href="https://github.com/Doplax"><span><i className="fa-brands fa-github"></i></span> Github</a></li>
+                        <li style={{ '--i': 5, '--clr': '#f2a918' }}><a href="https://codepen.io/doplax-the-scripter"><span><i className="fa-brands fa-codepen"></i></span>Components</a></li>
+                        <li style={{ '--i': 4, '--clr': '#1da1f2' }}><a href="https://twitter.com/DoplaxDev"><span><i className="fa-brands fa-twitter"></i></span> Twitter</a></li>
+                        <li style={{ '--i': 3, '--clr': '#c32aa3' }}><a href="https://www.instagram.com/doplax.dev/"><span><i className="fa-brands fa-instagram"></i></span> Instagram</a></li>
+                        <li style={{ '--i': 2, '--clr': '#ff0000' }}><a href="https://www.youtube.com/channel/UCf0IJU9vXlcUd2CALEBA93A"><span><i className="fa-brands fa-youtube"></i></span> Youtube</a></li>
+                        <li style={{ '--i': 1, '--clr': '#0a66c2' }}><a href="https://www.linkedin.com/in/pol-valle-montes/"><span><i className="fa-brands fa-linkedin"></i></span> Linkedin</a></li>
+                    </ul>
+                </div>
+            <Footer/>
+        </>
+    );
 };
 
-export default YourComponent;
+export default SocialMenu;
