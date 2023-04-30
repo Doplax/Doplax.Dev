@@ -14,11 +14,11 @@
 
 .footer {
   display: flex;
-  flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .footer a {
@@ -26,6 +26,19 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+.footer img {
+  height: 40px;
+  margin: 10px;
+  transform: scale(1);
+  transition: transform 0.2s ease-out;
+}
+
+.footer img:hover {
+  height: 40px;
+  margin: 10px;
+
+  transform: scale(1.2);
 }
 
 .title a {

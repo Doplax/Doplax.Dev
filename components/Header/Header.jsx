@@ -29,15 +29,14 @@ const Header = () => {
             <h1 className="text-white font-bold text-xl">Mi sitio web</h1>
           </a>
           <nav>
-            {/* Botón hamburguesa */}
-            {/*<button
-              className="block lg:hidden text-white focus:outline-none"
-              onClick={toggleMenu}
-            >
-              <FontAwesomeIcon icon={faBars} style={{ color: "#ffffff", }} />
-            </button>*/}
+              {/* Botón hamburguesa */}
+              <button
+                className="block lg:hidden text-white focus:outline-none"
+                onClick={toggleMenu}
+              > asdfas
+              </button>
 
-            {/* Menú */}
+              {/* Menú */}
             <ul
               className={`${isMenuOpen ? "block" : "hidden"
                 } lg:flex lg:space-x-4 space-y-2 lg:space-y-0`}

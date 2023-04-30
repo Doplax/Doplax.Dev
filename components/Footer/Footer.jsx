@@ -1,9 +1,13 @@
 import React from "react";
 import styles from "../../styles/Home.module.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-const linkedinIcon = "/svg/linkedin-in.svg";
+const githubIcon = "/img/icon/github-blanco.png";
+const linkedinIcon = "/img/icon/linkedin-blanco.png";
+const eMailIcon = "/img/icon/eMail-blanco.png";
+
+
+//const linkedinIcon = "/img/";
+
 
 const Footer = () => {
     return (
@@ -18,12 +22,36 @@ const Footer = () => {
 
 
                 </a>
+                
+                {/* Iconos */}
                 <div 
-                    className=""
+                    className="flex"
                 >
-                    <FontAwesomeIcon icon={faGithub} style={{ color: "#ffffff", width: "50px", height: "50px" }} />
-                    <img src={linkedinIcon} alt="LinkedIn"/>
-                    
+                    <a
+                    href="https://github.com/Doplax"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                        <img src={githubIcon} alt="eMail"/>
+                    </a>
+                    <a
+                    href="https://www.linkedin.com/in/pol-valle-montes/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                        <img src={linkedinIcon} alt="LinkedIn"/>
+                    </a> 
+                    <a
+                    href="mailto:doplax@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                        <img src={eMailIcon} alt="eMail"/>
+                    </a>
+
+
+
+ 
                 </div>
 
                     

@@ -19,18 +19,11 @@ export default function Pruebas() {
   return (
     <>
       <Header/>
-        <div className="w-screen h-screen flex justify-center items-center">
-          <div className="flex flex-col text-center">
-            <p>{counter}</p>
-            <button
-              type="button"
-              className="rounded-lg bg-blue-500 p-1"
-              onClick={handleButton}
-            >button</button>
-            {(counter < 5 ) ? 'Counter es más pequeño' : 'Más grande'}
-          </div>
-        </div>
-        <Footer/>
+
+
+
+
+      <Footer/>
     </>
   );
 }

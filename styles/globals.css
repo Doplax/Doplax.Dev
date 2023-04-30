@@ -11,6 +11,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h2 {
   color: rgb(0, 110, 255);
 }
@@ -20,15 +24,17 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 /* El contenedor del codigo */
 pre {
   padding: 10px;
   border-radius: 20px;
 }
+
+
+
+
 
 @media (prefers-color-scheme: dark) {
   html {
