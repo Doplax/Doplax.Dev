@@ -20,7 +20,7 @@ export default function Home({posts}) {
 
     <Header/>
 
-      <main className='w-full'>
+      <main className='w-full flex justify-center'  >
         <h1 className={styles.title}>
           
         </h1>
