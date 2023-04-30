@@ -18,7 +18,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <p className="text-center text-white">© {new Date().getFullYear()} By Doplax.Dev </p>
+                    <p className="text-center font-bold text-xl text-white hover:text-blue-500">© {new Date().getFullYear()} By Doplax.Dev </p>
 
 
                 </a>

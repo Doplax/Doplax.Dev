@@ -1,3 +1,5 @@
+// Este componente se encarga de renderizar el visór del bloques de código.
+
 import React from 'react';
 import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomOneDark  } from 'react-syntax-highlighter/dist/cjs/styles/hljs'; // Puedes elegir otro tema si prefieres

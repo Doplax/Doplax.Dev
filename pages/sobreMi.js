@@ -15,20 +15,19 @@ const projects = [
         name: "Mr Cripto",
         description:
             "Consumo de una API",
-        role: "HTML, CSS, JS",
+        role: "HTML, CSS, JS, API REST",
         imageUrl:
             "",
         netlify: "https://doplax.github.io/Mr.Crypto-API-REST/",
         github: "https://github.com/Doplax/Mr.Crypto-API-REST",
     },
     {
-        name: "Fórmula 1",
-        description: "Una aplicación que te permite ver los pilotos actuales de la F1, algnas de sus estadísticas y el ranking de pilotos. (en progreso)",
-        role: "React, Tailwind, Supabase",
-        imageUrl:
-            "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/f1.png?raw=true",
-        netlify: "https://f1-app-five.vercel.app/",
-        github: "https://github.com/jmontes33/F1-App",
+        name: "Buscador de Centradores y Electrodos",
+        description: "Este proyecto es una herramienta web diseñada para la empresa Tecsolda que permite a los usuarios seleccionar componentes de maquinaria de acuerdo a sus necesidades específicas.",
+        role: "HTML, CSS, JS",
+        imageUrl:"/img/projects/centradores.png",
+        netlify: "https://doplax.github.io/TSD-Centradores-Electrodos/",
+        github: "https://github.com/Doplax/TSD-Centradores-Electrodos",
     },
     {
         name: "Login/Register",

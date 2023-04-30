@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import "font-awesome/css/font-awesome.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-
+import Image from 'next/image'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,13 +18,14 @@ const Header = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="bg-gray-800 py-6 w-full">
+      <header className=" py-6 w-full">
         <div className="container mx-auto flex justify-between items-center px-4">
           <a
             href="/"
             className="text-white hover:rounded-full hover:bg-gray-300 hover:text-gray-800 px-3 py-2 transition-all duration-300"
           >
-            <h1 className="text-white font-bold text-xl">Mi sitio web</h1>
+      <Image src="/img/logo-doplax.png" alt="Descripción de la imagen" width={200} height={200} />
+
           </a>
           <nav>
               {/* Botón hamburguesa */}
@@ -44,41 +43,41 @@ const Header = () => {
               <li>
                 <a
                   href="/"
-                  className="text-white hover:rounded-full hover:bg-gray-300 hover:text-gray-800 px-3 py-2 transition-all duration-300"
+                  className="text-white  text-xl t-16 font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
                 >
-                  Home
+                  HOME
                 </a>
               </li>
               <li>
                 <a
                   href="/sobreMi"
-                  className="text-white hover:rounded-full hover:bg-gray-300 hover:text-gray-800 px-3 py-2 transition-all duration-300"
+                  className="text-xl text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
                 >
-                  Sobre Mi
+                  SOBRE MI
                 </a>
               </li>
               <li>
                 <a
                   href="/habilidades"
-                  className="text-white hover:rounded-full hover:bg-gray-300 hover:text-gray-800 px-3 py-2 transition-all duration-300"
+                  className="text-xl text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
                 >
-                  Habilidades
+                  HABILIDADES
                 </a>
               </li>
               <li>
                 <a
                   href="/contacto"
-                  className="text-white hover:rounded-full hover:bg-gray-300 hover:text-gray-800 px-3 py-2 transition-all duration-300"
+                  className="text-xl text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
                 >
-                  Contacto
+                  CONTACTO
                 </a>
               </li>
               <li>
                 <a
                   href="/pruebas"
-                  className="text-white hover:rounded-full hover:bg-gray-300 hover:text-gray-800 px-3 py-2 transition-all duration-300"
+                  className="text-xl text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
                 >
-                  Pruebas
+                  PRUEBAS
                 </a>
               </li>
             </ul>
