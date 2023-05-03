@@ -55,6 +55,7 @@ export default function sobreMi() {
                     </div>
                 </div>
                 <main>
+                {/* Desktop Version */}
                     <div className="mx-auto max-w-6xl sm:px-6 lg:px-8">
                         <h1 className="hidden md:flex text-3xl font-bold mt-8">Sobre mi</h1>
                         <div className="hidden md:flex items-center">
@@ -87,6 +88,7 @@ export default function sobreMi() {
                                 className="rounded-full"
                             />
                         </div>
+                        {/* Mobile Version */}
                         <div className="flex md:hidden items-center p-8">
                             <div className="flex flex-col">
                                 <h1 className="text-3xl font-bold mt-8 text-center">Sobre mi</h1>
@@ -114,6 +116,8 @@ export default function sobreMi() {
                                 </a>
                             </div>
                         </div>
+
+                        {/* Proyectos */}
                         <div className="px-4 py-8 sm:px-0">
                             <h1 className="text-3xl font-bold mb-10">Proyectos</h1>
                             <ul
