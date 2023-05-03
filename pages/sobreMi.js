@@ -3,6 +3,36 @@ import { Footer } from '../components/Footer/Footer'
 
 const projects = [
     {
+        name: "Login/Register",
+        description:
+            "Una aplicación que te permite registrarte y acceder a tu cuenta.",
+        role: "PHP, CSS",
+        imageUrl:
+            "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/Acceder.png?raw=true",
+        netlify: "https://github.com/jmontes33/php-login",
+        github: "https://github.com/jmontes33/php-login",
+    },
+    {
+        name: "Tecsolda.es/carroceria",
+        description:
+            "Una tienda online de productos de soldadura para carroceria",
+        role: "Woordpres, Woocommerce",
+        imageUrl:
+            "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/Acceder.png?raw=true",
+        netlify: "https://tecsolda.com/carroceria/",
+        github: "https://tecsolda.com/carroceria/",
+    },
+    {
+        name: "Equilibradores.es",
+        description:
+            "Una web en producción sobre Equilibradores Industriales.",
+        role: "Next, React, Bootstrap",
+        imageUrl:
+            "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/Acceder.png?raw=true",
+        netlify: "https://www.equilibradores.es/",
+        github: "https://www.equilibradores.es/",
+    },
+    {
         name: "Reproductor de música",
         description:
             "Una aplicación To-Do con D&D, en ella puedes crear tareas, marcarlas, moverlas a diferentes estados e incluso eliminarlas.",
