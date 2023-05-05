@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Header } from '../components/Header/Header'
 import { Footer } from '../components/Footer/Footer'
+import {ThreeModel} from '../components/3d/ThreeModel';
 
 
 export default function Pruebas() {
@@ -18,12 +19,12 @@ export default function Pruebas() {
   
   return (
     <>
-      <Header/>
+      {/*<Header/>*/}
+
+    <ThreeModel></ThreeModel>
 
 
-
-
-      <Footer/>
+      {/*<Footer/>*/}
     </>
   );
 }
