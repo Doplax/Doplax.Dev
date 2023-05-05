@@ -12,6 +12,7 @@
   --color-background-dark: #2a2a2a;
   --color-link-dark: #ffffff;
   --color-code-background-dark: #4a4a4a;
+  --color-blue: #008cffe7;
 }
 
 
@@ -31,13 +32,13 @@ body {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 2.4rem;
-  color: var(--color-link-dark);
+  font-size: 1.8rem;
+  color: var(--color-blue);
   margin-bottom: 1rem;
 }
 
@@ -47,12 +48,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -76,8 +76,8 @@ a:hover {
 
 /* El contenedor del código */
 pre {
-  font-size: 1.4rem;
-  padding: 2rem;
+  font-size: 1rem;
+  padding: 0.2rem;
   border-radius: 1rem;
   background-color: var(--color-code-background);
   color: var(--color-text);

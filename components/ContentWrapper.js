@@ -9,3 +9,5 @@ const ContentWrapper = ({ children }) => {
 };
 
 export default ContentWrapper;
+
+// Componente usado como contenedór para los posts

@@ -1,4 +1,5 @@
 // components/Skill.js
+
 import React from 'react';
 
 const Skill = ({ src, alt, label }) => (

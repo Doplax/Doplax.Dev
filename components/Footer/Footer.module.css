@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .footer img {
+    height: 25px;
+    margin: 15px;
+    transform: scale(1);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .footer img:hover {
+    height: 30px;
+    margin: 10px;
+    transform: scale(1.2);
+  }

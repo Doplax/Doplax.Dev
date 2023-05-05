@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import "font-awesome/css/font-awesome.min.css";
-import Image from 'next/image'
+import Image from "next/image";
+import  styles from "./Header.module.css"; // Importa el archivo CSS aquí
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,26 +25,33 @@ const Header = () => {
             href="/"
             className="text-white hover:rounded-full hover:bg-gray-300 hover:text-gray-800 px-3 py-2 transition-all duration-300"
           >
-      <Image src="/img/logo-doplax.png" alt="Descripción de la imagen" width={200} height={200} />
-
+            <Image
+              src="/img/logo-doplax.png"
+              alt="Descripción de la imagen"
+              width={200}
+              height={200}
+            />
           </a>
           <nav>
-              {/* Botón hamburguesa */}
-              <button
-                className="block lg:hidden text-white focus:outline-none"
-                onClick={toggleMenu}
-              > asdfas
-              </button>
+            {/* Botón hamburguesa */}
+            <button
+              className="block lg:hidden text-white focus:outline-none"
+              onClick={toggleMenu}
+            >
+              {" "}
+              asdfas
+            </button>
 
-              {/* Menú */}
+            {/* Menú */}
             <ul
-              className={`${isMenuOpen ? "block" : "hidden"
-                } lg:flex lg:space-x-4 space-y-2 lg:space-y-0`}
+              className={`${
+                isMenuOpen ? "block" : "hidden"
+              } lg:flex lg:space-x-4 space-y-2 lg:space-y-0`}
             >
               <li>
                 <a
                   href="/"
-                  className="text-white  text-xl t-16 font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
+                  className="text-white  text-base t-16 font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
                 >
                   HOME
                 </a>
@@ -51,7 +59,7 @@ const Header = () => {
               <li>
                 <a
                   href="/sobreMi"
-                  className="text-xl text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
+                  className="text-base text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
                 >
                   SOBRE MI
                 </a>
@@ -59,7 +67,7 @@ const Header = () => {
               <li>
                 <a
                   href="/habilidades"
-                  className="text-xl text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
+                  className="text-base text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
                 >
                   HABILIDADES
                 </a>
@@ -67,7 +75,7 @@ const Header = () => {
               <li>
                 <a
                   href="/contacto"
-                  className="text-xl text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
+                  className="text-base text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
                 >
                   CONTACTO
                 </a>
@@ -75,7 +83,7 @@ const Header = () => {
               <li>
                 <a
                   href="/pruebas"
-                  className="text-xl text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
+                  className="text-base text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
                 >
                   PRUEBAS
                 </a>

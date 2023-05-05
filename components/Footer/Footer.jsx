@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/Home.module.css";
+import styles from "./Footer.module.css";
 
 const githubIcon = "/img/icon/github-blanco.png";
 const linkedinIcon = "/img/icon/linkedin-blanco.png";
@@ -11,8 +11,8 @@ const eMailIcon = "/img/icon/eMail-blanco.png";
 
 const Footer = () => {
     return (
-        <>
             <footer className={styles.footer}>
+                {/* Link */}
                 <a
                     href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                     target="_blank"
@@ -24,9 +24,7 @@ const Footer = () => {
                 </a>
                 
                 {/* Iconos */}
-                <div 
-                    className="flex"
-                >
+                <div className="flex">
                     <a
                     href="https://github.com/Doplax"
                     target="_blank"
@@ -48,15 +46,8 @@ const Footer = () => {
                     >
                         <img src={eMailIcon} alt="eMail"/>
                     </a>
-
-
-
- 
-                </div>
-
-                    
+                </div>  
             </footer>
-        </>
     );
 }
 
