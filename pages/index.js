@@ -21,22 +21,22 @@ export default function Home({posts}) {
     <Header/>
 
       <main className='w-full flex justify-center'  >
-        <h1 className={styles.title}>
-          
-        </h1>
-        
+
+        <div></div>
+
+        {/* Render de articulos */}
         <div className={styles.grid}>
-        <h2>Últimos Articulos</h2>
-        {posts.map(post => (
-          <Link href={`/${post.slug}`} key={post.slug} passHref legacyBehavior>
-            <a className={styles.card}>
-              <h2>{post.title} &rarr;</h2>
-              <p>{post.date}</p>
-            </a>
-          </Link>
-        ))}
-          
+          <h2>Últimos Articulos</h2>
+          {posts.map(post => (
+            <Link href={`/${post.slug}`} key={post.slug} passHref legacyBehavior>
+              <a className={styles.card}>
+                <h2>{post.title} &rarr;</h2>
+                <p>{post.date}</p>
+              </a>
+            </Link>
+          ))}
         </div>
+
       </main>
 
       <Footer/>

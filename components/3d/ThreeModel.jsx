@@ -57,3 +57,6 @@ const ThreeModel = ({ modelType, modelPath }) => {
 };
 
 export {ThreeModel};
+
+
+//https://www.youtube.com/watch?v=cNlsWpjkYnI

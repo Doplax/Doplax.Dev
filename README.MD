@@ -1,3 +1,8 @@
+### Enlaces
+[Github](https://github.com/Doplax/Dolpax.Dev)
+[Vercel](https://doplax-dev.vercel.app/)
+
+
 # Proyecto
 
 Este proyecto es una aplicación web desarrollada con Next.js que utiliza archivos MDX para mostrar contenido. La aplicación incluye páginas dinámicas generadas a partir de archivos MDX y componentes personalizados. La arquitectura del proyecto se organiza en carpetas para facilitar la navegación y la comprensión del código.

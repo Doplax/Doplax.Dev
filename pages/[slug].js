@@ -2,16 +2,15 @@ import { MDXRemote } from "next-mdx-remote";
 import { getFileBySlug, getFiles } from "../lib/mdx";
 import MDXComponents from "../components/MDXComponents.js";
 import { Layout } from '../components/Layout';
-import ContentWrapper from '../components/ContentWrapper'; // Importa el componente ContentWrapper
 
+
+// Estructura el diseño de los posts
 export default function Post({ source, frontmatter }) {
   return (
     <Layout>
-      <ContentWrapper> {/* Envuelve el contenido de MDXRemote con el componente ContentWrapper */}
         <h1 className="text-center text-3xl font-bold my-8">{frontmatter.title}</h1>
         <h4 className="text-center">{frontmatter.date}</h4>
         <MDXRemote {...source} components={MDXComponents} />
-      </ContentWrapper>
     </Layout>
   );
 }

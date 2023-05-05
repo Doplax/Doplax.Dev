@@ -1,3 +1,6 @@
+/*
+Se encarga de cargar el contenido de los ficheros del blog, este fichero se carga en pages/[slug].js
+ */
 // components/Layout.js
 import React from 'react';
 import {Header} from './Header/Header';
@@ -7,7 +10,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-        {children}
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          {children}
+        </div>
       <Footer />
     </>
   );
@@ -16,14 +21,3 @@ const Layout = ({ children }) => {
 export { Layout };
 
 
-//const Layout = ({ children }) => {
-//  return (
-//    <div className="flex flex-col min-h-screen"> {/* Añade las clases CSS aquí */}
-//      <Header />
-//      <main className="flex-grow">{children}</main> {/* Añade la clase CSS aquí */}
-//      <Footer />
-//    </div>
-//  );
-//};
-
-//export { Layout };
