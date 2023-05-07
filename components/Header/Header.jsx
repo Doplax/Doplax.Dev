@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import Head from "next/head";
 import "font-awesome/css/font-awesome.min.css";
 import Image from "next/image";
-import  styles from "./Header.module.css"; // Importa el archivo CSS aquí
+import classNames from "classnames";
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(!isMenuOpen);  
   };
+
+  const menuLink = 'global_bottom_line_animation text-white hover:text-gray-300 text-base t-16 font-bold  px-3 py-2'
+
 
   return (
     <div>
@@ -23,7 +27,7 @@ const Header = () => {
         <div className="container mx-auto flex justify-between items-center px-4">
           <a
             href="/"
-            className="text-white hover:rounded-full hover:bg-gray-300 hover:text-gray-800 px-3 py-2 transition-all duration-300"
+            className="bottom_line_animation text-white  text-base t-16 font-bold  px-3 py-2 "
           >
             <Image
               src="/img/logo-doplax.png"
@@ -39,7 +43,7 @@ const Header = () => {
               onClick={toggleMenu}
             >
               {" "}
-              asdfas
+              BURGUER
             </button>
 
             {/* Menú */}
@@ -51,7 +55,7 @@ const Header = () => {
               <li>
                 <a
                   href="/"
-                  className="text-white  text-base t-16 font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
+                  className={menuLink}
                 >
                   HOME
                 </a>
@@ -59,7 +63,8 @@ const Header = () => {
               <li>
                 <a
                   href="/sobreMi"
-                  className="text-base text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
+                  className={menuLink}
+                  
                 >
                   SOBRE MI
                 </a>
@@ -67,7 +72,8 @@ const Header = () => {
               <li>
                 <a
                   href="/habilidades"
-                  className="text-base text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
+                  className={menuLink}
+
                 >
                   HABILIDADES
                 </a>
@@ -75,7 +81,8 @@ const Header = () => {
               <li>
                 <a
                   href="/contacto"
-                  className="text-base text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
+                  className={menuLink}
+
                 >
                   CONTACTO
                 </a>
@@ -83,7 +90,8 @@ const Header = () => {
               <li>
                 <a
                   href="/pruebas"
-                  className="text-base text-white font-bold hover:border-b-2 hover:border-blue-600 px-3 py-2 transition-all ease-in duration-100"
+                  className={menuLink}
+
                 >
                   PRUEBAS
                 </a>

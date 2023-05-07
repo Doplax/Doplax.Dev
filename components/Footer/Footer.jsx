@@ -10,18 +10,18 @@ const eMailIcon = "/img/icon/eMail-blanco.png";
 
 
 const Footer = () => {
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+
+
     return (
             <footer className={styles.footer}>
-                {/* Link */}
-                <a
-                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <p className="text-center font-bold text-xl text-white hover:text-blue-500">© {new Date().getFullYear()} By Doplax.Dev </p>
-
-
-                </a>
+                {/* SITE MAP */}
+                <div>
+                <h3 className="global_bottom_line_animation">SITE MAP</h3>
+                
+                </div>
+                <ul></ul>
                 
                 {/* Iconos */}
                 <div className="flex">
@@ -47,6 +47,17 @@ const Footer = () => {
                         <img src={eMailIcon} alt="eMail"/>
                     </a>
                 </div>  
+
+                {/* Link */}
+                <a
+                    href="https://github.com/Doplax"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <p className="text-center text-sm text-white hover:text-blue-500">© {new Date().getFullYear()}All rights reserved © Doplax.Dev {`${year}`}</p>
+                </a>
+
+
             </footer>
     );
 }
