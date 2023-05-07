@@ -38,19 +38,18 @@ const Header = () => {
           </a>
           <nav>
             {/* Botón hamburguesa */}
-            <button
+            {/*<button
               className="block lg:hidden text-white focus:outline-none"
               onClick={toggleMenu}
             >
-              {" "}
               BURGUER
-            </button>
+            </button>*/}
 
             {/* Menú */}
             <ul
-              className={`${
-                isMenuOpen ? "block" : "hidden"
-              } lg:flex lg:space-x-4 space-y-2 lg:space-y-0`}
+              //className={`${isMenuOpen ? "block" : "hidden"} lg:flex lg:space-x-4 space-y-2 lg:space-y-0`}
+              className={"block lg:flex lg:space-x-4 space-y-2 lg:space-y-0"}
+
             >
               <li>
                 <a
