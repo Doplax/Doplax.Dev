@@ -22,7 +22,9 @@ export default function Home({posts}) {
 
       <main className='w-full flex justify-center'  >
 
-        <div></div>
+        <div>
+          
+        </div>
 
         {/* Render de articulos */}
         <div className={styles.grid}>

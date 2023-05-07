@@ -3,7 +3,7 @@ import { Footer } from '../components/Footer/Footer'
 
 const projects = [
     {
-        name: "Login/Register",
+        name: "Login/Register1",
         description:
             "Una aplicación que te permite registrarte y acceder a tu cuenta.",
         role: "PHP, CSS",
@@ -60,7 +60,7 @@ const projects = [
         github: "https://github.com/Doplax/TSD-Centradores-Electrodos",
     },
     {
-        name: "Login/Register",
+        name: "Login/Register2",
         description:
             "Una aplicación que te permite registrarte y acceder a tu cuenta.",
         role: "PHP, CSS",
