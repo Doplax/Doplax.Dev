@@ -12,7 +12,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);  
   };
 
-  const menuLink = 'global_bottom_line_animation text-white hover:text-gray-300 text-base t-16 font-bold  px-3 py-2'
+  const menuLink = 'global_bottom_line_animation hover:text-white text-gray-400 text-base t-16 font-bold  px-3 py-2'
 
 
   return (
@@ -56,7 +56,7 @@ const Header = () => {
                   href="/"
                   className={menuLink}
                 >
-                  HOME
+                  Home
                 </a>
               </li>
               <li>
@@ -65,7 +65,7 @@ const Header = () => {
                   className={menuLink}
                   
                 >
-                  SOBRE MI
+                  Sobre Mi
                 </a>
               </li>
               <li>
@@ -74,7 +74,7 @@ const Header = () => {
                   className={menuLink}
 
                 >
-                  HABILIDADES
+                  Skills
                 </a>
               </li>
               <li>
@@ -83,7 +83,7 @@ const Header = () => {
                   className={menuLink}
 
                 >
-                  CONTACTO
+                  Contacto
                 </a>
               </li>
               <li>
@@ -92,7 +92,7 @@ const Header = () => {
                   className={menuLink}
 
                 >
-                  PRUEBAS
+                  Pruebas
                 </a>
               </li>
             </ul>

@@ -3,11 +3,16 @@ import { getFileBySlug, getFiles } from "../lib/mdx";
 import MDXComponents from "../components/MDXComponents.js";
 import { Layout } from '../components/Layout';
 
+
+// Lo que se renderiza
 export default function Post({ source, frontmatter }) {
   return (
     <Layout>
-        <h1 className="text-center text-3xl font-bold my-8">{frontmatter.title}</h1>
-        <h4 className="text-center">{frontmatter.date}</h4>
+        <div className="col-span-full lg:col-span-8 lg:col-start-3">
+            <h1 className="text-start text-white text-3xl font-bold m-8 mb-1">{frontmatter.title}</h1>
+            <h4 className="text-left text-sm text-gray-400 mx-8 mb-8 ">{frontmatter.date}</h4>
+        </div>
+
         <MDXRemote {...source} components={MDXComponents} />
     </Layout>
   );
