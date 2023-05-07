@@ -24,27 +24,27 @@ const Footer = () => {
                     <p className=" italic">"Programming isn't about what you know;</p>
                     <p className=" italic"> it's about what you can figure out"</p>
                     <div className="flex">
-                    <a
-                        href="https://github.com/Doplax"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img src={githubIcon} alt="eMail" />
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/pol-valle-montes/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img src={linkedinIcon} alt="LinkedIn" />
-                    </a>
-                    <a
-                        href="mailto:doplax@gmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img src={eMailIcon} alt="eMail" />
-                    </a>
+                        <a
+                            href="https://github.com/Doplax"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={githubIcon} alt="eMail" />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/pol-valle-montes/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={linkedinIcon} alt="LinkedIn" />
+                        </a>
+                        <a
+                            href="mailto:doplax@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={eMailIcon} alt="eMail" />
+                        </a>
                     </div>
                     <p className="allura__typography text-4xl"> Doplax Dev </p>
                 </div>
@@ -73,25 +73,25 @@ const Footer = () => {
 
                 {/* GENERAL */}
                 <div className="">
-  <h3 className="text-lg">Sitemap</h3>
-  <ul className="justify-start">
-    <li>
-      <a href="/" className={menuLink}>Home</a>
-    </li>
-    <li>
-      <a href="/my-mission" className={menuLink}>My Mission</a>
-    </li>
-    <li>
-      <a href="/privacy-policy" className={menuLink}>Privacy policy</a>
-    </li>
-    <li>
-      <a href="/terms-of-use" className={menuLink}>Terms of use</a>
-    </li>
-    <li>
-      <a href="/code-of-conduct" className={menuLink}>Code of conduct</a>
-    </li>
-  </ul>
-</div>
+                    <h3 className="text-lg">Sitemap</h3>
+                    <ul className="justify-start">
+                        <li>
+                            <a href="/" className={menuLink}>Home</a>
+                        </li>
+                        <li>
+                            <a href="/my-mission" className={menuLink}>My Mission</a>
+                        </li>
+                        <li>
+                            <a href="/privacy-policy" className={menuLink}>Privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="/terms-of-use" className={menuLink}>Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="/code-of-conduct" className={menuLink}>Code of conduct</a>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
 
@@ -112,19 +112,19 @@ const Footer = () => {
 
             {/* Circles */}
             <div className="position-relative bg-pattern pattern-2 pt-15 area">
-	<ul className="circles">
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
-</div>
+                <ul className={styles.circles}>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </footer>
     );
 };

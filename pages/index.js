@@ -26,7 +26,7 @@ export default function Home({posts}) {
 
         {/* Render de articulos */}
         <div className={styles.grid}>
-          <h2 className='text-center text-6xl font-bold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>Últimos Articulos</h2>
+          <h2 className='text-center text-6xlF font-bold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>Últimos Articulos</h2>
           {posts.map(post => (
             <Link href={`/${post.slug}`} key={post.slug} passHref legacyBehavior>
               <a className={styles.card}>
