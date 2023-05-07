@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import circles from "./Circles.module.css";
+import { Hub } from "../Hub/Hub";
 
 
 const githubIcon = "/img/icon/github-blanco.png";
@@ -94,7 +95,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-
+                <Hub/>
             </div>
 
 

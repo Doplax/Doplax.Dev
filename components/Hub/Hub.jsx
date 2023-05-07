@@ -1,12 +1,9 @@
 import React from "react";
-import { Header } from '../components/Header/Header'
-import { Footer } from '../components/Footer/Footer'
-import styles from '../styles/SocialMenu.module.css';
+import styles from './SocialMenu.module.css';
 
-const SocialMenu = () => {
+const Hub = () => {
     return (
-        <>
-            <Header/>
+        <div>
                 <div className={styles.container}>
                     <ul>
                         <li style={{ '--i': 6, '--clr': '#131212' }}><a href="https://github.com/Doplax"><span><i className="fa-brands fa-github"></i></span> Github</a></li>
@@ -17,9 +14,8 @@ const SocialMenu = () => {
                         <li style={{ '--i': 1, '--clr': '#0a66c2' }}><a href="https://www.linkedin.com/in/pol-valle-montes/"><span><i className="fa-brands fa-linkedin"></i></span> Linkedin</a></li>
                     </ul>
                 </div>
-            <Footer/>
-        </>
+        </div>
     );
 };
 
-export default SocialMenu;
+export  { Hub };
