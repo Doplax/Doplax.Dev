@@ -3,8 +3,6 @@ import { getFileBySlug, getFiles } from "../lib/mdx";
 import MDXComponents from "../components/MDXComponents.js";
 import { Layout } from '../components/Layout';
 
-
-// Estructura el diseño de los posts
 export default function Post({ source, frontmatter }) {
   return (
     <Layout>
@@ -14,6 +12,7 @@ export default function Post({ source, frontmatter }) {
     </Layout>
   );
 }
+
 export async function getStaticProps({ params }) {
   const { source, frontmatter } = await getFileBySlug(params.slug);
 
@@ -26,7 +25,7 @@ export async function getStaticPaths() {
   const posts = await getFiles();
   const paths = posts.map((post) => ({
     params: {
-      slug: post.replace(/\.mdx/, ""),
+      slug: post.slug,
     },
   }));
 
