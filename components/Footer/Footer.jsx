@@ -18,7 +18,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             {/* CONTAINER */}
-            <div className="flex justify-around items-center h-screen">
+            <div className="flex flex-col justify-around items-center h-screen sm:flex sm:justify-around sm:items-center">
 
                 {/* Sobre mi */}
                 <div className="">
