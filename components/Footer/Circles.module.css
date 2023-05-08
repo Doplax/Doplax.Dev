@@ -37,7 +37,7 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(78,79,255,.2);
+    background: var(--yellow);
     animation: animate 25s linear infinite;
     bottom: -150px
   }

@@ -24,7 +24,7 @@
   --color-code-background: #c4c4c4;
 
   /* DARK */
-  --color-text-dark: #a9adc1;
+  --color-text-dark: #c3c6d4;
   --color-background-dark: #1f2028;
   --color-link-dark: #ffffff;
   --color-code-background-dark: #4a4a4a;
@@ -53,7 +53,7 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  color: var(--color-blue);
+  color: var(--yellow);
 }
 
 h3 {

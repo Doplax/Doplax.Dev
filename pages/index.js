@@ -31,7 +31,7 @@ export default function Home({posts}) {
         </div> 
         {/* Render de articulos */}
         <div className={styles.grid}>
-          <h2 className='text-center text-6xl font-bold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500'>Últimos Articulos</h2>
+          <h2 className='text-center text-6xl font-bold leading-tight tracking-tight gradient-text'>Últimos Articulos</h2>
           {posts.map(post => (
             <Link href={`/${post.slug}`} key={post.slug} passHref legacyBehavior>
               <a className={styles.card}>
@@ -45,6 +45,25 @@ export default function Home({posts}) {
       </main>
 
       <Footer/>
+      <style jsx>{`
+        .gradient-text {
+          background-image: linear-gradient(to right, var(--yellow), #f0a500, #ff8c00);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          animation: animate-gradient 1s linear infinite;
+        }
+        
+        @keyframes animate-gradient {
+          0% {
+            background-position: 0%;
+          }
+          100% {
+            background-position: 100%;
+          }
+        }
+      `}
+      </style>
     </div>
   )
 }
