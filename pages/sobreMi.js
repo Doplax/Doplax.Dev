@@ -91,17 +91,7 @@ export default function sobreMi() {
                         <div className="hidden md:flex items-center">
                             <div className="flex-col">
                                 <p className="text-lg  w-9/12 mb-5">
-                                    Como persona proactiva, disfruto de la emoción de asumir y
-                                    superar nuevos retos.
-                                    <br />
-                                    Mi pasión por la tecnología, espcialmente por el desarrollo web,
-                                    me ha impulsado a profundizar mis conocimientos y compartirlos
-                                    con otros a través de <a href="/erdd">
-                                        "El Rincón Del Dev"
-                                    </a>. <br />
-                                    Mi objetivo es seguir creciendo y aprendiendo para llegar a ser
-                                    una fuente de información valiosa para aquellas personas que
-                                    estén empezando o quieran empezar en este mundo.
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
                                 </p>
                                 <a
                                     href="https://www.linkedin.com/in/pol-valle-montes/"
@@ -123,18 +113,12 @@ export default function sobreMi() {
                             <div className="flex flex-col">
                                 <h1 className="text-3xl font-bold mt-8 text-center">Sobre mi</h1>
                                 <img
-                                    src="https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/profile.png?raw=true"
+                                    src="/img/foto-pol.png"
                                     alt="profile image"
                                     className="rounded-full scale-75"
                                 />
                                 <p className="flex items-center pt-6 pb-4 text-lg">
-                                    Como persona proactiva, disfruto de la emoción de asumir y
-                                    superar nuevos retos. Mi pasión por la tecnología, espcialmente
-                                    por el desarrollo web, me ha impulsado a profundizar mis
-                                    conocimientos y compartirlos con otros a través de "El Rincón
-                                    Del Dev". Mi objetivo es seguir creciendo y aprendiendo para
-                                    llegar a ser una fuente de información valiosa para aquellas
-                                    personas que estén empezando o quieran empezar en este mundo.
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
                                 </p>
                                 <a
                                     href="https://www.linkedin.com/in/jose-ram%C3%B3n-montes-hermida-a8a635193/"
