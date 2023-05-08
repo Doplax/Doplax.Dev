@@ -17,7 +17,8 @@ const Header = () => {
       </Head>
 
       <header className=" py-6 w-full">
-        <div className="container mx-auto flex justify-between items-center px-4">
+        <div className="container mx-auto flex flex-wrap sm:flex-col justify-between items-center px-4">
+          {/* LOGO */}
           <a
             href="/"
             className={`${style.logo} ${style.navLink}`}

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Index.module.css'
 import { getAllFilesMetadata } from '../lib/mdx'
 import { Header } from '../components/Header/Header' 
 import { Footer } from '../components/Footer/Footer'
@@ -22,16 +22,13 @@ export default function Home({posts}) {
       
       <main className='w-full flex justify-center '  >
       <div className='w-max flex justify-center align-middle'>
-          <div>
-            <p>hola</p>
-          </div>
-          <div>
-            <p>hola</p>
-          </div>
+         
         </div> 
         {/* Render de articulos */}
         <div className={styles.grid}>
-          <h2 className='text-center text-6xl font-bold leading-tight tracking-tight gradient-text'>Últimos Articulos</h2>
+        <h2 className='text-center text-6xl font-bold leading-tight tracking-tight'>
+            <span className='gradient-text'>Últimos Artículos</span>
+          </h2>
           {posts.map(post => (
             <Link href={`/${post.slug}`} key={post.slug} passHref legacyBehavior>
               <a className={styles.card}>
