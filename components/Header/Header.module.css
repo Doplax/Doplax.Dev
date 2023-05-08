@@ -1,0 +1,22 @@
+
+.logo::before {
+    content: '<';
+    color: var(--yellow);
+}
+
+.logo::after {
+    content: "/>";
+    color: var(--yellow);
+}
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    /*padding: 0 4rem;*/
+    line-height: 8rem;
+    display: inherit;
+}
