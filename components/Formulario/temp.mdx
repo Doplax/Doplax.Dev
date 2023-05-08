@@ -1,0 +1,42 @@
+// Import 'useState' and 'useEffect' at the top of your Formulario.jsx file
+import React, { useState } from 'react';
+
+// ...
+
+// Modify the 'Formulario' function
+function Formulario() {
+  // Add state for form submission status
+  const [submitted, setSubmitted] = useState(false);
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+
+    const response = await fetch('/api/submitForm', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      setSubmitted(true);
+    }
+  };
+
+  return (
+    <div>
+      {/* Show a success message if the form was submitted */}
+      {submitted ? (
+        <p>Formulario enviado con éxito!</p>
+      ) : (
+        // ...
+        // Wrap your form with 'onSubmit' handler
+        <form onSubmit={handleSubmit} className={styles.form__fields}>
+          {/* ... */}
+        </form>
+      )}
+    </
