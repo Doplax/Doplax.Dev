@@ -22,7 +22,7 @@ const Header = () => {
             href="/"
             className={`${style.logo} ${style.navLink}`}
           > 
-            .
+            Doplax.Dev
           </a>
           
           <nav>
