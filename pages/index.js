@@ -23,6 +23,7 @@ export default function Home({posts}) {
         {/* Render de articulos */}
         <div className={styles.grid}>
           <PageTitle> Ultimos artículos</PageTitle>
+          
             {posts.map(post => (
               <Link href={`/${post.slug}`} key={post.slug} passHref legacyBehavior>
                 <a className={styles.card}>
