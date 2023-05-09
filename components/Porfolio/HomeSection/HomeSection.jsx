@@ -3,10 +3,12 @@ import React from 'react'
 function HomeSection (){
 
     return(
-        <section  className="w-screen">
+        <section              style={{  height: '100%' ,width: '100%'}}         
+        >
 
         <video
-            className="w-screen"            
+            //className="w-screen h-full"   
+            style={{  height: '100%' ,width: '100%'}}         
             preload="auto"
             autoPlay
             loop

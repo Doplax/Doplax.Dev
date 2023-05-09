@@ -1,21 +1,20 @@
 import React from "react";
 import styles from "./Porfolio.module.css";
 import { PageTitle } from "../PageTitle";
-import { HomeSection } from "./HomeSection/HomeSection";
+//import { HomeSection } from "./HomeSection/HomeSection";
 import { SkillSection } from "./SkillsSection/SkillSection";
 import { ProyectosSection } from "./ProyectosSection/ProyectosSection";
 
 
 const Portfolio = () => {
-  
+
 
     return (
         <>
-            <HomeSection/>
+            {/*<HomeSection/>*/}
             <main id={styles.main}>
                 {/* HOME */}
                 
-               
                 {/* SOBRE MI */}
                 <div className="py-10">
                 <div>
