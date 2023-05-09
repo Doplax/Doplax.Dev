@@ -6,13 +6,14 @@ import { Footer } from '../components/Footer/Footer'
 
 
 
+
 export default function Pruebas() {
 
   
   return (
     <>
       <Header/>
-   
+        
       <Footer/>
     </>
   );

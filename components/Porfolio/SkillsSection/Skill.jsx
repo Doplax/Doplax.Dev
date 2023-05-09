@@ -9,4 +9,4 @@ const Skill = ({ src, alt, label }) => (
   </div>
 );
 
-export default Skill;
+export {Skill};

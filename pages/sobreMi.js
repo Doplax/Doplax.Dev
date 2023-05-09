@@ -8,7 +8,7 @@ export default function sobreMi() {
     return (
         <>
             <Header />
-            <Portfolio/>
+                <Portfolio/>
             <Footer />
         </>
     )

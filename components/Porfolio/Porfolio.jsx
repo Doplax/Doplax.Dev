@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Porfolio.module.css";
 import { PageTitle } from "../PageTitle";
-import SkillSection from "./Skills/SkillSection";
-import Skill from "./Skills/Skill";
+import { SkillSection } from "./SkillsSection/SkillSection";
+
 
 const Portfolio = () => {
     const projects = [
@@ -73,69 +73,6 @@ const Portfolio = () => {
         },
     ];
 
-    const frontEndSkills = [
-        {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/html5.png?raw=true",
-            alt: "html",
-            label: "HTML",
-        },
-        {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/css3.png?raw=true",
-            alt: "css",
-            label: "CSS",
-        },
-        {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/javascript.png?raw=true",
-            alt: "javascript",
-            label: "JavaScript",
-        },
-        {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/react.png?raw=true",
-            alt: "react",
-            label: "React",
-        },
-        {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/tailwind.png?raw=true",
-            alt: "Tailwind",
-            label: "Tailwind",
-        },
-    ];
-
-    const backEndSkills = [
-        {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/postgresql.png?raw=true",
-            alt: "postgresql",
-            label: "PostgreSQL",
-        },
-        {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/php.png?raw=true",
-            alt: "php",
-            label: "PHP",
-        },
-    ];
-
-    const toolsSkills = [
-        {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/git.png?raw=true",
-            alt: "git",
-            label: "Git",
-        },
-        {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/github.png?raw=true",
-            alt: "github",
-            label: "GitHub",
-        },
-        {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/npm.png?raw=true",
-            alt: "npm",
-            label: "Npm",
-        },
-        {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/netlify.png?raw=true",
-            alt: "netlify",
-            label: "Netlify",
-        },
-    ];
 
     return (
         <>
@@ -309,79 +246,44 @@ const Portfolio = () => {
                             </div>
 
                 {/* SKILLS */}
-                <div className="mx-auto max-w-6xl sm:px-6 lg:px-8 py-10">
-                    <PageTitle>Skills</PageTitle>
-                    <SkillSection
-                        title="Front End"
-                        skills={frontEndSkills.map((skill) => (
-                            <Skill
-                                key={skill.alt}
-                                src={skill.src}
-                                alt={skill.alt}
-                                label={skill.label}
-                            />
-                        ))}
-                    />
-                    <SkillSection
-                        title="Back End"
-                        skills={backEndSkills.map((skill) => (
-                            <Skill
-                                key={skill.alt}
-                                src={skill.src}
-                                alt={skill.alt}
-                                label={skill.label}
-                            />
-                        ))}
-                    />
-                    <SkillSection
-                        title="Herramientas"
-                        skills={toolsSkills.map((skill) => (
-                            <Skill
-                                key={skill.alt}
-                                src={skill.src}
-                                alt={skill.alt}
-                                label={skill.label}
-                            />
-                        ))}
-                    />
-                </div>
+                <SkillSection/>
 
-                {/* SERVICIOS */}
+                {/* SERVCICIOS */}
                 <section id={styles.servicios__section} className={styles.section}>
-                    <PageTitle>SERVICIOS</PageTitle>
-                    <div class="services__grid">
-                    <div class="services__item">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <h3>Sitios Responsive</h3>
-                        <p>Su sitio se mostrará correctamente en cualquier dispositivo, computadoras, tabletas y teléfonos móviles.</p>
-                    </div>
-                    <div class="services__item">
-                        <i class="fa-solid fa-pen-ruler"></i>
-                        <h3>Diseños creativos</h3>
-                        <p>Un buen y atractivo diseño web lo ayuda a mantener potenciales clientes en su sitio, que es la cara digital de su negocio.</p>
-                    </div>
-                    <div class="services__item">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>Desarrollo</h3>
-                        <p>Conozco la importancia del diseño web y puedo ayudarte a crear un sitio web que te encantará.</p>
-                    </div>
-                    <div class="services__item">
-                        <i class="fa-solid fa-thumbs-up"></i>
-                        <h3>Integración de redes sociales</h3>
-                        <p>Existen muchas plataformas sociales, y debe promover su presencia en el sitio web.</p>
-                    </div>
-                    <div class="services__item">
-                        <i class="fa-solid fa-gauge-high"></i>
-                        <h3>Rendimiento</h3>
-                        <p>Retener a los usuarios es crucial para un sitio web. Los sitios de alto rendimiento atraen y retienen a los usuarios.</p>
-                    </div>
-                    <div class="services__item">
-                        <i class="fa-solid fa-crosshairs"></i>
-                        <h3>SEO</h3>
-                        <p>Optimizaré su sitio con una estrategia inteligente de optimización de motores de búsqueda para generar clientes potenciales.</p>
-                    </div>
-                </div>
-                </section>
+            <PageTitle>SERVICIOS</PageTitle>
+            <div class="services__grid">
+            <div class="services__item">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>Sitios Responsive</h3>
+                <p>Su sitio se mostrará correctamente en cualquier dispositivo, computadoras, tabletas y teléfonos móviles.</p>
+            </div>
+            <div class="services__item">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h3>Diseños creativos</h3>
+                <p>Un buen y atractivo diseño web lo ayuda a mantener potenciales clientes en su sitio, que es la cara digital de su negocio.</p>
+            </div>
+            <div class="services__item">
+                <i class="fa-solid fa-code"></i>
+                <h3>Desarrollo</h3>
+                <p>Conozco la importancia del diseño web y puedo ayudarte a crear un sitio web que te encantará.</p>
+            </div>
+            <div class="services__item">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <h3>Integración de redes sociales</h3>
+                <p>Existen muchas plataformas sociales, y debe promover su presencia en el sitio web.</p>
+            </div>
+            <div class="services__item">
+                <i class="fa-solid fa-gauge-high"></i>
+                <h3>Rendimiento</h3>
+                <p>Retener a los usuarios es crucial para un sitio web. Los sitios de alto rendimiento atraen y retienen a los usuarios.</p>
+            </div>
+            <div class="services__item">
+                <i class="fa-solid fa-crosshairs"></i>
+                <h3>SEO</h3>
+                <p>Optimizaré su sitio con una estrategia inteligente de optimización de motores de búsqueda para generar clientes potenciales.</p>
+            </div>
+            </div>  
+                </section>  
 
             </main>
         </>
