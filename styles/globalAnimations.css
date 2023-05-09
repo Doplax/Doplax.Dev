@@ -23,7 +23,7 @@
 
 /* GRADIENT */
 .gradientText_gAnimation {
-  background-image: linear-gradient(60deg, #ffcc00 0%, #ffb300 15%, #ffa700 30%, #ff8c00 40%, #ff7800 50%, #ff8c00 60%, #ffa700 70%, #ffb300 85%, #ffcc00 100%);
+  background-image: linear-gradient(45deg, #ffcc00 0%, #ffb300 15%, #ffa700 30%, #ff8c00 40%, #ff7800 50%, #ff8c00 60%, #ffa700 70%, #ffb300 85%, #ffcc00 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

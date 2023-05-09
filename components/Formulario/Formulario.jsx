@@ -4,7 +4,6 @@ import styles from './Formulario.module.css';
 function Formulario() {
     return (
         <div className={styles.form}>
-            <h2 className={styles.form__title}>CONTACTO</h2>
             <div className={styles.form__container}>
                 <form action="enviar.php" method="post" className={styles.form__fields}>
                     <label htmlFor="fname" className={styles.form__label}>Nombre y Apellidos</label>
