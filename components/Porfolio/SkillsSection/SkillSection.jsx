@@ -8,44 +8,75 @@ function SkillSection() {
     
     const frontEndSkills = [
         {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/html5.png?raw=true",
-            alt: "html",
+            src: "https://github.com/Doplax/Doplax/blob/main/img/html-logo.png?raw=true",
+            alt: "html5",
             label: "HTML",
         },
         {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/css3.png?raw=true",
-            alt: "css",
+            src: "https://github.com/Doplax/Doplax/blob/main/img/css-logo.png?raw=true",
+            alt: "css3",
             label: "CSS",
         },
         {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/javascript.png?raw=true",
+            src: "https://github.com/Doplax/Doplax/blob/main/img/js-logo.png?raw=true",
             alt: "javascript",
             label: "JavaScript",
         },
         {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/react.png?raw=true",
+            src: "https://github.com/Doplax/Doplax/blob/main/img/typescript-logo.png?raw=true",
+            alt: "Typescript",
+            label: "Typescript",
+        },
+        {
+            src: "https://github.com/Doplax/Doplax/blob/main/img/bootstrap-logo.png?raw=true",
+            alt: "bootstrap",
+            label: "Bootstrap",
+        },
+        {
+            src: "https://github.com/Doplax/Doplax/blob/main/img/tailwind-log.png?raw=true",
+            alt: "tailwind",
+            label: "Tailwind",
+        },
+        {
+            src: "https://github.com/Doplax/Doplax/blob/main/img/react-icon.png?raw=true",
             alt: "react",
             label: "React",
         },
         {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/tailwind.png?raw=true",
-            alt: "Tailwind",
-            label: "Tailwind",
+            src: "https://github.com/Doplax/Doplax/blob/main/img/next-js-logo.png?raw=true",
+            alt: "next-js",
+            label: "Next.js",
         },
     ];
-
+    
     const backEndSkills = [
         {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/postgresql.png?raw=true",
-            alt: "postgresql",
-            label: "PostgreSQL",
+            src: "https://github.com/Doplax/Doplax/blob/main/img/node-logo.png?raw=true",
+            alt: "nodejs",
+            label: "Node.js",
         },
         {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/php.png?raw=true",
-            alt: "php",
-            label: "PHP",
+            src: "https://github.com/Doplax/Doplax/blob/main/img/npm-logo.png?raw=true",
+            alt: "npm",
+            label: "npm",
+        },
+        {
+            src: "https://github.com/Doplax/Doplax/blob/main/img/linux-logo.png?raw=true",
+            alt: "linux",
+            label: "Linux",
+        },
+        {
+            src: "https://github.com/Doplax/Doplax/blob/main/img/python-logo.png?raw=true",
+            alt: "python",
+            label: "Python",
+        },
+        {
+            src: "https://github.com/Doplax/Doplax/blob/main/img/mongodb-logo.png?raw=true",
+            alt: "mongodb",
+            label: "MongoDB",
         },
     ];
+    
 
     const toolsSkills = [
         {
