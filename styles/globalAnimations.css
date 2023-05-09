@@ -21,3 +21,21 @@
   transform: scaleX(1);
 }
 
+/* GRADIENT */
+.gradientText_animation {
+  background-image: linear-gradient(60deg, var(--yellow) 0%, #ffcc00 15%, #ffb300 30%, #ffa700 45%, #ff8c00 60%, #ff7800 75%, #ff6a00 90%, var(--yellow) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: animateGradient 8s linear infinite;
+  background-size: 200% 100%;
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}

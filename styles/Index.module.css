@@ -103,19 +103,4 @@
   }
 }
 
-.gradient-text {
-  background-image: linear-gradient(to right, var(--yellow), #f0a500, #ff8c00);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: animate-gradient 5s linear infinite;
-}
 
-@keyframes animate-gradient {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 100%;
-  }
-}
