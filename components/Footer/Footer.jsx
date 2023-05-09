@@ -17,7 +17,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             {/* CONTAINER */}
-            <div className="flex flex-col justify-around items-center h-screen sm:flex sm:justify-around sm:items-center">
+            <div className="flex flex-col justify-around items-center h-screen sm:flex md:flex-row sm:justify-around sm:items-center">
 
                 {/* Sobre mi */}
                 <div className="">
@@ -104,7 +104,7 @@ const Footer = () => {
                 className=""
             >
                 <p className="flex justify-center w-full text-sm text-white hover:text-blue-500">
-                    © {new Date().getFullYear()}All rights reserved © Doplax.Dev{" "}
+                    © {new Date().getFullYear()}All rights reserved © Doplax.Dev
                     {`${year}`}
                 </p>
             </a>
