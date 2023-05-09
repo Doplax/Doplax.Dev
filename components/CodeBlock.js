@@ -3,14 +3,14 @@
 import React from 'react';
 import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 
-import { atomOneDark  } from 'react-syntax-highlighter/dist/cjs/styles/hljs'; // Puedes elegir otro tema si prefieres
+import { railscasts  } from 'react-syntax-highlighter/dist/cjs/styles/hljs'; // Puedes elegir otro tema si prefieres
 
 const CodeBlock = ({ children, className }) => {
   const language = className ? className.replace(/language-/, '') : 'javascript';
 
   try {
     return (
-      <SyntaxHighlighter language={language} style={atomOneDark }>
+      <SyntaxHighlighter language={language} style={ railscasts }>
         {children.trim()}
       </SyntaxHighlighter>
     );
@@ -25,3 +25,4 @@ const CodeBlock = ({ children, className }) => {
 };
 
 export default CodeBlock;
+

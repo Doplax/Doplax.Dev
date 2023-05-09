@@ -27,11 +27,11 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: animateGradient 10s linear infinite;
+  animation: animateGradientText 10s linear infinite;
   background-size: 200% 100%;
 }
 
-@keyframes animateGradient {
+@keyframes animateGradientText {
   0% {
     background-position: 300% 0;
   }

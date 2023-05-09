@@ -15,6 +15,7 @@
   --orange: #e34c26;
   --green: #008744;
   --blueReact: #61DBFB;
+  --black: #2b2b2b;
 
   /* White */
   --color-text: #2a2a2a;
@@ -91,11 +92,8 @@ a {
 
 /* El contenedor del código */
 pre {
-  font-size: 1rem;
-  padding: 0.2rem;
-  border-radius: 1rem;
-  background-color: var(--color-code-background);
-  color: var(--color-text);
+  /*margin: 0.2rem;*/
+  border-radius: 15px;
 }
 
 @media (prefers-color-scheme: dark) {

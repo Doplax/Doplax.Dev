@@ -2,17 +2,16 @@
 import React from 'react';
 
 const SkillCard = ({ title, skills }) => (
-  <div className="border drop-shadow-sm rounded-lg mb-10">
-    <div className="divide-y-2">
+  
+    <div className="mb-10">
       <div className="flex items-center px-6 py-4 text-xl">
-        <p className="font-bold">{title}</p>
+        <h2 className="font-bold text-3xl text-gray-300 hover:text-gray-200  underLine_gAnimation">{title}</h2>
       </div>
       <div className="px-6 py-4 text-lg">
-        <div className="hidden md:flex space-x-10">{skills}</div>
-        <div className="grid grid-cols-2 md:hidden p-6 gap-12">{skills}</div>
+        <div className="flex flex-wrap jus ">{skills}</div>
       </div>
     </div>
-  </div>
+  
 );
 
 export {SkillCard};
