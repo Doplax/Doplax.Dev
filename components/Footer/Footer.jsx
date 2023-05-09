@@ -22,8 +22,7 @@ const Footer = () => {
                 {/* Sobre mi */}
                 <div className="">
                     <h3>Pol Valle</h3>
-                    <p className=" italic">"Programming isn't about what you know;</p>
-                    <p className=" italic"> it's about what you can figure out"</p>
+                    <p className="italic">"Programming isn't about what you know; <br/>it's about what you can figure out"</p>
                     <div className="flex">
                         <a
                             href="https://github.com/Doplax"

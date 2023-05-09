@@ -1,6 +1,6 @@
 import React  from "react";
 import Head from "next/head";
-import style from './Header.module.css'
+import style from './Header.module.css' // Para hacer el Logo con ::afet y ::Before
 //import "font-awesome/css/font-awesome.min.css";
 
 

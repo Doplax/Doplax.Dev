@@ -8,7 +8,7 @@ const Contacto = () => {
   return (
    <>
       <Header/>
-      <PageTitle>Contacto</PageTitle>
+      {/*<PageTitle>Contacto</PageTitle>*/}
 
       <div className="mx-auto max-w-4xl py-12 px-4 sm:px-6 lg:px-8">
         <Formulario/>  
