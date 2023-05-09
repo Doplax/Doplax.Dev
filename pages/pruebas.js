@@ -1,4 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Header } from '../components/Header/Header' 
+import { Footer } from '../components/Footer/Footer'
+
 
 
 
@@ -8,9 +11,9 @@ export default function Pruebas() {
   
   return (
     <>
-    <div style={{ width: '100vw', height: '100vh' }}>
-
-    </div>
+      <Header/>
+   
+      <Footer/>
     </>
   );
 }

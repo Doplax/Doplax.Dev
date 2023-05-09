@@ -48,6 +48,7 @@ const Header = () => {
                   Home
                 </a>
               </li>
+              
               <li>
                 <a
                   href="/sobreMi"
@@ -57,17 +58,9 @@ const Header = () => {
                   Sobre Mi
                 </a>
               </li>
+              
               <li>
-                <a
-                  href="/skills"
-                  className={menuLink}
-
-                >
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a
+                <a 
                   href="/contacto"
                   className={menuLink}
 
@@ -75,15 +68,16 @@ const Header = () => {
                   Contacto
                 </a>
               </li>
+
               <li>
                 <a
                   href="/pruebas"
                   className={menuLink}
-
                 >
                   Pruebas
                 </a>
               </li>
+
             </ul>
           </nav>
       </header>
