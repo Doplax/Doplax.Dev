@@ -124,14 +124,14 @@
 
 
 /* ///////////// HOME ///////////// */
-.home__video-background {
+.home__videoBackground {
     object-fit: cover;
     top: 0;
     left: 0;
     min-height: 100vh;
     height: 100%;
-    width: 100%;
-    position: absolute;
+    width: 100100%;
+    /*position: absolute;*/
 }
 
 .home__description {
@@ -162,20 +162,6 @@
     padding: 1rem;
 }
 
-
-/*  NOSOTROS  */
-/*#nosotros__section {
-    background-image: url('../img/nosotros.png');
-    background-size: cover;
-    opacity: 0.8; 
-
-}*/
-
-/* SERVICIOS */
-/*#servicios__section {
-    background-image: url('../img/servicios.png');
-    background-size: cover;
-}*/
 
 .services__grid {
     display: grid;
