@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import style from './Header.module.css'
-import "font-awesome/css/font-awesome.min.css";
+//import "font-awesome/css/font-awesome.min.css";
 
 
 
 const Header = () => {
 
-  const menuLink = 'global_bottom_line_animation hover:text-white text-gray-400 text-base t-16 font-bold  px-3 py-2'
+  const menuLink = 'underLine_gAnimation hover:text-white text-gray-400 text-base t-16 font-bold  px-3 py-2'
   return (
     <div>
       <Head>
@@ -58,7 +58,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="/habilidades"
+                  href="/skills"
                   className={menuLink}
 
                 >

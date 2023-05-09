@@ -12,8 +12,7 @@ const eMailIcon = "/img/icon/eMail-blanco.png";
 const Footer = () => {
     const currentDate = new Date();
     const year = currentDate.getFullYear();
-    const menuLink =
-        "global_bottom_line_animation text-gray-300 hover:text-white text-base font-bold px-2  py-2";
+    const menuLink = "underLine_gAnimation text-gray-300 hover:text-white text-base font-bold px-2  py-2";
 
     return (
         <footer className={styles.footer}>

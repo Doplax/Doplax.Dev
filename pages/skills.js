@@ -3,8 +3,9 @@ import { Header } from '../components/Header/Header';
 import { Footer } from '../components/Footer/Footer';
 import SkillSection from '../components/SkillSection';
 import Skill from '../components/Skill';
+import { PageTitle } from '../components/PageTitle'
 
-export default function sobreMi() {
+export default function skills() {
     const frontEndSkills = [
         {
           src: 'https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/html5.png?raw=true',
@@ -73,9 +74,7 @@ export default function sobreMi() {
     <>
       <Header />
       <div className="mx-auto max-w-6xl sm:px-6 lg:px-8 py-10">
-        <h1 className="text-center text-6xl font-bold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-8">
-          Habilidades
-        </h1>
+        <PageTitle>Skills</PageTitle>
         <SkillSection
           title="Front End"
           skills={frontEndSkills.map((skill) => (

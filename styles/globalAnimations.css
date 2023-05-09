@@ -1,10 +1,10 @@
 /* global_bottom_line_animation */
-.global_bottom_line_animation {
+.underLine_gAnimation {
   position: relative;
   
 }
 
-.global_bottom_line_animation::after {
+.underLine_gAnimation::after {
   content: "";
   position: absolute;
   left: 0;
@@ -17,17 +17,17 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.global_bottom_line_animation:hover::after {
+.underLine_gAnimation:hover::after {
   transform: scaleX(1);
 }
 
 /* GRADIENT */
-.gradientText_animation {
-  background-image: linear-gradient(60deg, var(--yellow) 0%, #ffcc00 15%, #ffb300 30%, #ffa700 45%, #ff8c00 60%, #ff7800 75%, #ff6a00 90%, var(--yellow) 100%);
+.gradientText_gAnimation {
+  background-image: linear-gradient(60deg, #ffcc00 0%, #ffb300 15%, #ffa700 30%, #ff8c00 40%, #ff7800 50%, #ff8c00 60%, #ffa700 70%, #ffb300 85%, #ffcc00 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: animateGradient 8s linear infinite;
+  animation: animateGradient 10s linear infinite;
   background-size: 200% 100%;
 }
 

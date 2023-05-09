@@ -1,5 +1,7 @@
 import { Header } from '../components/Header/Header'
 import { Footer } from '../components/Footer/Footer'
+import { PageTitle } from '../components/PageTitle'
+
 
 const projects = [
     {
@@ -79,9 +81,7 @@ export default function sobreMi() {
             <div className="py-10">
                 <div>
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                        <h1 className="text-center text-6xl font-bold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                            Pol Valle
-                        </h1>
+                        <PageTitle>Pol Valle</PageTitle>
                     </div>
                 </div>
                 <main>
