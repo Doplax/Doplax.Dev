@@ -1,21 +1,30 @@
-import React from "react";
-import { Header } from '../components/Header/Header' 
-import { Footer } from '../components/Footer/Footer'
+import React from 'react';
+import { Layout } from '../components/Layout';
+import  {LiveCodeEditor}  from '../components/LiveCodeEditor'
 
 
-
-
-
-
-export default function Pruebas() {
-
-  
+const sampleCode = `
+function Example() {
   return (
-    <>
-      <Header/>
-        
-      <Footer/>
-    </>
+    <div>
+      <h1>Borrame Didac</h1>
+    </div>
   );
 }
 
+render(<Example />);
+`;
+
+export default function Pruebas() {
+  return (
+    <>
+      
+      <Layout>
+
+        <LiveCodeEditor editable  code={sampleCode} />
+
+      </Layout>
+      
+    </>
+  );
+}
