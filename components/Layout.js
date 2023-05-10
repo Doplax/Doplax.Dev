@@ -1,6 +1,3 @@
-/*
-Se encarga de cargar el contenido de los ficheros del blog, este fichero se carga en pages/[slug].js
- */
 // components/Layout.js
 import React from 'react';
 import {Header} from './Header/Header';
@@ -22,3 +19,25 @@ const Layout = ({ children }) => {
 export { Layout };
 
 
+/** DOCUMENTACIÓN
+ * Layout
+ *
+ * Este componente se encarga de cargar y organizar el contenido principal de la aplicación,
+ * incluyendo encabezado (Header) y pie de página (Footer). Este archivo es utilizado
+ * en la página `pages/[slug].js`.
+ *
+ * Uso:
+ *
+ * Importación del componente:
+ *   import { Layout } from './components/Layout';
+ *
+ * Uso en la estructura de la aplicación:
+ *   <Layout>
+ *     <ComponentePrincipal />
+ *   </Layout>
+ *
+ * Propiedades:
+ *
+ * - children (ReactNode): El contenido principal de la aplicación que será renderizado
+ *                         entre el encabezado y el pie de página.
+ */
