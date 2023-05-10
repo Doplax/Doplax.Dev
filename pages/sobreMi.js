@@ -1,16 +1,15 @@
-import { Header } from '../components/Header/Header'
+import  React from 'react'
 import { Portfolio } from "../components/Porfolio/Porfolio"
-import { Footer } from '../components/Footer/Footer'
+import { Layout } from '../components/Layout';
+
 
 
 
 export default function sobreMi() {
     return (
-        <>
-            <Header />
-            <Portfolio/>
-            <Footer />
-        </>
+    <Layout>
+        <Portfolio/>
+    </Layout>
     )
 }
 

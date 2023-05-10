@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import styles from '../styles/Index.module.css'
 import { getAllFilesMetadata } from '../lib/mdx'
-import { Header } from '../components/Header/Header' 
-import { Footer } from '../components/Footer/Footer'
+import { Layout } from '../components/Layout';
 import { PageTitle } from '../components/PageTitle'
 
 
@@ -16,8 +15,8 @@ export async function getStaticProps() {
 // Recibos los post por props
 export default function Home({posts}) {
   return (
-    <>
-      <Header/>
+
+      <Layout>
       
       <main className='w-full flex justify-center '  >
         {/* Render de articulos */}
@@ -34,9 +33,9 @@ export default function Home({posts}) {
         </div>
       </main>
 
-      <Footer/>
+      </Layout>
       
-    </>
+
   )
 }
 
