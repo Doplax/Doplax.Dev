@@ -29,26 +29,18 @@ const Portfolio = () => {
                         <div className="hidden md:flex items-center">
                             <div className="flex-col">
                                 <p className="text-lg  w-9/12 mb-5">
-                                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de
-                                    relleno estándar de las industrias desde el año 1500, cuando
-                                    un impresor (N. del T. persona que se dedica a la imprenta)
-                                    desconocido usó una galería de textos y los mezcló de tal
-                                    manera que logró hacer un libro de textos especimen. No sólo
-                                    sobrevivió 500 años, sino que tambien ingresó como texto de
-                                    relleno en documentos electrónicos, quedando esencialmente
-                                    igual al original. Fue popularizado en los 60s con la creación
-                                    de las hojas "Letraset", las cuales contenian pasajes de Lorem
-                                    Ipsum, y más recientemente con software de autoedición, como
-                                    por ejemplo Aldus PageMaker, el cual incluye versiones de
-                                    Lorem Ipsum.
+                                Hola! Me llamo Pol, me considero un profesional muy versátil y multidisciplinar, con muchas ganas de aprender y de trabajar en un entorno dinámico y desafiante de desarrollo de software. 
+                                <br/>Poseo experiencia en el desarrollo de aplicaciones multiplataforma y web, y tengo conocimientos en la industria 4.0. 
+                                <br/>He participado en ferias, brindando apoyo al departamento comercial al presentar nuestros proyectos. 
+                                <br/>Estoy muy familiarizado con el trabajo en equipo y metodolgías Agile, habiendo aplicado exitosamente esta metodología en proyectos anteriores y colaborando eficazmente en equipos."
                                 </p>
                                 <a
                                     href="https://www.linkedin.com/in/pol-valle-montes/"
                                     target="_blank"
                                     type="button"
-                                    className="inline-flex items-center rounded-md border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                    className="inline-flex items-center rounded-md border border-gray-300 bg-white px-6 py-3 text-xl font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                                 >
-                                    Linkedin
+                                    Descargar CV
                                 </a>
                             </div>
                             <img
