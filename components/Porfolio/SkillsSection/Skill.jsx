@@ -3,7 +3,7 @@
 import React from 'react';
 
 const Skill = ({ src, alt, label }) => (
-  <div className="flex flex-col space-y-2 m-4" >
+  <div className="flex flex-col space-y-2 m-2" >
     <div className='skill-image '> 
       <img className="h-16 w-16" src={src} alt={alt} />
     </div>

@@ -13,9 +13,9 @@ const Portfolio = () => {
     return (
         <>
             <HomeSection/>
-            <ProyectosSection/>
             <SkillSection/>
             <ServiciosSection/>
+            <ProyectosSection/>
         </>
     );
 };
