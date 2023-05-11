@@ -24,7 +24,7 @@ const Portfolio = () => {
                 </div>
                 <main>
                     {/* Desktop Version */}
-                    <div className="mx-auto max-w-6xl sm:px-6 lg:px-8">
+                    <div className="mx-auto sm:px-6 lg:px-8">
                         <h1 className="hidden md:flex text-3xl font-bold mt-8">Sobre mi</h1>
                         <div className="hidden md:flex items-center">
                             <div className="flex-col">

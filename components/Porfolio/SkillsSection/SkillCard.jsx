@@ -1,4 +1,4 @@
-// components/SkillSection.js
+// Donde se agupan las categorias (Front, Back...)
 import React from 'react';
 
 const SkillCard = ({ title, skills }) => (
