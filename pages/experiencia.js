@@ -4,7 +4,7 @@ import { ExperienciaLaboral } from '../components/ExperienciaLaboral/Experiencia
 
 
 
-export default function resume() {
+export default function experiencia() {
   return (
     <Layout>
         <ExperienciaLaboral/>

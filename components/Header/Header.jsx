@@ -21,9 +21,7 @@ const Header = () => {
           <a
             href="/"
             className={`${style.logo} ${style.navLink}`}
-          > 
-            Doplax.Dev
-          </a>
+          > Doplax.Dev </a>
           
           <nav>
             {/* Botón hamburguesa */}
@@ -38,7 +36,6 @@ const Header = () => {
             <ul
               //className={`${isMenuOpen ? "block" : "hidden"} lg:flex lg:space-x-4 space-y-2 lg:space-y-0`}
               className={"flex "}
-
             >
               <li>
                 <a
@@ -58,24 +55,20 @@ const Header = () => {
                   Sobre Mi
                 </a>
               </li>
-              
-              <li>
-                <a 
-                  href="/contacto"
-                  className={menuLink}
 
+              <li>
+                <a
+                  href="/experiencia"
+                  className={menuLink}
                 >
-                  Contacto
+                  Experiencia
                 </a>
               </li>
 
               <li>
-                <a
-                  href="/pruebas"
+                <a href="/contacto"
                   className={menuLink}
-                >
-                  Pruebas
-                </a>
+                > Contacto </a>
               </li>
 
             </ul>
