@@ -30,7 +30,7 @@ export default function Pruebas() {
       <FontAwesomeIcon icon={faHeart} />
       <FontAwesomeIcon icon={faCode} />
       <FontAwesomeIcon icon="fa-solid fa-code" size="lg" />
-      <FontAwesomeIcon icon={faCode} size="10x" />
+      <FontAwesomeIcon icon={faCode} size="10x" /> 
         <LiveCodeEditor editable  code={sampleCode} />
 
       </Layout>

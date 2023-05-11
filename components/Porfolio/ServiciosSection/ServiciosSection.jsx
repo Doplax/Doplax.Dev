@@ -1,45 +1,52 @@
-import React from 'react' 
+import React from 'react'
 import { PageTitle } from '../../PageTitle'
-
+import { faMobile, faPenRuler, faCode, faThumbsUp, faBatteryFull, faCrosshairs} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function ServiciosSection() {
 
-    {/* SERVCICIOS */}
+    const serviceContainerStyle = "flex flex-col justify-start align-middle"
+    const iconColor =  {color: 'var(--yellow)'};
+    const iconSice = "3x"
+    const positionText =  'text-center text-gray-100' 
+    {/* SERVCICIOS */ }
     return (
-    <section>
-    <PageTitle>SERVICIOS</PageTitle>
-    <div className="services__grid">
-    <div className="services__item">
-        <i className="fa-solid fa-mobile-screen-button"></i>
-        <h3>Sitios Responsive</h3>
-        <p>Su sitio se mostrará correctamente en cualquier dispositivo, computadoras, tabletas y teléfonos móviles.</p>
-    </div>
-    <div className="services__item">
-        <i className="fa-solid fa-pen-ruler"></i>
-        <h3>Diseños creativos</h3>
-        <p>Un buen y atractivo diseño web lo ayuda a mantener potenciales clientes en su sitio, que es la cara digital de su negocio.</p>
-    </div>
-    <div className="services__item">
-        <i className="fa-solid fa-code"></i>
-        <h3>Desarrollo</h3>
-        <p>Conozco la importancia del diseño web y puedo ayudarte a crear un sitio web que te encantará.</p>
-    </div>
-    <div className="services__item">
-        <i className="fa-solid fa-thumbs-up"></i>
-        <h3>Integración de redes sociales</h3>
-        <p>Existen muchas plataformas sociales, y debe promover su presencia en el sitio web.</p>
-    </div>
-    <div className="services__item">
-        <i className="fa-solid fa-gauge-high"></i>
-        <h3>Rendimiento</h3>
-        <p>Retener a los usuarios es crucial para un sitio web. Los sitios de alto rendimiento atraen y retienen a los usuarios.</p>
-    </div>
-    <div className="services__item">
-        <i className="fa-solid fa-crosshairs"></i>
-        <h3>SEO</h3>
-        <p>Optimizaré su sitio con una estrategia inteligente de optimización de motores de búsqueda para generar clientes potenciales.</p>
-    </div>
-    </div>  
-        </section>  
+        <section>
+            <PageTitle>SERVICIOS</PageTitle>
+            <h2 className='underLine_gAnimation font-bold text-3xl text-gray-300 hover:text-gray-200 my-5'>Servicios que ofrezco a mis clientes</h2>
+            <div className="grid grid-cols-3 gap-4">
+                <div className={serviceContainerStyle}>
+                    <FontAwesomeIcon icon={faMobile} size={iconSice} style={iconColor} />                    
+                    <h4 className={positionText}>Sitios Responsive</h4>
+                    <p className={positionText}>Tu sitio se verá correctamente en cualquier dispositivo, ya sea en ordenadores, Tablets y móviles</p>
+                </div>
+                <div className={serviceContainerStyle}>
+                    <FontAwesomeIcon icon={faPenRuler} size={iconSice} style={iconColor} />                    
+                    <h4 className={positionText}>Diseños creativos</h4>
+                    <p className={positionText}>El diseño es algo fundamental, por ello debe ser atractivo para ayuda a retener clientes potenciales en tu web</p>
+                </div>
+                <div className={serviceContainerStyle}>
+                    <FontAwesomeIcon icon={faCode} size={iconSice} style={iconColor} />                    
+                    <h4 className={positionText}>Desarrollo</h4>
+                    <p className={positionText}>La escalabilidad del proyecto es fundamental para hacer crecer negocios pensando en el largo plazo.</p>
+                </div>
+                <div className={serviceContainerStyle}>
+                    <FontAwesomeIcon icon={faThumbsUp} size={iconSice} style={iconColor} />                    
+                    <h4 className={positionText}>Integración de redes sociales</h4>
+                    <p className={positionText}>Las redes sociales son una herramienta imprescindible para cualquier negocio. Me aseguraré de tenerlas actualizadas y optimizadas.</p>
+                </div>
+                <div className={serviceContainerStyle}>
+                    <FontAwesomeIcon icon={faBatteryFull} size={iconSice} style={iconColor} />                    
+                    <h4 className={positionText}>Rendimiento</h4>
+                    <p className={positionText}>La experiencia de navegación debe ser fluida y eficiente, imprescindible para ofrecer el mejor servicio</p>
+                </div>
+                <div className={serviceContainerStyle}>
+                    <FontAwesomeIcon icon={faCrosshairs} size={iconSice} style={iconColor} />                    
+                    <h4 className={positionText}>SEO</h4>
+                    <p className={positionText}>En internet si no apareces en google no existes, por ello se requiere de buenas prácticas para posicionar tu negocio en internet.</p>
+                </div>
+            </div>
+        </section>
+
     )
 }
 
