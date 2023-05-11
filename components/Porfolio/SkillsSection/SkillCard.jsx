@@ -8,7 +8,7 @@ const SkillCard = ({ title, skills }) => (
         <h2 className="font-bold text-3xl text-gray-300 hover:text-gray-200  underLine_gAnimation">{title}</h2>
       </div>
       <div className="px-6 py-4 text-lg">
-        <div className="flex flex-wrap jus ">{skills}</div>
+        <div className="flex flex-wrap  justify-center">{skills}</div>
       </div>
     </div>
   

@@ -76,29 +76,29 @@ function SkillSection() {
             label: "MongoDB",
         },
     ];
-    
 
     const toolsSkills = [
         {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/git.png?raw=true",
-            alt: "git",
+            src: "https://raw.githubusercontent.com/Doplax/Doplax/main/img/git-logo.png",
+            alt: "Git",
             label: "Git",
         },
         {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/github.png?raw=true",
-            alt: "github",
-            label: "GitHub",
+            src: "https://raw.githubusercontent.com/Doplax/Doplax/main/img/notion-logo.png",
+            alt: "Notion",
+            label: "Notion",
         },
         {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/npm.png?raw=true",
-            alt: "npm",
-            label: "Npm",
+            src: "https://raw.githubusercontent.com/Doplax/Doplax/main/img/wordpress-logo.png",
+            alt: "Wordpress",
+            label: "Wordpress",
         },
         {
-            src: "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/netlify.png?raw=true",
-            alt: "netlify",
-            label: "Netlify",
+            src: "https://raw.githubusercontent.com/Doplax/Doplax/main/img/wooCommerce-logo.png",
+            alt: "WooCommerce",
+            label: "WooCommerce",
         },
+
     ];
     
     return(
@@ -127,7 +127,7 @@ function SkillSection() {
                 ))}
             />
             <SkillCard
-                title="Herramientas"
+                title="Otras Herramientas"
                 skills={toolsSkills.map((skill) => (
                     <Skill
                         key={skill.alt}
