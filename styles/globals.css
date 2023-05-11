@@ -40,7 +40,6 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
-  background-color: var(--color-background);
 }
 
 * {
@@ -54,7 +53,7 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  color: var(--yellow);
+  color: var(--blue);
 }
 
 h3 {
@@ -96,6 +95,8 @@ pre {
   border-radius: 15px;
 }
 
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -110,9 +111,14 @@ pre {
   a:hover {
     color: var(--color-link-hover);
   }
-  pre {
-    background-color: var(--color-code-background-dark);
-    color: var(--color-text-dark);
+  
+
+  h2 {
+    font-size: 1.8rem;
+    color: #d2d5db;
+  }
+  h2:hover {
+    color: var(--white);
   }
 }
 

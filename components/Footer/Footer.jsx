@@ -72,7 +72,7 @@ const Footer = () => {
                 </div>
 
                 {/* GENERAL */}
-                <div className="">
+                {/*<div className="">
                     <h3 className="text-lg">Sitemap</h3>
                     <ul className="justify-start">
                         <li>
@@ -91,7 +91,7 @@ const Footer = () => {
                             <a href="/code-of-conduct" className={menuLink}>Code of conduct</a>
                         </li>
                     </ul>
-                </div>
+                </div>*/}
             </div>
 
 
@@ -103,8 +103,7 @@ const Footer = () => {
                 className=""
             >
                 <p className="flex justify-center w-full text-sm text-white hover:text-blue-500">
-                    © {new Date().getFullYear()}All rights reserved © Doplax.Dev
-                    {`${year}`}
+                    © All rights reserved © Doplax.Dev {`${year}`}
                 </p>
             </a>
 

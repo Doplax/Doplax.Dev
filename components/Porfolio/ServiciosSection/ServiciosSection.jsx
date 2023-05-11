@@ -14,7 +14,7 @@ function ServiciosSection() {
     return (
         <section className='my-10'>
             <PageTitle>SERVICIOS</PageTitle>
-            <h2 className='underLine_gAnimation font-bold text-3xl text-gray-300 hover:text-gray-200 my-5'>Servicios que ofrezco a mis clientes</h2>
+            <h2 className='underLine_gAnimation font-bold text-3xl my-5'>Servicios que ofrezco a mis clientes</h2>
             <div className="grid grid-cols-3 gap-4">
                 <div className={serviceContainerStyle}>
                     <FontAwesomeIcon icon={faMobile} size={iconSice} style={iconColor} />                    
