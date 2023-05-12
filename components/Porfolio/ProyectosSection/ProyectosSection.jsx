@@ -3,14 +3,18 @@ import React from 'react'
 function ProyectosSection() {
     const projects = [
         {
-            name: "Login/Register1",
+            name: 
+                "Login/Register1",
             description:
                 "Una aplicación que te permite registrarte y acceder a tu cuenta.",
-            role: "PHP, CSS",
+            role: 
+                "PHP, CSS",
             imageUrl:
                 "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/Acceder.png?raw=true",
-            netlify: "https://github.com/jmontes33/php-login",
-            github: "https://github.com/jmontes33/php-login",
+            netlify: 
+                "https://github.com/jmontes33/php-login",
+            github: 
+                "https://github.com/jmontes33/php-login",
         },
         {
             name: "Tecsolda.es/carroceria",
