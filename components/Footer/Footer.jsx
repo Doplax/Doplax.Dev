@@ -22,7 +22,7 @@ const Footer = () => {
                 {/* Sobre mi */}
                 <div className="">
                     <h3>Pol Valle</h3>
-                    <p className="italic">"Programming isn't about what you know; <br/>it's about what you can figure out"</p>
+                    <p className="italic text-center">"Programming isn't about what you know; <br/>it's about what you can figure out"</p>
                     <div className="flex">
                         <a
                             href="https://github.com/Doplax"
@@ -46,7 +46,7 @@ const Footer = () => {
                             <img src={eMailIcon} alt="eMail" />
                         </a>
                     </div>
-                    <p className="allura__typography text-4xl"> Doplax Dev </p>
+                    <p className="allura__typography text-4xl gradientText_gAnimation"> Doplax Dev </p>
                 </div>
 
                 {/* SITE MAP */}
