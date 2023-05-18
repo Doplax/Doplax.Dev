@@ -40,8 +40,6 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
-  color: var(--color-text-dark);
-  background-color: var(--color-background-dark);
 }
 
 * {
@@ -54,18 +52,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
-  color: var(--white);
-
-}
-
-h2:hover {
-  color: #d2d5db;
-
+  font-size: 1.8rem;
+  color: var(--blue);
 }
 
 h3 {
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -87,14 +79,11 @@ option {
 }
 
 a {
-  color: var(--color-link-dark);
+  color: var(--color-link);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-a:hover {
-  color: var(--color-link-hover);
-}
 
 
 
@@ -107,6 +96,31 @@ pre {
 }
 
 
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: var(--color-text-dark);
+    background-color: var(--color-background-dark);
+  }
+  a {
+    color: var(--color-link-dark);
+  }
+  a:hover {
+    color: var(--color-link-hover);
+  }
+  
+
+  h2 {
+    font-size: 1.8rem;
+    color: #d2d5db;
+  }
+  h2:hover {
+    color: var(--white);
+  }
+}
 
 
 
