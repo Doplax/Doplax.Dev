@@ -4,71 +4,95 @@ import { PageTitle } from "../PageTitle";
 import { ExperienceCard } from "./ExperienceCard";
 
 function ExperienciaLaboral() {
+  const experiencias =[
+    {
+      titulo: 'Front End',
+      ubicacion: 'Tecsolda, Esparreguera',
+      fecha: 'Mayo 2022 - Actualidad',
+      tareas: [
+        'Encargado de diseñar y desarrollar la estructura visual del e-commerce',
+        'Análisis de estadísticas mediante Google Analytics.',
+        'Gestión de la Red y Equipos de la empresa',
+        'Rebranding de la marca personal de la empresa. Diseño de la web con Wordpress y Elementor.',
+        'Migración y mantenimiento del programa de gestión empresarial a Ekon ERP (con SQL) para la exportación de datos (con Python) para la limpieza de los mismos',
+        'Despliegue de aplicaciónes web'
+      ]
+    },
+    {
+      titulo: 'Help Desk en SEAT',
+      ubicacion: 'SEAT',
+      fecha: '2018 - 2019',
+      tareas: [
+        'Asistencia y atención al cliente para trabajadores internos',
+        'Gestión del Stock',
+        'Preparación, recepción y configuración de dispositivos para el personal de SEAT',
+      ]
+    },
+    {
+      titulo: 'Help Desk en Cesicat (Ciber Segurdidad)',
+      ubicacion: 'Cesicat',
+      fecha: '2017 - 2018',
+      tareas: [
+        'Atención telefónica y virtual a clientes (administraciones públicas)',
+        'Trámites con administraciones públicas para ejecutar escaneos de seguridad',
+        'Recepción y derivación de incidencias de ciber seguridad a técnicos para su resolución',
+      ]
+    }
+  ]
 
+  const formacion = [
+    {
+      titulo: 'DAW - Técnico Superior en Desarrollo de Aplicaciones Web',
+      ubicacion: 'INS Milà i Fontanals, Igualada',
+      fecha: '2020 - 2022',
+      tareas: [
+        'Programación: Adquisición de habilidades en lenguajes de programación y conceptos de programación avanzados.',
+        'Desarrollo de aplicaciones web: Aprendizaje de diseño y desarrollo de aplicaciones web, con un enfoque en interfaces de usuario y seguridad.',
+        'Bases de datos: Estudio de los fundamentos, diseño, creación y gestión de bases de datos.',
+        'Servidores web: Configuración y administración de servidores web y despliegue de aplicaciones.',
+        'Frameworks y librerías: Exploración y uso de frameworks y librerías para el desarrollo web.',
+        'Diseño y maquetación web: Adquisición de habilidades en diseño y maquetación web con diversas herramientas.',
+        'Gestión de proyectos: Aprendizaje de técnicas de gestión de proyectos aplicadas al desarrollo web.',
+        'Pruebas y depuración: Aprendizaje de técnicas para probar y depurar aplicaciones web.',
+        'Desarrollo móvil: Posibilidad de aprender sobre desarrollo de aplicaciones móviles en algunos programas.'
+]
+      
+    },
+    {
+      titulo: 'Sistemas Microinformáticos y Redes',
+      ubicacion: 'IES Daniel Blanxart, Olesa de Montserrat',
+      fecha: '2015 - 2017',
+      tareas: [
+        'Montaje y mantenimiento de hardware: Ensamblado y soporte técnico de componentes de hardware de un sistema informático.',
+        'Sistemas operativos: Instalación, configuración y administración de sistemas operativos.',
+        'Redes: Configuración y mantenimiento de redes informáticas, incluyendo solución de problemas y seguridad de red.',
+        'Aplicaciones ofimáticas: Uso de aplicaciones de software de oficina, como procesadores de texto, hojas de cálculo, bases de datos y presentaciones.',
+        'Servidores: Instalación y configuración de servidores, incluyendo servicios de red.',
+        'Seguridad informática: Implementación de políticas y procedimientos de seguridad para proteger sistemas y datos.',
+        'Soporte técnico: Ofrecer asistencia técnica para resolver problemas de hardware y software.',
+        'Sistemas de almacenamiento: Administración de sistemas de almacenamiento de datos y copias de seguridad.'
+    ]
+    
+    }
+  ]
+  
 
   return (
     <>
       <PageTitle> Experiencia Laboral </PageTitle>
-      <ExperienceCard></ExperienceCard>
-      
-
-      {/* Help Desk Seat */}
-      <div className="border drop-shadow-sm rounded-lg mb-10">
-        <div className="divide-y-2">
-          <div className="flex items-center px-6 py-4 text-xl">
-            <p className="font-bold">Help Desk en SEAT</p>
-          </div>
-          <div className="px-6 py-4 text-lg">
-            <div className="flex place-items-center">
-              {/*<HomeModernIcon className="h-7" />*/}
-              <p className="font-semibold pl-2">Tecsolda, Esparreguera</p>
-            </div>
-            <div className="flex place-items-center mt-2">
-              {/*<CalendarDaysIcon className="h-7" />*/}
-              <p className="font-semibold pl-2">2018 - 2019</p>
-            </div>
-            <div>
-              <p>Funciones que desarrollo en esta empresa:</p>
-              <ul>
-                <li>Asistencia y atención al cliente para trabajadores internos</li>
-                <li>Gestión del Stock</li>
-                <li>Preparación, recepción y configuración de dispositivos para el personal de SEAT</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Cesicat */}
-      <div className="border drop-shadow-sm rounded-lg mb-10">
-        <div className="divide-y-2">
-          <div className="flex items-center px-6 py-4 text-xl">
-            <p className="font-bold">Help Desk en Cesicat (Ciber Segurdidad)</p>
-          </div>
-          <div className="px-6 py-4 text-lg">
-            <div className="flex place-items-center">
-              {/*<HomeModernIcon className="h-7" />*/}
-              <p className="font-semibold pl-2">Barcelona</p>
-            </div>
-            <div className="flex place-items-center mt-2">
-              {/*<CalendarDaysIcon className="h-7" />*/}
-              <p className="font-semibold pl-2">2017 - 2018</p>
-            </div>
-            <div>
-              <p>Funciones que desarrollé en esta empresa:</p>
-              <ul>
-                <li>Atención telefónica y virtual a clientes (administraciones públicas)</li>
-                <li>Trámites con administraciones públicas para ejecutar escaneos de seguridad</li>
-                <li>Recepción y derivación de incidencias de ciber seguridad a técnicos para su resolución</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      {experiencias.map((content, index)=>(
+        <ExperienceCard 
+          key= {index}
+          titulo = {content.titulo}
+          ubicacion = {content.ubicacion}
+          fecha = {content.fecha}
+          tareas = {content.tareas}
+        />))
+      }
+  
 
       {/* Trancision */}
-      <div className="hidden md:flex items-center ">
+      {/*<div className="hidden md:flex items-center ">
         <div className="flex-col">
           <h2 className="hidden md:flex text-3xl font-bold mb-8">
             Sin embargo...
@@ -82,55 +106,18 @@ function ExperienciaLaboral() {
           alt="flecha"
           className="h-40 mr-20"
         />
-      </div>
+      </div>*/}
 
       <PageTitle> Estudios </PageTitle>
-
-      {/* Grado superior */}
-      <div className="border drop-shadow-sm rounded-lg mb-10">
-        <div className="divide-y-2">
-          <div className="flex items-center px-6 py-4 text-xl">
-            <p className="font-bold">DAW - Técnico Superior en Desarrollo de Aplicaciones Web</p>
-          </div>
-          <div className="px-6 py-4 text-lg">
-            <div className="flex place-items-center">
-              {/*<HomeModernIcon className="h-7" />*/}
-              <p className="font-semibold pl-2">INS Milà i Fontanals, Igualada </p>
-            </div>
-            <div className="flex place-items-center mt-2">
-              {/*<CalendarDaysIcon className="h-7" />*/}
-              <p className="font-semibold pl-2">2020 - 2022</p>
-            </div>
-            <p className="mt-2">
-              lo que aprendí
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Formación SMX */}
-      <div className="border drop-shadow-sm rounded-lg mb-10">
-        <div className="divide-y-2">
-          <div className="flex items-center px-6 py-4 text-xl">
-            <p className="font-bold">Sistemas Microinformáticos y Redes</p>
-          </div>
-          <div className="px-6 py-4 text-lg">
-            <div className="flex place-items-center">
-              {/*<HomeModernIcon className="h-7" />*/}
-              <p className="font-semibold pl-2">IES Daniel Blanxart, Olesa de Montserrat</p>
-            </div>
-            <div className="flex place-items-center mt-2">
-              {/*<CalendarDaysIcon className="h-7" />*/}
-              <p className="font-semibold pl-2">2015 - 2017</p>
-            </div>
-            <p className="mt-2">
-              En esta formación de grado medio fue donde toqué por primera vez
-              el desarrollo web, también aprendí sobre aplicaciones ofimáticas,
-              redes y Linux.
-            </p>
-          </div>
-        </div>
-      </div>
+      {formacion.map((content, index)=>(
+        <ExperienceCard 
+          key= {index}
+          titulo = {content.titulo}
+          ubicacion = {content.ubicacion}
+          fecha = {content.fecha}
+          tareas = {content.tareas}
+        />))
+      }
 
 
     </>
