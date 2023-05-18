@@ -23,6 +23,8 @@ const Footer = () => {
                 <div className="">
                     <h3>Pol Valle</h3>
                     <p className="italic text-center">"Programming isn't about what you know; <br/>it's about what you can figure out"</p>
+                    
+                    {/* RRHH */}
                     <div className="flex">
                         <a
                             href="https://github.com/Doplax"
@@ -103,7 +105,7 @@ const Footer = () => {
                 className=""
             >
                 <p className="flex justify-center w-full text-sm text-white hover:text-blue-500">
-                    © All rights reserved © Doplax.Dev {`${year}`}
+                    Doplax.Dev | All rights reserved © {`${year}`}
                 </p>
             </a>
 
