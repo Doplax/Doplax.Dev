@@ -78,7 +78,12 @@ function SkillSection() {
     ];
 
     const toolsSkills = [
+        
         {
+            src: "https://raw.githubusercontent.com/Doplax/Doplax/main/img/GraphQL.png",
+            alt: "GraphQL",
+            label: "GraphQL",
+        },{
             src: "https://raw.githubusercontent.com/Doplax/Doplax/main/img/git-logo.png",
             alt: "Git",
             label: "Git",
