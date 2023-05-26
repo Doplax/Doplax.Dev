@@ -30,7 +30,8 @@ function HomeSection() {
                                     equipos.
                                 </p>
                                 <a
-                                    href="https://www.linkedin.com/in/pol-valle-montes/"
+                                    href="/documents/CV-Pol-Valle.pdf"
+                                    download="CV-Pol-Valle.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer" // Agrega esta línea para la seguridad del enlace
                                     type="button"
@@ -55,13 +56,14 @@ function HomeSection() {
                                     habiendo aplicado exitosamente esta metodología en proyectosanteriores y colaborando eficazmente en equipos.
                                 </p>
                                 <a
-                                    href="https://www.linkedin.com/in/pol-valle-montes/"
+                                    href="/documents/CV-Pol-Valle.pdf"
+                                    download="CV-Pol-Valle.pdf"
                                     target="_blank"
-                                    rel="noopener noreferrer"
+                                    rel="noopener noreferrer" // Agrega esta línea para la seguridad del enlace
                                     type="button"
-                                    className="inline-flex items-center rounded-md border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                    className="inline-flex items-center rounded-md border border-gray-300 bg-white px-6 py-3 text-xl font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                                 >
-                                    Linkedin
+                                    Descargar CV
                                 </a>
                             </div>
                         </div>
