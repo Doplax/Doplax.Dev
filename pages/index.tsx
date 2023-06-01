@@ -8,6 +8,7 @@ import NotionService from '../services/notion-service'
 //import styles from '../styles/Index.module.css'
 
 import { Layout } from '../components/Layout'
+import { BlogCard } from '../components/BlogCard'
 //import { PageTitle } from '../components/PageTitle'
 
 export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext<ParsedUrlQuery>) => {
@@ -25,17 +26,17 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
 
 // Recibos los post por props
 const Home: NextPage = ({posts}: InferGetStaticPropsType<typeof getStaticProps>) => {
-  const title = "Test Blog";
-  const description = "Welcome to my notion blog"
+
 
   return (
     <>
 
     <Layout>
-    {posts.map((post: BlogPost) => (
-        
-        <p key={post.id}>Blog Post Component will go here: {post.title}</p>
-      ))}
+      <div className='mt-12 max-wlg mx-auto grid gap-6 lg:grids-cols-2 lg:max-w-none'>
+        {posts.map((post: BlogPost) => (
+          <BlogCard key={post.id} post={post}/>
+        ))} 
+      </div>
     </Layout>
     </>
   )
