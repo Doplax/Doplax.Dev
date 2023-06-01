@@ -20,6 +20,7 @@
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.325",
     "classnames": "^2.3.2",
+    "dayjs": "^1.11.7",
     "font-awesome": "^4.7.0",
     "gray-matter": "^4.0.3",
     "mongodb": "^5.4.0",
