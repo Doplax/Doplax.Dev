@@ -1,17 +1,14 @@
 import Link from 'next/link'
 import styles from '../styles/Index.module.css'
-import { getAllFilesMetadata } from '../lib/mdx'
 import { Header } from '../components/Header/Header' 
 import { Footer } from '../components/Footer/Footer'
-import { PageTitle } from '../components/PageTitle'
+//import { PageTitle } from '../components/PageTitle'
+
+import { getDatabase } from "../lib/notion";
+import { Text } from "./[id].js";
 
 
-export async function getStaticProps() {
-  const posts = await getAllFilesMetadata()
-  return {
-    props: {posts},// Se deben devolver como un objeto
-  }
-}
+
 
 // Recibos los post por props
 export default function Home({posts}) {
@@ -19,21 +16,15 @@ export default function Home({posts}) {
     <>
       <Header/>
       
-      <main className='w-full flex justify-center '  >
-        {/* Render de articulos */}
-        <div className={styles.grid}>
-          <PageTitle> Ultimos artículos</PageTitle>
-          
-            {posts.map(post => (
-              <Link href={`/${post.slug}`} key={post.slug} passHref legacyBehavior>
-                <a className={styles.card}>
-                  <h2>{post.title} &rarr;</h2>
-                  <p>{post.date}</p>
-                </a>
-              </Link>
-            ))}
-        </div>
-      </main>
+      <ol className={styles.posts}>
+      {posts.map((post) => (
+        <li key={post.id}>
+          <Link href={`/${post.id}`}>
+             <Text text={post.properties.Name.title} />
+          </Link>
+        </li>
+      ))}
+    </ol>
 
       <Footer/>
       
@@ -41,4 +32,17 @@ export default function Home({posts}) {
   )
 }
 
-
+export const getStaticProps = async () => {
+  const databaseId = process.env.NOTION_DATABASE_ID;
+  const database = await getDatabase(databaseId);
+  
+  return {
+    props: {
+      posts: database,
+    },
+		// Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every second
+    revalidate: 1, // In seconds
+  };
+};
