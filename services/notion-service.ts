@@ -47,18 +47,20 @@ export default class NotionService {
         const database = process.env.NOTION_BLOG_DATABASE_ID ?? "";
 
         // list of blog posts
-        const response = await this.client.databases.query (args: {
+        const response = await this.client.databases.query ({
             database_id: database,
             filter: {
                 property: 'Slug',
                 formula: {
-                    text: {
+                    string: {
                         equals: slug
                     }
                 }
             }
         })
+        console.log(response); // Aquí se imprimirá la respuesta en la consola.
 
+        
         if (!response.results[0]) {
             throw 'No results available'
         }

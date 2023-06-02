@@ -1,6 +1,6 @@
 import NotionService from "../../services/notion-service";
-import { GetStaticProps, GetStaticPropsContext, InferGetServerSidePropsType } from "next";
-import { Head } from "next/document";
+import { GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType, PreviewData  } from "next";
+import Head  from "next/head";
 import { ParsedUrlQuery } from "querystring";
 import ReactMarkdown from "react-markdown"
 
@@ -26,11 +26,11 @@ export async function getStaticPaths() {
 
 
 
-export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext <ParsedUrlQuery, PreviewData>){
+export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext <ParsedUrlQuery, PreviewData>) => {
     const notionService = new NotionService();
 
     //ts-ignore
-    const p = await notionService.getSingleBlogPost(context.params?.slug)
+    const p = await notionService.getSingleBlogPost(context.params?.slug as string)
 
     if (!p){
         throw "Error"
@@ -47,7 +47,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
 
 
 
-const Post = ({markdown, post}: InferGetServerSidePropsType<typeof getStaticProps>) => {
+const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) => {
     return (
         <>
             <Head>
@@ -64,8 +64,6 @@ const Post = ({markdown, post}: InferGetServerSidePropsType<typeof getStaticProp
                         <article className="prose">
                             <ReactMarkdown>{markdown}</ReactMarkdown>
                         </article>
-                        {/*<h1>{post.title}</h1>*/}
-                        {/*<p>{post.description}</p>*/}
                     </div>
                 </div>
             </main>
