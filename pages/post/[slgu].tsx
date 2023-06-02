@@ -1,12 +1,13 @@
-import NotionService from "../services/notion-service";
-import { GetStaticProps, InferGetServerSidePropsType } from "next";
+import NotionService from "../../services/notion-service";
+import { GetStaticProps, GetStaticPropsContext, InferGetServerSidePropsType } from "next";
 import { Head } from "next/document";
+import { ParsedUrlQuery } from "querystring";
 import ReactMarkdown from "react-markdown"
 
 export async function getStaticPaths() {
     const notionService = new NotionService();
 
-    const posts = await notionService.getPublishedBlogPosts()
+    const posts = await notionService.getPublishedBlogPost()
 
 
     // Because we are generating static paths, you will have to redeploy
@@ -25,7 +26,28 @@ export async function getStaticPaths() {
 
 
 
-const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) => {
+export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext <ParsedUrlQuery, PreviewData>){
+    const notionService = new NotionService();
+
+    //ts-ignore
+    const p = await notionService.getSingleBlogPost(context.params?.slug)
+
+    if (!p){
+        throw "Error"
+    }
+
+    return {
+        props: {
+            markdown: p.markdown,
+            post: p.post
+        }
+    }
+}
+
+
+
+
+const Post = ({markdown, post}: InferGetServerSidePropsType<typeof getStaticProps>) => {
     return (
         <>
             <Head>
