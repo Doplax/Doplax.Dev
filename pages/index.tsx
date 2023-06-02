@@ -44,3 +44,6 @@ const Home: NextPage = ({posts}: InferGetStaticPropsType<typeof getStaticProps>)
 }
 
 export default Home;
+
+
+// Borrar, prueba para github
