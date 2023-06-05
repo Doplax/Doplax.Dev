@@ -17,5 +17,5 @@ export type BlogPost = {
 
 export type PostPage = {
     post: BlogPost
-    markdown: string
+    markdown: any // Cambiar esto cunado sepa arreglarlo
 }

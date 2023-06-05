@@ -3,6 +3,8 @@ import { GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType, Preview
 import Head  from "next/head";
 import { ParsedUrlQuery } from "querystring";
 import ReactMarkdown from "react-markdown"
+import { Header } from "../../components/Header/Header";
+import { Footer } from "../../components/Footer/Footer";
 
 export async function getStaticPaths() {
     const notionService = new NotionService();
@@ -36,9 +38,11 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
         throw "Error"
     }
 
+    console.log("************[slug]***********");
+    console.log(p);
     return {
         props: {
-            markdown: p.markdown,
+            markdown: p.markdown.parent, // Parent es la parte en la que viene el artículo
             post: p.post
         }
     }
@@ -57,9 +61,12 @@ const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) 
                 <meta name="og:title" content={post.title} />
                 <meta name="og:image" content={post.cover} />
             </Head>
+            {/* Pasar las propiedades estas */}
+            <Header></Header>
 
             <main className="max-w-xl mx-auto">
                 <div className="flex items-center justify-center">
+                    
                     <div className="flex intems-center justify-center">
                         <article className="prose">
                             <ReactMarkdown>{markdown}</ReactMarkdown>
@@ -67,6 +74,8 @@ const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) 
                     </div>
                 </div>
             </main>
+
+            <Footer></Footer>
         </>
     );
 }

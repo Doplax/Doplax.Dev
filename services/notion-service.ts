@@ -70,8 +70,8 @@ export default class NotionService {
         const page = response.results[0];
 
         const mdBlocks = await this.n2m.pageToMarkdown(page.id)
-        markdown = JSON.stringify(this.n2m.toMarkdownString(mdBlocks));
-        //markdown = this.n2m.toMarkdownString(mdBlocks);
+        //markdown = JSON.stringify(this.n2m.toMarkdownString(mdBlocks));
+        markdown = this.n2m.toMarkdownString(mdBlocks);
 
         console.log(markdown);
         
@@ -81,7 +81,7 @@ export default class NotionService {
 
         return {
             post,
-            markdown  
+            markdown 
         }
     }
 
