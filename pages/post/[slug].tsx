@@ -62,6 +62,7 @@ const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) 
                 <meta name="og:image" content={post.cover} />
             </Head>
             {/* Pasar las propiedades estas */}
+            
             <Header></Header>
 
             <main className="max-w-xl mx-auto">
