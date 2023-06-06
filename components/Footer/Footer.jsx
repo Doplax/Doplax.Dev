@@ -2,10 +2,12 @@ import React from "react";
 import styles from "./Footer.module.css";
 import circles from "./Circles.module.css";
 
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const githubIcon = "/img/icon/github-blanco.png";
-const linkedinIcon = "/img/icon/linkedin-blanco.png";
-const eMailIcon = "/img/icon/eMail-blanco.png";
+
+
 
 //const linkedinIcon = "/img/";
 
@@ -13,6 +15,10 @@ const Footer = () => {
     const currentDate = new Date();
     const year = currentDate.getFullYear();
     const menuLink = "underLine_gAnimation text-gray-300 hover:text-white text-base font-bold px-2  py-2";
+
+    // FontAwesomeIcon
+    const iconColor =  {color: 'var(--yellow)'};
+    const iconSice = "2x"
 
     return (
         <footer className={styles.footer}>
@@ -25,27 +31,27 @@ const Footer = () => {
                     <p className="italic text-center">"Programming isn't about what you know; <br/>it's about what you can figure out"</p>
                     
                     {/* RRHH */}
-                    <div className="flex">
+                    <div className="flex gap-4">
                         <a
                             href="https://github.com/Doplax"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img src={githubIcon} alt="eMail" />
+                            <FontAwesomeIcon icon={faGithub} size={iconSice} style={iconColor} />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/pol-valle-montes/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img src={linkedinIcon} alt="LinkedIn" />
+                            <FontAwesomeIcon icon={faLinkedin} size={iconSice} style={iconColor} />
                         </a>
                         <a
                             href="mailto:doplax@gmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img src={eMailIcon} alt="eMail" />
+                            <FontAwesomeIcon icon={faEnvelope} size={iconSice} style={iconColor} />
                         </a>
                     </div>
                     <p className="allura__typography text-4xl gradientText_gAnimation"> Doplax Dev </p>
