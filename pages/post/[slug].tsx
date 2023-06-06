@@ -33,13 +33,13 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
 
     //ts-ignore
     const p = await notionService.getSingleBlogPost(context.params?.slug as string)
-
+    console.log("************[slug]***********");
+    console.log(p);
     if (!p){
         throw "Error"
     }
 
-    console.log("************[slug]***********");
-    console.log(p);
+    
     return {
         props: {
             markdown: p.markdown.parent, // Parent es la parte en la que viene el artículo
