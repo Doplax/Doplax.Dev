@@ -32,7 +32,7 @@ const Home: NextPage = ({posts}: InferGetStaticPropsType<typeof getStaticProps>)
     <>
 
     <Layout>
-      <PageTitle>{"Blog"}</PageTitle>
+      <PageTitle>{"Ultimos Artículos"}</PageTitle>
       <div className='mt-12 max-wlg mx-auto grid gap-6 lg:grid-cols-2 lg:max-w-none'>
         {posts.map((post: BlogPost) => (
           <BlogCard key={post.id} post={post}/>

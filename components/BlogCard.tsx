@@ -24,28 +24,32 @@ const BlogCard: FunctionComponent<BlogCardProps> = ({post}) => {
                     {/* Text*/}
                     <div className='flex-1 bg-gray-50 pt-2 pb-6 px-4 flex flex-col justify-between'>
                         <div className="flex-1"> 
-                            {/* Date */}
-                            <span className='block mt-2'>
-                                <h4 className='text-xs font medium text-gray-600'>{dayjs(post.date).format('LL')}</h4>
-                            </span>
+                            
                             {/* Title */}
                             <span className='block mt-2'>
-                                <h4 className='text-xs font medium text-gray-600'>{post.title}</h4>
+                                <h4 className='text-base font-bold text-gray-600'>{post.title}</h4>
                             </span>
                             {/* Dscription */}
                             <span className='block mt-2'>
                                 <h4 className='text-xs font medium text-gray-600'>{post.description}</h4>
                             </span>
-
-                            <span className='block mt-2 space-x-4'>
-                                {
-                                    post.tags.map(tag => (
-                                        <span key={tag.id} className='bg-green-300 text-green-800 px-2 py-1 text-xs rounded-lg'>
-                                            {tag.name}
-                                        </span>
-                                    ))
-                                }
-                            </span>
+                            
+                            <div className='flex justify-between'>
+                                <span className='block mt-2 '>
+                                    {
+                                        post.tags.map(tag => (
+                                            <span key={tag.id} className='bg-green-300 text-green-800 px-2 py-1 text-xs rounded-lg'>
+                                                {tag.name}
+                                            </span>
+                                        ))
+                                    }
+                                </span>
+                                {/* Date */}
+                                <span className='block mt-2'>
+                                    <h4 className='text-xs font medium text-gray-600 px-2 py-1'>{dayjs(post.date).format('LL')}</h4>
+                                </span>
+                            </div>
+                           
 
                         </div>
                     </div>

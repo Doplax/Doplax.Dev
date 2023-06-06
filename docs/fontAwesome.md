@@ -1,4 +1,6 @@
 Hay que coger el individual import
+
+Cudado con los diferentes imports
 ```JavaScript
 import { faMobile, faPenRuler, faCode, faThumbsUp, faBatteryFull, faCrosshairs} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

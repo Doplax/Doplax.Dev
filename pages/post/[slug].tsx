@@ -65,6 +65,22 @@ const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) 
             <Header></Header>
 
             <main className="max-w-4xl mx-auto">
+                {/* Cabecero */}
+                <div>
+                    <img className="rounded-3xl" src={post.cover}/>
+                    <h1 className="gradientText_gAnimation font-bold">{post.title}</h1>
+                    <span>{post.Author}</span>
+                    {/*<span className='block mt-2 space-x-4'>
+                        {
+                            post.tags.map(tag => (
+                                <span key={tag.id} className='bg-green-300 text-green-800 px-2 py-1 text-xs rounded-lg'>
+                                    {tag.name}
+                                </span>
+                            ))
+                        }
+                    </span>*/}
+                </div>
+
                 <div className="flex items-center justify-center">
                     <div className="flex intems-center justify-center">
                         <div>

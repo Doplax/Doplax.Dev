@@ -1,3 +1,5 @@
+//Antiguo componente de MDX, hay que actualizarlo
+
 import Link from 'next/link';
 import styles from '../styles/Index.module.css';
 import { PageTitle } from './PageTitle';
