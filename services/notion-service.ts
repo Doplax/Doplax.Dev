@@ -80,7 +80,6 @@ export default class NotionService {
         post = NotionService.pageToPostTransformer(page);
         
 
-
         return {
             post,
             markdown 
