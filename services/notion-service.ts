@@ -78,6 +78,8 @@ export default class NotionService {
         
 
         post = NotionService.pageToPostTransformer(page);
+        
+
 
         return {
             post,
@@ -103,6 +105,10 @@ export default class NotionService {
                     coverUrl = '' 
             }
         }
+
+        
+
+
 
         return {
             id: page.id,

@@ -64,13 +64,12 @@ const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) 
             {/* Pasar las propiedades estas */}
             <Header></Header>
 
-            <main className="max-w-xl mx-auto">
+            <main className="max-w-4xl mx-auto">
                 <div className="flex items-center justify-center">
-                    
                     <div className="flex intems-center justify-center">
-                        <article className="prose">
+                        <div>
                             <ReactMarkdown>{markdown}</ReactMarkdown>
-                        </article>
+                        </div>
                     </div>
                 </div>
             </main>
