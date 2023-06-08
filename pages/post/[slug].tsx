@@ -6,6 +6,9 @@ import ReactMarkdown from "react-markdown"
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 
+import CodeBlock from '../../components/CodeBlock'; // Asegúrate de importar tu componente CodeBlock
+
+
 export async function getStaticPaths() {
     const notionService = new NotionService();
 
@@ -84,7 +87,9 @@ const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) 
                 <div className="flex items-center justify-center">
                     <div className="flex intems-center justify-center">
                         <div>
-                            <ReactMarkdown>{markdown}</ReactMarkdown>
+                            <ReactMarkdown components={{ code: CodeBlock }}>
+                                {markdown}
+                            </ReactMarkdown>
                         </div>
                     </div>
                 </div>
