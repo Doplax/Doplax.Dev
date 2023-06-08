@@ -1,5 +1,7 @@
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { railscasts  } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import prism from 'react-syntax-highlighter/dist/cjs/styles/prism/prism'; 
+
+//import { railscasts  } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 const CodeBlock = ({node, inline}) => {
   if (inline) {
@@ -15,7 +17,7 @@ const CodeBlock = ({node, inline}) => {
   
   try {
     return (
-      <SyntaxHighlighter language={language} style={railscasts}>
+      <SyntaxHighlighter language={language} style={prism}>
         {code}
       </SyntaxHighlighter>
     );
