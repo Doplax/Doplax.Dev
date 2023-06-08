@@ -1,5 +1,6 @@
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import prism from 'react-syntax-highlighter/dist/cjs/styles/prism/prism'; 
+import ColorTheme  from 'react-syntax-highlighter/dist/cjs/styles/prism/darcula'; // Para cambiar de tema, cambiar la ultima parte de la importacion
+
 
 //import { railscasts  } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
@@ -17,7 +18,7 @@ const CodeBlock = ({node, inline}) => {
   
   try {
     return (
-      <SyntaxHighlighter language={language} style={prism}>
+      <SyntaxHighlighter language={language} style={ColorTheme}>
         {code}
       </SyntaxHighlighter>
     );
