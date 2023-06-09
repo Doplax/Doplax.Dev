@@ -114,7 +114,7 @@ export default class NotionService {
             cover: coverUrl,
             title: page.properties.Name.title[0].plain_text,
             tags: page.properties.Tags.multi_select,
-            description: page.properties.Description.rich_text[0].plain_text,
+            description: page.properties.Description?.rich_text?.[0]?.plain_text ?? '',
             date: page.properties.Updated.last_edited_time,
             slug: page.properties.Slug.formula.string
         }
