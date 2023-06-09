@@ -1,12 +1,20 @@
 {
-    "routes": [
+  "static": {
+    "directory": "public",
+    "rewrites": [
       {
-        "src": "/post/.*",
-        "methods": ["GET"],
-        "headers": {
-          "Cache-Control": "public, max-age=86400"
-        }
+        "source": "/(.*)",
+        "destination": "/$1"
       }
     ]
-  }
-  
+  },
+  "routes": [
+    {
+      "src": "/post/.*",
+      "methods": ["GET"],
+      "headers": {
+        "Cache-Control": "public, max-age=86400"
+      }
+    }
+  ]
+}
