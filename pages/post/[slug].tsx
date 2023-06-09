@@ -61,7 +61,7 @@ const Post = ({markdown, post}: InferGetServerSidePropsType<typeof getServerSide
                     <div className="flex intems-center justify-center">
                         <div className="markdown-container">
                             {/*//@ts-ignore*/}
-                            <ReactMarkdown components={{ code: CodeBlock }}>
+                            <ReactMarkdown components={{ code: CodeBlock }} skipHtml={true}>
                                 {markdown}
                             </ReactMarkdown>
                         </div>
