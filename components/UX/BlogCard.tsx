@@ -1,5 +1,5 @@
 import {FunctionComponent} from 'react'
-import { BlogPost } from "../@types/schema";
+import { BlogPost } from "../../@types/schema";
 import dayjs from "dayjs"
 import Link from 'next/link';
 

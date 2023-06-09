@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import styles from '../styles/Index.module.css';
-import { PageTitle } from './PageTitle';
+import { PageTitle } from '../PageTitle';
 
 
 function LatestArticles({ posts }) {

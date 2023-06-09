@@ -78,7 +78,8 @@ export default class NotionService {
         
 
         post = NotionService.pageToPostTransformer(page);
-        
+        console.log("COVER");
+        console.log(post.cover);
 
         return {
             post,

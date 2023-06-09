@@ -1,11 +1,9 @@
-import Link from 'next/link'
 import type { GetServerSideProps, GetServerSidePropsContext, InferGetServerSidePropsType, NextPage } from 'next'
-import { ParsedUrlQuery } from 'querystring'
 import { BlogPost } from '../@types/schema'
 import NotionService from '../services/notion-service'
 
 import { Layout } from '../components/Layout'
-import { BlogCard } from '../components/BlogCard'
+import { BlogCard } from '../components/UX/BlogCard'
 import { PageTitle } from '../components/PageTitle'
 
 export const getServerSideProps: GetServerSideProps = async (context: GetServerSidePropsContext) => {

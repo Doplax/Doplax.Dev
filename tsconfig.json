@@ -105,7 +105,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/CodeBlock.jsx"  ],
+, "components/UX/CodeBlock.jsx"  ],
   "exclude": [
     "node_modules"
   ]
