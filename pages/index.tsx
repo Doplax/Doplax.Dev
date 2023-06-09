@@ -1,17 +1,14 @@
 import Link from 'next/link'
-//import React from 'react'
-import type { GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType, NextPage } from 'next'
+import type { GetServerSideProps, GetServerSidePropsContext, InferGetServerSidePropsType, NextPage } from 'next'
 import { ParsedUrlQuery } from 'querystring'
 import { BlogPost } from '../@types/schema'
 import NotionService from '../services/notion-service'
-
-//import styles from '../styles/Index.module.css'
 
 import { Layout } from '../components/Layout'
 import { BlogCard } from '../components/BlogCard'
 import { PageTitle } from '../components/PageTitle'
 
-export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext<ParsedUrlQuery>) => {
+export const getServerSideProps: GetServerSideProps = async (context: GetServerSidePropsContext) => {
   const notionService  = new NotionService();
 
   const posts = await notionService.getPublishedBlogPost();
@@ -19,26 +16,20 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
     props: {
       posts
     },
-
   }
 }
 
-
-// Recibos los post por props
-const Home: NextPage = ({posts}: InferGetStaticPropsType<typeof getStaticProps>) => {
-
-
+const Home: NextPage = ({posts}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <>
-
-    <Layout>
-      <PageTitle>{"Ultimos Artículos"}</PageTitle>
-      <div className='mt-12 max-wlg mx-auto grid gap-6 lg:grid-cols-2 lg:max-w-none'>
-        {posts.map((post: BlogPost) => (
-          <BlogCard key={post.id} post={post}/>
-        ))} 
-      </div>
-    </Layout>
+      <Layout>
+        <PageTitle>{"Ultimos Artículos"}</PageTitle>
+        <div className='mt-12 max-wlg mx-auto grid gap-6 lg:grid-cols-2 lg:max-w-none'>
+          {posts.map((post: BlogPost) => (
+            <BlogCard key={post.id} post={post}/>
+          ))} 
+        </div>
+      </Layout>
     </>
   )
 }
