@@ -86,7 +86,7 @@ const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) 
 
                 <div className="flex items-center justify-center">
                     <div className="flex intems-center justify-center">
-                        <div>
+                        <div className="markdown-container">
                             {/*//@ts-ignore*/}
                             <ReactMarkdown components={{ code: CodeBlock }}>
                                 {markdown}
@@ -97,6 +97,16 @@ const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) 
             </main>
 
             <Footer></Footer>
+            <style jsx global>{`
+              .markdown-container p img {
+                display: block;
+                margin: 0 auto;
+              }
+              strong code {
+                color: var(--yellow);
+              }
+            `}</style>
+
         </>
     );
 }
