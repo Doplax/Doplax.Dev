@@ -1,7 +1,7 @@
 import {FunctionComponent} from 'react'
 import { BlogPost } from "../../@types/schema";
 import dayjs from "dayjs"
-import Link from 'next/link';
+import { BlogCover } from "../../components/UX/BlogCover";
 
 type BlogCardProps = {
     post: BlogPost
@@ -14,11 +14,11 @@ dayjs.extend(localizedFormat)
 const BlogCard: FunctionComponent<BlogCardProps> = ({post}) => {
     return (
         //<Link href={`/post/${post.slug}`}>
-            <a href={`/post/${post.slug}`} className="transition duraion-300 hover:scale-105">
+            <a href={`/blog/${post.slug}`} className="transition duraion-300 hover:scale-105">
                 <div className="flex flex-col rounded-xl shadow-lg overflow-hidden">
                     {/* Image */}
                     <div className='flex-shrink-0'>
-                        <img className='h-64 w-full object-fit' src={post.cover} alt={"cover"}/>
+                        <BlogCover cover={post.cover} customClass="h-64 w-full object-fit"/>
                     </div>
 
                     {/* Text*/}

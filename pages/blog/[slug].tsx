@@ -8,6 +8,7 @@ import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
+import { BlogCover } from "../../components/UX/BlogCover";
 
 import CodeBlock from "../../components/UX/CodeBlock";
 
@@ -57,15 +58,7 @@ const Post = ({
       <main className="max-w-4xl mx-auto">
         {/* Cabecero */}
         <div>
-       
-        {post.cover ?
-            (post.cover.url 
-                ? 
-            <img className="rounded-3xl" src={post.cover.url} /> 
-            : 
-            <img className="rounded-3xl" src={post.cover} />) 
-            : null
-        }
+        <BlogCover cover={post.cover} customClass="rounded-3xl"/>
 
 
         
@@ -86,7 +79,7 @@ const Post = ({
           <div className="flex intems-center justify-center">
             <div className="markdown-container">
               {/*//@ts-ignore*/}
-              <ReactMarkdown components={{ code: CodeBlock }} skipHtml={true}>
+              <ReactMarkdown components={{ code: CodeBlock }} skipHtml={true} >
                 {markdown}
               </ReactMarkdown>
             </div>
