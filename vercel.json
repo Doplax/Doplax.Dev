@@ -1,0 +1,12 @@
+{
+    "routes": [
+      {
+        "src": "/post/.*",
+        "methods": ["GET"],
+        "headers": {
+          "Cache-Control": "public, max-age=86400"
+        }
+      }
+    ]
+  }
+  
