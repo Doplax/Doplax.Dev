@@ -64,7 +64,8 @@ const Post = ({
             <img className="rounded-3xl" src={post.cover.url} /> 
             : 
             <img className="rounded-3xl" src={post.cover} />) 
-            : null}
+            : null
+        }
 
 
         
