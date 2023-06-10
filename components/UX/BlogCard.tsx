@@ -49,8 +49,6 @@ const BlogCard: FunctionComponent<BlogCardProps> = ({post}) => {
                                     <h4 className='text-xs font medium text-gray-600 px-2 py-1'>{dayjs(post.date).format('LL')}</h4>
                                 </span>
                             </div>
-                           
-
                         </div>
                     </div>
                 </div>
