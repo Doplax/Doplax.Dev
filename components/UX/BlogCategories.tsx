@@ -3,7 +3,7 @@
 const BlogCategories = ({tags}) => {
 
     return (
-    <span className='block mt-2 space-x-4'>
+        <span className='block mt-2 space-x-4'>
             {
                 
                 //@ts-ignore
@@ -13,8 +13,8 @@ const BlogCategories = ({tags}) => {
                     </span>
                 ))
             }
-          </span>
-          )
+        </span>
+    )
 }
 
 

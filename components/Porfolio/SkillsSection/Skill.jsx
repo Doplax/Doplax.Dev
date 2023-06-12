@@ -9,6 +9,7 @@ const Skill = ({ src, alt, label }) => (
     </div>
     <p className="flex justify-center">{label}</p>
 
+    {/* Animación de las cartas */}
     <style jsx>{`
     .skill-image {
         border-radius: 10px; /* Add this line */

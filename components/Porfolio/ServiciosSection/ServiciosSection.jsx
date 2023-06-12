@@ -8,14 +8,14 @@ function ServiciosSection() {
     const iconColor =  {color: 'var(--yellow)'};
     const iconSice = "3x"
     const positionText_h4 =  'text-center text-gray-100' 
-    const positionText_p =  'text-center text-gray-300' 
+    const positionText_p =  'text-center text-gray-300 text-base' 
 
     {/* SERVCICIOS */ }
     return (
         <section className='my-10'>
-            <PageTitle>SERVICIOS</PageTitle>
-            <h2 className='underLine_gAnimation font-bold text-3xl my-5'>Servicios que ofrezco a mis clientes</h2>
-            <div className="grid grid-cols-3 gap-4">
+            <PageTitle>Servicios</PageTitle>
+            <h2 className='font-bold text-3xl my-10'>Servicios que ofrezco a mis clientes</h2>
+            <div className="grid grid-cols-3 gap-10">
                 <div className={serviceContainerStyle}>
                     <FontAwesomeIcon icon={faMobile} size={iconSice} style={iconColor} />                    
                     <h4 className={positionText_h4}>Sitios Responsive</h4>
