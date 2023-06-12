@@ -1,16 +1,17 @@
-import NotionService from "../../services/notion-service";
 import {
   GetServerSideProps,
   GetServerSidePropsContext,
   InferGetServerSidePropsType,
 } from "next";
+import NotionService from "../../services/notion-service";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 import { BlogCover } from "../../components/UX/BlogCover";
-
 import CodeBlock from "../../components/UX/CodeBlock";
+import { BlogCategories } from "../../components/UX/BlogCategories";
+
 
 export const getServerSideProps: GetServerSideProps = async (
   context: GetServerSidePropsContext
@@ -58,28 +59,19 @@ const Post = ({
       <main className="max-w-4xl mx-auto">
         {/* Cabecero */}
         <div>
-        <BlogCover cover={post.cover} customClass="rounded-3xl"/>
-
-
+          <BlogCover cover={post.cover} customClass="rounded-3xl"/>
+          <BlogCategories tags={post.tags}/>
         
           <h1 className="gradientText_gAnimation font-bold">{post.title}</h1>
           <span>{post.Author}</span>
-          {/*<span className='block mt-2 space-x-4'>
-                        {
-                            post.tags.map(tag => (
-                                <span key={tag.id} className='bg-green-300 text-green-800 px-2 py-1 text-xs rounded-lg'>
-                                    {tag.name}
-                                </span>
-                            ))
-                        }
-                    </span>*/}
+          
         </div>
 
         <div className="flex items-center justify-center">
           <div className="flex intems-center justify-center">
             <div className="markdown-container">
               {/*//@ts-ignore*/}
-              <ReactMarkdown components={{ code: CodeBlock }} skipHtml={true} >
+              <ReactMarkdown components={{ code: CodeBlock }} skipHtml={true} >{/*  */}
                 {markdown}
               </ReactMarkdown>
             </div>
@@ -87,7 +79,7 @@ const Post = ({
         </div>
       </main>
 
-      <Footer></Footer>
+      <Footer/>
       <style jsx global>{`
         .markdown-container p img {
           display: block;
@@ -95,6 +87,14 @@ const Post = ({
         }
         strong code {
           color: var(--yellow);
+        }
+        strong{
+          color: var(--yellow);
+        }
+
+        h2,h3 {
+          margin-top: 30px;
+
         }
       `}</style>
     </>
