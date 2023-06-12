@@ -9,9 +9,9 @@ const BlogCover: React.FC<Props> = ({ cover, customClass}) => {
   const coverUrl = typeof cover === 'string' ? cover : cover.url;
   console.log("COVER");
   console.log(coverUrl);
-  return coverUrl ? (
+  return   (
     <img className={`${customClass}`} src={coverUrl} alt="Post Cover" />
-  ) : null;
+  ) ;
 };
 
 export {BlogCover};
