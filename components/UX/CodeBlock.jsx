@@ -14,7 +14,7 @@ const CodeBlock = ({node, inline}) => {
   }
   
   const language = node.properties.className[0].replace(/language-/, '');
-  const code = node.children[0].value.trim().replace(/^javascriptCopy code\n/, ''); // Esto quitará "javascriptCopy code"
+  const code = node.children[0].value; // Esto quitará "javascriptCopy code"
   
   try {
     return (

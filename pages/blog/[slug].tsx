@@ -56,7 +56,7 @@ const Post = ({
       {/* Pasar las propiedades estas */}
       <Header></Header>
 
-      <main className="max-w-4xl mx-auto">
+      <main className="max-w-4xl mx-auto p-4 md:p-0">
         {/* Cabecero */}
         <div>
           <BlogCover cover={post.cover} customClass="rounded-3xl"/>
@@ -67,15 +67,12 @@ const Post = ({
           
         </div>
 
-        <div className="flex items-center justify-center">
-          <div className="flex intems-center justify-center">
-            <div className="markdown-container">
-              {/*//@ts-ignore*/}
-              <ReactMarkdown components={{ code: CodeBlock }} skipHtml={true} >{/*  */}
-                {markdown}
-              </ReactMarkdown>
-            </div>
-          </div>
+        {/* Contenido */}
+        <div className="markdown-container">
+          {/*//@ts-ignore*/}
+          <ReactMarkdown components={{ code: CodeBlock }} skipHtml={true} >{/*  */}
+            {markdown}
+          </ReactMarkdown>
         </div>
       </main>
 

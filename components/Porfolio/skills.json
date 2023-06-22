@@ -56,10 +56,7 @@
         }
     },
     "toolsSkills": {
-        "GraphQL": {
-            "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/GraphQL.png",
-            "label": "GraphQL"
-        },
+        
         "Git": {
             "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/git-logo.png",
             "label": "Git"
@@ -78,3 +75,5 @@
         }
     }
 }
+
+
