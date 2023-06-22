@@ -1,0 +1,80 @@
+{
+    "frontEndSkills": {
+        "html5": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/html-logo.png?raw=true",
+            "label": "HTML"
+        },
+        "css3": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/css-logo.png?raw=true",
+            "label": "CSS"
+        },
+        "javascript": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/js-logo.png?raw=true",
+            "label": "JavaScript"
+        },
+        "Typescript": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/typescript-logo.png?raw=true",
+            "label": "Typescript"
+        },
+        "bootstrap": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/bootstrap-logo.png?raw=true",
+            "label": "Bootstrap"
+        },
+        "tailwind": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/tailwind-log.png?raw=true",
+            "label": "Tailwind"
+        },
+        "react": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/react-icon.png?raw=true",
+            "label": "React"
+        },
+        "next-js": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/next-js-logo.png?raw=true",
+            "label": "Next.js"
+        }
+    },
+    "backEndSkills": {
+        "nodejs": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/node-logo.png?raw=true",
+            "label": "Node.js"
+        },
+        "npm": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/npm-logo.png?raw=true",
+            "label": "npm"
+        },
+        "linux": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/linux-logo.png?raw=true",
+            "label": "Linux"
+        },
+        "python": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/python-logo.png?raw=true",
+            "label": "Python"
+        },
+        "mongodb": {
+            "src": "https://github.com/Doplax/Doplax/blob/main/img/mongodb-logo.png?raw=true",
+            "label": "MongoDB"
+        }
+    },
+    "toolsSkills": {
+        "GraphQL": {
+            "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/GraphQL.png",
+            "label": "GraphQL"
+        },
+        "Git": {
+            "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/git-logo.png",
+            "label": "Git"
+        },
+        "Notion": {
+            "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/notion-logo.png",
+            "label": "Notion"
+        },
+        "Wordpress": {
+            "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/wordpress-logo.png",
+            "label": "Wordpress"
+        },
+        "WooCommerce": {
+            "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/wooCommerce-logo.png",
+            "label": "WooCommerce"
+        }
+    }
+}
