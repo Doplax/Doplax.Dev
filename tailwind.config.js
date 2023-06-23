@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        orange: '#ffa700',
         dark: {
           DEFAULT: '#1F2937',
           100: '#111827',
