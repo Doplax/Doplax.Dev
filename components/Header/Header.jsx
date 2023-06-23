@@ -70,6 +70,11 @@ const Header = () => {
                   className={menuLink}
                 > Contacto </a>
               </li>
+              <li>
+                <a href="/chatPage"
+                  className={menuLink}
+                > Chat </a>
+              </li>
 
             </ul>
           </nav>
