@@ -15,6 +15,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
+    "@nanostores/react": "github:ai/react",
     "@next/mdx": "^13.3.1",
     "@notionhq/client": "^2.2.5",
     "@splinetool/react-spline": "^2.2.6",
