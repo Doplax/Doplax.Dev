@@ -12,7 +12,7 @@ const config = new Configuration({
 
 const openai = new OpenAIApi(config)
 
-export default async function GET(req) {
+export default async function POST(req) {
     const response = await openai.createChatCompletion({
         model: 'gpt-3.5-turbo',
         stream: true, // Conforme tiene la respuesta la va enviando
