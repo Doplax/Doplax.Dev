@@ -9,9 +9,15 @@ function Chat () {
 
         {
             messages.map(message => {
+                const isChat = message.role !== 'user'
                 return(
                     <div key={message.id}>
-                        <p>{message.content}</p>
+                        <p>
+                            {isChat ? "🤖" : "🧑"}
+                            <span className={`${isChat ? 'text-yellow' : 'text-blue'}`}>
+                                {message.content}
+                            </span>
+                        </p>
                     </div>
                 )
             })
