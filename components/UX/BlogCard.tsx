@@ -20,7 +20,7 @@ const BlogCard: FunctionComponent<BlogCardProps> = ({post}) => {
                 <div className="flex flex-col rounded-xl shadow-lg overflow-hidden">
                     {/* Image */}
                     <div className='flex-shrink-0'>
-                        <BlogCover cover={post.cover} customClass="h-64 w-full object-fit"/>
+                        <BlogCover cover={post.cover} customClass=" w-full object-fit"/>
                     </div>
 
                     {/* Text*/}
