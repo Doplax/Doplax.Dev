@@ -39,7 +39,7 @@ export default class NotionService {
             return NotionService.pageToPostTransformer(res)
         })
     }
-
+ 
 
     async getSingleBlogPost(slug: string): Promise<PostPage> {
         let post, markdown
@@ -105,7 +105,7 @@ export default class NotionService {
             }
         }
 
-        
+
 
 
 
