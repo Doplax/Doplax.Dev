@@ -1,3 +1,4 @@
+'use'
 import { faLocationDot, faCalendarDays } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -38,7 +39,7 @@ function ExperienceCard({ titulo, ubicacion, fecha, tareas }) {
               Aquí aprendí a...
             </h3>
             <ul>
-              {tareas.map((tarea) => <li>{tarea}</li>)}
+              {tareas.map((tarea) => <li key={tarea.id}>{tarea}</li>)}
             </ul>
           </div>
         </div>
