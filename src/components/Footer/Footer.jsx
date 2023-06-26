@@ -28,7 +28,7 @@ const Footer = () => {
                 {/* Sobre mi */}
                 <div className="">
                     <h3>Pol Valle</h3>
-                    <p className="italic text-center">"Programming isn't about what you know; <br/>it's about what you can figure out"</p>
+                    {/*<p className="italic text-center">"Programming isn't about what you know; <br/>it's about what you can figure out"</p>*/}
                     
                     {/* RRHH */}
                     <div className="flex gap-4">

@@ -5,10 +5,7 @@ import {Chat} from '../../components/Chat'
 
 const chatPage = () => {
     return (
-        
-            <Chat />        
-        
-    
+        <Chat />        
     );
 };
     
