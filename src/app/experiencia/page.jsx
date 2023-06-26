@@ -1,6 +1,13 @@
+import React from 'react';
+import { Layout } from '../components/Layout';
+import { ExperienciaLaboral } from '../components/ExperienciaLaboral/ExperienciaLaboral';
+
+
 
 export default function experiencia() {
-    return (
-     <h1>Hola</h1>
-    );
-  }
+  return (
+    <Layout>
+        <ExperienciaLaboral/>
+    </Layout>
+  );
+}

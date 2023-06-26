@@ -1,6 +1,6 @@
 import  React from 'react'
-import { Portfolio } from "../components/Porfolio/Porfolio"
-import { Layout } from '../components/Layout';
+import { Portfolio } from "../../components/Porfolio/Porfolio"
+import { Layout } from '../../components/Layout';
 
 
 
