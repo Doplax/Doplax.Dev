@@ -115,7 +115,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/UX/CodeBlock.jsx", "pages/api/chat.js", "src/app/page.tsx"  ],
+    "components/UX/CodeBlock.jsx", 
+    "pages/api/chat.js", 
+    "src/app/page.tsx"  ],
   "exclude": [
     "node_modules"
   ],"plugins": [
