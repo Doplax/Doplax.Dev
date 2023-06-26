@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Enlaces
+[Github](https://github.com/Doplax/Dolpax.Dev)
 
-## Getting Started
+[Vercel](https://doplax.dev)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# Proyecto JAM Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este proyecto es una aplicación web desarrollada con Next.js que utiliza archivos MDX para mostrar contenido. La aplicación incluye páginas dinámicas generadas a partir de archivos MDX y componentes personalizados. La arquitectura del proyecto se organiza en carpetas para facilitar la navegación y la comprensión del código.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estructura del proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `components`: Contiene los componentes reutilizables de la aplicación.
+- `data`: Almacena los archivos MDX con contenido y metadatos.
+- `docs`: Documentación del proyecto, incluyendo guías y descripciones de archivos y componentes.
+- `lib`: Funciones relacionadas con la obtención y manipulación de datos MDX.
+- `pages`: Páginas de la aplicación y archivos relacionados con el enrutamiento dinámico.
+- `public`: Archivos estáticos como imágenes y otros recursos.
+- `styles`: Estilos globales y específicos de los módulos.
 
-## Learn More
+## Documentación
 
-To learn more about Next.js, take a look at the following resources:
+La documentación del proyecto se encuentra en la carpeta `docs`. Puedes encontrar información detallada sobre los siguientes temas:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Guía de inicio](docs/getting-started.md): Cómo configurar el entorno de desarrollo y comenzar a trabajar en el proyecto.
+- [Funciones MDX](docs/mdx-functions.md): Explicación de las funciones relacionadas con MDX en el archivo `lib/mdx.js`.
+- [Componentes](docs/components.md): Documentación de cada componente en la carpeta `components`.
+- [Páginas](docs/pages.md): Descripción de cada archivo de página en la carpeta `pages` y cómo se obtienen los datos para cada página.
+- [Página [slug]](docs/slug-page.md) Encargado de renderizar el contenido de los posts en formato MDX.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

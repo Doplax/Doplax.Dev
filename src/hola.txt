@@ -1,0 +1,994 @@
+
+  integrity: '',
+  keepalive: false,
+  method: 'GET',
+  mode: 'cors',
+  redirect: 'follow',
+  referrer: 'about:client',
+  referrerPolicy: '',
+  signal: AbortSignal {
+  [Symbol(kAborted)]: false,
+  [Symbol(kReason)]: undefined,
+  [Symbol(kOnabort)]: undefined,
+  [Symbol(realm)]: { settingsObject: { baseUrl: undefined } }
+}
+}
+Response {
+  [Symbol(realm)]: { settingsObject: {} },
+  [Symbol(state)]: {
+  aborted: false,
+  rangeRequested: false,
+  timingAllowPassed: false,
+  requestIncludesCredentials: false,
+  type: 'default',
+  status: 200,
+  timingInfo: null,
+  cacheState: '',
+  statusText: 'OK',
+  headersList: HeadersList {
+  [Symbol(headers map)]: Map(21) {
+  'access-control-allow-origin' => '*',
+  'alt-svc' => 'h3=":443"; ma=86400',
+  'cache-control' => 'no-cache, must-revalidate',
+  'cf-cache-status' => 'DYNAMIC',
+  'cf-ray' => '7dbbf111a9536678-MAD',
+  'connection' => 'keep-alive',
+  'content-type' => 'text/event-stream',
+  'date' => 'Fri, 23 Jun 2023 10:10:32 GMT',
+  'openai-organization' => 'user-pqrz5diofepsjzybffgwcm4i',
+  'openai-processing-ms' => '202',
+  'openai-version' => '2020-10-01',
+  'server' => 'cloudflare',
+  'strict-transport-security' => 'max-age=15724800; includeSubDomains',
+  'transfer-encoding' => 'chunked',
+  'x-ratelimit-limit-requests' => '3500',
+  'x-ratelimit-limit-tokens' => '90000',
+  'x-ratelimit-remaining-requests' => '3499',
+  'x-ratelimit-remaining-tokens' => '89979',
+  'x-ratelimit-reset-requests' => '17ms',
+  'x-ratelimit-reset-tokens' => '14ms',
+  'x-request-id' => '32c749bfb2f72266f1195e93bae9d610'
+},
+  [Symbol(headers map sorted)]: null
+},
+  urlList: [],
+  body: {
+  stream: <ref *1> ReadableStream {
+  _state: 'readable',
+  _reader: undefined,
+  _storedError: undefined,
+  _disturbed: false,
+  _readableStreamController: ReadableStreamDefaultController {
+  _controlledReadableStream: [Circular *1],
+  _queue: S {
+  _cursor: 0,
+  _size: 0,
+  _front: { _elements: [], _next: undefined },
+  _back: { _elements: [], _next: undefined }
+},
+  _queueTotalSize: 0,
+  _started: true,
+  _closeRequested: false,
+  _pullAgain: false,
+  _pulling: false,
+  _strategySizeAlgorithm: [Function],
+  _strategyHWM: 0,
+  _pullAlgorithm: [Function],
+  _cancelAlgorithm: [Function]
+}
+},
+  source: null,
+  length: null
+}
+},
+  [Symbol(headers)]: Headers {
+  [Symbol(headers list)]: HeadersList {
+  [Symbol(headers map)]: Map(21) {
+  'access-control-allow-origin' => '*',
+  'alt-svc' => 'h3=":443"; ma=86400',
+  'cache-control' => 'no-cache, must-revalidate',
+  'cf-cache-status' => 'DYNAMIC',
+  'cf-ray' => '7dbbf111a9536678-MAD',
+  'connection' => 'keep-alive',
+  'content-type' => 'text/event-stream',
+  'date' => 'Fri, 23 Jun 2023 10:10:32 GMT',
+  'openai-organization' => 'user-pqrz5diofepsjzybffgwcm4i',
+  'openai-processing-ms' => '202',
+  'openai-version' => '2020-10-01',
+  'server' => 'cloudflare',
+  'strict-transport-security' => 'max-age=15724800; includeSubDomains',
+  'transfer-encoding' => 'chunked',
+  'x-ratelimit-limit-requests' => '3500',
+  'x-ratelimit-limit-tokens' => '90000',
+  'x-ratelimit-remaining-requests' => '3499',
+  'x-ratelimit-remaining-tokens' => '89979',
+  'x-ratelimit-reset-requests' => '17ms',
+  'x-ratelimit-reset-tokens' => '14ms',
+  'x-request-id' => '32c749bfb2f72266f1195e93bae9d610'
+},
+  [Symbol(headers map sorted)]: null
+},
+  [Symbol(guard)]: 'response',
+  [Symbol(realm)]: { settingsObject: {} }
+}
+}
+wait  - compiling /_error (client and server)...
+event - compiled client and server successfully in 108 ms (178 modules)
+wait  - compiling...
+event - compiled client and server successfully in 170 ms (143 modules)
+wait  - compiling...
+event - compiled successfully in 114 ms (143 modules)
+wait  - compiling...
+event - compiled successfully in 114 ms (143 modules)
+wait  - compiling...
+event - compiled successfully in 111 ms (143 modules)
+wait  - compiling...
+event - compiled successfully in 97 ms (143 modules)
+wait  - compiling...
+event - compiled successfully in 97 ms (143 modules)
+wait  - compiling...
+event - compiled successfully in 128 ms (143 modules)
+wait  - compiling /api/chat (client and server)...
+event - compiled successfully in 75 ms (44 modules)
+error - pages/api/chat.js (19:12) @ messages
+error - Cannot destructure property 'messages' of '(intermediate value)' as it is null.
+  17 | export default async function POST(req) {
+  18 |
+> 19 |     const { messages } = await req.body;
+     |            ^
+  20 |
+  21 |     const response = await openai.createChatCompletion({
+  22 |         model: 'gpt-3.5-turbo',
+wait  - compiling /_error (client and server)...
+event - compiled client and server successfully in 115 ms (178 modules)
+wait  - compiling / (client and server)...
+warn  - Fast Refresh had to perform a full reload due to a runtime error.
+event - compiled client and server successfully in 502 ms (229 modules)
+COVER
+https://s3.us-west-2.amazonaws.com/secure.notion-static.com/da6e36c8-7dd5-4692-b2cf-d4b6a3773534/reactpy-logo-landscape-padded.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230623%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230623T101941Z&X-Amz-Expires=3600&X-Amz-Signature=9f442e9918efbbd92094d1f45446a0cf646aafa828642c325a7fecfd64648c52&X-Amz-SignedHeaders=host&x-id=GetObject
+COVER
+https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0e77c8ff-30db-4b8a-916f-da5b7e08da41/ohmyposh.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230623%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230623T101941Z&X-Amz-Expires=3600&X-Amz-Signature=710fbafa181f9c73be0a146583e6067cd9d884c0f3d40c06dd205dd26f7cec96&X-Amz-SignedHeaders=host&x-id=GetObject
+COVER
+https://images.unsplash.com/photo-1607434472257-d9f8e57a643d?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb
+COVER
+https://s3.us-west-2.amazonaws.com/secure.notion-static.com/95c592ac-b187-40ad-bd8e-6b2987fa4950/promt.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230623%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230623T101941Z&X-Amz-Expires=3600&X-Amz-Signature=64e558a402cda07da84aad4939da443764a0b8e399aee8a1bd7378cb5d3f8d86&X-Amz-SignedHeaders=host&x-id=GetObject
+COVER
+https://images.unsplash.com/photo-1566207474742-de921626ad0c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb
+COVER
+https://images.unsplash.com/photo-1525011268546-bf3f9b007f6a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb
+wait  - compiling /chatPage (client and server)...
+event - compiled client and server successfully in 307 ms (243 modules)
+Response {
+  [Symbol(realm)]: { settingsObject: {} },
+  [Symbol(state)]: {
+  aborted: false,
+  rangeRequested: false,
+  timingAllowPassed: false,
+  requestIncludesCredentials: false,
+  type: 'default',
+  status: 400,
+  timingInfo: null,
+  cacheState: '',
+  statusText: 'Bad Request',
+  headersList: HeadersList {
+  [Symbol(headers map)]: Map(20) {
+  'access-control-allow-origin' => '*',
+  'alt-svc' => 'h3=":443"; ma=86400',
+  'cf-cache-status' => 'DYNAMIC',
+  'cf-ray' => '7dbbfeb1eca03148-MAD',
+  'connection' => 'keep-alive',
+  'content-length' => '160',
+  'content-type' => 'application/json',
+  'date' => 'Fri, 23 Jun 2023 10:19:49 GMT',
+  'openai-organization' => 'user-pqrz5diofepsjzybffgwcm4i',
+  'openai-processing-ms' => '4',
+  'openai-version' => '2020-10-01',
+  'server' => 'cloudflare',
+  'strict-transport-security' => 'max-age=15724800; includeSubDomains',
+  'x-ratelimit-limit-requests' => '3500',
+  'x-ratelimit-limit-tokens' => '90000',
+  'x-ratelimit-remaining-requests' => '3499',
+  'x-ratelimit-remaining-tokens' => '89983',
+  'x-ratelimit-reset-requests' => '17ms',
+  'x-ratelimit-reset-tokens' => '11ms',
+  'x-request-id' => '25bb0da10fabd7d90145a97789b3dca3'
+},
+  [Symbol(headers map sorted)]: null
+},
+  urlList: [],
+  body: {
+  stream: <ref *1> ReadableStream {
+  _state: 'readable',
+  _reader: undefined,
+  _storedError: undefined,
+  _disturbed: false,
+  _readableStreamController: ReadableStreamDefaultController {
+  _controlledReadableStream: [Circular *1],
+  _queue: S {
+  _cursor: 0,
+  _size: 0,
+  _front: { _elements: [], _next: undefined },
+  _back: { _elements: [], _next: undefined }
+},
+  _queueTotalSize: 0,
+  _started: true,
+  _closeRequested: false,
+  _pullAgain: false,
+  _pulling: false,
+  _strategySizeAlgorithm: [Function],
+  _strategyHWM: 0,
+  _pullAlgorithm: [Function],
+  _cancelAlgorithm: [Function]
+}
+},
+  source: null,
+  length: null
+}
+},
+  [Symbol(headers)]: Headers {
+  [Symbol(headers list)]: HeadersList {
+  [Symbol(headers map)]: Map(20) {
+  'access-control-allow-origin' => '*',
+  'alt-svc' => 'h3=":443"; ma=86400',
+  'cf-cache-status' => 'DYNAMIC',
+  'cf-ray' => '7dbbfeb1eca03148-MAD',
+  'connection' => 'keep-alive',
+  'content-length' => '160',
+  'content-type' => 'application/json',
+  'date' => 'Fri, 23 Jun 2023 10:19:49 GMT',
+  'openai-organization' => 'user-pqrz5diofepsjzybffgwcm4i',
+  'openai-processing-ms' => '4',
+  'openai-version' => '2020-10-01',
+  'server' => 'cloudflare',
+  'strict-transport-security' => 'max-age=15724800; includeSubDomains',
+  'x-ratelimit-limit-requests' => '3500',
+  'x-ratelimit-limit-tokens' => '90000',
+  'x-ratelimit-remaining-requests' => '3499',
+  'x-ratelimit-remaining-tokens' => '89983',
+  'x-ratelimit-reset-requests' => '17ms',
+  'x-ratelimit-reset-tokens' => '11ms',
+  'x-request-id' => '25bb0da10fabd7d90145a97789b3dca3'
+},
+  [Symbol(headers map sorted)]: null
+},
+  [Symbol(guard)]: 'response',
+  [Symbol(realm)]: { settingsObject: {} }
+}
+}
+error - node_modules/ai/dist/index.mjs (112:0) @ AIStream
+error - Failed to convert the response to stream. Received status code: 400.
+null
+wait  - compiling...
+event - compiled client and server successfully in 152 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 110 ms (176 modules)
+wait  - compiling /api/chat (client and server)...
+event - compiled successfully in 38 ms (44 modules)
+error - node_modules/ai/dist/index.mjs (112:0) @ AIStream
+error - Failed to convert the response to stream. Received status code: 400.
+null
+wait  - compiling /_error (client and server)...
+event - compiled client and server successfully in 58 ms (225 modules)
+wait  - compiling...
+event - compiled client and server successfully in 146 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 132 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 85 ms (176 modules)
+wait  - compiling /api/chat (client and server)...
+event - compiled successfully in 63 ms (59 modules)
+error - Error: Failed to convert the response to stream. Received status code: 400.
+    at AIStream (file:///home/super/Doplax.Dev/node_modules/ai/dist/index.mjs:112:11)
+    at OpenAIStream (file:///home/super/Doplax.Dev/node_modules/ai/dist/index.mjs:140:10)
+    at POST (webpack-internal:///(api)/./pages/api/chat.js:30:68)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: undefined
+}
+wait  - compiling /_error (client and server)...
+event - compiled client and server successfully in 99 ms (236 modules)
+wait  - compiling...
+event - compiled client and server successfully in 134 ms (225 modules)
+wait  - compiling...
+event - compiled successfully in 151 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 87 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 112 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 122 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 95 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 124 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 113 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 124 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 130 ms (176 modules)
+wait  - compiling /api/chat (client and server)...
+event - compiled successfully in 53 ms (44 modules)
+/////////////////////////////////
+error - pages/api/chat.js (20:20) @ body
+error - body is not defined
+  18 |
+  19 |     console.log("/////////////////////////////////");
+> 20 |     console.log(req,body);
+     |                    ^
+  21 |     const response = await openai.createChatCompletion({
+  22 |         model: 'gpt-3.5-turbo',
+  23 |         stream: true, // Conforme tiene la respuesta la va enviando
+wait  - compiling /_error (client and server)...
+event - compiled client and server successfully in 49 ms (225 modules)
+wait  - compiling...
+event - compiled client and server successfully in 236 ms (221 modules)
+/////////////////////////////////
+<ref *1> ReadableStream {
+  _state: 'readable',
+  _reader: undefined,
+  _storedError: undefined,
+  _disturbed: false,
+  _readableStreamController: ReadableStreamDefaultController {
+  _controlledReadableStream: [Circular *1],
+  _queue: S {
+  _cursor: 0,
+  _size: 0,
+  _front: { _elements: [], _next: undefined },
+  _back: { _elements: [], _next: undefined }
+},
+  _queueTotalSize: 0,
+  _started: false,
+  _closeRequested: false,
+  _pullAgain: false,
+  _pulling: false,
+  _strategySizeAlgorithm: [Function],
+  _strategyHWM: 1,
+  _pullAlgorithm: [Function],
+  _cancelAlgorithm: [Function]
+}
+}
+Response {
+  [Symbol(realm)]: { settingsObject: {} },
+  [Symbol(state)]: {
+  aborted: false,
+  rangeRequested: false,
+  timingAllowPassed: false,
+  requestIncludesCredentials: false,
+  type: 'default',
+  status: 200,
+  timingInfo: null,
+  cacheState: '',
+  statusText: 'OK',
+  headersList: HeadersList {
+  [Symbol(headers map)]: Map(21) {
+  'access-control-allow-origin' => '*',
+  'alt-svc' => 'h3=":443"; ma=86400',
+  'cache-control' => 'no-cache, must-revalidate',
+  'cf-cache-status' => 'DYNAMIC',
+  'cf-ray' => '7dbc0ca6389a1bb9-MAD',
+  'connection' => 'keep-alive',
+  'content-type' => 'text/event-stream',
+  'date' => 'Fri, 23 Jun 2023 10:29:22 GMT',
+  'openai-organization' => 'user-pqrz5diofepsjzybffgwcm4i',
+  'openai-processing-ms' => '238',
+  'openai-version' => '2020-10-01',
+  'server' => 'cloudflare',
+  'strict-transport-security' => 'max-age=15724800; includeSubDomains',
+  'transfer-encoding' => 'chunked',
+  'x-ratelimit-limit-requests' => '3500',
+  'x-ratelimit-limit-tokens' => '90000',
+  'x-ratelimit-remaining-requests' => '3499',
+  'x-ratelimit-remaining-tokens' => '89979',
+  'x-ratelimit-reset-requests' => '17ms',
+  'x-ratelimit-reset-tokens' => '14ms',
+  'x-request-id' => '3438912724d1b1e0988d85a6d09e39e4'
+},
+  [Symbol(headers map sorted)]: null
+},
+  urlList: [],
+  body: {
+  stream: <ref *1> ReadableStream {
+  _state: 'readable',
+  _reader: undefined,
+  _storedError: undefined,
+  _disturbed: false,
+  _readableStreamController: ReadableStreamDefaultController {
+  _controlledReadableStream: [Circular *1],
+  _queue: S {
+  _cursor: 0,
+  _size: 0,
+  _front: { _elements: [], _next: undefined },
+  _back: { _elements: [], _next: undefined }
+},
+  _queueTotalSize: 0,
+  _started: true,
+  _closeRequested: false,
+  _pullAgain: false,
+  _pulling: false,
+  _strategySizeAlgorithm: [Function],
+  _strategyHWM: 0,
+  _pullAlgorithm: [Function],
+  _cancelAlgorithm: [Function]
+}
+},
+  source: null,
+  length: null
+}
+},
+  [Symbol(headers)]: Headers {
+  [Symbol(headers list)]: HeadersList {
+  [Symbol(headers map)]: Map(21) {
+  'access-control-allow-origin' => '*',
+  'alt-svc' => 'h3=":443"; ma=86400',
+  'cache-control' => 'no-cache, must-revalidate',
+  'cf-cache-status' => 'DYNAMIC',
+  'cf-ray' => '7dbc0ca6389a1bb9-MAD',
+  'connection' => 'keep-alive',
+  'content-type' => 'text/event-stream',
+  'date' => 'Fri, 23 Jun 2023 10:29:22 GMT',
+  'openai-organization' => 'user-pqrz5diofepsjzybffgwcm4i',
+  'openai-processing-ms' => '238',
+  'openai-version' => '2020-10-01',
+  'server' => 'cloudflare',
+  'strict-transport-security' => 'max-age=15724800; includeSubDomains',
+  'transfer-encoding' => 'chunked',
+  'x-ratelimit-limit-requests' => '3500',
+  'x-ratelimit-limit-tokens' => '90000',
+  'x-ratelimit-remaining-requests' => '3499',
+  'x-ratelimit-remaining-tokens' => '89979',
+  'x-ratelimit-reset-requests' => '17ms',
+  'x-ratelimit-reset-tokens' => '14ms',
+  'x-request-id' => '3438912724d1b1e0988d85a6d09e39e4'
+},
+  [Symbol(headers map sorted)]: null
+},
+  [Symbol(guard)]: 'response',
+  [Symbol(realm)]: { settingsObject: {} }
+}
+}
+wait  - compiling...
+event - compiled client and server successfully in 169 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 131 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 112 ms (176 modules)
+wait  - compiling /api/chat (client and server)...
+event - compiled successfully in 36 ms (44 modules)
+/////////////////////////////////
+{
+  cookies: RequestCookies {},
+  geo: {},
+  ip: undefined,
+  nextUrl: {
+  href: 'http://localhost:3000/api/chat',
+  origin: 'http://localhost:3000',
+  protocol: 'http:',
+  username: '',
+  password: '',
+  host: 'localhost:3000',
+  hostname: 'localhost',
+  port: '3000',
+  pathname: '/api/chat',
+  search: '',
+  searchParams: URLSearchParams {  },
+  hash: ''
+},
+  url: 'http://localhost:3000/api/chat',
+  bodyUsed: false,
+  cache: 'default',
+  credentials: 'same-origin',
+  destination: '',
+  headers: {
+  accept: '*/*',
+  accept-language: 'es,es-ES;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  cache-control: 'no-cache',
+  connection: 'keep-alive',
+  content-type: 'text/plain;charset=UTF-8',
+  host: 'localhost:3000',
+  origin: 'http://localhost:3000',
+  pragma: 'no-cache',
+  referer: 'http://localhost:3000/chatPage',
+  sec-ch-ua: '"Not.A/Brand";v="8", "Chromium";v="114", "Microsoft Edge";v="114"',
+  sec-ch-ua-mobile: '?0',
+  sec-ch-ua-platform: '"Windows"',
+  sec-fetch-dest: 'empty',
+  sec-fetch-mode: 'cors',
+  sec-fetch-site: 'same-origin',
+  transfer-encoding: 'chunked',
+  user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.51',
+  x-forwarded-for: '::1',
+  x-forwarded-host: 'localhost:3000',
+  x-forwarded-port: '3000',
+  x-forwarded-proto: 'http',
+  x-invoke-path: '/api/chat',
+  x-invoke-query: '%7B%7D'
+},
+  integrity: '',
+  keepalive: false,
+  method: 'POST',
+  mode: 'cors',
+  redirect: 'follow',
+  referrer: 'about:client',
+  referrerPolicy: '',
+  signal: AbortSignal {
+  [Symbol(kAborted)]: false,
+  [Symbol(kReason)]: undefined,
+  [Symbol(kOnabort)]: undefined,
+  [Symbol(realm)]: { settingsObject: { baseUrl: undefined } }
+}
+}
+Response {
+  [Symbol(realm)]: { settingsObject: {} },
+  [Symbol(state)]: {
+  aborted: false,
+  rangeRequested: false,
+  timingAllowPassed: false,
+  requestIncludesCredentials: false,
+  type: 'default',
+  status: 200,
+  timingInfo: null,
+  cacheState: '',
+  statusText: 'OK',
+  headersList: HeadersList {
+  [Symbol(headers map)]: Map(21) {
+  'access-control-allow-origin' => '*',
+  'alt-svc' => 'h3=":443"; ma=86400',
+  'cache-control' => 'no-cache, must-revalidate',
+  'cf-cache-status' => 'DYNAMIC',
+  'cf-ray' => '7dbc0e122c832150-MAD',
+  'connection' => 'keep-alive',
+  'content-type' => 'text/event-stream',
+  'date' => 'Fri, 23 Jun 2023 10:30:19 GMT',
+  'openai-organization' => 'user-pqrz5diofepsjzybffgwcm4i',
+  'openai-processing-ms' => '139',
+  'openai-version' => '2020-10-01',
+  'server' => 'cloudflare',
+  'strict-transport-security' => 'max-age=15724800; includeSubDomains',
+  'transfer-encoding' => 'chunked',
+  'x-ratelimit-limit-requests' => '3500',
+  'x-ratelimit-limit-tokens' => '90000',
+  'x-ratelimit-remaining-requests' => '3499',
+  'x-ratelimit-remaining-tokens' => '89979',
+  'x-ratelimit-reset-requests' => '17ms',
+  'x-ratelimit-reset-tokens' => '14ms',
+  'x-request-id' => 'da57d9be7f78b4ebfa24b2981fec8515'
+},
+  [Symbol(headers map sorted)]: null
+},
+  urlList: [],
+  body: {
+  stream: <ref *1> ReadableStream {
+  _state: 'readable',
+  _reader: undefined,
+  _storedError: undefined,
+  _disturbed: false,
+  _readableStreamController: ReadableStreamDefaultController {
+  _controlledReadableStream: [Circular *1],
+  _queue: S {
+  _cursor: 0,
+  _size: 0,
+  _front: { _elements: [], _next: undefined },
+  _back: { _elements: [], _next: undefined }
+},
+  _queueTotalSize: 0,
+  _started: true,
+  _closeRequested: false,
+  _pullAgain: false,
+  _pulling: false,
+  _strategySizeAlgorithm: [Function],
+  _strategyHWM: 0,
+  _pullAlgorithm: [Function],
+  _cancelAlgorithm: [Function]
+}
+},
+  source: null,
+  length: null
+}
+},
+  [Symbol(headers)]: Headers {
+  [Symbol(headers list)]: HeadersList {
+  [Symbol(headers map)]: Map(21) {
+  'access-control-allow-origin' => '*',
+  'alt-svc' => 'h3=":443"; ma=86400',
+  'cache-control' => 'no-cache, must-revalidate',
+  'cf-cache-status' => 'DYNAMIC',
+  'cf-ray' => '7dbc0e122c832150-MAD',
+  'connection' => 'keep-alive',
+  'content-type' => 'text/event-stream',
+  'date' => 'Fri, 23 Jun 2023 10:30:19 GMT',
+  'openai-organization' => 'user-pqrz5diofepsjzybffgwcm4i',
+  'openai-processing-ms' => '139',
+  'openai-version' => '2020-10-01',
+  'server' => 'cloudflare',
+  'strict-transport-security' => 'max-age=15724800; includeSubDomains',
+  'transfer-encoding' => 'chunked',
+  'x-ratelimit-limit-requests' => '3500',
+  'x-ratelimit-limit-tokens' => '90000',
+  'x-ratelimit-remaining-requests' => '3499',
+  'x-ratelimit-remaining-tokens' => '89979',
+  'x-ratelimit-reset-requests' => '17ms',
+  'x-ratelimit-reset-tokens' => '14ms',
+  'x-request-id' => 'da57d9be7f78b4ebfa24b2981fec8515'
+},
+  [Symbol(headers map sorted)]: null
+},
+  [Symbol(guard)]: 'response',
+  [Symbol(realm)]: { settingsObject: {} }
+}
+}
+wait  - compiling...
+event - compiled client and server successfully in 121 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 109 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 108 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 89 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 90 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 94 ms (176 modules)
+wait  - compiling /api/chat (client and server)...
+event - compiled successfully in 105 ms (59 modules)
+error - Error [TypeError]: resolver is not a function
+    at /home/super/Doplax.Dev/node_modules/next/dist/server/api-utils/node.js:377:16
+    at /home/super/Doplax.Dev/node_modules/next/dist/server/lib/trace/tracer.js:92:36
+    at NoopContextManager.with (/home/super/Doplax.Dev/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7057)
+    at ContextAPI.with (/home/super/Doplax.Dev/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:516)
+    at NoopTracer.startActiveSpan (/home/super/Doplax.Dev/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18086)
+    at ProxyTracer.startActiveSpan (/home/super/Doplax.Dev/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18847)
+    at /home/super/Doplax.Dev/node_modules/next/dist/server/lib/trace/tracer.js:81:107
+    at NoopContextManager.with (/home/super/Doplax.Dev/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7057)
+    at ContextAPI.with (/home/super/Doplax.Dev/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:516)
+    at NextTracerImpl.trace (/home/super/Doplax.Dev/node_modules/next/dist/server/lib/trace/tracer.js:81:32)
+    at Object.apiResolver (/home/super/Doplax.Dev/node_modules/next/dist/server/api-utils/node.js:375:63)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async DevServer.runApi (/home/super/Doplax.Dev/node_modules/next/dist/server/next-server.js:571:9)
+    at async Object.fn (/home/super/Doplax.Dev/node_modules/next/dist/server/next-server.js:1018:35)
+    at async Router.execute (/home/super/Doplax.Dev/node_modules/next/dist/server/router.js:297:32)
+    at async DevServer.runImpl (/home/super/Doplax.Dev/node_modules/next/dist/server/base-server.js:522:29)
+    at async DevServer.run (/home/super/Doplax.Dev/node_modules/next/dist/server/dev/next-dev-server.js:869:20)
+    at async DevServer.handleRequestImpl (/home/super/Doplax.Dev/node_modules/next/dist/server/base-server.js:456:20) {
+  digest: undefined
+}
+wait  - compiling /_error (client and server)...
+event - compiled client and server successfully in 121 ms (236 modules)
+wait  - compiling...
+event - compiled client and server successfully in 288 ms (224 modules)
+wait  - compiling...
+event - compiled successfully in 120 ms (176 modules)
+wait  - compiling...
+event - compiled client and server successfully in 60 ms (224 modules)
+wait  - compiling...
+event - compiled successfully in 112 ms (176 modules)
+wait  - compiling...
+event - compiled client and server successfully in 55 ms (224 modules)
+wait  - compiling...
+event - compiled successfully in 88 ms (176 modules)
+wait  - compiling...
+event - compiled client and server successfully in 307 ms (224 modules)
+wait  - compiling...
+event - compiled client and server successfully in 242 ms (224 modules)
+wait  - compiling...
+event - compiled client and server successfully in 186 ms (224 modules)
+wait  - compiling...
+event - compiled client and server successfully in 157 ms (224 modules)
+wait  - compiling...
+event - compiled client and server successfully in 137 ms (224 modules)
+wait  - compiling /api/chat (client and server)...
+event - compiled successfully in 47 ms (44 modules)
+error - Error [TypeError]: Native module not found: ../../webpack-api-runtime.js
+    at <unknown> (file:///home/super/Doplax.Dev/node_modules/next/dist/server/web/sandbox/context.js:196)
+    at value (file:///home/super/Doplax.Dev/node_modules/next/dist/server/web/sandbox/context.js:196:31)
+    at <unknown> (file:///home/super/Doplax.Dev/.next/server/pages/api/chat.js:50:27)
+    at <unknown> (file:///home/super/Doplax.Dev/.next/server/pages/api/chat.js:56:3)
+    at Script.runInContext (node:vm:140:12)
+    at Object.runInContext (node:vm:290:6)
+    at evaluateInContext (file:///home/super/Doplax.Dev/node_modules/next/dist/server/web/sandbox/context.js:345:26)
+    at getRuntimeContext (file:///home/super/Doplax.Dev/node_modules/next/dist/server/web/sandbox/sandbox.js:47:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async (file:///home/super/Doplax.Dev/node_modules/next/dist/server/web/sandbox/sandbox.js:54:21)
+    at async DevServer.runEdgeFunction (file:///home/super/Doplax.Dev/node_modules/next/dist/server/next-server.js:1775:24)
+    at async Object.fn (file:///home/super/Doplax.Dev/node_modules/next/dist/server/next-server.js:991:59)
+    at async Router.execute (file:///home/super/Doplax.Dev/node_modules/next/dist/server/router.js:297:32)
+    at async DevServer.runImpl (file:///home/super/Doplax.Dev/node_modules/next/dist/server/base-server.js:522:29)
+    at async DevServer.run (file:///home/super/Doplax.Dev/node_modules/next/dist/server/dev/next-dev-server.js:869:20)
+    at async DevServer.handleRequestImpl (file:///home/super/Doplax.Dev/node_modules/next/dist/server/base-server.js:456:20) {
+  digest: undefined
+}
+wait  - compiling /_error (client and server)...
+event - compiled client and server successfully in 94 ms (225 modules)
+error - Error [TypeError]: Native module not found: ../../webpack-api-runtime.js
+    at <unknown> (file:///home/super/Doplax.Dev/node_modules/next/dist/server/web/sandbox/context.js:196)
+    at value (file:///home/super/Doplax.Dev/node_modules/next/dist/server/web/sandbox/context.js:196:31)
+    at <unknown> (file:///home/super/Doplax.Dev/.next/server/pages/api/chat.js:50:27)
+    at <unknown> (file:///home/super/Doplax.Dev/.next/server/pages/api/chat.js:56:3)
+    at Script.runInContext (node:vm:140:12)
+    at Object.runInContext (node:vm:290:6)
+    at evaluateInContext (file:///home/super/Doplax.Dev/node_modules/next/dist/server/web/sandbox/context.js:345:26)
+    at getRuntimeContext (file:///home/super/Doplax.Dev/node_modules/next/dist/server/web/sandbox/sandbox.js:47:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async (file:///home/super/Doplax.Dev/node_modules/next/dist/server/web/sandbox/sandbox.js:54:21)
+    at async DevServer.runEdgeFunction (file:///home/super/Doplax.Dev/node_modules/next/dist/server/next-server.js:1775:24)
+    at async Object.fn (file:///home/super/Doplax.Dev/node_modules/next/dist/server/next-server.js:991:59)
+    at async Router.execute (file:///home/super/Doplax.Dev/node_modules/next/dist/server/router.js:297:32)
+    at async DevServer.runImpl (file:///home/super/Doplax.Dev/node_modules/next/dist/server/base-server.js:522:29)
+    at async DevServer.run (file:///home/super/Doplax.Dev/node_modules/next/dist/server/dev/next-dev-server.js:869:20)
+    at async DevServer.handleRequestImpl (file:///home/super/Doplax.Dev/node_modules/next/dist/server/base-server.js:456:20) {
+  digest: undefined
+}
+wait  - compiling...
+event - compiled client and server successfully in 167 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 92 ms (176 modules)
+wait  - compiling...
+event - compiled successfully in 88 ms (176 modules)
+^C
+
+super:Doplax.Dev/ (main✗) $ npm run dev                                                                      [12:50:11]
+
+> doplax-dev@0.1.0 dev
+> next dev
+
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+info  - Loaded env from /home/super/Doplax.Dev/.env.local
+info  - automatically enabled Fast Refresh for 1 custom loader
+event - compiled client and server successfully in 1276 ms (177 modules)
+wait  - compiling...
+event - compiled successfully in 123 ms (143 modules)
+wait  - compiling /_error (client and server)...
+event - compiled client and server successfully in 130 ms (178 modules)
+warn  - Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+wait  - compiling /chatPage (client and server)...
+event - compiled client and server successfully in 551 ms (225 modules)
+warn  - Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+wait  - compiling /api/chat (client and server)...
+event - compiled successfully in 71 ms (44 modules)
+/////////////////////////////////
+<ref *1> ReadableStream {
+  _state: 'readable',
+  _reader: undefined,
+  _storedError: undefined,
+  _disturbed: false,
+  _readableStreamController: ReadableStreamDefaultController {
+  _controlledReadableStream: [Circular *1],
+  _queue: S {
+  _cursor: 0,
+  _size: 0,
+  _front: { _elements: [], _next: undefined },
+  _back: { _elements: [], _next: undefined }
+},
+  _queueTotalSize: 0,
+  _started: false,
+  _closeRequested: false,
+  _pullAgain: false,
+  _pulling: false,
+  _strategySizeAlgorithm: [Function],
+  _strategyHWM: 1,
+  _pullAlgorithm: [Function],
+  _cancelAlgorithm: [Function]
+}
+}
+Response {
+  [Symbol(realm)]: { settingsObject: {} },
+  [Symbol(state)]: {
+  aborted: false,
+  rangeRequested: false,
+  timingAllowPassed: false,
+  requestIncludesCredentials: false,
+  type: 'default',
+  status: 200,
+  timingInfo: null,
+  cacheState: '',
+  statusText: 'OK',
+  headersList: HeadersList {
+  [Symbol(headers map)]: Map(21) {
+  'access-control-allow-origin' => '*',
+  'alt-svc' => 'h3=":443"; ma=86400',
+  'cache-control' => 'no-cache, must-revalidate',
+  'cf-cache-status' => 'DYNAMIC',
+  'cf-ray' => '7dbc279abab62fa6-MAD',
+  'connection' => 'keep-alive',
+  'content-type' => 'text/event-stream',
+  'date' => 'Fri, 23 Jun 2023 10:47:45 GMT',
+  'openai-organization' => 'user-pqrz5diofepsjzybffgwcm4i',
+  'openai-processing-ms' => '4',
+  'openai-version' => '2020-10-01',
+  'server' => 'cloudflare',
+  'strict-transport-security' => 'max-age=15724800; includeSubDomains',
+  'transfer-encoding' => 'chunked',
+  'x-ratelimit-limit-requests' => '3500',
+  'x-ratelimit-limit-tokens' => '90000',
+  'x-ratelimit-remaining-requests' => '3499',
+  'x-ratelimit-remaining-tokens' => '89979',
+  'x-ratelimit-reset-requests' => '17ms',
+  'x-ratelimit-reset-tokens' => '14ms',
+  'x-request-id' => 'c3a5affb0df5ebcb968b3bda7f4f4b1c'
+},
+  [Symbol(headers map sorted)]: null
+},
+  urlList: [],
+  body: {
+  stream: <ref *1> ReadableStream {
+  _state: 'readable',
+  _reader: undefined,
+  _storedError: undefined,
+  _disturbed: false,
+  _readableStreamController: ReadableStreamDefaultController {
+  _controlledReadableStream: [Circular *1],
+  _queue: S {
+  _cursor: 0,
+  _size: 0,
+  _front: { _elements: [], _next: undefined },
+  _back: { _elements: [], _next: undefined }
+},
+  _queueTotalSize: 0,
+  _started: true,
+  _closeRequested: false,
+  _pullAgain: false,
+  _pulling: false,
+  _strategySizeAlgorithm: [Function],
+  _strategyHWM: 0,
+  _pullAlgorithm: [Function],
+  _cancelAlgorithm: [Function]
+}
+},
+  source: null,
+  length: null
+}
+},
+  [Symbol(headers)]: Headers {
+  [Symbol(headers list)]: HeadersList {
+  [Symbol(headers map)]: Map(21) {
+  'access-control-allow-origin' => '*',
+  'alt-svc' => 'h3=":443"; ma=86400',
+  'cache-control' => 'no-cache, must-revalidate',
+  'cf-cache-status' => 'DYNAMIC',
+  'cf-ray' => '7dbc279abab62fa6-MAD',
+  'connection' => 'keep-alive',
+  'content-type' => 'text/event-stream',
+  'date' => 'Fri, 23 Jun 2023 10:47:45 GMT',
+  'openai-organization' => 'user-pqrz5diofepsjzybffgwcm4i',
+  'openai-processing-ms' => '4',
+  'openai-version' => '2020-10-01',
+  'server' => 'cloudflare',
+  'strict-transport-security' => 'max-age=15724800; includeSubDomains',
+  'transfer-encoding' => 'chunked',
+  'x-ratelimit-limit-requests' => '3500',
+  'x-ratelimit-limit-tokens' => '90000',
+  'x-ratelimit-remaining-requests' => '3499',
+  'x-ratelimit-remaining-tokens' => '89979',
+  'x-ratelimit-reset-requests' => '17ms',
+  'x-ratelimit-reset-tokens' => '14ms',
+  'x-request-id' => 'c3a5affb0df5ebcb968b3bda7f4f4b1c'
+},
+  [Symbol(headers map sorted)]: null
+},
+  [Symbol(guard)]: 'response',
+  [Symbol(realm)]: { settingsObject: {} }
+}
+}
+/////////////////////////////////
+<ref *1> ReadableStream {
+  _state: 'readable',
+  _reader: undefined,
+  _storedError: undefined,
+  _disturbed: false,
+  _readableStreamController: ReadableStreamDefaultController {
+  _controlledReadableStream: [Circular *1],
+  _queue: S {
+  _cursor: 0,
+  _size: 0,
+  _front: { _elements: [], _next: undefined },
+  _back: { _elements: [], _next: undefined }
+},
+  _queueTotalSize: 0,
+  _started: false,
+  _closeRequested: false,
+  _pullAgain: false,
+  _pulling: false,
+  _strategySizeAlgorithm: [Function],
+  _strategyHWM: 1,
+  _pullAlgorithm: [Function],
+  _cancelAlgorithm: [Function]
+}
+}
+Response {
+  [Symbol(realm)]: { settingsObject: {} },
+  [Symbol(state)]: {
+  aborted: false,
+  rangeRequested: false,
+  timingAllowPassed: false,
+  requestIncludesCredentials: false,
+  type: 'default',
+  status: 200,
+  timingInfo: null,
+  cacheState: '',
+  statusText: 'OK',
+  headersList: HeadersList {
+  [Symbol(headers map)]: Map(21) {
+  'access-control-allow-origin' => '*',
+  'alt-svc' => 'h3=":443"; ma=86400',
+  'cache-control' => 'no-cache, must-revalidate',
+  'cf-cache-status' => 'DYNAMIC',
+  'cf-ray' => '7dbc280b5f211bac-MAD',
+  'connection' => 'keep-alive',
+  'content-type' => 'text/event-stream',
+  'date' => 'Fri, 23 Jun 2023 10:48:03 GMT',
+  'openai-organization' => 'user-pqrz5diofepsjzybffgwcm4i',
+  'openai-processing-ms' => '196',
+  'openai-version' => '2020-10-01',
+  'server' => 'cloudflare',
+  'strict-transport-security' => 'max-age=15724800; includeSubDomains',
+  'transfer-encoding' => 'chunked',
+  'x-ratelimit-limit-requests' => '3500',
+  'x-ratelimit-limit-tokens' => '90000',
+  'x-ratelimit-remaining-requests' => '3499',
+  'x-ratelimit-remaining-tokens' => '89979',
+  'x-ratelimit-reset-requests' => '17ms',
+  'x-ratelimit-reset-tokens' => '14ms',
+  'x-request-id' => 'd7830ddc3048622a7693dad9633ede43'
+},
+  [Symbol(headers map sorted)]: null
+},
+  urlList: [],
+  body: {
+  stream: <ref *1> ReadableStream {
+  _state: 'readable',
+  _reader: undefined,
+  _storedError: undefined,
+  _disturbed: false,
+  _readableStreamController: ReadableStreamDefaultController {
+  _controlledReadableStream: [Circular *1],
+  _queue: S {
+  _cursor: 0,
+  _size: 0,
+  _front: { _elements: [], _next: undefined },
+  _back: { _elements: [], _next: undefined }
+},
+  _queueTotalSize: 0,
+  _started: true,
+  _closeRequested: false,
+  _pullAgain: false,
+  _pulling: false,
+  _strategySizeAlgorithm: [Function],
+  _strategyHWM: 0,
+  _pullAlgorithm: [Function],
+  _cancelAlgorithm: [Function]
+}
+},
+  source: null,
+  length: null
+}
+},
+  [Symbol(headers)]: Headers {
+  [Symbol(headers list)]: HeadersList {
+  [Symbol(headers map)]: Map(21) {
+  'access-control-allow-origin' => '*',
+  'alt-svc' => 'h3=":443"; ma=86400',
+  'cache-control' => 'no-cache, must-revalidate',
+  'cf-cache-status' => 'DYNAMIC',
+  'cf-ray' => '7dbc280b5f211bac-MAD',
+  'connection' => 'keep-alive',
+  'content-type' => 'text/event-stream',
+  'date' => 'Fri, 23 Jun 2023 10:48:03 GMT',
+  'openai-organization' => 'user-pqrz5diofepsjzybffgwcm4i',
+  'openai-processing-ms' => '196',
+  'openai-version' => '2020-10-01',
+  'server' => 'cloudflare',
+  'strict-transport-security' => 'max-age=15724800; includeSubDomains',
+  'transfer-encoding' => 'chunked',
+  'x-ratelimit-limit-requests' => '3500',
+  'x-ratelimit-limit-tokens' => '90000',
+  'x-ratelimit-remaining-requests' => '3499',
+  'x-ratelimit-remaining-tokens' => '89979',
+  'x-ratelimit-reset-requests' => '17ms',
+  'x-ratelimit-reset-tokens' => '14ms',
+  'x-request-id' => 'd7830ddc3048622a7693dad9633ede43'
+},
+  [Symbol(headers map sorted)]: null
+},
+  [Symbol(guard)]: 'response',
+  [Symbol(realm)]: { settingsObject: {} }
+}
+}
