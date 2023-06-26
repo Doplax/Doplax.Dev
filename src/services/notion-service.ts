@@ -58,7 +58,6 @@ export default class NotionService {
                 }
             }
         })
-        console.log(response); // Aquí se imprimirá la respuesta en la consola.
 
         
         if (!response.results[0]) {
@@ -78,7 +77,7 @@ export default class NotionService {
         
 
         post = NotionService.pageToPostTransformer(page);
-        
+        console.log(post);
 
         return {
             post,

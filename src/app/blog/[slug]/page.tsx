@@ -6,17 +6,11 @@ import {
 import NotionService from "../../../services/notion-service";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
-import { Header } from "../../../components/Header/Header";
-import { Footer } from "../../../components/Footer/Footer";
 import { BlogCover } from "../../../components/UX/BlogCover";
 import CodeBlock from "../../../components/UX/CodeBlock";
 import { BlogCategories } from "../../../components/UX/BlogCategories";
 
-async function getPublishedBlogPost() {
-  const notionService = new NotionService()
-  const posts = await notionService.getPublishedBlogPost()
-  return posts
-}
+
 export const inferGetServerSidePropsType= async (
   context: GetServerSidePropsContext
 ) => {
@@ -26,8 +20,7 @@ export const inferGetServerSidePropsType= async (
   const p = await notionService.getSingleBlogPost(
     context.params?.slug as string
   );
-  console.log("************[AQUI]***********");
-  console.log(p);
+
 
 
 
@@ -38,6 +31,10 @@ export const inferGetServerSidePropsType= async (
     };
   }
 
+
+  console.log("************[AQUI]***********");
+  console.log(p);
+  console.log(p.post);
   return {
     props: {
       markdown: p.markdown.parent, // Parent es la parte en la que viene el artículo
@@ -50,21 +47,18 @@ const Post = ({
   markdown,
   post,
 }: InferGetServerSidePropsType<typeof inferGetServerSidePropsType>) => {
-  console.log(Post)
-  
-  if (post){
+  console.log(post)
+
     return (
       <>
         <Head>
-          
-          <title>{post ? post.title : 'Cargando...'}</title>
-          <meta name="description" content={post.description} />
-          <meta name="og:description" content={post.description} />
-          <meta name="og:title" content={post.title} />
-          <meta name="og:image" content={post.cover} />
+          <title>{post?.title}</title>
+          <meta name="description" content={post?.description} />
+          <meta name="og:description" content={post?.description} />
+          <meta name="og:title" content={post?.title} />
+          <meta name="og:image" content={post?.cover} />
         </Head>
         {/* Pasar las propiedades estas */}
-        <Header></Header>
   
         <main className="max-w-4xl mx-auto p-4 md:p-0">
           {/* Cabecero */}
@@ -86,7 +80,6 @@ const Post = ({
           </div>
         </main>
   
-        <Footer/>
         <style jsx global>{`
           .markdown-container p img {
             display: block;
@@ -106,9 +99,7 @@ const Post = ({
         `}</style>
       </>
     );
-  } else {
-    return <div>No está cargando el post</div>
-  }
+
 };
 
 export default Post;
