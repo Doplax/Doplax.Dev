@@ -1,3 +1,4 @@
+'use client'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import ColorTheme  from 'react-syntax-highlighter/dist/cjs/styles/prism/darcula'; // Para cambiar de tema, cambiar la ultima parte de la importacion
 

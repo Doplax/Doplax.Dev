@@ -1,6 +1,7 @@
 /*
 Al hacer fetch en el blog, el cover viene como un string o un objeto con la propiedad url
 */
+
 import React from 'react';
 
 interface Props {
