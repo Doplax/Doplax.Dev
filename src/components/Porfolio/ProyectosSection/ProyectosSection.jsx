@@ -5,18 +5,32 @@ import  jsonData  from '../skills.json'
 function ProyectosSection() {
     const projects = [
         {
-            name:
-                "Login/Register1",
+            name: "ChatGPT Web Integration",
             description:
-                "Una aplicación que te permite registrarte y acceder a tu cuenta.",
-            role:
-                "PHP, CSS",
-            imageUrl:
-                "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/Acceder.png?raw=true",
-            netlify:
-                "https://github.com/jmontes33/php-login",
-            github:
-                "https://github.com/jmontes33/php-login",
+                "integración del SDK de Vercel AI con la API de Chat de GPT",
+            role: "HTML, CSS, JS",
+            imageUrl: "/img/vercel-sdk.png",
+            netlify: "https://doplax.dev/chatPage",
+            github: "https://github.com/Doplax/Doplax.Dev/blob/main/src/app/api/chat/route.js",
+        },
+        {
+            name: "Reproductor de música",
+            description:
+                "Una aplicación To-Do con D&D, en ella puedes crear tareas, marcarlas, moverlas a diferentes estados e incluso eliminarlas.",
+            role: "HTML, CSS, JS",
+            imageUrl: "/img/mp3-easy-player.png.png",
+            netlify: "https://doplax.github.io/MP3-Easy-Player/",
+            github: "https://github.com/Doplax/MP3-Easy-Player",
+        },
+
+        {
+            name: "Buscador de Centradores y Electrodos",
+            description:
+                "Este proyecto es una herramienta web diseñada para la empresa Tecsolda que permite a los usuarios seleccionar componentes de maquinaria de acuerdo a sus necesidades específicas.",
+            role: "HTML, CSS, JS",
+            imageUrl: "/img/centradores.png",
+            netlify: "https://doplax.github.io/TSD-Centradores-Electrodos/",
+            github: "https://github.com/Doplax/TSD-Centradores-Electrodos",
         },
         {
             name: "Tecsolda.es/carroceria",
@@ -24,55 +38,20 @@ function ProyectosSection() {
                 "Una tienda online de productos de soldadura para carroceria",
             role: "Woordpres, Woocommerce",
             imageUrl:
-                "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/Acceder.png?raw=true",
+                "/img/tsd-car.png",
             netlify: "https://tecsolda.com/carroceria/",
             github: "https://tecsolda.com/carroceria/",
         },
         {
-            name: "Equilibradores.es",
+            name: "Tecsolda/Resistencia",
             description: "Una web en producción sobre Equilibradores Industriales.",
-            role: "Next, React, Bootstrap",
+            role: "Woordpress, Woocomerce",
             imageUrl:
-                "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/Acceder.png?raw=true",
+                "/img/tsd-res.png",
             netlify: "https://www.equilibradores.es/",
             github: "https://www.equilibradores.es/",
         },
-        {
-            name: "Reproductor de música",
-            description:
-                "Una aplicación To-Do con D&D, en ella puedes crear tareas, marcarlas, moverlas a diferentes estados e incluso eliminarlas.",
-            role: "HTML, CSS, JS",
-            imageUrl: "/img/projects/mp3-easy-player.png",
-            netlify: "https://doplax.github.io/MP3-Easy-Player/",
-            github: "https://github.com/Doplax/MP3-Easy-Player",
-        },
-        {
-            name: "Mr Cripto",
-            description: "Consumo de una API",
-            role: "HTML, CSS, JS, API REST",
-            imageUrl: "",
-            netlify: "https://doplax.github.io/Mr.Crypto-API-REST/",
-            github: "https://github.com/Doplax/Mr.Crypto-API-REST",
-        },
-        {
-            name: "Buscador de Centradores y Electrodos",
-            description:
-                "Este proyecto es una herramienta web diseñada para la empresa Tecsolda que permite a los usuarios seleccionar componentes de maquinaria de acuerdo a sus necesidades específicas.",
-            role: "HTML, CSS, JS",
-            imageUrl: "/img/projects/centradores.png",
-            netlify: "https://doplax.github.io/TSD-Centradores-Electrodos/",
-            github: "https://github.com/Doplax/TSD-Centradores-Electrodos",
-        },
-        {
-            name: "Login/Register2",
-            description:
-                "Una aplicación que te permite registrarte y acceder a tu cuenta.",
-            role: "PHP, CSS",
-            imageUrl:
-                "https://github.com/jmontes33/React-Portfolio/blob/main/src/assets/Acceder.png?raw=true",
-            netlify: "https://github.com/jmontes33/php-login",
-            github: "https://github.com/jmontes33/php-login",
-        },
+
     ];
 
 
