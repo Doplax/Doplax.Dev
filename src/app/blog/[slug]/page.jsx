@@ -13,9 +13,13 @@ import { BlogCategories } from "../../../components/UX/BlogCategories";
 
 async function getSinglePost(slug) {
   const notionService = new NotionService()
-  const p = await notionService.getSingleBlogPost(slug)
-  return p
-  
+  const p = await notionService.getPublishedBlogPost(slug)
+  return {
+    props: {
+      markdown: p.markdown.parent, // Parent es la parte en la que viene el artículo
+      post: p.post,
+    },
+  };
 }
 
 
@@ -25,14 +29,14 @@ async function getSinglePost(slug) {
   
 
 
-export default async function Post({params}) {
-  const {slug} = params;
-  const post = await getSinglePost(slug);
-  console.log("/////////////////////////////////////////////");
-  console.log(post);
+  export default function Post({params}) {
+    const {slug} = params;
+    const post = getSinglePost(slug);
+    console.log("/////////////////////////////////////////////");
+    console.log(post);
 
-  return (<h1>{slug}</h1>)
-}
+    return (<h1>{slug}</h1>)
+  }
 
     //return (
     //  <>
