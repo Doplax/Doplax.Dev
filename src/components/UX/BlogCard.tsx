@@ -3,6 +3,7 @@ import { BlogPost } from "../../@types/schema";
 import dayjs from "dayjs"
 import { BlogCover } from "../../components/UX/BlogCover";
 import { BlogCategories } from "../../components/UX/BlogCategories";
+import Link from 'next/link';
 
 
 type BlogCardProps = {
@@ -16,7 +17,7 @@ dayjs.extend(localizedFormat)
 const BlogCard: FunctionComponent<BlogCardProps> = ({post}) => {
     return (
         //<Link href={`/post/${post.slug}`}>
-            <a href={`/blog/${post.slug}`} className="transition duraion-300 hover:scale-105">
+            <Link href={`/blog/${post.slug}`} className="transition duraion-300 hover:scale-105">
                 <div className="flex flex-col rounded-xl shadow-lg overflow-hidden">
                     {/* Image */}
                     <div className='flex-shrink-0'>
@@ -46,7 +47,7 @@ const BlogCard: FunctionComponent<BlogCardProps> = ({post}) => {
                         </div>
                     </div>
                 </div>
-            </a>
+            </Link>
         //</Link>
 
     )
