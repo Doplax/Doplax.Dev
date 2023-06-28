@@ -6,6 +6,7 @@ import { HomeSection } from "./HomeSection/HomeSection";
 import { SkillSection } from "./SkillsSection/SkillSection";
 import { ProyectosSection } from "./ProyectosSection/ProyectosSection";
 import { ServiciosSection } from "./ServiciosSection/ServiciosSection";
+import { Formulario } from "./Formulario/Formulario";
 
 
 const Portfolio = () => {
@@ -17,6 +18,7 @@ const Portfolio = () => {
             <SkillSection/>
             <ServiciosSection/>
             <ProyectosSection/>
+            <Formulario/>
         </>
     );
 };

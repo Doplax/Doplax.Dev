@@ -50,11 +50,11 @@ const Header = () => {
               
               <li>
                 <a
-                  href="/sobreMi"
+                  href="/blog"
                   className={menuLink}
                   
                 >
-                  Sobre Mi
+                  Blog
                 </a>
               </li>
 
@@ -65,12 +65,6 @@ const Header = () => {
                 >
                   Experiencia
                 </a>
-              </li>
-
-              <li>
-                <a href="/contacto"
-                  className={menuLink}
-                > Contacto </a>
               </li>
               <li>
                 <a href="/chatPage"

@@ -1,10 +1,10 @@
 
-import NotionService from "../../../services/notion-service";
+import NotionService from "../../../../services/notion-service";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
-import { BlogCover } from "../../../components/UX/BlogCover";
-import CodeBlock from "../../../components/UX/CodeBlock";
-import { BlogCategories } from "../../../components/UX/BlogCategories";
+import { BlogCover } from "../../../../components/UX/BlogCover";
+import CodeBlock from "../../../../components/UX/CodeBlock";
+import { BlogCategories } from "../../../../components/UX/BlogCategories";
 import "./page.module.css"
 
 async function getSinglePost(slug) {

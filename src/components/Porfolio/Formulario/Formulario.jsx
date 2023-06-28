@@ -1,8 +1,11 @@
 import React from "react";
 import styles from './Formulario.module.css';
+import { PageTitle } from '../../PageTitle';
 
 function Formulario() {
     return (
+        <>
+        <PageTitle>Contacto</PageTitle>
         <div className={styles.form}>
             <div className={styles.form__container}>
                 <form action="enviar.php" method="post" className={styles.form__fields}>
@@ -29,6 +32,7 @@ function Formulario() {
                 </form>
             </div>
         </div>
+        </>
     );
 }
 
