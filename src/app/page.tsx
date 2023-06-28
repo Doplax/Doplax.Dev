@@ -1,3 +1,4 @@
+
 import  NotionService from '../services/notion-service'
 import { BlogCard } from '../components/UX/BlogCard'
 import { PageTitle } from '../components/PageTitle'
@@ -18,6 +19,7 @@ export default async function Home() {
       <div className='mt-12 max-wlg mx-auto grid gap-6 lg:grid-cols-2 lg:max-w-none'>
         {posts.map((post) => (
           <BlogCard key={post.id} post={post}/>
+
         ))} 
       </div>
     </div>
