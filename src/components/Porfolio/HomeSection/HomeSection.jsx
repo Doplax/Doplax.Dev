@@ -30,7 +30,7 @@ function HomeSection() {
                                     equipos.
                                 </p>
                                 <a
-                                    href="/documents/CV-Pol-Valle.pdf"
+                                    href="/docs/CV-Pol-Valle.pdf"
                                     download="CV-Pol-Valle.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer" // Agrega esta línea para la seguridad del enlace
