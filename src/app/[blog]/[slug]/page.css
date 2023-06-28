@@ -2,14 +2,14 @@
     display: block;
     margin: 0 auto;
   }
-  /*code {
+  pre {
     color: var(--yellow);
-  }*/
-  /*strong{
+  }
+  strong{
     color: var(--yellow);
-  }*/
-/*
-  h2,h3 {
-    margin-top: 30px;
+  }
 
-  }*/
+  h2,h3 {
+    margin-top: 50px;
+
+  }
