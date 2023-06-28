@@ -1,4 +1,4 @@
-import React from 'react';
+import "../styles/globalAnimations.css"
 
 function PageTitle({ children }) {
     return (

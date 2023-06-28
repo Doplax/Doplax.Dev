@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import circles from "./Circles.module.css";
+import "../../styles/globalTypography.css"
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -110,7 +111,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className=""
             >
-                <p className="flex justify-center w-full text-sm text-white hover:text-blue-500">
+                <p className="z-10 flex justify-center w-full text-sm text-white hover:text-blue-500 bg-black  bg-opacity-40">
                     Doplax.Dev | All rights reserved © {`${year}`}
                 </p>
             </a>

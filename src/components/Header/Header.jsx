@@ -37,14 +37,16 @@ const Header = () => {
               //className={`${isMenuOpen ? "block" : "hidden"} lg:flex lg:space-x-4 space-y-2 lg:space-y-0`}
               className={"flex "}
             >
-              <li>
+
+            {/* Home */}
+              {/*<li>
                 <a
                   href="/"
                   className={menuLink}
                 >
                   Home
                 </a>
-              </li>
+              </li>*/}
               
               <li>
                 <a

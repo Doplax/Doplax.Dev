@@ -86,7 +86,7 @@ export default class NotionService {
     }
 
 
-    static pageToPostTransformer(page: any): BlogPost {
+    private static pageToPostTransformer(page: any): BlogPost {
         let cover = page?.cover;
         let coverUrl = '';
 

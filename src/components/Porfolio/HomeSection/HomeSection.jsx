@@ -40,13 +40,13 @@ function HomeSection() {
                                     Descargar CV
                                 </a>
                             </div>
-                            <img src="/img/foto-pol.png" alt="profile image" className="rounded-full" />
+                            <img src="/img/pol-valle.webp"  alt="profile image" className="rounded-full h-80" />
                         </div>
                         {/* Mobile Version */}
                         <div className="flex md:hidden items-center p-8">
                             <div className="flex flex-col">
                                 <h1 className="text-3xl font-bold mt-8 text-center">Sobre mi</h1>
-                                <img src="/img/foto-pol.png" alt="profile image" className="rounded-full scale-75" />
+                                <img src="/img/pol-valle.webp" alt="profile image" className="rounded-full scale-75" />
                                 <p className="text-lg  w-9/12 mb-5">
                                     Hola! Me llamo Pol, me considero un profesional muy versátil y multidisciplinar, con muchas ganas de
                                     aprender y de trabajar en un entorno dinámico y desafiante de desarrollo de software. <br />
