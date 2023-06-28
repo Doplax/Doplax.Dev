@@ -20,7 +20,7 @@ const Header = () => {
           {/* LOGO */}
           <a
             href="/"
-            className={`${style.logo} ${style.navLink}`}
+            className={`${style.logo} ${style.navLink} `}
           > Doplax.Dev </a>
           
           <nav>

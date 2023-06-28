@@ -1,6 +1,5 @@
 import React from 'react'
 import { PageTitle } from '../../PageTitle'
-import  jsonData  from '../skills.json'
 
 function ProyectosSection() {
     const projects = [
@@ -69,12 +68,16 @@ function ProyectosSection() {
                         key={project.name}
                         className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-slate-100 text-center shadow"
                     >
-                        <div className="flex flex-1 flex-col p-8">
-                            <img
-                                className="mx-auto flex-shrink-0 max-h-56"
+                        <div className="flex flex-1 flex-col rounded-lg overflow-hidden">
+                            <a
+                                href={project.netlify}
+                                target={"_blank"}>
+                                <img
+                                className="mx-auto flex-shrink-0  w-full object-fit "
                                 src={project.imageUrl}
                                 alt=""
                             />
+                            </a>
                             <h3 className="mt-6 mb-4 text-xl font-bold text-gray-900">
                                 {project.name}
                             </h3>
