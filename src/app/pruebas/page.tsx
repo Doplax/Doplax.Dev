@@ -1,9 +1,9 @@
-import { Pruebas } from '../../components/Pruebas'
+import { Modal } from '../../components/Modal/Modal'
 
 export default function pruebas() {
 
   return (
-    <Pruebas/>
+    <Modal/>
   )
 }
 //export default Home;
