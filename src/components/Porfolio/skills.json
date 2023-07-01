@@ -1,7 +1,7 @@
 {
     "frontEndSkills": {
         "html5": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/html-logo.png?raw=true",
+            "src": "/svg/html.svg",
             "label": "HTML"
         },
         "css3": {
@@ -29,7 +29,7 @@
             "label": "React"
         },
         "next-js": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/next-js-logo.png?raw=true",
+            "src": "/svg/next-js.svg",
             "label": "Next.js"
         }
     },
