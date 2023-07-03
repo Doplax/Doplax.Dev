@@ -1,7 +1,7 @@
 import React  from "react";
 import Head from "next/head";
 import style from './Header.module.css' // Para hacer el Logo con ::afet y ::Before
-import { HambBtn } from '@/components/UX/HambBtn/HambBtn'
+//import { HambBtn } from '@/components/UX/HambBtn/HambBtn'
 //import "font-awesome/css/font-awesome.min.css";
 
 
@@ -23,7 +23,7 @@ const Header = () => {
             href="/"
             className={`${style.logo} ${style.navLink} `}
           > Doplax.Dev </a>
-          <HambBtn/>
+          {/*<HambBtn/>*/}
           <nav>
             {/* Botón hamburguesa */}
             {/*<button
