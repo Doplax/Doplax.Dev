@@ -16,7 +16,7 @@ const Header = () => {
         <link rel="icon" href="/img/icon/site-icon.png"/>
       </Head>
       
-      <header className="flex flex-wrap flex-row w-full justify-around items-center md:flex-row mx-0">
+      <header className="flex flex-wrap flex-row justify-around items-center md:flex-row mx-0">
           {/* LOGO */}
           <a
             href="/"
