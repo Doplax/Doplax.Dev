@@ -1,45 +1,45 @@
 {
     "frontEndSkills": {
         "html5": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/html-logo.png?raw=true",
+            "src": "/svg/html.svg",
             "label": "HTML"
         },
         "css3": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/css-logo.png?raw=true",
+            "src": "/svg/css.svg",
             "label": "CSS"
         },
         "javascript": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/js-logo.png?raw=true",
+            "src": "/svg/javascript.svg",
             "label": "JavaScript"
         },
         "Typescript": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/typescript-logo.png?raw=true",
+            "src": "/svg/typescript.svg",
             "label": "Typescript"
         },
         "bootstrap": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/bootstrap-logo.png?raw=true",
+            "src": "/svg/bootstrap.svg",
             "label": "Bootstrap"
         },
         "tailwind": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/tailwind-log.png?raw=true",
+            "src": "/svg/tailwind.svg",
             "label": "Tailwind"
         },
         "react": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/react-icon.png?raw=true",
+            "src": "/svg/react.svg",
             "label": "React"
         },
         "next-js": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/next-js-logo.png?raw=true",
+            "src": "/svg/next-js.svg",
             "label": "Next.js"
         }
     },
     "backEndSkills": {
         "nodejs": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/node-logo.png?raw=true",
+            "src": "/svg/node.svg",
             "label": "Node.js"
         },
         "npm": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/npm-logo.png?raw=true",
+            "src": "/svg/npm.svg",
             "label": "npm"
         },
         "linux": {
@@ -47,11 +47,11 @@
             "label": "Linux"
         },
         "python": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/python-logo.png?raw=true",
+            "src": "/svg/python.svg",
             "label": "Python"
         },
         "mongodb": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/mongodb-logo.png?raw=true",
+            "src": "/svg/mongodb.svg",
             "label": "MongoDB"
         }
     },
@@ -72,6 +72,10 @@
         "WooCommerce": {
             "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/wooCommerce-logo.png",
             "label": "WooCommerce"
+        },
+        "ChatGPT": {
+            "src": "/svg/chatgpt.svg",
+            "label": "ChatGPT"
         }
     }
 }

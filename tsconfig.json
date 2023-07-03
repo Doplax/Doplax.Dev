@@ -117,7 +117,7 @@
     ".next/types/**/*.ts",
     "components/UX/CodeBlock.jsx", 
     "pages/api/chat.js", 
-    "src/app/[blog]/[post]/[slug]/page.jsx", "src/app/page.tsx"],
+    "src/app/[blog]/[post]/[slug]/page.jsx", "src/app/page.tsx", "src/components/Pruebas/Pruebas.jsx", "src/app/pruebas/page.jsx"],
   "exclude": [
     "node_modules"
   ],"plugins": [
