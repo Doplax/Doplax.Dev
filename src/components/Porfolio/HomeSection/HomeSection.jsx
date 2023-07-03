@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageTitle } from '../../PageTitle';
-//import styles from './styles.module.css'; // Asegúrate de importar los estilos adecuados
+import styles from './Button.module.css'; // Asegúrate de importar los estilos adecuados
 
 function HomeSection() {
     return (
@@ -16,7 +16,7 @@ function HomeSection() {
                         <h1 className="hidden md:flex text-3xl font-bold mt-8">Sobre mi</h1>
                         <div className="hidden md:flex items-center">
                             <div className="flex-col">
-                                <p className="text-lg  w-9/12 mb-5">
+                                <p className="text-lg w-9/12 mb-5">
                                     Hola! Me llamo Pol, me considero un profesional muy versátil y multidisciplinar, con muchas ganas de
                                     aprender y de trabajar en un entorno dinámico y desafiante de desarrollo de software. <br />
                                     Poseo experiencia en el desarrollo de aplicaciones multiplataforma y web, y tengo conocimientos en la
@@ -31,7 +31,7 @@ function HomeSection() {
                                     target="_blank"
                                     rel="noopener noreferrer" // Agrega esta línea para la seguridad del enlace
                                     type="button"
-                                    className="inline-flex justify-center  rounded-full bg-orange-400 text-white px-6 py-3 text-xl font-bold text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                    className={`${styles.btnHover} ${styles.color3} px-6 py-3 text-white hover:text-white text-xl font-bold shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2`}
                                 >
                                     Descargar CV
                                 </a>
