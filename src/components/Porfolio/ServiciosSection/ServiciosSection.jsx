@@ -4,7 +4,7 @@ import { faMobile, faPenRuler, faCode, faThumbsUp, faBatteryFull, faCrosshairs} 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function ServiciosSection() {
 
-    const serviceContainerStyle = "flex flex-col justify-start align-middle"
+    const serviceContainerStyle = "flex flex-col justify-start align-middle my-20"
     const iconColor =  {color: 'var(--yellow)'};
     const iconSice = "3x"
     const positionText_h4 =  'text-center text-gray-100' 
@@ -15,7 +15,7 @@ function ServiciosSection() {
         <section className='my-10'>
             <PageTitle>Servicios</PageTitle>
             <h2 className='font-bold text-3xl my-10'>Servicios que ofrezco a mis clientes</h2>
-            <div className="grid grid-cols-3 gap-10">
+            <div className="md:grid md:grid-cols-3 md:gap-10">
                 <div className={serviceContainerStyle}>
                     <FontAwesomeIcon icon={faMobile} size={iconSice} style={iconColor} />                    
                     <h4 className={positionText_h4}>Sitios Responsive</h4>

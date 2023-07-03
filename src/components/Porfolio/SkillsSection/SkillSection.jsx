@@ -8,7 +8,7 @@ import jsonData from '../skills.json'
 function SkillSection() {
     
     return(
-        <section className="mx-auto max-w-6xl m-5 sm:px-6 lg:px-8 py-10">
+        <section className="py-10">
             <PageTitle>Skills</PageTitle>
             
             {/*{Object.entries(jsonData.frontEndSkills).map(([key,value]) => (

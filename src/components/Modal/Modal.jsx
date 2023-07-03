@@ -16,11 +16,11 @@ function Modal({ closeModal }) {
         >
             <div className="flex items-end justify-center min-h-screen pt-4 px-4 text-center sm:block sm:p-0">
                 <div
-                    className="fixed inset-0 bg-gray-800 bg-opacity-75 transition-opacity"
+                    className="fixed inset-0 bg-black bg-opacity-40 transition-opacity"
                     aria-hidden="true"
                 ></div>
             
-                <div className=" bg-black opacity-50 backdrop-blur-md  rounded-lg  min-w-full px-4 pt-5 pb-40 text-left overflow-hidden transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+                <div className=" bg-black   rounded-lg  min-w-full px-4 pt-5 pb-40 text-left overflow-hidden transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
                     <div className="sm:flex sm:items-start">
                         <div className="mt-3  sm:mt-0 sm:ml-4 sm:text-left">
                                 {/* Menú */}
