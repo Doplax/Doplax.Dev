@@ -1,4 +1,4 @@
-#ModalBtn {
+/*#ModalBtn {
     transition: transform 200s linear;
     transform: rotate(10000deg);
     position: absolute;
@@ -8,4 +8,4 @@
 #ModalBtn:hover {
     transition: transform 50s linear;
     transform: rotate(-60deg);
-}
+}*/
