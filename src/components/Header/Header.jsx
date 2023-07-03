@@ -8,7 +8,6 @@ import { HambBtn } from '@/components/UX/HambBtn/HambBtn'
 
 const Header = () => {
 
-  const menuLink = 'underLine_gAnimation hover:text-white text-gray-400 text-sm md:text-base font-bold  px-3 py-2'
   return (
     <>
       <Head>
@@ -25,38 +24,7 @@ const Header = () => {
           > Doplax.Dev </a>
           
           <nav>
-          
-          
-
             <HambBtn/>
-            {/* Menú */}
-            {/*<ul
-              className={"flex "}
-            >
-              <li>
-                <a
-                  href="/blog"
-                  className={menuLink}
-                  
-                >
-                  Blog
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="/experiencia"
-                  className={menuLink}
-                >
-                  Experiencia
-                </a>
-              </li>
-              <li>
-                <a href="/chatPage"
-                  className={menuLink}
-                > Chat </a>
-              </li>
-            </ul>*/}
           </nav>
       </header>
     </>
