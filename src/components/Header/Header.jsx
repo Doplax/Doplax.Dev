@@ -17,38 +17,22 @@ const Header = () => {
         <link rel="icon" href="/img/icon/site-icon.png"/>
       </Head>
       
-      <header className="flex flex-wrap flex-col w-full justify-around items-center md:flex-row mx-0">
+      <header className="flex flex-wrap flex-row w-full justify-around items-center md:flex-row mx-0">
           {/* LOGO */}
           <a
             href="/"
             className={`${style.logo} ${style.navLink} `}
           > Doplax.Dev </a>
-          <HambBtn/>
+          
           <nav>
-            {/* Botón hamburguesa */}
-            {/*<button
-              className="block lg:hidden text-white focus:outline-none"
-              onClick={toggleMenu}
-            >
-              BURGUER
-            </button>*/}
+          
+          
 
+            <HambBtn/>
             {/* Menú */}
-            <ul
-              //className={`${isMenuOpen ? "block" : "hidden"} lg:flex lg:space-x-4 space-y-2 lg:space-y-0`}
+            {/*<ul
               className={"flex "}
             >
-
-            {/* Home */}
-              {/*<li>
-                <a
-                  href="/"
-                  className={menuLink}
-                >
-                  Home
-                </a>
-              </li>*/}
-              
               <li>
                 <a
                   href="/blog"
@@ -72,8 +56,7 @@ const Header = () => {
                   className={menuLink}
                 > Chat </a>
               </li>
-
-            </ul>
+            </ul>*/}
           </nav>
       </header>
     </>

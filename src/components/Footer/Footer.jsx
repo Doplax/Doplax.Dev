@@ -24,13 +24,9 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             {/* CONTAINER */}
-            <div className="flex flex-col justify-around items-center h-screen sm:flex md:flex-row sm:justify-around sm:items-center">
+            <div className="flex flex-col justify-end items-center h-screen sm:flex md:flex-row sm:justify-around sm:items-end sm:pb-4">
 
                 {/* Sobre mi */}
-                <div className="">
-                    <h3>Pol Valle</h3>
-                    {/*<p className="italic text-center">"Programming isn't about what you know; <br/>it's about what you can figure out"</p>*/}
-                    
                     {/* RRHH */}
                     <div className="flex gap-4">
                         <a
@@ -56,51 +52,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <p className="allura__typography text-4xl gradientText_gAnimation"> Doplax Dev </p>
-                </div>
-
-                {/* SITE MAP */}
-                <div className="">
-                    <h3 className="text-lg">Sitemap</h3>
-                    <ul className="justify-start">
-                        <li >
-                            <a href="/" className={menuLink}>  Home</a>
-                        </li>
-                        <li>
-                            <a href="/sobreMi" className={menuLink}> Sobre Mi </a>
-                        </li>
-                        <li>
-                            <a href="/habilidades" className={menuLink}> Habilidades </a>
-                        </li>
-                        <li>
-                            <a href="/contacto" className={menuLink}> Contacto </a>
-                        </li>
-                        <li>
-                            <a href="/pruebas" className={menuLink}> Pruebas </a>
-                        </li>
-                    </ul>
-                </div>
-
-                {/* GENERAL */}
-                {/*<div className="">
-                    <h3 className="text-lg">Sitemap</h3>
-                    <ul className="justify-start">
-                        <li>
-                            <a href="/" className={menuLink}>Home</a>
-                        </li>
-                        <li>
-                            <a href="/my-mission" className={menuLink}>My Mission</a>
-                        </li>
-                        <li>
-                            <a href="/privacy-policy" className={menuLink}>Privacy policy</a>
-                        </li>
-                        <li>
-                            <a href="/terms-of-use" className={menuLink}>Terms of use</a>
-                        </li>
-                        <li>
-                            <a href="/code-of-conduct" className={menuLink}>Code of conduct</a>
-                        </li>
-                    </ul>
-                </div>*/}
+        
             </div>
 
 
