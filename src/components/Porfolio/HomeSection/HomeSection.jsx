@@ -31,7 +31,7 @@ function HomeSection() {
                                     target="_blank"
                                     rel="noopener noreferrer" // Agrega esta línea para la seguridad del enlace
                                     type="button"
-                                    className="inline-flex items-center rounded-md border border-gray-300 bg-white px-6 py-3 text-xl font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                    className="inline-flex justify-center  rounded-full bg-orange-400 text-white px-6 py-3 text-xl font-bold text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                                 >
                                     Descargar CV
                                 </a>
@@ -43,7 +43,7 @@ function HomeSection() {
                             <div className="flex flex-col">
                                 <h1 className="text-3xl font-bold mt-8 text-center">Sobre mi</h1>
                                 <img src="/img/pol-valle.webp" alt="profile image" className="rounded-full scale-75" />
-                                <p className="text-lg  w-9/12 mb-5">
+                                <p className="text-lg  mb-5">
                                     Hola! Me llamo Pol, me considero un profesional muy versátil y multidisciplinar, con muchas ganas de
                                     aprender y de trabajar en un entorno dinámico y desafiante de desarrollo de software. <br />
                                     Poseo experiencia en el desarrollo de aplicaciones multiplataforma y web, y tengo conocimientos en la
@@ -57,7 +57,7 @@ function HomeSection() {
                                     target="_blank"
                                     rel="noopener noreferrer" // Agrega esta línea para la seguridad del enlace
                                     type="button"
-                                    className="inline-flex items-center rounded-md border border-gray-300 bg-white px-6 py-3 text-xl font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                    className="inline-flex justify-center  rounded-full  bg-orange-400 px-6 py-3 text-xl font-bold text-white shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                                 >
                                     Descargar CV 
                                 </a>

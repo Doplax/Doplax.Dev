@@ -3,8 +3,9 @@
 import "./Modal.css";
 
 function Modal({ closeModal }) {
-    const menuLink = 'text-orange-200 text-lg md:text-base font-bold  px-3 py-4'
-
+    const menuLink = 'text-white text-lg font-bold '
+    const menuLi = 'my-3'
+    
     return (
         <div
             onClick={closeModal}
@@ -14,20 +15,22 @@ function Modal({ closeModal }) {
             role="dialog"
             aria-modal="true"
         >
-            <div className="flex items-end justify-center min-h-screen pt-4 px-4 text-center sm:block sm:p-0">
+            <div className="flex items-end justify-center min-h-screen pt-4 px-4 text-center  sm:p-0">
+                
+                {/* Fondo */}
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-40 transition-opacity"
+                    className="fixed inset-0 bg-black opacity-20 transition-opacity"
                     aria-hidden="true"
                 ></div>
             
-                <div className=" bg-black   rounded-lg  min-w-full px-4 pt-5 pb-40 text-left overflow-hidden transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
-                    <div className="sm:flex sm:items-start">
-                        <div className="mt-3  sm:mt-0 sm:ml-4 sm:text-left">
+                <div className=" bg-black  backdrop-blur-md  rounded-lg  min-w-full  pt-5 pb-60 text-left overflow-hidden transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+                    
+                        <div className="mt-3 px-10">
                                 {/* Menú */}
                                 <ul
-                                    className={"flex flex-col text-center"}
+                                    className={"flex flex-col text-left"}
                                 >
-                                    <li>
+                                    <li className={menuLi}>
                                         <a
                                             href="/blog"
                                             className={menuLink}
@@ -37,7 +40,7 @@ function Modal({ closeModal }) {
                                         </a>
                                     </li>
 
-                                    <li>
+                                    <li className={menuLi}>
                                         <a
                                             href="/experiencia"
                                             className={menuLink}
@@ -45,14 +48,14 @@ function Modal({ closeModal }) {
                                             Experiencia
                                         </a>
                                     </li>
-                                    <li>
+                                    <li className={menuLi}>
                                         <a href="/chatPage"
                                             className={menuLink}
                                         > Chat </a>
                                     </li>
                                 </ul>
                         </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
