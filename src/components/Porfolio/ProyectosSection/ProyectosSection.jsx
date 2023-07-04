@@ -73,10 +73,10 @@ function ProyectosSection() {
                                 href={project.netlify}
                                 target={"_blank"}>
                                 <img
-                                className="mx-auto flex-shrink-0  w-full object-fit "
-                                src={project.imageUrl}
-                                alt=""
-                            />
+                                    className="mx-auto flex-shrink-0  w-full object-fit h-50 w-50"
+                                    src={project.imageUrl}
+                                    alt=""
+                                />
                             </a>
                             <h3 className="mt-6 mb-4 text-xl font-bold text-gray-900">
                                 {project.name}

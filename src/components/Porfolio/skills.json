@@ -69,10 +69,6 @@
             "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/wordpress-logo.png",
             "label": "Wordpress"
         },
-        "WooCommerce": {
-            "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/wooCommerce-logo.png",
-            "label": "WooCommerce"
-        },
         "ChatGPT": {
             "src": "/svg/chatgpt.svg",
             "label": "ChatGPT"
