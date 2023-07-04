@@ -16,7 +16,7 @@ const Portfolio = () => {
         <>
             <HomeSection/>
             <SkillSection/>
-            <ServiciosSection/>
+            {/*<ServiciosSection/>*/}
             <ProyectosSection/>
             {/*<Formulario/>*/}
         </>

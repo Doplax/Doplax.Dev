@@ -3,7 +3,7 @@
 import "./Modal.css";
 
 function Modal({ closeModal }) {
-    const menuLink = 'text-orange-200 text-lg md:text-base font-bold  px-3 py-4'
+    const menuLink = 'text-orange-200 opacity-100 text-2xl md:text-base font-bold  px-3 py-4'
 
     return (
         <div
@@ -14,9 +14,9 @@ function Modal({ closeModal }) {
             role="dialog"
             aria-modal="true"
         >
-            <div className="flex items-end justify-center min-h-screen pt-4 px-4 text-center sm:block sm:p-0">
+            <div className="flex items-end justify-center min-h-screen pt-4 px-1 text-center sm:block sm:p-0">
                 <div
-                    className="fixed inset-0 bg-gray-800 bg-opacity-75 transition-opacity"
+                    className="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity"
                     aria-hidden="true"
                 ></div>
             
@@ -27,6 +27,15 @@ function Modal({ closeModal }) {
                                 <ul
                                     className={"flex flex-col text-center"}
                                 >
+                                <li>
+                                        <a
+                                            href="/"
+                                            className={menuLink}
+
+                                        >
+                                            Home
+                                        </a>
+                                    </li>
                                     <li>
                                         <a
                                             href="/blog"
