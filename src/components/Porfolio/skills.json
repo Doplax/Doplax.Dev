@@ -16,13 +16,10 @@
             "src": "/svg/typescript.svg",
             "label": "Typescript"
         },
-        "bootstrap": {
-            "src": "/svg/bootstrap.svg",
-            "label": "Bootstrap"
-        },
-        "tailwind": {
-            "src": "/svg/tailwind.svg",
-            "label": "Tailwind"
+        
+        "angular": {
+            "src": "/svg/angular.svg",
+            "label": "Angular"
         },
         "react": {
             "src": "/svg/react.svg",
@@ -31,16 +28,24 @@
         "next-js": {
             "src": "/svg/next-js.svg",
             "label": "Next.js"
+        },
+        "bootstrap": {
+            "src": "/svg/bootstrap.svg",
+            "label": "Bootstrap"
+        },
+        "tailwind": {
+            "src": "/svg/tailwind.svg",
+            "label": "Tailwind"
         }
     },
     "backEndSkills": {
+        "Java": {
+            "src": "/svg/java.svg",
+            "label": "java"
+        },
         "nodejs": {
             "src": "/svg/node.svg",
             "label": "Node.js"
-        },
-        "npm": {
-            "src": "/svg/npm.svg",
-            "label": "npm"
         },
         "linux": {
             "src": "https://github.com/Doplax/Doplax/blob/main/img/linux-logo.png?raw=true",
@@ -53,6 +58,10 @@
         "mongodb": {
             "src": "/svg/mongodb.svg",
             "label": "MongoDB"
+        },
+        "sql": {
+            "src": "/svg/sql.svg",
+            "label": "SQL"
         }
     },
     "toolsSkills": {
@@ -60,6 +69,10 @@
         "Git": {
             "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/git-logo.png",
             "label": "Git"
+        },
+        "figma": {
+            "src": "/svg/figma.svg",
+            "label": "Figma"
         },
         "Notion": {
             "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/notion-logo.png",
