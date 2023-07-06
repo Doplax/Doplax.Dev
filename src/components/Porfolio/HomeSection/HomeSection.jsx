@@ -16,13 +16,14 @@ function HomeSection() {
                         <div className="hidden md:flex items-center">
                             <div className="flex-col">
                                 <p className="text-lg w-9/12 mb-5">
-                                    Hola! Me llamo Pol, me considero un profesional muy versátil y multidisciplinar, con muchas ganas de
-                                    aprender y de trabajar en un entorno dinámico y desafiante de desarrollo de software. <br />
-                                    Poseo experiencia en el desarrollo de aplicaciones multiplataforma y web, y tengo conocimientos en la
-                                    industria 4.0. <br />He participado en ferias, brindando apoyo al departamento comercial al presentar
-                                    nuestros proyectos. <br />Estoy muy familiarizado con el trabajo en equipo y metodologías Agile,
-                                    habiendo aplicado exitosamente esta metodología en proyectos anteriores y colaborando eficazmente en
-                                    equipos.
+                                    Soy desarrollador frontend y backend, creo páginas web con interfaces de usuario (UI/UX) y también aplicaciones del lado del servidor. 
+                                </p>
+
+                                <p className="text-lg w-9/12 mb-5">
+                                    Me apasiona campo del liderazgo y busco especializarme en esta área para coordinar un equipo en el futuro.
+                                </p>
+                                <p className="text-lg w-9/12 mb-5">
+                                    Estoy particularmente interesado en el desarrollo de aplicaciones que no solo sean funcionales, sino también atractivas y fáciles de usar. Mi objetivo es crear experiencias de usuario que sean agradables y sin complicaciones, y para lograrlo, combino mis habilidades técnicas con un enfoque en las necesidades del usuario final.
                                 </p>
                                 <a
                                     href="/docs/CV-Pol-Valle.pdf"
