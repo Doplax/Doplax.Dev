@@ -12,7 +12,7 @@ function ServiciosSection() {
 
     {/* SERVCICIOS */ }
     return (
-        <section className='my-10'>
+        <section className='my-28'> 
             <PageTitle>Servicios</PageTitle>
             <h2 className='font-bold text-3xl my-10'>Servicios que ofrezco a mis clientes</h2>
             <div className="md:grid md:grid-cols-3 md:gap-10">

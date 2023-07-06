@@ -8,12 +8,11 @@ function HomeSection() {
             {/* HOME */}
 
             {/* SOBRE MI */}
-            <section className="py-10">
+            <section className="py-28">
                 
                     {/* Desktop Version */}
-                    <PageTitle>Pol Valle</PageTitle>
+                    <PageTitle>Sobre Mí</PageTitle>
 
-                        <h1 className="hidden md:flex text-3xl font-bold mt-8">Sobre mi</h1>
                         <div className="hidden md:flex items-center">
                             <div className="flex-col">
                                 <p className="text-lg w-9/12 mb-5">
@@ -31,7 +30,7 @@ function HomeSection() {
                                     target="_blank"
                                     rel="noopener noreferrer" // Agrega esta línea para la seguridad del enlace
                                     type="button"
-                                    className={`${styles.btnHover} ${styles.color3} px-6 py-3 text-white hover:text-white text-xl font-bold shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2`}
+                                    className={`${styles.btnHover} ${styles.color2} px-6 py-3 text-white hover:text-white text-xl font-bold shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2`}
                                 >
                                     Descargar CV
                                 </a>

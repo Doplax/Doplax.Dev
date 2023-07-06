@@ -4,6 +4,24 @@ import { PageTitle } from '../../PageTitle'
 function ProyectosSection() {
     const projects = [
         {
+            name: "Cuphead CV",
+            description:
+                "Porfolio de Cuphead",
+            role: "HTML, CSS, JS",
+            imageUrl: "/img/cuphead.png",
+            netlify: "https://doplax.dev/chatPage",
+            github: "https://github.com/Doplax/Doplax.Dev/blob/main/src/app/api/chat/route.js",
+        },
+        {
+            name: "BC Personel Group",
+            description:
+                "Web para una empresa de contratación de trabajo",
+            role: "HTML, CSS, JS",
+            imageUrl: "/img/bc-personel.png",
+            netlify: "http://bcpersonnelgroup.surge.sh/",
+            github: "https://github.com/Doplax/bcpersonnelgroup.com",
+        },
+        {
             name: "ChatGPT Web Integration",
             description:
                 "integración del SDK de Vercel AI con la API de Chat de GPT",
@@ -15,7 +33,7 @@ function ProyectosSection() {
         {
             name: "Reproductor de música",
             description:
-                "Una aplicación To-Do con D&D, en ella puedes crear tareas, marcarlas, moverlas a diferentes estados e incluso eliminarlas.",
+                "Ejemplo de una interfaz web de un Reproductor de música",
             role: "HTML, CSS, JS",
             imageUrl: "/img/mp3-easy-player.png.png",
             netlify: "https://doplax.github.io/MP3-Easy-Player/",
@@ -55,7 +73,7 @@ function ProyectosSection() {
 
 
     return (
-        <section className="mx-auto max-w-6xl sm:px-6 lg:px-8 py-10">
+        <section className="mx-auto max-w-6xl sm:px-6 py-28">
             <PageTitle>Proyectos</PageTitle>
 
             
