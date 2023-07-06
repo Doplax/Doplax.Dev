@@ -20,10 +20,13 @@ function HomeSection() {
                                 </p>
 
                                 <p className="text-lg w-9/12 mb-5">
-                                    Me apasiona campo del liderazgo y busco especializarme en esta área para coordinar un equipo en el futuro.
+                                    Me apasiona el campo del liderazgo, busco especializarme en esta área para coordinar un equipo en el futuro.
                                 </p>
                                 <p className="text-lg w-9/12 mb-5">
-                                    Estoy particularmente interesado en el desarrollo de aplicaciones que no solo sean funcionales, sino también atractivas y fáciles de usar. Mi objetivo es crear experiencias de usuario que sean agradables y sin complicaciones, y para lograrlo, combino mis habilidades técnicas con un enfoque en las necesidades del usuario final.
+                                    Estoy particularmente interesado en el desarrollo de aplicaciones además de funcionales, también sean atractivas y fáciles de usar. 
+                                </p>
+                                <p>
+                                Mi objetivo es crear experiencias de usuario que sean agradables y sin complicaciones, y para lograrlo, combino mis habilidades técnicas con un enfoque centrado en las necesidades del usuario final.
                                 </p>
                                 <a
                                     href="/docs/CV-Pol-Valle.pdf"
