@@ -23,7 +23,7 @@ function HomeSection() {
                                     Me apasiona el campo del liderazgo, busco especializarme en esta área para coordinar un equipo en el futuro.
                                 </p>
                                 <p className="text-lg w-9/12 mb-5">
-                                    Estoy particularmente interesado en el desarrollo de aplicaciones además de funcionales, también sean atractivas y fáciles de usar. 
+                                    Estoy particularmente interesado en el desarrollo de aplicaciones que además de funcionales, también sean atractivas y fáciles de usar. 
                                 </p>
                                 <p>
                                 Mi objetivo es crear experiencias de usuario que sean agradables y sin complicaciones, y para lograrlo, combino mis habilidades técnicas con un enfoque centrado en las necesidades del usuario final.
@@ -34,7 +34,7 @@ function HomeSection() {
                                     target="_blank"
                                     rel="noopener noreferrer" // Agrega esta línea para la seguridad del enlace
                                     type="button"
-                                    className={`${styles.btnHover} ${styles.color2} px-6 py-3 text-white hover:text-white text-xl font-bold shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2`}
+                                    className={`${styles.btnHover} ${styles.color2}  px-6 py-3 text-white hover:text-white text-xl font-bold shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2`}
                                 >
                                     Descargar CV
                                 </a>
