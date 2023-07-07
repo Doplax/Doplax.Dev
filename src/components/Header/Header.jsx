@@ -8,7 +8,7 @@ import { HambBtn } from '@/components/UX/HambBtn/HambBtn'
 
 const Header = () => {
 
-  const menuLink = 'text-orange-200 text-lg md:text-base font-bold  px-3 py-4'
+  const menuLink = 'text-lg md:text-base font-bold  px-3 py-4';
 
   return (
     <>
