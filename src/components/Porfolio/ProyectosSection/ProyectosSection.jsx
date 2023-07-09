@@ -8,7 +8,7 @@ function ProyectosSection() {
             description:
                 "Aplicación web de una pokédex hecha en Angular",
             role: "Angular",
-            imageUrl: "/img/pokedex.png",
+            imageUrl: "/img/pokedex.webp",
             netlify: "https://doplaxpokeangular.netlify.app/",
             github: "https://github.com/Doplax/Pokedex-Angular",
         },
@@ -17,7 +17,7 @@ function ProyectosSection() {
             description:
                 "Porfolio de Cuphead",
             role: "HTML, CSS, JS",
-            imageUrl: "/img/cuphead.png",
+            imageUrl: "/img/cuphead.webp",
             netlify: "https://doplax.dev/chatPage",
             github: "https://github.com/Doplax/Doplax.Dev/blob/main/src/app/api/chat/route.js",
         },
@@ -26,7 +26,7 @@ function ProyectosSection() {
             description:
                 "Web para una empresa de contratación de trabajo",
             role: "HTML, CSS, JS",
-            imageUrl: "/img/bc-personel.png",
+            imageUrl: "/img/bc-personel.webp",
             netlify: "http://bcpersonnelgroup.surge.sh/",
             github: "https://github.com/Doplax/bcpersonnelgroup.com",
         },
@@ -35,7 +35,7 @@ function ProyectosSection() {
             description:
                 "integración del SDK de Vercel AI con la API de Chat de GPT",
             role: "HTML, CSS, JS",
-            imageUrl: "/img/vercel-sdk.png",
+            imageUrl: "/img/vercel-sdk.webp",
             netlify: "https://doplax.dev/chatPage",
             github: "https://github.com/Doplax/Doplax.Dev/blob/main/src/app/api/chat/route.js",
         },
@@ -44,7 +44,7 @@ function ProyectosSection() {
             description:
                 "Ejemplo de una interfaz web de un Reproductor de música",
             role: "HTML, CSS, JS",
-            imageUrl: "/img/mp3-easy-player.png.png",
+            imageUrl: "/img/mp3-easy-player.webp",
             netlify: "https://doplax.github.io/MP3-Easy-Player/",
             github: "https://github.com/Doplax/MP3-Easy-Player",
         },
@@ -54,7 +54,7 @@ function ProyectosSection() {
             description:
                 "Este proyecto es una herramienta web diseñada para la empresa Tecsolda que permite a los usuarios seleccionar componentes de maquinaria de acuerdo a sus necesidades específicas.",
             role: "HTML, CSS, JS",
-            imageUrl: "/img/centradores.png",
+            imageUrl: "/img/centradores.webp",
             netlify: "https://doplax.github.io/TSD-Centradores-Electrodos/",
             github: "https://github.com/Doplax/TSD-Centradores-Electrodos",
         },
@@ -64,7 +64,7 @@ function ProyectosSection() {
                 "Una tienda online de productos de soldadura para carroceria",
             role: "Woordpres, Woocommerce",
             imageUrl:
-                "/img/tsd-car.png",
+                "/img/tsd-car.webp",
             netlify: "https://tecsolda.com/carroceria/",
             github: "https://tecsolda.com/carroceria/",
         },
@@ -73,7 +73,7 @@ function ProyectosSection() {
             description: "Una web en producción sobre Equilibradores Industriales.",
             role: "Woordpress, Woocomerce",
             imageUrl:
-                "/img/tsd-res.png",
+                "/img/tsd-res.webp",
             netlify: "https://www.equilibradores.es/",
             github: "https://www.equilibradores.es/",
         },
