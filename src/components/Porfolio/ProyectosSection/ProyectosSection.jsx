@@ -9,8 +9,8 @@ function ProyectosSection() {
                 "Aplicación web de una pokédex hecha en Angular",
             role: "Angular",
             imageUrl: "/img/pokedex.png",
-            netlify: "https://doplax.dev/chatPage",
-            github: "https://github.com/Doplax/Doplax.Dev/blob/main/src/app/api/chat/route.js",
+            netlify: "https://doplaxpokeangular.netlify.app/",
+            github: "https://github.com/Doplax/Pokedex-Angular",
         },
         {
             name: "Cuphead CV",
