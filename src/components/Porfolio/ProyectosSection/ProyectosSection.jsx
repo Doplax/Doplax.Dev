@@ -4,6 +4,15 @@ import { PageTitle } from '../../PageTitle'
 function ProyectosSection() {
     const projects = [
         {
+            name: "Pokedex - Angular",
+            description:
+                "Aplicación web de una pokédex hecha en Angular",
+            role: "Angular",
+            imageUrl: "/img/pokedex.png",
+            netlify: "https://doplax.dev/chatPage",
+            github: "https://github.com/Doplax/Doplax.Dev/blob/main/src/app/api/chat/route.js",
+        },
+        {
             name: "Cuphead CV",
             description:
                 "Porfolio de Cuphead",
