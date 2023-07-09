@@ -16,9 +16,9 @@ function ProyectosSection() {
             name: "Cuphead CV",
             description:
                 "Porfolio de Cuphead",
-            role: "HTML, CSS, JS",
+            role: "HTML, CSS",
             imageUrl: "/img/cuphead.webp",
-            netlify: "https://doplax.dev/chatPage",
+            netlify: "https://cupheadcv.netlify.app/",
             github: "https://github.com/Doplax/Doplax.Dev/blob/main/src/app/api/chat/route.js",
         },
         {
