@@ -13,6 +13,15 @@ function ProyectosSection() {
             github: "https://github.com/Doplax/Pokedex-Angular",
         },
         {
+            name: "Pokedex - React",
+            description:
+                "Aplicación web de una Herramienta de ToDos con Local Storege",
+            role: "React",
+            imageUrl: "/img/todo-react.webp",
+            netlify: "https://64abbad54dd25f31dbc77026--todoreactdoplaxdev.netlify.app/",
+            github: "https://github.com/Doplax/ToDo-React",
+        },
+        {
             name: "Cuphead CV",
             description:
                 "Porfolio de Cuphead",
