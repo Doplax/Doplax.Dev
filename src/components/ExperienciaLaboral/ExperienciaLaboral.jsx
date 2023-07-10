@@ -11,10 +11,10 @@ function ExperienciaLaboral() {
       fecha: "Mayo 2022 - Actualidad",
       tareas: [
         "Encargado de diseñar y desarrollar la web con Angular",
-        "Análisis de estadísticas mediante Google Analytics.",
-        "Gestión de la Red y Equipos de la empresa",
+        "Desarrollo de aplicación de control horario usando Node.js.",
+        "Implementación de metodologías Agile en el desarrollo de proyectos.",
         "Migración y mantenimiento del programa de gestión empresarial a Ekon ERP (con SQL) para la exportación de datos (con Python) para la limpieza de los mismos",
-        "Despliegue de aplicaciónes web",
+        "Gestión de la Red y Equipos de la empresa",
       ],
     },
     {
@@ -91,6 +91,19 @@ function ExperienciaLaboral() {
 
   return (
     <>
+
+<PageTitle> Experiencia Laboral </PageTitle>
+      {experiencias.map((content, index) => (
+        <ExperienceCard
+          key={index}
+          titulo={content.titulo}
+          ubicacion={content.ubicacion}
+          fecha={content.fecha}
+          tareas={content.tareas}
+        />
+      ))}
+
+      
       <PageTitle> Estudios </PageTitle>
       {formacion.map((content, index) => (
         <ExperienceCard
@@ -102,16 +115,7 @@ function ExperienciaLaboral() {
         />
       ))}
 
-      <PageTitle> Experiencia Laboral </PageTitle>
-      {experiencias.map((content, index) => (
-        <ExperienceCard
-          key={index}
-          titulo={content.titulo}
-          ubicacion={content.ubicacion}
-          fecha={content.fecha}
-          tareas={content.tareas}
-        />
-      ))}
+      
     </>
   );
 }
