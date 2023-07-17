@@ -1,12 +1,13 @@
-// components/Skill.js
-
+// Foto y título
+// Se usa en el padre
+import Image from 'next/image';
 import React from 'react';
 
-const Skill = ({ src, alt, label }) => (
+const Skill = ({ src, alt, label, url }) => (
   <div className="flex flex-col space-y-2 m-2" >
-    <div className='skill-image '> 
-      <img className="h-16 w-16" src={src} alt={alt} />
-    </div>
+    <a className='skill-image ' href={url}> 
+      <Image width={50} height={50} className="h-16 w-16" src={src} alt={alt} />
+    </a>
     <p className="flex justify-center">{label}</p>
 
     {/* Animación de las cartas */}

@@ -1,92 +1,128 @@
 {
     "frontEndSkills": {
-        "html5": {
+        "html": {
             "src": "/svg/html.svg",
-            "label": "HTML"
+            "label": "HTML",
+            "description": "Lenguaje de marcado estándar para crear páginas web.",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
         },
-        "css3": {
+        "css": {
             "src": "/svg/css.svg",
-            "label": "CSS"
+            "label": "CSS",
+            "description": "Hoja de estilo en cascada usada para describir la apariencia de un documento escrito en HTML.",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
         },
         "javascript": {
             "src": "/svg/javascript.svg",
-            "label": "JavaScript"
+            "label": "JavaScript",
+            "description": "Lenguaje de programación de alto nivel, dinámico, débilmente tipado y de los lados del cliente y servidor.",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
         },
-        "Typescript": {
+        "typescript": {
             "src": "/svg/typescript.svg",
-            "label": "Typescript"
+            "label": "Typescript",
+            "description": "Superset tipado de JavaScript que compila a JavaScript puro.",
+            "url": "https://www.typescriptlang.org/"
         },
-        
         "angular": {
             "src": "/svg/angular.svg",
-            "label": "Angular"
+            "label": "Angular",
+            "description": "Plataforma de desarrollo para crear aplicaciones web de una sola página.",
+            "url": "https://angular.io/"
         },
         "react": {
             "src": "/svg/react.svg",
-            "label": "React"
+            "label": "React",
+            "description": "Biblioteca JavaScript para construir interfaces de usuario.",
+            "url": "https://reactjs.org/"
         },
-        "next-js": {
+        "next.js": {
             "src": "/svg/next-js.svg",
-            "label": "Next.js"
+            "label": "Next.js",
+            "description": "Framework de JavaScript para producción: React, Node.js, server rendering y más.",
+            "url": "https://nextjs.org/"
         },
         "bootstrap": {
             "src": "/svg/bootstrap.svg",
-            "label": "Bootstrap"
+            "label": "Bootstrap",
+            "description": "Biblioteca de código abierto para el diseño de sitios y aplicaciones web.",
+            "url": "https://getbootstrap.com/"
         },
         "tailwind": {
             "src": "/svg/tailwind.svg",
-            "label": "Tailwind"
+            "label": "Tailwind",
+            "description": "Un framework de utilidades para la construcción de interfaces de usuario.",
+            "url": "https://tailwindcss.com/"
         }
     },
     "backEndSkills": {
-        "Java": {
+        "java": {
             "src": "/svg/java.svg",
-            "label": "java"
+            "label": "java",
+            "description": "Lenguaje de programación y plataforma informática de uso general.",
+            "url": "https://www.oracle.com/java/"
         },
         "nodejs": {
             "src": "/svg/node.svg",
-            "label": "Node.js"
+            "label": "Node.js",
+            "description": "Entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome.",
+            "url": "https://nodejs.org/"
         },
         "linux": {
-            "src": "https://github.com/Doplax/Doplax/blob/main/img/linux-logo.png?raw=true",
-            "label": "Linux"
+            "src": "/svg/linux.svg",
+            "label": "Linux",
+            "description": "Familia de sistemas operativos de código abierto basados en el kernel de Linux.",
+            "url": "https://www.linux.org/"
         },
         "python": {
             "src": "/svg/python.svg",
-            "label": "Python"
+            "label": "Python",
+            "description": "Lenguaje de programación de alto nivel con diseño de código legible.",
+            "url": "https://www.python.org/"
         },
         "mongodb": {
             "src": "/svg/mongodb.svg",
-            "label": "MongoDB"
+            "label": "MongoDB",
+            "description": "Base de datos NoSQL, basada en documentos y de código abierto.",
+            "url": "https://www.mongodb.com/"
         },
         "sql": {
             "src": "/svg/sql.svg",
-            "label": "SQL"
+            "label": "SQL",
+            "description": "Lenguaje de programación utilizado para comunicarse con bases de datos.",
+            "url": "https://en.wikipedia.org/wiki/SQL"
         }
     },
     "toolsSkills": {
-        
-        "Git": {
-            "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/git-logo.png",
-            "label": "Git"
+        "git": {
+            "src": "/svg/git.svg",
+            "label": "Git",
+            "description": "Sistema de control de versiones distribuido.",
+            "url": "https://git-scm.com/"
         },
         "figma": {
             "src": "/svg/figma.svg",
-            "label": "Figma"
+            "label": "Figma",
+            "description": "Herramienta de diseño y prototipado basada en la web.",
+            "url": "https://www.figma.com/"
         },
-        "Notion": {
-            "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/notion-logo.png",
-            "label": "Notion"
+        "notion": {
+            "src": "/svg/notion.svg",
+            "label": "Notion",
+            "description": "Aplicación de productividad que combina pizarras kanban, bases de datos, tareas y notas.",
+            "url": "https://www.notion.so/"
         },
-        "Wordpress": {
-            "src": "https://raw.githubusercontent.com/Doplax/Doplax/main/img/wordpress-logo.png",
-            "label": "Wordpress"
+        "wordpress": {
+            "src": "/svg/wordpress.svg",
+            "label": "Wordpress",
+            "description": "Sistema de gestión de contenidos de código abierto basado en PHP y MySQL.",
+            "url": "https://wordpress.org/"
         },
-        "ChatGPT": {
+        "chatgpt": {
             "src": "/svg/chatgpt.svg",
-            "label": "ChatGPT"
+            "label": "ChatGPT",
+            "description": "Modelo de lenguaje AI de OpenAI que genera respuestas humanas.",
+            "url": "https://openai.com/research/chatgpt"
         }
     }
 }
-
-

@@ -10,14 +10,6 @@ function SkillSection() {
     return(
         <section className="py-28">
             <PageTitle>Skills</PageTitle>
-            
-            {/*{Object.entries(jsonData.frontEndSkills).map(([key,value]) => (
-                    <Skill
-                        key={value.alt}
-                        src={value.src}
-                        label={value.label}
-                    />
-                ))}*/}
             <SkillCard
                 title="Front End"
                 skills={Object.entries(jsonData.frontEndSkills).map(([key,value]) => (
@@ -25,6 +17,7 @@ function SkillSection() {
                         key={key}
                         src={value.src}
                         label={value.label}
+                        url={value.url}
                     />
                 ))}
             />
@@ -35,6 +28,7 @@ function SkillSection() {
                         key={key}
                         src={value.src}
                         label={value.label}
+                        url={value.url}
                     />
                 ))}
             />
@@ -45,6 +39,7 @@ function SkillSection() {
                         key={key}
                         src={value.src}
                         label={value.label}
+                        url={value.url}
                     />
                 ))}
             />

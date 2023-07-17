@@ -1,4 +1,5 @@
-// Donde se agupan las categorias (Front, Back...)
+// Donde se agupan las categorias (Front, Back, Otros...)
+// Se usa en el padre
 import React from 'react';
 
 const SkillCard = ({ title, skills }) => (
