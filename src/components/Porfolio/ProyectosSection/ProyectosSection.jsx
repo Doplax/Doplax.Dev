@@ -19,7 +19,7 @@ function ProyectosSection() {
             role: "HTML, CSS",
             imageUrl: "/img/cuphead.webp",
             netlify: "https://cupheadcv.netlify.app/",
-            github: "https://github.com/Doplax/Doplax.Dev/blob/main/src/app/api/chat/route.js",
+            github: "https://github.com/Doplax/CupHead",
         },
         {
             name: "BC Personel Group",
