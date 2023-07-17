@@ -17,6 +17,15 @@ function ProyectosSection() {
             description:
                 "Porfolio de Cuphead",
             role: "HTML, CSS",
+            imageUrl: "/img/todo-react.webp",
+            netlify: "https://64abbad54dd25f31dbc77026--todoreactdoplaxdev.netlify.app/",
+            github: "https://github.com/Doplax/ToDo-React",
+        },
+        {
+            name: "Cuphead CV",
+            description:
+                "Porfolio de Cuphead",
+            role: "HTML, CSS",
             imageUrl: "/img/cuphead.webp",
             netlify: "https://cupheadcv.netlify.app/",
             github: "https://github.com/Doplax/CupHead",
@@ -47,15 +56,6 @@ function ProyectosSection() {
             imageUrl: "/img/themoviedb.webp",
             netlify: "https://moviedb-doplax.surge.sh/",
             github: "https://github.com/Doplax/TheMovieDB-Api",
-        },
-        {
-            name: "Cuphead CV",
-            description:
-                "Porfolio de Cuphead",
-            role: "HTML, CSS",
-            imageUrl: "/img/cuphead.webp",
-            netlify: "https://cupheadcv.netlify.app/",
-            github: "https://github.com/Doplax/CupHead",
         },
         {
             name: "Reproductor de música",
