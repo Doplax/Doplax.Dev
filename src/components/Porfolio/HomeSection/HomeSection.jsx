@@ -13,7 +13,7 @@ function HomeSection() {
                     {/* Desktop Version */}
                     <PageTitle>Sobre Mí</PageTitle>
 
-                        <div className="hidden md:flex items-center">
+                        <div className="hidden md:flex items-start">
                             <div className="flex-col">
                                 <p className="text-lg w-9/12 mb-5">
                                     Soy desarrollador frontend y backend, creo páginas web con interfaces de usuario (UI/UX) y también aplicaciones del lado del servidor. 

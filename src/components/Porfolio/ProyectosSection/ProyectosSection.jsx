@@ -13,7 +13,7 @@ function ProyectosSection() {
             github: "https://github.com/Doplax/Pokedex-Angular",
         },
         {
-            name: "Cuphead CV",
+            name: "ToDo App - React",
             description:
                 "Porfolio de Cuphead",
             role: "HTML, CSS",
@@ -37,6 +37,24 @@ function ProyectosSection() {
             role: "HTML, CSS, JS",
             imageUrl: "/img/vercel-sdk.webp",
             netlify: "https://doplax.dev/chatPage",
+            github: "https://github.com/Doplax/Doplax.Dev/blob/main/src/app/api/chat/route.js",
+        },
+        {
+            name: "TheMovieDB",
+            description:
+                "AVISO: Para que esta app funcione, se debe descargar del repositorio y utilizar la API Key",
+            role: "HTML, CSS, JS",
+            imageUrl: "/img/themoviedb.webp",
+            netlify: "https://moviedb-doplax.surge.sh/",
+            github: "https://github.com/Doplax/TheMovieDB-Api",
+        },
+        {
+            name: "Cuphead CV",
+            description:
+                "Porfolio de Cuphead",
+            role: "HTML, CSS",
+            imageUrl: "/img/cuphead.webp",
+            netlify: "https://cupheadcv.netlify.app/",
             github: "https://github.com/Doplax/Doplax.Dev/blob/main/src/app/api/chat/route.js",
         },
         {
@@ -108,7 +126,7 @@ function ProyectosSection() {
                             <h3 className="mt-6 mb-4 text-xl font-bold text-gray-900">
                                 {project.name}
                             </h3>
-                            <dl className="flex flex-grow flex-col justify-between">
+                            <dl className="flex flex-grow flex-col justify-between p-3">
                                 <dd className="text-sm text-gray-500">
                                     {project.description}
                                 </dd>
