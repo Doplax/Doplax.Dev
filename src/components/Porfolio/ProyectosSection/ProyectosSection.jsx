@@ -33,7 +33,7 @@ function ProyectosSection() {
         },
         {
             name: "BC Personel Group",
-            description: "Web para una empresa de contratación de trabajo",
+            description: "Web para una empresa de selección de personal",
             role: "HTML, CSS, JS",
             imageUrl: "/img/bc-personel.webp",
             netlify: "http://bcpersonnelgroup.surge.sh/",
@@ -69,7 +69,7 @@ function ProyectosSection() {
         {
             name: "Buscador de Centradores y Electrodos",
             description:
-                "Este proyecto es una herramienta web diseñada para la empresa Tecsolda que permite a los usuarios seleccionar componentes de maquinaria de acuerdo a sus necesidades específicas.",
+                "Este proyecto es una herramienta web diseñada para la empresa Tecsolda, la cual permite a los usuarios seleccionar componentes de maquinaria de acuerdo a sus necesidades específicas.",
             role: "HTML, CSS, JS",
             imageUrl: "/img/centradores.webp",
             netlify: "https://doplax.github.io/TSD-Centradores-Electrodos/",
@@ -121,10 +121,10 @@ function ProyectosSection() {
                                 />
                             </a>
                             {/* Nombre  y descripción*/}
-                            <div className="absolute flex flex-col justify-center items-center inset-0 rounded-lg translate-y-40 transition-all duration-500 hover:translate-y-0  hover:bg-white hover:bg-opacity-20 hover:backdrop-blur-lg" >
+                            <div className="absolute flex flex-col justify-center items-center inset-0 rounded-lg translate-y-40 transition-all duration-500 hover:translate-y-0   hover:bg-red-700 hover:bg-opacity-0 hover:backdrop-blur-lg" >
                                 <h3 className="mt-6 text-xl font-bold text-gray-900"> {project.name} </h3>
                                 <div className="flex flex-col ">
-                                    <h4 className="text-sm text-gray-900">{project.description}</h4>
+                                    <h4 className="text-base text-gray-900 px-4" >{project.description}</h4>
                                     {/* Aqui van los iconos */} 
                                 </div>
 
