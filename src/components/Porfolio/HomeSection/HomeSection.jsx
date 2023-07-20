@@ -65,9 +65,9 @@ function HomeSection() {
                                     target="_blank"
                                     rel="noopener noreferrer" // Agrega esta línea para la seguridad del enlace
                                     type="button"
-                                    className="inline-flex justify-center  rounded-full  bg-orange-400 px-6 py-3 text-xl font-bold text-white shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                    className={`${styles.btnHover} ${styles.color2}  px-6 py-3 text-white hover:text-white text-xl font-bold shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2`}
                                 >
-                                    Descargar CV 
+                                    Descargar CV
                                 </a>
                             </div>
                         </div>
