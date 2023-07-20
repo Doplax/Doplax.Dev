@@ -16,7 +16,7 @@ function ProyectosSection() {
         },
         {
             name: "ToDo App - React",
-            description: "Porfolio de Cuphead",
+            description: "App de tareas con React y almacenamiento en LocalStorage",
             role: "HTML, CSS",
             imageUrl: "/img/todo-react.webp",
             netlify:
@@ -107,9 +107,9 @@ function ProyectosSection() {
                 {projects.map((project) => (
                     <div
                         key={project.name}
-                        className="flex flex-col divide-y divide-gray-200 rounded-lg bg-slate-100 text-center shadow"
+                        className=" flex flex-col divide-y divide-gray-200 rounded-lg bg-slate-100 text-center shadow"
                     >
-                        <div className="flex flex-1 flex-col rounded-lg overflow-hidden">
+                        <div className="relative flex  flex-col rounded-lg overflow-hidden">
                             {/* Imagen */}
                             <a href={project.netlify} target="_blank">
                                 <Image
@@ -120,53 +120,58 @@ function ProyectosSection() {
                                     alt={project.name}
                                 />
                             </a>
-                            {/* Nombre */}
-                            <h3 className="mt-6 mb-4 text-xl font-bold text-gray-900"> {project.name} </h3>
-                            <div className="flex flex-grow flex-col justify-between p-3">
-                                <h4 className="text-sm text-gray-500">{project.description}</h4>
-                                {/* Aqui van los iconos */}
-a
-
+                            {/* Nombre  y descripción*/}
+                            <div className="absolute flex flex-col justify-center items-center inset-0 rounded-lg translate-y-40 transition-all duration-500 hover:translate-y-0  hover:bg-white hover:bg-opacity-20 hover:backdrop-blur-lg" >
+                                <h3 className="mt-6 text-xl font-bold text-gray-900"> {project.name} </h3>
+                                <div className="flex flex-col ">
+                                    <h4 className="text-sm text-gray-900">{project.description}</h4>
+                                    {/* Aqui van los iconos */} 
+                                </div>
 
                             </div>
                         </div>
 
-                        {/* Parte de los enlaces */}
-                        <div>
-                            <div className="-mt-px flex divide-x divide-gray-200">
-                                <div className="flex w-0 flex-1">
-                                    <a
-                                        href={project.github}
-                                        target={"_blank"}
-                                        className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500"
-                                    >
-                                        <Image
-                                            height="50"
-                                            width="50"
-                                            src="https://raw.githubusercontent.com/jmontes33/React-Portfolio/20d9cedab15245df7dbed1c63ebc814c6d655c57/src/assets/github-logo.svg"
-                                            alt="github"
-                                            className="h-5 w-5 text-gray-400"
-                                            aria-hidden="true"
-                                        />
-                                        <span className="ml-3">Github</span>
-                                    </a>
-                                </div>
-                                <div className="-ml-px flex w-0 flex-1">
-                                    <a
-                                        target={"_blank"}
-                                        href={project.netlify}
-                                        className="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500"
-                                    >
-                                        {/*<ComputerDesktopIcon
-                    className="h-5 w-5 text-gray-400"
-                    aria-hidden="true"
-                />*/}
-                                        <span className="ml-3">Probar</span>
-                                    </a>
-                                </div>
+                        {/* BOTONES*/}
+                        <div className="-mt-px flex divide-x divide-gray-200">
+                            {/* Github */}
+                            <div className="flex w-0 flex-1">
+                                <a
+                                    href={project.github}
+                                    target="_blank"
+                                    className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500"
+                                >
+                                    <Image
+                                        height="50"
+                                        width="50"
+                                        src="/svg/github.svg"
+                                        alt="github"
+                                        className="h-5 w-5 text-gray-400"
+                                    />
+                                    <span className="ml-3">Github</span>
+                                </a>
                             </div>
+
+                            {/* Live */}
+                            <div className="flex w-0 flex-1">
+                                <a
+                                    href={project.netlify}
+                                    target="_blank"
+                                    className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500"
+                                >
+                                    <Image
+                                        height="50"
+                                        width="50"
+                                        src="/svg/github.svg"
+                                        alt="github"
+                                        className="h-5 w-5 text-gray-400"
+                                    />
+                                    <span className="ml-3">Live</span>
+                                </a>
+                            </div>
+                            
                         </div>
                     </div>
+                    
                 ))}
             </div>
         </section>

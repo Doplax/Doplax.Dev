@@ -1,0 +1,118 @@
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60rem; /* Aproximación de max-w-6xl */
+  padding-left: 1.5rem; /* Aproximación de sm:px-6 */
+  padding-right: 1.5rem; /* Aproximación de sm:px-6 */
+  padding-top: 7rem; /* Aproximación de py-28 */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem; /* Aproximación de gap-6 */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* Aproximación de divide-y divide-gray-200 */
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  border-radius: 0.375rem; /* Aproximación de rounded-lg */
+  /* Aproximación de bg-slate-100 y text-center */
+  background-color: #f1f5f9;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Aproximación de shadow */
+}
+
+.innerCard {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-radius: 0.375rem; /* Aproximación de rounded-lg */
+  overflow: hidden;
+}
+
+.image {
+  margin-left: auto;
+  margin-right: auto;
+  /* Aproximación de flex-shrink-0 */
+  flex-shrink: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* Aproximación de justify-center y align-middle */
+  justify-content: center;
+  align-items: center;
+}
+
+.projectName {
+  margin-top: 1.5rem; /* Aproximación de mt-6 */
+  margin-bottom: 1rem; /* Aproximación de mb-4 */
+  font-size: 1.25rem; /* Aproximación de text-xl */
+  font-weight: 700; /* Aproximación de font-bold */
+  color: #1a202c; /* Aproximación de text-gray-900 */
+}
+
+.textSection {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  /* Aproximación de justify-between */
+  justify-content: space-between;
+  padding: 0.75rem; /* Aproximación de p-3 */
+}
+
+.text {
+  font-size: 0.875rem; /* Aproximación de text-sm */
+  color: #6b7280; /* Aproximación de text-gray-500 */
+}
+
+.buttons {
+  margin-top: -1px; /* Aproximación de -mt-px */
+  display: flex;
+  /* Aproximación de divide-x divide-gray-200 */
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+}
+
+.button {
+  flex: 1;
+  width: 0;
+}
+
+.buttonLink {
+  position: relative;
+  display: inline-flex;
+  width: 0;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 0.375rem 0; /* Aproximación de rounded-bl-lg */
+  padding-top: 1rem; /* Aproximación de py-4 */
+  padding-bottom: 1rem; /* Aproximación de py-4 */
+  font-size: 0.875rem; /* Aproximación de text-sm */
+  font-weight: 500; /* Aproximación de font-medium */
+  color: #374151; /* Aproximación de text-gray-700 */
+  transition: color 0.2s ease-in-out; /* Aproximación de hover:text-gray-500 */
+}
+
+.buttonLink:hover {
+  color: #6b7280; /* Aproximación de text-gray-500 */
+}
+
+.icon {
+  height: 1.25rem; /* Aproximación de h-5 */
+  width: 1.25rem; /* Aproximación de w-5 */
+  color: #9ca3af; /* Aproximación de text-gray-400 */
+}
+
+.linkText {
+  margin-left: 0.75rem; /* Aproximación de ml-3 */
+}
