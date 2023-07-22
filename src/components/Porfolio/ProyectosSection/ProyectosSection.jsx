@@ -8,7 +8,7 @@ function ProyectosSection() {
     const projects = [
         {
             name: "Pokedex - Angular",
-            description: "Aplicación web de una pokédex hecha en Angular",
+            description: "Web application of a pokédex made in Angular",
             role: ['Angular'],
             imageUrl: "/img/pokedex.webp",
             netlify: "https://doplaxpokeangular.netlify.app/",
@@ -16,7 +16,7 @@ function ProyectosSection() {
         },
         {
             name: "ToDo App - React",
-            description: "App de tareas con React y almacenamiento en LocalStorage",
+            description: "Task App with React and storage in LocalStorage",
             role: "HTML, CSS",
             imageUrl: "/img/todo-react.webp",
             netlify:
@@ -25,7 +25,7 @@ function ProyectosSection() {
         },
         {
             name: "Cuphead CV",
-            description: "Porfolio de Cuphead",
+            description: "Cuphead porfolio",
             role: "HTML, CSS",
             imageUrl: "/img/cuphead.webp",
             netlify: "https://cupheadcv.netlify.app/",
@@ -33,7 +33,7 @@ function ProyectosSection() {
         },
         {
             name: "BC Personel Group",
-            description: "Web para una empresa de selección de personal",
+            description: "Web for a recruitment company",
             role: "HTML, CSS, JS",
             imageUrl: "/img/bc-personel.webp",
             netlify: "http://bcpersonnelgroup.surge.sh/",
@@ -41,7 +41,7 @@ function ProyectosSection() {
         },
         {
             name: "ChatGPT Web Integration",
-            description: "integración del SDK de Vercel AI con la API de Chat de GPT",
+            description: "integration of Vercel AI SDK with GPT Chat API",
             role: "HTML, CSS, JS",
             imageUrl: "/img/vercel-sdk.webp",
             netlify: "https://doplax.dev/chatPage",
@@ -51,7 +51,7 @@ function ProyectosSection() {
         {
             name: "TheMovieDB",
             description:
-                "AVISO: Para que esta app funcione, se debe descargar del repositorio y utilizar la API Key",
+            "NOTICE: For this app to work, it must be downloaded from the repository and use the API Key.",
             role: "HTML, CSS, JS",
             imageUrl: "/img/themoviedb.webp",
             netlify: "https://moviedb-doplax.surge.sh/",
@@ -59,7 +59,7 @@ function ProyectosSection() {
         },
         {
             name: "Reproductor de música",
-            description: "Ejemplo de una interfaz web de un Reproductor de música",
+            description: "Example of a web interface of a Music Player",
             role: "HTML, CSS, JS",
             imageUrl: "/img/mp3-easy-player.webp",
             netlify: "https://doplax.github.io/MP3-Easy-Player/",
@@ -69,7 +69,7 @@ function ProyectosSection() {
         {
             name: "Buscador de Centradores y Electrodos",
             description:
-                "Este proyecto es una herramienta web diseñada para la empresa Tecsolda, la cual permite a los usuarios seleccionar componentes de maquinaria de acuerdo a sus necesidades específicas.",
+            "This project is a web tool designed for the company Tecsolda, which allows users to select machinery components according to their specific needs.",
             role: "HTML, CSS, JS",
             imageUrl: "/img/centradores.webp",
             netlify: "https://doplax.github.io/TSD-Centradores-Electrodos/",
@@ -78,7 +78,7 @@ function ProyectosSection() {
         {
             name: "Tecsolda.es/carroceria",
             description:
-                "Una tienda online de productos de soldadura para carroceria",
+            "An online store for body shop welding products.",
             role: "Woordpres, Woocommerce",
             imageUrl: "/img/tsd-car.webp",
             netlify: "https://tecsolda.com/carroceria/",
@@ -86,7 +86,7 @@ function ProyectosSection() {
         },
         {
             name: "Tecsolda/Resistencia",
-            description: "Una web en producción sobre Equilibradores Industriales.",
+            description: "A website in production on Industrial Balancers.",
             role: "Woordpress, Woocomerce",
             imageUrl: "/img/tsd-res.webp",
             netlify: "https://www.equilibradores.es/",
@@ -98,7 +98,7 @@ function ProyectosSection() {
 
     return (
         <section className="mx-auto max-w-6xl sm:px-6 py-28">
-            <PageTitle>Proyectos</PageTitle>
+            <PageTitle>Projects</PageTitle>
 
             <div
                 role="list"
@@ -161,7 +161,7 @@ function ProyectosSection() {
                                     <Image
                                         height="50"
                                         width="50"
-                                        src="/svg/github.svg"
+                                        src="/svg/paper-plane.svg"
                                         alt="github"
                                         className="h-5 w-5 text-gray-400"
                                     />

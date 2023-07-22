@@ -11,23 +11,14 @@ function HomeSection() {
             <section className="py-28">
                 
                     {/* Desktop Version */}
-                    <PageTitle>Sobre Mí</PageTitle>
+                    <PageTitle>About Me</PageTitle>
 
                         <div className="hidden md:flex items-start">
                             <div className="flex-col">
-                                <p className="text-lg w-9/12 mb-5">
-                                    Soy desarrollador frontend y backend, creo páginas web con interfaces de usuario (UI/UX) y también aplicaciones del lado del servidor. 
-                                </p>
+                            <p className="text-lg w-9/12 mb-5">As a <strong>frontend and backend developer</strong>, I aim to design <strong>fluid and enjoyable user experiences</strong> by creating <strong>attractive, functional applications</strong> that are centered on the user.</p>
+                            <p className="text-lg w-9/12 mb-5">I am particularly drawn to developing applications that are not only functional but also visually appealing and easy to use. I accomplish this by implementing <strong>SOLID principles</strong> and <strong>clean architecture</strong>, and applying <strong>testing</strong> to ensure quality.</p>
+                            <p className="text-lg w-9/12 mb-5">I also use <strong>agile methodologies</strong> for adaptability and continuous improvement.</p>
 
-                                <p className="text-lg w-9/12 mb-5">
-                                    Me apasiona el campo del liderazgo, busco especializarme en esta área para coordinar un equipo en el futuro.
-                                </p>
-                                <p className="text-lg w-9/12 mb-5">
-                                    Estoy particularmente interesado en el desarrollo de aplicaciones que además de funcionales, también sean atractivas y fáciles de usar. 
-                                </p>
-                                <p>
-                                Mi objetivo es crear experiencias de usuario que sean agradables y sin complicaciones, y para lograrlo, combino mis habilidades técnicas con un enfoque centrado en las necesidades del usuario final.
-                                </p>
                                 <a
                                     href="/docs/CV-Pol-Valle.pdf"
                                     download="CV-Pol-Valle.pdf"
@@ -36,7 +27,7 @@ function HomeSection() {
                                     type="button"
                                     className={`${styles.btnHover} ${styles.color2}  px-6 py-3 text-white hover:text-white text-xl font-bold shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2`}
                                 >
-                                    Descargar CV
+                                    Download CV
                                 </a>
                             </div>
                             <img src="/img/pol-valle.webp"  alt="profile image" className="rounded-full h-80" />
@@ -44,21 +35,10 @@ function HomeSection() {
                         {/* Mobile Version */}
                         <div className="flex md:hidden items-center p-8">
                             <div className="flex flex-col">
-                                <h1 className="text-3xl font-bold mt-8 text-center">Sobre Mí</h1>
                                 <img src="/img/pol-valle.webp" alt="profile image" className="rounded-full scale-75" />
-                                <p className="text-lg w-9/12 mb-5">
-                                    Soy desarrollador frontend y backend, creo páginas web con interfaces de usuario (UI/UX) y también aplicaciones del lado del servidor. 
-                                </p>
-
-                                <p className="text-lg w-9/12 mb-5">
-                                    Me apasiona el campo del liderazgo, busco especializarme en esta área para coordinar un equipo en el futuro.
-                                </p>
-                                <p className="text-lg w-9/12 mb-5">
-                                    Estoy particularmente interesado en el desarrollo de aplicaciones que además de funcionales, también sean atractivas y fáciles de usar. 
-                                </p>
-                                <p>
-                                Mi objetivo es crear experiencias de usuario que sean agradables y sin complicaciones, y para lograrlo, combino mis habilidades técnicas con un enfoque centrado en las necesidades del usuario final.
-                                </p>
+                                <p className="text-lg  mb-5">As a <strong>frontend and backend developer</strong>, I aim to design <strong>fluid and enjoyable user experiences</strong> by creating <strong>attractive, functional applications</strong> that are centered on the user.</p>
+                                <p className="text-lg  mb-5">I am particularly drawn to developing applications that are not only functional but also visually appealing and easy to use. I accomplish this by implementing <strong>SOLID principles</strong> and <strong>clean architecture</strong>, and applying <strong>testing</strong> to ensure quality.</p>
+                                <p className="text-lg  mb-5">I also use <strong>agile methodologies</strong> for adaptability and continuous improvement.</p>
                                 <a
                                     href="/docs/CV-Pol-Valle.pdf"
                                     download="CV-Pol-Valle.pdf"
@@ -67,7 +47,7 @@ function HomeSection() {
                                     type="button"
                                     className={`${styles.btnHover} ${styles.color2}  px-6 py-3 text-white hover:text-white text-xl font-bold shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2`}
                                 >
-                                    Descargar CV
+                                    Download CV
                                 </a>
                             </div>
                         </div>

@@ -30,6 +30,12 @@
             "description": "Plataforma de desarrollo para crear aplicaciones web de una sola página.",
             "url": "https://angular.io/"
         },
+        "rxjs": {
+            "src": "/svg/rxjs.svg",
+            "label": "RxJS",
+            "description": "A library for composing asynchronous and event-based programs by using observable sequences.",
+            "url": "https://rxjs.dev/"
+        },
         "react": {
             "src": "/svg/react.svg",
             "label": "React",
@@ -56,12 +62,6 @@
         }
     },
     "backEndSkills": {
-        "java": {
-            "src": "/svg/java.svg",
-            "label": "java",
-            "description": "Lenguaje de programación y plataforma informática de uso general.",
-            "url": "https://www.oracle.com/java/"
-        },
         "nodejs": {
             "src": "/svg/node.svg",
             "label": "Node.js",
@@ -94,6 +94,12 @@
         }
     },
     "toolsSkills": {
+        "jasmine": {
+            "src": "/svg/jasmine.svg",
+            "label": "Jasmine",
+            "description": "A behavior-driven development framework for testing JavaScript code.",
+            "url": "https://jasmine.github.io/"
+        },        
         "git": {
             "src": "/svg/git.svg",
             "label": "Git",

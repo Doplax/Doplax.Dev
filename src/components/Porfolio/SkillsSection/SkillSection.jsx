@@ -33,7 +33,7 @@ function SkillSection() {
                 ))}
             />
             <SkillCard
-                title="Otras Herramientas"
+                title="Other Tools"
                 skills={Object.entries(jsonData.toolsSkills).map(([key,value]) => (
                     <Skill
                         key={key}

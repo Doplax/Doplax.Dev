@@ -50,7 +50,7 @@ const Header = () => {
                 href="/experiencia"
                 className={menuLink}
               >
-                Experiencia
+                Experience
               </a>
             </li>
             <li>

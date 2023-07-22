@@ -45,7 +45,7 @@ function Modal({ closeModal }) {
                                             href="/experiencia"
                                             className={menuLink}
                                         >
-                                            Experiencia
+                                            Experiencie
                                         </a>
                                     </li>
                                     <li className={menuLi}>
