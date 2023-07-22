@@ -14,7 +14,6 @@ function ExperienciaLaboral() {
         "Collaborating on the implementation of best practices for software development, including code reviews and testing.",
         "Migration and maintenance of A3 business management software to Ekon ERP (with SQL for data export and Python for data cleansing).",
         "Implementation of Agile methodologies in project development.",
-        "Migration and maintenance of business management software to Ekon ERP (with SQL) for data export (with Python) for data cleansing",
         "Management of the company's Network and Equipment"
       ],
     },
@@ -50,16 +49,14 @@ function ExperienciaLaboral() {
         "Full Stack Web Development: Training in front-end and back-end development for the creation of complete web applications.",
         "Databases: Acquisition of skills in relational and non-relational databases such as MySQL and MongoDB.",
         "Frameworks and Libraries: Using modern frameworks and libraries such as React.js, Express.js, and Node.js.",
-        "API Development: Learning how to design and develop RESTful APIs and GraphQL.", "API Development: Learning how to design and develop RESTful APIs and GraphQL.",
-        "Web Security: Teaching cryptography, authentication and authorization, and protection against common web vulnerabilities.", 
-        "Web Security.",
+        "API Development: Learning how to design and develop RESTful APIs and GraphQL.",
+        "Web Security: Teaching cryptography, authentication and authorization, and protection against common web vulnerabilities.",
         "Project management: Use of agile methodologies and version control tools such as Git.",
-        "Testing and debugging: Learning unit, integration, and system testing techniques to ensure software quality.", "Testing and debugging: Learning unit, integration, and system testing techniques to ensure software quality.",
-        "Deployment: Skills in containers, such as Docker, and deployment platforms such as AWS and Heroku.", "Deployment: Skills in containers, such as Docker, and deployment platforms such as AWS and Heroku.",
-      ],
+        "Testing and debugging: Learning unit, integration, and system testing techniques to ensure software quality.",
+        "Deployment: Skills in containers, such as Docker, and deployment platforms such as AWS and Heroku."],
     },
     {
-      titulo: "DAW - Técnico Superior en Desarrollo de Aplicaciones Web",
+      titulo: "DAW - Advanced Technician in Web Applications Development",
       ubicacion: "INS Milà i Fontanals, Igualada",
       fecha: "2020 - 2022",
       tareas: [
@@ -67,26 +64,25 @@ function ExperienciaLaboral() {
         "Web Application Development: Learning web application design and development, with a focus on user interfaces and security.",
         "Databases: Study of the fundamentals, design, creation and management of databases.",
         "Web servers: Configuration and administration of web servers and application deployment.",
-        "Frameworks and libraries: Exploration and use of frameworks and libraries for web development.", "Frameworks and libraries: Exploration and use of frameworks and libraries for web development.",
+        "Frameworks and libraries: Exploration and use of frameworks and libraries for web development.",
         "Web design and layout: Acquisition of skills in web design and layout with various tools.",
         "Project management: Learning project management techniques applied to web development.",
-        "Testing and debugging: Learning techniques for testing and debugging web applications.", "Testing and debugging: Learning techniques for testing and debugging web applications.",
-        "Mobile development: Possibility to learn about mobile application development in some programs.", "Mobile development: Possibility to learn about mobile application development in some programs.",
-      ],
+        "Testing and debugging: Learning techniques for testing and debugging web applications.",
+        "Mobile development: Possibility to learn about mobile application development in some programs."],
     },
     {
-      titulo: "Sistemas Microinformáticos y Redes",
+      titulo: "SMX - Microcomputer Systems and Networks",
       ubicacion: "IES Daniel Blanxart, Olesa de Montserrat",
       fecha: "2015 - 2017",
       tareas: [
-        "Hardware assembly and maintenance: Assembly and technical support of hardware components of a computer system.", "Operating systems: Installation, configuration and administration of operating systems.", "Hardware assembly and maintenance: Assembly and technical support of hardware components of a computer system.",
-        "Operating Systems: Installation, configuration, and administration of operating systems.",
-        "Networking: Configuration and maintenance of computer networks, including troubleshooting and network security.", "Networking: Configuration and maintenance of computer networks, including troubleshooting and network security.",
+        "Hardware assembly and maintenance: Assembly and technical support of hardware components of a computer system.", 
+        "Operating systems: Installation, configuration and administration of operating systems.", "Hardware assembly and maintenance: Assembly and technical support of hardware components of a computer system.",
+        "Networking: Configuration and maintenance of computer networks, including troubleshooting and network security.",
         "Office Applications: Use of office software applications, such as word processors, spreadsheets, databases, and presentations.",
         "Servers: Installation and configuration of servers, including network services.",
-        "Computer security: Implementing security policies and procedures to protect systems and data.", "Computer security: Implementing security policies and procedures to protect systems and data.",
-        "Technical Support: Providing technical assistance to resolve hardware and software problems.", "Technical Support: Providing technical assistance to resolve hardware and software problems.",
-        "Storage systems: Administration of data storage systems and backups.", "Storage systems: Administration of data storage systems and backups.",
+        "Computer security: Implementing security policies and procedures to protect systems and data.",
+        "Technical Support: Providing technical assistance to resolve hardware and software problems.", 
+        "Storage systems: Administration of data storage systems and backups.",
       ],
     },
   ];
@@ -94,7 +90,7 @@ function ExperienciaLaboral() {
   return (
     <>
 
-<PageTitle> Experiencia Laboral </PageTitle>
+<PageTitle>Work Experience</PageTitle>
       {experiencias.map((content, index) => (
         <ExperienceCard
           key={index}
@@ -106,7 +102,7 @@ function ExperienciaLaboral() {
       ))}
 
       
-      <PageTitle> Estudios </PageTitle>
+      <PageTitle>Studies</PageTitle>
       {formacion.map((content, index) => (
         <ExperienceCard
           key={index}

@@ -37,7 +37,7 @@ function ExperienceCard({ titulo, ubicacion, fecha, tareas }) {
 
           <div>
             <h3 className="font-bold mt-4 mb-2 text-2xl text-white">
-              Aquí aprendí a...
+              Here I learned to...
             </h3>
             <ul>
               {tareas.map((tarea) => <li key={tarea.id}>{tarea}</li>)}
