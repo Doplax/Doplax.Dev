@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { PageTitle } from "../../PageTitle";
-import skillsData from '../skills.json'
+//import skillsData from '../skills.json'
 
 
 function ProyectosSection() {
@@ -9,7 +9,7 @@ function ProyectosSection() {
         {
             name: "Pokedex - Angular",
             description: "Web application of a pokédex made in Angular",
-            role: ['Angular'],
+            role: 'Angular',
             imageUrl: "/img/pokedex.webp",
             netlify: "https://doplaxpokeangular.netlify.app/",
             github: "https://github.com/Doplax/Pokedex-Angular",
@@ -67,7 +67,7 @@ function ProyectosSection() {
         },
 
         {
-            name: "Buscador de Centradores y Electrodos",
+            name: "Buscador de Centradores ",
             description:
             "This project is a web tool designed for the company Tecsolda, which allows users to select machinery components according to their specific needs.",
             role: "HTML, CSS, JS",
@@ -102,14 +102,16 @@ function ProyectosSection() {
 
             <div
                 role="list"
-                className=" grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3"
-            >
+                className=" grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+
+
                 {projects.map((project) => (
                     <div
                         key={project.name}
                         className=" flex flex-col divide-y divide-gray-200 rounded-lg bg-slate-100 text-center shadow"
                     >
                         <div className="relative flex  flex-col rounded-lg overflow-hidden">
+
                             {/* Imagen */}
                             <a href={project.netlify} target="_blank">
                                 <Image
@@ -121,11 +123,13 @@ function ProyectosSection() {
                                 />
                             </a>
                             {/* Nombre  y descripción*/}
-                            <div className="absolute flex flex-col justify-center items-center inset-0 rounded-lg translate-y-40 transition-all duration-500 hover:translate-y-0   hover:bg-red-700 hover:bg-opacity-0 hover:backdrop-blur-lg" >
+                            <div className=" h-500 absolute flex flex-col justify-start items-center inset-0 rounded-lg translate-y-80 transition-all duration-500 hover:translate-y-0  hover:bg-opacity-1 hover:backdrop-blur-3xl" >
                                 <h3 className="mt-6 text-xl font-bold text-gray-900"> {project.name} </h3>
                                 <div className="flex flex-col ">
-                                    <h4 className="text-base text-gray-900 px-4" >{project.description}</h4>
+                                    <h4 className="text-base text-gray-900 px-4 py-10" >{project.description}</h4>
                                     {/* Aqui van los iconos */} 
+                                    <h4 className="text-base text-gray-900 px-4 bg-slate-400" >{project.role}</h4>
+
                                 </div>
 
                             </div>
