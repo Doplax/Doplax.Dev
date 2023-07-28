@@ -97,12 +97,12 @@ function ProyectosSection() {
 
 
     return (
-        <section className="mx-auto max-w-6xl sm:px-6 py-28">
+        <section className=" py-28">
             <PageTitle>Projects</PageTitle>
 
             <div
                 role="list"
-                className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3"
+                className=" grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3"
             >
                 {projects.map((project) => (
                     <div
