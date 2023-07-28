@@ -68,6 +68,18 @@
             "description": "Entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome.",
             "url": "https://nodejs.org/"
         },
+        "nestjs": {
+            "src": "/svg/nest-js.svg",
+            "label": "NestJS",
+            "description": "Un marco de trabajo para la construcción de aplicaciones de servidor eficientes, fiables y escalables en Node.js.",
+            "url": "https://nestjs.com/"
+        },        
+        "mongodb": {
+            "src": "/svg/mongodb.svg",
+            "label": "MongoDB",
+            "description": "Base de datos NoSQL, basada en documentos y de código abierto.",
+            "url": "https://www.mongodb.com/"
+        },
         "linux": {
             "src": "/svg/linux.svg",
             "label": "Linux",
@@ -80,12 +92,7 @@
             "description": "Lenguaje de programación de alto nivel con diseño de código legible.",
             "url": "https://www.python.org/"
         },
-        "mongodb": {
-            "src": "/svg/mongodb.svg",
-            "label": "MongoDB",
-            "description": "Base de datos NoSQL, basada en documentos y de código abierto.",
-            "url": "https://www.mongodb.com/"
-        },
+       
         "sql": {
             "src": "/svg/sql.svg",
             "label": "SQL",
