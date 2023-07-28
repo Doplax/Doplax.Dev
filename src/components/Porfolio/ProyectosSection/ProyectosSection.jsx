@@ -124,11 +124,11 @@ function ProyectosSection() {
                             </a>
                             {/* Nombre  y descripción*/}
                             <div className=" h-500 absolute flex flex-col justify-start items-center inset-0 rounded-lg translate-y-80 transition-all duration-500 hover:translate-y-0  hover:bg-opacity-1 hover:backdrop-blur-3xl" >
-                                <h3 className="mt-6 text-xl font-bold text-gray-900"> {project.name} </h3>
+                                <h3 className="mt-6 text-2xl font-bold text-gray-900"> {project.name} </h3>
                                 <div className="flex flex-col ">
-                                    <h4 className="text-base text-gray-900 px-4 py-10" >{project.description}</h4>
+                                    <h4 className="text-xl text-gray-900 px-4 py-10" >{project.description}</h4>
                                     {/* Aqui van los iconos */} 
-                                    <h4 className="text-base text-gray-900 px-4 bg-slate-400" >{project.role}</h4>
+                                    <p className="text-lg text-black bold px-4 " >{project.role}</p>
 
                                 </div>
 
