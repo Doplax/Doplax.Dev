@@ -7,6 +7,14 @@ import skillsData from '../skills.json'
 function ProyectosSection() {
     const projects = [
         {
+            name: "Tesla - Astro",
+            description: "Tesla Landing Page",
+            role: ['Astro'],
+            imageUrl: "/img/tesla-cover.webp",
+            netlify: "https://tesla-astro.netlify.app/",
+            github: "https://github.com/Doplax/Tesla-Astro",
+        },
+        {
             name: "Pokedex - Angular",
             description: "Web application of a pokédex made in Angular",
             role: ['Angular'],
