@@ -21,7 +21,7 @@ export default function RootLayout({ children, }: {children: React.ReactNode}) {
         <link rel="icon" href="/src/app/favicon.ico" />
       </Head>
 
-        <body className={inter.className}>
+        <body className={`${inter.className} dark text-foreground `}>
             <Providers>
                   <div className='max-w-7xl mx-auto'>
                     <Header />
