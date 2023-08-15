@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageTitle } from '../../PageTitle';
 import styles from './Button.module.css'; // Asegúrate de importar los estilos adecuados
+import {Image} from "@nextui-org/react";
 
 function HomeSection() {
     return (
@@ -30,12 +31,19 @@ function HomeSection() {
                                     Download CV
                                 </a>
                             </div>
-                            <img src="/img/pol-valle.webp"  alt="profile image" className="rounded-full h-80" />
+                            <Image
+                                width={500}
+                                src="/img/pol-valle.webp"  
+                                alt="profile image" 
+                                className="rounded-full" />
                         </div>
                         {/* Mobile Version */}
                         <div className="flex md:hidden items-center p-8">
                             <div className="flex flex-col">
-                                <img src="/img/pol-valle.webp" alt="profile image" className="rounded-full scale-75" />
+                                <Image 
+                                    src="/img/pol-valle.webp" 
+                                    alt="profile image" 
+                                    className="rounded-full scale-75" />
                                 <p className="text-lg  mb-5">As a <strong>frontend and backend developer</strong>, I aim to design <strong>fluid and enjoyable user experiences</strong> by creating <strong>attractive, functional applications</strong> that are centered on the user.</p>
                                 <p className="text-lg  mb-5">I am particularly drawn to developing applications that are not only functional but also visually appealing and easy to use. I accomplish this by implementing <strong>SOLID principles</strong> and <strong>clean architecture</strong>, and applying <strong>testing</strong> to ensure quality.</p>
                                 <p className="text-lg  mb-5">I also use <strong>agile methodologies</strong> for adaptability and continuous improvement.</p>
