@@ -10,7 +10,7 @@ async function getPublishedBlogPost() {
   return posts
 }
 
-export default async function Home() {
+async function blog() {
   const posts = await getPublishedBlogPost()
 
   return (
@@ -24,4 +24,4 @@ export default async function Home() {
     </div>
   )
 }
-//export default Home;
+export default blog;

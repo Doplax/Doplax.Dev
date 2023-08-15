@@ -1,6 +1,8 @@
 /*
 Al hacer fetch en el blog, el cover viene como un string o un objeto con la propiedad url
 */
+'use client'
+import {Image} from "@nextui-org/react";
 
 import React from 'react';
 
@@ -14,7 +16,7 @@ const BlogCover: React.FC<Props> = ({ cover, customClass}) => {
   console.log("COVER");
   console.log(coverUrl);
   return   (
-    <img className={`${customClass}`} src={coverUrl} alt="Post Cover" />
+    <Image isBlurred  src={coverUrl} alt="Post Cover" />
   ) ;
 };
 

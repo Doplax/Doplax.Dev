@@ -10,5 +10,4 @@ const chatPage = () => {
     );
 };
     
-export default chatPage;
-    
+export default chatPage     

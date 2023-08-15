@@ -17,7 +17,7 @@ export default async function Post({params}) {
     const {slug} = params;
     const {post , markdown} = await getSinglePost(slug);
     //const post = data.post;
-    console.log("///////////////////////markdown///////////////////////////////");
+    
     console.log(markdown.parent);
     return (
       <>
