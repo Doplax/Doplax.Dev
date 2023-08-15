@@ -1,6 +1,6 @@
 "use client";
 
-function ModalMenu({ closeModal, menuList }) {
+function ModalMenu({ closeModal, menuItem }) {
   const menuLink = "text-white text-lg font-bold ";
   const menuLi = "my-3";
 
@@ -24,14 +24,14 @@ function ModalMenu({ closeModal, menuList }) {
           <div className="mt-3 px-10">
             <ul className={"flex flex-col text-left"}>
 
-              {menuList.map((element, index) => (
+              {menuItem.map((element, index) => (
                 <li className={menuLi} key={index}>
                   <a href={element.route} className={menuLink}>
                     {element.name}
                   </a>
                 </li>
               ))}
-              
+
             </ul>
           </div>
         </div>

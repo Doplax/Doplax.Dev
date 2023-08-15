@@ -9,7 +9,7 @@ import { HambBtn } from './HambBtn/HambBtn'
 const Header = () => {
 
   const menuLink = 'text-lg md:text-base font-bold  px-3 py-4';
-  const menuList = [
+  const menuItem = [
     {
       name: 'Blog',
       route: '/blog'
@@ -44,7 +44,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <nav className="md:hidden">
-          <HambBtn menuList={menuList}/>
+          <HambBtn menuItem={menuItem}/>
         </nav>
 
         {/* Desktop Menu */}
@@ -52,7 +52,7 @@ const Header = () => {
           {/* Menú */}
           <ul className={"flex flex-row text-center"}>
 
-            {menuList.map((element,index) => (
+            {menuItem.map((element,index) => (
               <li key={index}>
                 <a
                   href={element.route}

@@ -12,7 +12,6 @@ const Skill = ({ src, alt, label, url }) => (
         isBlurred
         width={50} 
         height={50} 
-        className="h-16 w-16" 
         src={src} 
         alt={alt} />
     </a>
