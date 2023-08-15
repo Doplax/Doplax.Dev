@@ -9,6 +9,22 @@ import { HambBtn } from '@/components/UX/HambBtn/HambBtn'
 const Header = () => {
 
   const menuLink = 'text-lg md:text-base font-bold  px-3 py-4';
+  const menuList = [
+    {
+      name: 'Blog',
+      route: '/blog'
+    },
+    {
+      name: 'Experience',
+      route: '/experiencia'
+    },
+    {
+      name: 'Chat',
+      route: '/chat'
+    },
+  ]
+
+  
 
   return (
     <>
@@ -19,49 +35,36 @@ const Header = () => {
       </Head>
 
       <header className="flex flex-wrap flex-row justify-between items-center md:flex-row ">
-        {/*className=' mx-auto px-4 sm:px-6 lg:px-8'*/}
         {/* LOGO */}
         <a
           href="/"
-          className={`${style.logo} ${style.navLink} `}
-        > Doplax.Dev </a>
+          className={`${style.logo} ${style.navLink} `}> 
+            Doplax.Dev 
+        </a>
 
-
+        {/* Mobile Menu */}
         <nav className="md:hidden">
           <HambBtn />
         </nav>
+
+        {/* Desktop Menu */}
         <nav className="hidden md:block">
           {/* Menú */}
-          <ul
-            className={"flex flex-row text-center"}
-          >
-            <li>
-              <a
-                href="/blog"
-                className={menuLink}
+          <ul className={"flex flex-row text-center"}>
 
-              >
-                Blog
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="/experiencia"
-                className={menuLink}
-              >
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="/chatPage"
-                className={menuLink}
-              > Chat </a>
-            </li>
+            {menuList.map((element,index) => (
+              <li key={index}>
+                <a
+                  href={element.route}
+                  className={menuLink}
+                >
+                  {element.name}
+                </a>
+              </li>
+            ))}
+            
           </ul>
         </nav>
-
-
       </header>
     </>
   );

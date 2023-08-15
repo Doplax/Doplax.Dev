@@ -8,7 +8,9 @@ import {
   faBatteryFull,
   faCrosshairs,
 } from "@fortawesome/free-solid-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 function ServiciosSection() {
   const serviceContainerStyle =
     "flex flex-col justify-start align-middle my-20";
@@ -47,6 +49,7 @@ function ServiciosSection() {
             retain potential customers on your website.
           </p>
         </div>
+
         <div className={serviceContainerStyle}>
           <FontAwesomeIcon icon={faCode} size={iconSice} style={iconColor} />
           <h4 className={positionText_h4}>Development</h4>
@@ -55,6 +58,7 @@ function ServiciosSection() {
             thinking long-term.
           </p>
         </div>
+        
         <div className={serviceContainerStyle}>
           <FontAwesomeIcon
             icon={faThumbsUp}

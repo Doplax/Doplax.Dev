@@ -5,7 +5,6 @@ export default function pruebasPage() {
 
   return (
     <Pruebas/>
-    //<Button color='primary'>Hola </Button>
   )
 }
 //export default Home;
