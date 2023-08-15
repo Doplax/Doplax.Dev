@@ -10,12 +10,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
+
 //const linkedinIcon = "/img/";
 
 const Footer = () => {
     const currentDate = new Date();
     const year = currentDate.getFullYear();
-    const menuLink = "underLine_gAnimation text-gray-300 hover:text-white text-base font-bold px-2  py-2";
 
     // FontAwesomeIcon
     const iconColor =  {color: 'var(--yellow)'};
@@ -28,6 +28,7 @@ const Footer = () => {
 
                 {/* Sobre mi */}
                     {/* RRHH */}
+                    
                     <div className="flex gap-4">
                         <a
                             href="https://github.com/Doplax"
