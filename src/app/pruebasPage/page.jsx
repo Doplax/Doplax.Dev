@@ -1,12 +1,11 @@
-//import { Modal } from '../../components/Modal/Modal'
+'use client'
 import { Pruebas } from '../../components/Pruebas/Pruebas'
-<Pruebas/>
 
-
-export default function pruebas() {
+export default function pruebasPage() {
 
   return (
     <Pruebas/>
+    //<Button color='primary'>Hola </Button>
   )
 }
 //export default Home;
