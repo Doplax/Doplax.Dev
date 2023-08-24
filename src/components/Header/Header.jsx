@@ -43,21 +43,21 @@ const Header = () => {
       <header className="hidden md:flex flex-wrap flex-row justify-between items-center md:flex-row ">
         {/* LOGO */}
         <a href="/" className={`${style.logo} ${style.navLink} `}>
-          {" "}
-          Doplax.Dev{" "}
+         
+          Doplax.Dev
         </a>
         {/* Desktop Menu */}
         <nav className="">
-          {" "}
-          {/* Menú */}{" "}
+          
+          {/* Menú */}
           <ul className={"flex flex-row text-center"}>
             {menuItems.map((element, index) => (
               <li key={index}>
-                {" "}
+                
                 <a href={element.route} className={menuLink}>
-                  {" "}
-                  {element.name}{" "}
-                </a>{" "}
+                  
+                  {element.name}
+                </a>
               </li>
             ))}
           </ul>
@@ -111,35 +111,4 @@ const Header = () => {
 
 export { Header };
 
-//<header className="flex flex-wrap flex-row justify-between items-center md:flex-row ">
-//{/* LOGO */}
-//<a
-//  href="/"
-//  className={`${style.logo} ${style.navLink} `}>
-//    Doplax.Dev
-//</a>
 
-//{/* Mobile Menu */}
-//<nav className="md:hidden">
-//  <HambBtn menuItem={menuItem}/>
-//</nav>
-
-//{/* Desktop Menu */}
-//<nav className="hidden md:block">
-//  {/* Menú */}
-//  <ul className={"flex flex-row text-center"}>
-
-//    {menuItem.map((element,index) => (
-//      <li key={index}>
-//        <a
-//          href={element.route}
-//          className={menuLink}
-//        >
-//          {element.name}
-//        </a>
-//      </li>
-//    ))}
-
-//  </ul>
-//</nav>
-//</header>
