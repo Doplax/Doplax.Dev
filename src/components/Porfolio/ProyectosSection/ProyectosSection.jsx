@@ -119,7 +119,7 @@ function ProyectosSection() {
                         key={project.name}
                         className=" flex flex-col divide-y divide-gray-200 rounded-lg bg-slate-100 text-center shadow"
                     >
-                        <div className="relative flex  flex-col rounded-lg overflow-hidden">
+                        <div className="relative flex  flex-col rounded-t-lg overflow-hidden">
 
                             {/* Imagen */}
                             <a href={project.netlify} target="_blank">
@@ -144,7 +144,7 @@ function ProyectosSection() {
                         </div>
 
                         {/* BOTONES*/}
-                        <div className="-mt-px flex divide-x divide-gray-200">
+                        <div className="flex divide-x divide-gray-200">
                             {/* Github */}
                             <div className="flex w-0 flex-1">
                                 <a
