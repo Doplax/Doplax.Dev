@@ -101,6 +101,12 @@
         }
     },
     "toolsSkills": {
+        "docker": {
+            "src": "/svg/docker.svg",
+            "label": "Docker",
+            "description": "Máquina virtual de desarollo",
+            "url": "https://www.docker.com/"
+        },   
         "jasmine": {
             "src": "/svg/jasmine.svg",
             "label": "Jasmine",
