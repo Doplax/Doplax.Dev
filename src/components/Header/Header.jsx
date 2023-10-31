@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-
-import style from "./Header.module.css"; // Para hacer el Logo con ::afet y ::Before
-//import { HambBtn } from './HambBtn/HambBtn'
+import Head from "next/head";
+import style from './Header.module.css' // Para hacer el Logo con ::afet y ::Before
+import { HambBtn } from './HambBtn/HambBtn'
 //import "font-awesome/css/font-awesome.min.css";
 import {
   Navbar,
@@ -46,6 +46,12 @@ const Header = () => {
          
           Doplax.Dev
         </a>
+
+        {/* Mobile Menu */}
+        <nav className="md:hidden">
+          <HambBtn menuList={menuList}/>
+        </nav>
+
         {/* Desktop Menu */}
         <nav className="">
           
