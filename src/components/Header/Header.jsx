@@ -49,7 +49,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <nav className="md:hidden">
-          <HambBtn menuList={menuList}/>
+          <HambBtn />
         </nav>
 
         {/* Desktop Menu */}
