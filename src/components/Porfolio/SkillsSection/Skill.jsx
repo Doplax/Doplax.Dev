@@ -11,7 +11,7 @@ const Skill = ({ src, alt, label, url }) => (
       <Image 
         isBlurred
         width={50} 
-        height={50} 
+        height={50}  
         src={src} 
         alt={alt} />
     </a>

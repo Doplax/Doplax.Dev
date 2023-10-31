@@ -1,147 +1,186 @@
 {
-    "frontEndSkills": {
-        "html": {
-            "src": "/svg/html.svg",
-            "label": "HTML",
-            "description": "Lenguaje de marcado estándar para crear páginas web.",
-            "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
-        },
-        "css": {
-            "src": "/svg/css.svg",
-            "label": "CSS",
-            "description": "Hoja de estilo en cascada usada para describir la apariencia de un documento escrito en HTML.",
-            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-        },
-        "javascript": {
-            "src": "/svg/javascript.svg",
-            "label": "JavaScript",
-            "description": "Lenguaje de programación de alto nivel, dinámico, débilmente tipado y de los lados del cliente y servidor.",
-            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-        },
-        "typescript": {
-            "src": "/svg/typescript.svg",
-            "label": "Typescript",
-            "description": "Superset tipado de JavaScript que compila a JavaScript puro.",
-            "url": "https://www.typescriptlang.org/"
-        },
-        "angular": {
-            "src": "/svg/angular.svg",
-            "label": "Angular",
-            "description": "Plataforma de desarrollo para crear aplicaciones web de una sola página.",
-            "url": "https://angular.io/"
-        },
-        "rxjs": {
-            "src": "/svg/rxjs.svg",
-            "label": "RxJS",
-            "description": "A library for composing asynchronous and event-based programs by using observable sequences.",
-            "url": "https://rxjs.dev/"
-        },
-        "react": {
-            "src": "/svg/react.svg",
-            "label": "React",
-            "description": "Biblioteca JavaScript para construir interfaces de usuario.",
-            "url": "https://reactjs.org/"
-        },
-        "next.js": {
-            "src": "/svg/next-js.svg",
-            "label": "Next.js",
-            "description": "Framework de JavaScript para producción: React, Node.js, server rendering y más.",
-            "url": "https://nextjs.org/"
-        },
-        "bootstrap": {
-            "src": "/svg/bootstrap.svg",
-            "label": "Bootstrap",
-            "description": "Biblioteca de código abierto para el diseño de sitios y aplicaciones web.",
-            "url": "https://getbootstrap.com/"
-        },
-        "tailwind": {
-            "src": "/svg/tailwind.svg",
-            "label": "Tailwind",
-            "description": "Un framework de utilidades para la construcción de interfaces de usuario.",
-            "url": "https://tailwindcss.com/"
-        }
+    "html": {
+        "src": "/svg/html.svg",
+        "label": "HTML",
+        "description": "Standard markup language for creating web pages.",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
+        "TechnologyType": "Frontend",
+        "show": true
     },
-    "backEndSkills": {
-        "nodejs": {
-            "src": "/svg/node.svg",
-            "label": "Node.js",
-            "description": "Entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome.",
-            "url": "https://nodejs.org/"
-        },
-        "nestjs": {
-            "src": "/svg/nest-js.svg",
-            "label": "NestJS",
-            "description": "Un marco de trabajo para la construcción de aplicaciones de servidor eficientes, fiables y escalables en Node.js.",
-            "url": "https://nestjs.com/"
-        },        
-        "mongodb": {
-            "src": "/svg/mongodb.svg",
-            "label": "MongoDB",
-            "description": "Base de datos NoSQL, basada en documentos y de código abierto.",
-            "url": "https://www.mongodb.com/"
-        },
-        "linux": {
-            "src": "/svg/linux.svg",
-            "label": "Linux",
-            "description": "Familia de sistemas operativos de código abierto basados en el kernel de Linux.",
-            "url": "https://www.linux.org/"
-        },
-        "python": {
-            "src": "/svg/python.svg",
-            "label": "Python",
-            "description": "Lenguaje de programación de alto nivel con diseño de código legible.",
-            "url": "https://www.python.org/"
-        },
-       
-        "sql": {
-            "src": "/svg/sql.svg",
-            "label": "SQL",
-            "description": "Lenguaje de programación utilizado para comunicarse con bases de datos.",
-            "url": "https://en.wikipedia.org/wiki/SQL"
-        }
+    "css": {
+        "src": "/svg/css.svg",
+        "label": "CSS",
+        "description": "Cascading Style Sheets used for describing the look and formatting of a document written in HTML.",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "TechnologyType": "Frontend",
+        "show": true
     },
-    "toolsSkills": {
-        "docker": {
-            "src": "/svg/docker.svg",
-            "label": "Docker",
-            "description": "Máquina virtual de desarollo",
-            "url": "https://www.docker.com/"
-        },   
-        "jasmine": {
-            "src": "/svg/jasmine.svg",
-            "label": "Jasmine",
-            "description": "A behavior-driven development framework for testing JavaScript code.",
-            "url": "https://jasmine.github.io/"
-        },        
-        "git": {
-            "src": "/svg/git.svg",
-            "label": "Git",
-            "description": "Sistema de control de versiones distribuido.",
-            "url": "https://git-scm.com/"
-        },
-        "figma": {
-            "src": "/svg/figma.svg",
-            "label": "Figma",
-            "description": "Herramienta de diseño y prototipado basada en la web.",
-            "url": "https://www.figma.com/"
-        },
-        "notion": {
-            "src": "/svg/notion.svg",
-            "label": "Notion",
-            "description": "Aplicación de productividad que combina pizarras kanban, bases de datos, tareas y notas.",
-            "url": "https://www.notion.so/"
-        },
-        "wordpress": {
-            "src": "/svg/wordpress.svg",
-            "label": "Wordpress",
-            "description": "Sistema de gestión de contenidos de código abierto basado en PHP y MySQL.",
-            "url": "https://wordpress.org/"
-        },
-        "chatgpt": {
-            "src": "/svg/chatgpt.svg",
-            "label": "ChatGPT",
-            "description": "Modelo de lenguaje AI de OpenAI que genera respuestas humanas.",
-            "url": "https://openai.com/research/chatgpt"
-        }
+    "javascript": {
+        "src": "/svg/javascript.svg",
+        "label": "JavaScript",
+        "description": "High-level, dynamic, untyped, and interpreted programming language.",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "TechnologyType": "Frontend",
+        "show": true
+    },
+    "typescript": {
+        "src": "/svg/typescript.svg",
+        "label": "Typescript",
+        "description": "Typed superset of JavaScript that compiles to plain JavaScript.",
+        "url": "https://www.typescriptlang.org/",
+        "TechnologyType": "Frontend",
+        "show": true
+    },
+    "angular": {
+        "src": "/svg/angular.svg",
+        "label": "Angular",
+        "description": "Platform for building mobile and desktop web applications.",
+        "url": "https://angular.io/",
+        "TechnologyType": "Frontend",
+        "show": true
+    },
+    "rxjs": {
+        "src": "/svg/rxjs.svg",
+        "label": "RxJS",
+        "description": "Library for composing asynchronous and event-based programs by using observable sequences.",
+        "url": "https://rxjs.dev/",
+        "TechnologyType": "Frontend",
+        "show": true
+    },
+    "react": {
+        "src": "/svg/react.svg",
+        "label": "React",
+        "description": "JavaScript library for building user interfaces.",
+        "url": "https://reactjs.org/",
+        "TechnologyType": "Frontend",
+        "show": true
+    },
+    "next.js": {
+        "src": "/svg/next-js.svg",
+        "label": "Next.js",
+        "description": "JavaScript framework for production: React, Node.js, server rendering, and more.",
+        "url": "https://nextjs.org/",
+        "TechnologyType": "Frontend",
+        "show": true
+    },
+    "bootstrap": {
+        "src": "/svg/bootstrap.svg",
+        "label": "Bootstrap",
+        "description": "Open-source CSS framework directed at responsive, mobile-first web development.",
+        "url": "https://getbootstrap.com/",
+        "TechnologyType": "Frontend",
+        "show": true
+    },
+    "tailwind": {
+        "src": "/svg/tailwind.svg",
+        "label": "Tailwind",
+        "description": "A utility-first CSS framework for building custom designs.",
+        "url": "https://tailwindcss.com/",
+        "TechnologyType": "Frontend",
+        "show": true
+    },
+    "nodejs": {
+        "src": "/svg/node.svg",
+        "label": "Node.js",
+        "description": "JavaScript runtime built on Chrome's V8 JavaScript engine.",
+        "url": "https://nodejs.org/",
+        "TechnologyType": "Backend",
+        "show": true
+    },
+    "nestjs": {
+        "src": "/svg/nest-js.svg",
+        "label": "NestJS",
+        "description": "A framework for building efficient, reliable and scalable server-side applications.",
+        "url": "https://nestjs.com/",
+        "TechnologyType": "Backend",
+        "show": true
+    },
+    "mongodb": {
+        "src": "/svg/mongodb.svg",
+        "label": "MongoDB",
+        "description": "Open-source, document-oriented NoSQL database.",
+        "url": "https://www.mongodb.com/",
+        "TechnologyType": "Backend",
+        "show": true
+    },
+    "linux": {
+        "src": "/svg/linux.svg",
+        "label": "Linux",
+        "description": "Open-source operating system based on the Linux kernel.",
+        "url": "https://www.linux.org/",
+        "TechnologyType": "Backend",
+        "show": true
+    },
+    "python": {
+        "src": "/svg/python.svg",
+        "label": "Python",
+        "description": "High-level programming language designed for readability.",
+        "url": "https://www.python.org/",
+        "TechnologyType": "Backend",
+        "show": true
+    },
+    "sql": {
+        "src": "/svg/sql.svg",
+        "label": "SQL",
+        "description": "Programming language used for communicating with databases.",
+        "url": "https://en.wikipedia.org/wiki/SQL",
+        "TechnologyType": "Backend",
+        "show": true
+    },
+    "docker": {
+        "src": "/svg/docker.svg",
+        "label": "Docker",
+        "description": "Development virtual machine.",
+        "url": "https://www.docker.com/",
+        "TechnologyType": "Tools",
+        "show": true
+    },
+    "jasmine": {
+        "src": "/svg/jasmine.svg",
+        "label": "Jasmine",
+        "description": "A behavior-driven development framework for testing JavaScript code.",
+        "url": "https://jasmine.github.io/",
+        "TechnologyType": "Tools",
+        "show": true
+    },
+    "git": {
+        "src": "/svg/git.svg",
+        "label": "Git",
+        "description": "Distributed version control system.",
+        "url": "https://git-scm.com/",
+        "TechnologyType": "Tools",
+        "show": true
+    },
+    "figma": {
+        "src": "/svg/figma.svg",
+        "label": "Figma",
+        "description": "Web-based design and prototyping tool.",
+        "url": "https://www.figma.com/",
+        "TechnologyType": "Tools",
+        "show": true
+    },
+    "notion": {
+        "src": "/svg/notion.svg",
+        "label": "Notion",
+        "description": "Productivity application that combines kanban boards, databases, tasks, and notes.",
+        "url": "https://www.notion.so/",
+        "TechnologyType": "Tools",
+        "show": true
+    },
+    "wordpress": {
+        "src": "/svg/wordpress.svg",
+        "label": "Wordpress",
+        "description": "Open-source content management system based on PHP and MySQL.",
+        "url": "https://wordpress.org/",
+        "TechnologyType": "Tools",
+        "show": true
+    },
+    "chatgpt": {
+        "src": "/svg/chatgpt.svg",
+        "label": "ChatGPT",
+        "description": "AI language model by OpenAI that generates human-like responses.",
+        "url": "https://openai.com/research/chatgpt",
+        "TechnologyType": "Tools",
+        "show": true
     }
 }
