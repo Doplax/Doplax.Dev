@@ -7,8 +7,20 @@ function ExperienciaLaboral() {
   const experiencias = [
     {
       titulo: "Front-end",
+      ubicacion: "Seat, Martorell",
+      fecha: "2023 - Currently",
+      tareas: [
+        "UI layout design for Seat brand embedded car systems using Angular.",
+        "Close collaboration with design and development teams to ensure a coherent and effective user experience.",
+        "Implementation of optimized Angular-based front-end solutions for resource-limited devices.",
+        "Angular codebase maintenance and updates for scalability and performance.",
+        "Implementation of Agile methodologies in project development."
+      ],
+    },
+    {
+      titulo: "Front-end",
       ubicacion: "Tecsolda, Esparreguera",
-      fecha: "Mayo 2022 - Currently",
+      fecha: "2022 - 2023",
       tareas: [
         "Development of time-tracking application using Angular on the front-end and Node.js on the back-end.",
         "Collaborating on the implementation of best practices for software development, including code reviews and testing.",
