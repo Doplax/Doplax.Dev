@@ -1,70 +1,58 @@
 'use client'
-import React from "react";
+import React, { useState } from 'react';
+import style from "./Header.module.css"; // Asegúrate de tener este archivo CSS o ajustarlo según tu estructura de estilos
+import { MenuButton } from './MenuButton/MenuButton'; // Asumiendo que tienes estos componentes en sus respectivos archivos
+import { ModalMenu } from './ModalMenu/ModalMenu';
 
-import style from './Header.module.css' // Para hacer el Logo con ::afet y ::Before
-import { HambBtn } from './HambBtn/HambBtn'
-//import "font-awesome/css/font-awesome.min.css";
+// Definición del menú
+const menuItems = [
+  { name: "Blog", route: "/blog" },
+  { name: "Experiencia", route: "/experiencia" },
+  { name: "Chat", route: "/chatPage" },
+];
 
-
-
+// Componente Header principal
 const Header = () => {
-
-  const menuLink = 'text-lg md:text-base font-bold  px-3 py-4';
-  const menuItem = [
-    {
-      name: 'Blog',
-      route: '/blog'
-    },
-    {
-      name: 'Experience',
-      route: '/experiencia'
-    },
-    {
-      name: 'Chat',
-      route: '/chatPage'
-    },
-  ]
-
-  
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const toggleModal = () => setIsModalOpen(!isModalOpen);
 
   return (
-    <>
-  
-
-      <header className="flex flex-wrap flex-row justify-between items-center md:flex-row ">
-        {/* LOGO */}
-        <a
-          href="/"
-          className={`${style.logo} ${style.navLink} `}> 
-            Doplax.Dev 
-        </a>
-
-        {/* Mobile Menu */}
-        <nav className="md:hidden">
-          <HambBtn menuItem={menuItem}/>
-        </nav>
-
-        {/* Desktop Menu */}
-        <nav className="hidden md:block">
-          {/* Menú */}
-          <ul className={"flex flex-row text-center"}>
-
-            {menuItem.map((element,index) => (
-              <li key={index}>
-                <a
-                  href={element.route}
-                  className={menuLink}
-                >
-                  {element.name}
-                </a>
-              </li>
-            ))}
-
-          </ul>
-        </nav>
-      </header>
-    </>
+    <header className="flex flex-wrap flex-row justify-between items-center p-5 md:flex-row">
+      <Logo />
+      <MobileMenu isModalOpen={isModalOpen} toggleModal={toggleModal} menuItems={menuItems} />
+      <DesktopMenu menuItems={menuItems} />
+    </header>
   );
 };
+
+// Componente para el Logo
+const Logo = () => (
+  <a href="/" className={`${style.logo} ${style.navLink}`}>
+    Doplax.Dev
+  </a>
+);
+
+// Componente para el menú de escritorio
+const DesktopMenu = ({ menuItems }) => (
+  <nav className="hidden md:block">
+    <ul className="flex flex-row text-center">
+      {menuItems.map((item, index) => (
+        <li key={index}>
+          <a href={item.route} className="text-lg md:text-base font-bold px-3">
+            {item.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+);
+
+// Componente para el menú móvil
+const MobileMenu = ({ isModalOpen, toggleModal, menuItems }) => (
+  <nav className="md:hidden">
+    <MenuButton isOpen={isModalOpen} toggle={toggleModal} />
+    {isModalOpen && <ModalMenu menuItems={menuItems} closeModal={toggleModal} />}
+  </nav>
+);
 
 export { Header };
