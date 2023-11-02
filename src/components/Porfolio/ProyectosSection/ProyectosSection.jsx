@@ -24,7 +24,7 @@ function ProyectosSection() {
     {
       name: "ToDo App - React",
       description: "Task App with React and storage in LocalStorage",
-      role: [{ name: "React", img: "/img/svg/react.svg" }],
+      role: [{ name: "React", img: "/svg/react.svg" }],
       imageUrl: "/img/todo-react.webp",
       netlify:
         "https://64abbad54dd25f31dbc77026--todoreactdoplaxdev.netlify.app/",

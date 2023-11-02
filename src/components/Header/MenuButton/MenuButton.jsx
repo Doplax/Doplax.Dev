@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./MenuButton.module.css"; // Asegúrate de que este archivo de estilos exista o ajusta la referencia
 
 const MenuButton = ({ isOpen, toggle }) => {
-  const size = "50px";
+  const size = "40px";
 
   return (
     <button

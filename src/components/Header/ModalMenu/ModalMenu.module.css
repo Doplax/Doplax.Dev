@@ -53,22 +53,26 @@
 .menuList {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
+.menuList li {
+    width: 100%;
 
+}
 
 .menuList li a {
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
     width: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
     display: block;
 }
 
 .menuList li a:hover {
-    filter: invert(1);
     backdrop-filter: saturate(100%);
+    filter: invert();
 }
 
 

@@ -8,8 +8,9 @@ import { ModalMenu } from './ModalMenu/ModalMenu';
 const menuItems = [
   { name: "Home", route: "/" },
   { name: "Blog", route: "/blog" },
-  { name: "Experiencia", route: "/experiencia" },
   { name: "Chat", route: "/chatPage" },
+  { name: "Work Experience", route: "/experience"},
+
 ];
 
 // Componente Header principal
@@ -53,7 +54,7 @@ const DesktopMenu = ({ menuItems }) => (
 
 // Componente para el menú móvil
 const MobileMenu = ({ isModalOpen, toggleModal, menuItems }) => (
-  <nav className="md:hidden">
+  <nav className="md:hidden flex justify-center" >
     <MenuButton isOpen={isModalOpen} toggle={toggleModal} />
     <ModalMenu isOpen={isModalOpen} menuItems={menuItems} closeModal={toggleModal} />
   </nav>
