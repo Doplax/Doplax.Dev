@@ -1,4 +1,4 @@
-import  style  from './Circles.module.css'
+import style from './Circles.module.css'
 
 export function Circles(){
     return(

@@ -14,7 +14,7 @@ const menuItems = [
 ];
 
 // Componente Header principal
-const Header = () => {
+export const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => setIsModalOpen(!isModalOpen);
 
@@ -60,4 +60,3 @@ const MobileMenu = ({ isModalOpen, toggleModal, menuItems }) => (
   </nav>
 );
 
-export { Header };
