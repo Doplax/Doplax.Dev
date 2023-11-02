@@ -2,8 +2,26 @@
     position: fixed;
     z-index: 20;
     inset: 0;
-    overflow-y: auto;
+    overflow-y: hidden;
+    /* Usar opacity en lugar de visibility */
+    opacity: 0;
+    /* Hacer que el fondo sea transparente inicialmente */
+    background-color: rgba(0, 0, 0, 0.0);
+    /* Combinar las transiciones */
+    transition: opacity 1s ease-in-out, background-color 1s ease-in-out, visibility 0s 1s; 
+    /* Hacer que el modal no sea clickeable cuando está oculto */
+    visibility: hidden;
 }
+
+.modalBackground.active {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: visible;
+
+    /* Remover el delay de la transición de visibility */
+    transition-delay: 0s;
+}
+
 
 .centerContent {
     display: flex;
@@ -13,43 +31,45 @@
     text-align: center;
 }
 
-.overlay {
-    position: fixed;
-    inset: 0;
-    background: black;
-    opacity: 0.5;
-    transition: opacity 3s ease-in-out;
-}
+
 
 .menuBox {
     backdrop-filter: blur(20px) saturate(150%);
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
     min-width: 100%;
+    min-height: 70vh;
     padding-top: 1.25rem;
-    padding-bottom: 15rem;
+    /*padding-bottom: 15rem;*/
     overflow: hidden;
-    transform: translateY(0%);
-    transition: transform 1s ease-in-out;
+    transform: translateY(100%);
+    transition: transform 1s ease-in-out;   
 }
 
-.active {
-    transform: translateY(100%);
-
+.menuBox.active {
+    transform: translateY(0%);
 }
 
 .menuList {
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 
-.menuLi {
-    margin: 0.75rem 0;
-}
 
-.menuLink {
+
+.menuList li a {
     color: white;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 700;
+    width: 100%;
+    padding: 1rem;
+    display: block;
 }
+
+.menuList li a:hover {
+    filter: invert(1);
+    backdrop-filter: saturate(100%);
+}
+
+
+

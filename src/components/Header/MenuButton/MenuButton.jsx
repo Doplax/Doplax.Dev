@@ -8,7 +8,7 @@ const MenuButton = ({ isOpen, toggle }) => {
   return (
     <button
       onClick={toggle}
-      className={`${styles.button} ${isOpen ? styles.opened : ""}`}
+      className={`${isOpen ? styles.opened : ""}`}
       aria-expanded={isOpen}
       aria-label="Main Menu"
     >

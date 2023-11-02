@@ -6,6 +6,7 @@ import { ModalMenu } from './ModalMenu/ModalMenu';
 
 // Definición del menú
 const menuItems = [
+  { name: "Home", route: "/" },
   { name: "Blog", route: "/blog" },
   { name: "Experiencia", route: "/experiencia" },
   { name: "Chat", route: "/chatPage" },
@@ -19,8 +20,11 @@ const Header = () => {
   return (
     <header className="flex flex-wrap flex-row justify-between items-center p-5 md:flex-row">
       <Logo />
-      <MobileMenu isModalOpen={isModalOpen} toggleModal={toggleModal} menuItems={menuItems} />
       <DesktopMenu menuItems={menuItems} />
+      <MobileMenu 
+        isModalOpen={isModalOpen} 
+        toggleModal={toggleModal} 
+        menuItems={menuItems} />
     </header>
   );
 };
@@ -51,7 +55,7 @@ const DesktopMenu = ({ menuItems }) => (
 const MobileMenu = ({ isModalOpen, toggleModal, menuItems }) => (
   <nav className="md:hidden">
     <MenuButton isOpen={isModalOpen} toggle={toggleModal} />
-    {isModalOpen && <ModalMenu menuItems={menuItems} closeModal={toggleModal} />}
+    <ModalMenu isOpen={isModalOpen} menuItems={menuItems} closeModal={toggleModal} />
   </nav>
 );
 
