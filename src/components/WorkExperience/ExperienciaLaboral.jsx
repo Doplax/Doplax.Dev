@@ -14,7 +14,7 @@ function ExperienciaLaboral() {
         "Close collaboration with design and development teams to ensure a coherent and effective user experience.",
         "Implementation of optimized Angular-based front-end solutions for resource-limited devices.",
         "Angular codebase maintenance and updates for scalability and performance.",
-        "Implementation of Agile methodologies in project development."
+        "Implementation of Agile methodologies in project development.",
       ],
     },
     {
@@ -26,7 +26,7 @@ function ExperienciaLaboral() {
         "Collaborating on the implementation of best practices for software development, including code reviews and testing.",
         "Migration and maintenance of A3 business management software to Ekon ERP (with SQL for data export and Python for data cleansing).",
         "Implementation of Agile methodologies in project development.",
-        "Management of the company's Network and Equipment"
+        "Management of the company's Network and Equipment",
       ],
     },
     {
@@ -36,7 +36,7 @@ function ExperienciaLaboral() {
       tareas: [
         "Assistance and customer service for internal workers",
         "Stock Management",
-        "Preparation, reception and configuration of devices for SEAT personnel"
+        "Preparation, reception and configuration of devices for SEAT personnel",
       ],
     },
     {
@@ -65,7 +65,8 @@ function ExperienciaLaboral() {
         "Web Security: Teaching cryptography, authentication and authorization, and protection against common web vulnerabilities.",
         "Project management: Use of agile methodologies and version control tools such as Git.",
         "Testing and debugging: Learning unit, integration, and system testing techniques to ensure software quality.",
-        "Deployment: Skills in containers, such as Docker, and deployment platforms such as AWS and Heroku."],
+        "Deployment: Skills in containers, such as Docker, and deployment platforms such as AWS and Heroku.",
+      ],
     },
     {
       titulo: "DAW - Advanced Technician in Web Applications Development",
@@ -80,20 +81,22 @@ function ExperienciaLaboral() {
         "Web design and layout: Acquisition of skills in web design and layout with various tools.",
         "Project management: Learning project management techniques applied to web development.",
         "Testing and debugging: Learning techniques for testing and debugging web applications.",
-        "Mobile development: Possibility to learn about mobile application development in some programs."],
+        "Mobile development: Possibility to learn about mobile application development in some programs.",
+      ],
     },
     {
       titulo: "SMX - Microcomputer Systems and Networks",
       ubicacion: "IES Daniel Blanxart, Olesa de Montserrat",
       fecha: "2015 - 2017",
       tareas: [
-        "Hardware assembly and maintenance: Assembly and technical support of hardware components of a computer system.", 
-        "Operating systems: Installation, configuration and administration of operating systems.", "Hardware assembly and maintenance: Assembly and technical support of hardware components of a computer system.",
+        "Hardware assembly and maintenance: Assembly and technical support of hardware components of a computer system.",
+        "Operating systems: Installation, configuration and administration of operating systems.",
+        "Hardware assembly and maintenance: Assembly and technical support of hardware components of a computer system.",
         "Networking: Configuration and maintenance of computer networks, including troubleshooting and network security.",
         "Office Applications: Use of office software applications, such as word processors, spreadsheets, databases, and presentations.",
         "Servers: Installation and configuration of servers, including network services.",
         "Computer security: Implementing security policies and procedures to protect systems and data.",
-        "Technical Support: Providing technical assistance to resolve hardware and software problems.", 
+        "Technical Support: Providing technical assistance to resolve hardware and software problems.",
         "Storage systems: Administration of data storage systems and backups.",
       ],
     },
@@ -101,8 +104,7 @@ function ExperienciaLaboral() {
 
   return (
     <>
-
-<PageTitle>Work Experience</PageTitle>
+      <PageTitle>Work Experience</PageTitle>
       {experiencias.map((content, index) => (
         <ExperienceCard
           key={index}
@@ -113,7 +115,6 @@ function ExperienciaLaboral() {
         />
       ))}
 
-      
       <PageTitle>Studies</PageTitle>
       {formacion.map((content, index) => (
         <ExperienceCard
@@ -124,8 +125,6 @@ function ExperienciaLaboral() {
           tareas={content.tareas}
         />
       ))}
-
-      
     </>
   );
 }
