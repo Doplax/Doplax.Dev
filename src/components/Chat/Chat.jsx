@@ -2,7 +2,7 @@
 import { useChat } from 'ai/react'
 import './Chat.css' 
 
-function Chat() {
+export function Chat() {
     const { messages, input, handleInputChange, handleSubmit } = useChat({
         api: '/api/chat'
     })
@@ -44,4 +44,4 @@ function Chat() {
     )
 }
 
-export { Chat };
+

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import circles from "./Circles.module.css";
+import { Circles } from "./Circles/Circles";
 import "../../styles/globalTypography.css"
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -71,20 +71,7 @@ const Footer = () => {
 
 
             {/* Circles */}
-            <div className="position-relative bg-pattern pattern-2 pt-15 area">
-                <ul className={circles.circles}>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+            <Circles/>
         </footer>
     );
 };
