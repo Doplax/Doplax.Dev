@@ -123,7 +123,7 @@ function ProyectosSection() {
   ];
 
   return (
-    <section className=" py-28">
+    <section className=" py-10">
       <PageTitle>Projects</PageTitle>
 
       <div

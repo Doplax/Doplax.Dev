@@ -9,7 +9,7 @@ function HomeSection() {
             {/* HOME */}
 
             {/* SOBRE MI */}
-            <section className="py-28">
+            <section className="py-10 md:py-28">
                 
                     {/* Desktop Version */}
                     <PageTitle>About Me</PageTitle>
@@ -47,8 +47,8 @@ function HomeSection() {
                                 <p className="text-lg  mb-5">As a <strong>frontend and backend developer</strong>, I aim to design <strong>fluid and enjoyable user experiences</strong> by creating <strong>attractive, functional applications</strong> that are centered on the user.</p>
                                 <p className="text-lg  mb-5">I am particularly drawn to developing applications that are not only functional but also visually appealing and easy to use. I accomplish this by implementing <strong>SOLID principles</strong> and <strong>clean architecture</strong>, and applying <strong>testing</strong> to ensure quality.</p>
                                 <p className="text-lg  mb-5">I also use <strong>agile methodologies</strong> for adaptability and continuous improvement.</p>
-                                <div className='flex justify-center bg-white'>
                                 
+                                <div className='flex justify-center'>
                                     <a
                                         href="/docs/CV-Pol-Valle.pdf"
                                         download="CV-Pol-Valle.pdf"
@@ -60,6 +60,7 @@ function HomeSection() {
                                      Download CV
                                     </a>
                                 </div>
+
                             </div>
                         </div>
             </section>

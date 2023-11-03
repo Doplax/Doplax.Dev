@@ -26,7 +26,6 @@
   padding: 15px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);  /* Aumenta la opacidad a 0.7 para oscurecer el fondo */
-  border-radius: 10px; 
   z-index: 20;
   font-weight: bold;
 }

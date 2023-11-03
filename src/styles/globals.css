@@ -33,7 +33,6 @@
 }
 
 
-
 html,
 body {
   padding: 0;
@@ -42,6 +41,8 @@ body {
   line-height: 1.6;
   color: var(--color-text-dark);
   background-color: var(--color-background-dark);
+  overscroll-behavior-y: none; /* Esto puede prevenir el scroll más allá del contenido en el eje Y. */
+
 }
 
 * {
