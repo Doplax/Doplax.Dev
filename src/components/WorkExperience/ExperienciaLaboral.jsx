@@ -1,6 +1,4 @@
-//import { HomeModernIcon, CalendarDaysIcon } from "@heroicons/react/20/solid";
-import React from "react";
-import { PageTitle } from "../PageTitle";
+import { PageTitle } from "../PageTitle/PageTitle";
 import { ExperienceCard } from "./ExperienceCard";
 
 function ExperienciaLaboral() {
