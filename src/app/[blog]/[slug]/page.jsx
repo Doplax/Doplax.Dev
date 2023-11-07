@@ -1,10 +1,10 @@
-
+'use client'
 import NotionService from "../../../services/notion-service";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
-import { BlogCover } from "../../../components/UX/BlogCover";
+import { BlogCover } from "../../../components/Blog/BlogCover";
+import { BlogCategories } from "../../../components/Blog/BlogCategories";
 import CodeBlock from "../../../components/UX/CodeBlock";
-import { BlogCategories } from "../../../components/UX/BlogCategories";
 import "./page.css"
 
 async function getSinglePost(slug) {

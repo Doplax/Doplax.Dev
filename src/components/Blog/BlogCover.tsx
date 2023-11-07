@@ -7,7 +7,6 @@ import {Image} from "@nextui-org/react";
 
 interface Props {
   cover: string | { url: string } ;
-  customClass?: string;
 }
 
 const BlogCover: React.FC<Props> = ({cover}) => {
@@ -15,7 +14,7 @@ const BlogCover: React.FC<Props> = ({cover}) => {
   console.log("COVER");
   console.log(coverUrl);
 
-  return(<Image isBlurred  src={coverUrl} alt="Post Cover"/>);
+  return(<img src={coverUrl} alt="Post Cover"/>);
 };
 
 export {BlogCover};

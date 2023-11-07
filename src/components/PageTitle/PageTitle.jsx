@@ -1,4 +1,4 @@
-import "../styles/globalAnimations.css"
+import "../../styles/globalAnimations.css"
 
 function PageTitle({ children }) {
     return (

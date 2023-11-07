@@ -1,5 +1,5 @@
 import React from "react";
-import { PageTitle } from "../../PageTitle";
+import { PageTitle } from "../../PageTitle/PageTitle";
 import {
   faMobile,
   faPenRuler,

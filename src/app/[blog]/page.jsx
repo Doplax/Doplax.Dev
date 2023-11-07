@@ -1,7 +1,7 @@
 'use client'
 import  NotionService from '../../services/notion-service'
-import { BlogCard } from '../../components/UX/BlogCard'
-import { PageTitle } from '../../components/PageTitle'
+import { BlogCard } from '../../components/Blog/BlogCard'
+import { PageTitle } from '../../components/PageTitle/PageTitle'
 
 // This function can be named anything
 async function getPublishedBlogPost() {

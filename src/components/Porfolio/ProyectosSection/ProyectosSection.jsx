@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { PageTitle } from "../../PageTitle";
+import { PageTitle } from "../../PageTitle/PageTitle";
 import css from "./ProyectosSection.module.css";
 
 function ProyectosSection() {

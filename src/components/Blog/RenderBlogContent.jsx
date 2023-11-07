@@ -1,5 +1,5 @@
 'use client'
-import CodeBlock from "../../components/UX/CodeBlock";
+import CodeBlock from "../UX/CodeBlock";
 import ReactMarkdown from "react-markdown";
 
 
