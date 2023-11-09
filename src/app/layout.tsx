@@ -4,6 +4,7 @@ import {Footer} from '../components/Footer/Footer';
 import {Header} from '../components/Header/Header';
 import Head from "next/head";
 import {Providers} from "./providers";
+import {ScrollShadow} from "@nextui-org/scroll-shadow";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children, }: {children: React.ReactNode}) {
       </Head>
 
         <body className={`${inter.className} dark text-foreground `}>
+          <ScrollShadow size={50} className="w-screen h-screen">
             <Providers>
                   <div className='max-w-7xl mx-auto'>
                     <Header />
@@ -32,6 +34,7 @@ export default function RootLayout({ children, }: {children: React.ReactNode}) {
                   </div>
                   <Footer />
               </Providers>
+          </ScrollShadow>
         </body>
     </html>
   )
