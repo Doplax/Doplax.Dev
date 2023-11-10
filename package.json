@@ -28,7 +28,7 @@
     "http-proxy-middleware": "^2.0.6",
     "next": "^14.0.1",
     "notion-to-md": "^3.1.0",
-    "openai": "^4.16.1",
+    "openai": "^4.17.3",
     "openai-edge": "^1.1.0",
     "postcss": "8.4.24",
     "react": "^18.2.0",

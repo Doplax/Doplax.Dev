@@ -19,7 +19,6 @@ const menuItems:MenuItem[] = [
   { name: "Work Experience", route: "/experience"},
 ];
 
-
 // MAIN COMPONENT
 interface HeaderProps {
   className: string;
