@@ -23,14 +23,15 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
 
       <body className={`${inter.className} antialiased dark text-foreground `} >
         <Providers>
-          <div className='max-w-7xl mx-auto'>
-            <Header />
-          </div>
+          
+          <Header className='max-w-7xl mx-auto'/>
           
           {/* Content */}
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+          <main className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             {children}
-          </div>
+          </main>
+
+
           <Footer />
         </Providers>
       </body>

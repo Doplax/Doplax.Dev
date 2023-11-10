@@ -5,22 +5,31 @@ import { MenuButton } from './MenuButton/MenuButton'; // Asumiendo que tienes es
 import { ModalMenu } from './ModalMenu/ModalMenu';
 import Link from 'next/link';
 
-// Definición del menú
-const menuItems = [
+
+// INTERFACES
+interface MenuItem {
+  name: string,
+  route: string
+}
+
+const menuItems:MenuItem[] = [
   { name: "Home", route: "/" },
   { name: "Blog", route: "/blog" },
   { name: "Chat", route: "/chatPage" },
   { name: "Work Experience", route: "/experience"},
-
 ];
 
-// Componente Header principal
-export const Header = () => {
+
+// MAIN COMPONENT
+interface HeaderProps {
+  className: string;
+}
+export const Header: React.FC<HeaderProps>  = ({className}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => setIsModalOpen(!isModalOpen);
 
   return (
-    <header className="flex flex-wrap flex-row justify-between items-center p-5 md:flex-row">
+    <header className={`flex flex-wrap flex-row justify-between items-center p-5 md:flex-row ${className}`}>
       <Logo />
       <DesktopMenu menuItems={menuItems} />
       <MobileMenu 
@@ -31,15 +40,12 @@ export const Header = () => {
   );
 };
 
-// Componente para el Logo
-const Logo = () => (
-  <a href="/" className={`${style.logo} ${style.navLink}`}>
-    Doplax.Dev
-  </a>
-);
+// DesktopMenu
+interface DesktopMenuProps {
+  menuItems: MenuItem[]
+}
 
-// Componente para el menú de escritorio
-const DesktopMenu = ({ menuItems }) => (
+const DesktopMenu: React.FC<DesktopMenuProps>= ({ menuItems }) => (
   <nav className="hidden md:block">
     <ul className="flex flex-row text-center">
       {menuItems.map((item, index) => (
@@ -53,11 +59,24 @@ const DesktopMenu = ({ menuItems }) => (
   </nav>
 );
 
-// Componente para el menú móvil
-const MobileMenu = ({ isModalOpen, toggleModal, menuItems }) => (
+
+// MobileMenu
+interface MobileMenuProps {
+  isModalOpen: boolean;
+  toggleModal: () => void;
+  menuItems: MenuItem[];
+}
+
+const MobileMenu:  React.FC<MobileMenuProps> = ({ isModalOpen, toggleModal, menuItems }) => (
   <nav className="md:hidden flex justify-center" >
     <MenuButton isOpen={isModalOpen} toggle={toggleModal} />
     <ModalMenu isOpen={isModalOpen} menuItems={menuItems} closeModal={toggleModal} />
   </nav>
 );
 
+// Componente para el Logo
+const Logo = () => (
+  <a href="/" className={`${style.logo} ${style.navLink}`}>
+    Doplax.Dev
+  </a>
+);
