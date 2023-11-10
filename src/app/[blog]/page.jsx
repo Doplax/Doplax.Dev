@@ -1,17 +1,11 @@
-'use client'
+//'use client'
 import  NotionService from '../../services/notion-service'
 import { BlogCard } from '../../components/Blog/BlogCard'
 import { PageTitle } from '../../components/PageTitle/PageTitle'
 
-// This function can be named anything
-async function getPublishedBlogPost() {
+export default async function blogPage() {
   const notionService = new NotionService()
   const posts = await notionService.getPublishedBlogPost()
-  return posts
-}
-
-async function blog() {
-  const posts = await getPublishedBlogPost()
 
   return (
     <div>
@@ -24,4 +18,3 @@ async function blog() {
     </div>
   )
 }
-export default blog;
