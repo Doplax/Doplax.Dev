@@ -27,6 +27,4 @@ const ModalMenu = ({ closeModal, menuItems, isOpen }) => {
   );
 };
 
-
-
 export { ModalMenu };

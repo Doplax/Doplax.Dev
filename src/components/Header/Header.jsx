@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import style from "./Header.module.css"; // Asegúrate de tener este archivo CSS o ajustarlo según tu estructura de estilos
 import { MenuButton } from './MenuButton/MenuButton'; // Asumiendo que tienes estos componentes en sus respectivos archivos
 import { ModalMenu } from './ModalMenu/ModalMenu';
+import Link from 'next/link';
 
 // Definición del menú
 const menuItems = [
@@ -43,9 +44,9 @@ const DesktopMenu = ({ menuItems }) => (
     <ul className="flex flex-row text-center">
       {menuItems.map((item, index) => (
         <li key={index}>
-          <a href={item.route} className="text-lg md:text-base font-bold px-3">
+          <Link href={item.route} className="text-lg md:text-base font-bold px-3">
             {item.name}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
