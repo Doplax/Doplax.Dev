@@ -1,4 +1,4 @@
-'use client'
+//'use client'
 import NotionService from "../../../services/notion-service";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";

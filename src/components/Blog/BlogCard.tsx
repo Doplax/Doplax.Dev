@@ -1,4 +1,4 @@
-'use client'
+//'use client'
 import {FunctionComponent} from 'react'
 import { BlogPost } from "../../@types/schema";
 import dayjs from "dayjs"

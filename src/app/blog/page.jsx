@@ -1,4 +1,3 @@
-'use client'
 import  NotionService from '../../services/notion-service'
 import { BlogCard } from '../../components/Blog/BlogCard'
 import { PageTitle } from '../../components/PageTitle/PageTitle'
