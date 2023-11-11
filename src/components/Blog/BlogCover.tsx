@@ -11,8 +11,7 @@ interface Props {
 
 const BlogCover: React.FC<Props> = ({cover}) => {
   const coverUrl = typeof cover === 'string' ? cover : cover.url;
-  console.log("COVER");
-  console.log(coverUrl);
+
 
   return(<img src={coverUrl} alt="Post Cover"/>);
 };

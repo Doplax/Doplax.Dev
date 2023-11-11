@@ -7,6 +7,8 @@ import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ['latin'] })
 
+
+// Es como si fuera un Json
 export const metadata = {
   title: 'Doplax.dev',
   description: 'La web de pol valle',
