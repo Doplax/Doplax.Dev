@@ -7,7 +7,7 @@ import { BlogCategories } from "../../../components/Blog/BlogCategories";
 import CodeBlock from "../../../components/UX/CodeBlock";
 import "./page.css";
 
-export const revalidate = 30; // revalidate the data at most every hour
+export const revalidate = 1; // revalidate the data at most every hour
 
 
 async function getSinglePost(slug) {
