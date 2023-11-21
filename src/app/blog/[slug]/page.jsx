@@ -1,5 +1,5 @@
-//'use client'
-import NotionService from "../../../services/notion-service";
+
+import NotionService from "../../api/notion-service";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import { BlogCover } from "../../../components/Blog/BlogCover";
