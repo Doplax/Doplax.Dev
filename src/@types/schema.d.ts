@@ -18,4 +18,5 @@ export type BlogPost = {
 export type PostPage = {
     post: BlogPost
     markdown: any // Cambiar esto cunado sepa arreglarlo
+    mdBlocks?: any
 }

@@ -1,6 +1,6 @@
 import { Client } from "@notionhq/client";
 import { NotionToMarkdown } from "notion-to-md";
-import { BlogPost, PostPage } from "../../@types/schema";
+import { BlogPost, PostPage } from "../@types/schema";
 
 export const revalidate = 3599; // revalidate the data at most every hour
 
@@ -37,7 +37,8 @@ export default class NotionService {
   }
 
   async getSingleBlogPost(slug: string): Promise<PostPage> {
-    let post, markdown;
+    let post;
+    let markdown;
 
     const database = process.env.NOTION_BLOG_DATABASE_ID ?? "";
 
@@ -62,17 +63,16 @@ export default class NotionService {
     const page = response.results[0];
 
     const mdBlocks = await this.n2m.pageToMarkdown(page.id);
-    //markdown = JSON.stringify(this.n2m.toMarkdownString(mdBlocks));
     markdown = this.n2m.toMarkdownString(mdBlocks);
 
-    console.log(markdown);
+    //console.log(mdBlocks);
 
     post = NotionService.pageToPostTransformer(page);
-    console.log(post);
 
     return {
       post,
       markdown,
+      mdBlocks
     };
   }
 

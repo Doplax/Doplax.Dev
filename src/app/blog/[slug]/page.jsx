@@ -1,9 +1,9 @@
-
-import NotionService from "../../api/notion-service";
+import NotionService from "../../../lib/notion-service";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import { BlogCover } from "../../../components/Blog/BlogCover";
 import { BlogCategories } from "../../../components/Blog/BlogCategories";
+
 import CodeBlock from "../../../components/UX/CodeBlock";
 import "./page.css";
 
@@ -15,10 +15,11 @@ async function getSinglePost(slug) {
 
 export default async function Post({ params }) {
   const { slug } = params;
-  const { post, markdown } = await getSinglePost(slug);
-  //const post = data.post;
+  const { post, markdown, mdBlocks } = await getSinglePost(slug);
 
-  console.log(markdown.parent);
+  console.log("///////  $$ //////");
+  console.log(mdBlocks);
+
   return (
     <>
       <Head>
@@ -42,9 +43,29 @@ export default async function Post({ params }) {
         {/* Contenido */}
         <div className="markdown-container">
           {/*//@ts-ignore*/}
-          <ReactMarkdown components={{ code: CodeBlock }}>
+
+          {/*<ReactMarkdown components={{ code: CodeBlock }}>
             {markdown.parent}
-          </ReactMarkdown>
+          </ReactMarkdown>*/}
+
+          <div className="markdown-container">
+            {mdBlocks.map((block) =>
+              block.parent ? (
+                <ReactMarkdown
+                  key={block.blockId}
+                  components={{ code: CodeBlock }}
+                >
+                  {block.parent}
+                </ReactMarkdown>
+              ) : (
+                <div key={block.blockId}>
+                  <br/> 
+                </div>
+                )
+            )}
+          </div>
+
+
         </div>
       </main>
     </>

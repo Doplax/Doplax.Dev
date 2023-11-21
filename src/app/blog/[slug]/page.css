@@ -1,15 +1,18 @@
 .markdown-container p img {
-    display: block;
-    margin: 0 auto;
-  }
-  pre {
-    color: var(--yellow);
-  }
-  strong{
-    color: var(--yellow);
-  }
+  display: block;
+  margin: 0 auto;
+}
+pre {
+  color: var(--yellow);
+}
+strong {
+  color: var(--yellow);
+}
 
-  h2,h3 {
-    margin-top: 50px;
+h2,
+h3,
+p {
+  margin-top: 10px;
 
-  }
+}
+

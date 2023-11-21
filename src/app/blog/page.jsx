@@ -1,4 +1,4 @@
-import  NotionService from '../api/notion-service'
+import  NotionService from '../../lib/notion-service'
 import { BlogCard } from '../../components/Blog/BlogCard'
 import { PageTitle } from '../../components/PageTitle/PageTitle'
 
