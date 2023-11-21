@@ -7,6 +7,9 @@ import { BlogCategories } from "../../../components/Blog/BlogCategories";
 import CodeBlock from "../../../components/UX/CodeBlock";
 import "./page.css";
 
+export const revalidate = 30; // revalidate the data at most every hour
+
+
 async function getSinglePost(slug) {
   const notionService = new NotionService();
   const p = await notionService.getSingleBlogPost(slug);
