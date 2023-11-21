@@ -9,9 +9,12 @@ strong {
   color: var(--yellow);
 }
 
+h1,
 h2,
 h3,
-p {
+p,
+img,
+pre {
   margin-top: 10px;
 
 }
