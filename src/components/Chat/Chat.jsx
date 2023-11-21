@@ -32,7 +32,7 @@ function MessageList({ messages }) {
     </div>
   );
 }
-
+ 
 // Message.js
 function Message({ message }) {
   const isChat = message.role !== "user";
@@ -60,21 +60,19 @@ function ChatForm({ input, handleInputChange, handleSubmit }) {
       {" "}
       {/* Chat form container */}
       <input
-    placeholder="Escribe al chat"
-    type="text"
-    id="content"
-    name="content"
-    value={input}
-    onChange={handleInputChange}
-    className="flex-grow p-2.5 rounded-3xl outline-none mr-2.5 text-white border-2 border-gray-300 focus:border-yellow-500 transition-colors"
-    style={{ transitionDuration: '5000ms' }}
-/>
-
-
+        placeholder="Escribe al chat"
+        type="text"
+        id="content"
+        name="content"
+        value={input}
+        onChange={handleInputChange}
+        className="flex-grow p-2.5 rounded-3xl outline-none mr-2.5 text-white border-2 border-gray-300 focus:border-yellow-500 transition-colors"
+        style={{ transitionDuration: "5000ms" }}
+      />
       <button
         type="submit"
         className="px-5 py-2.5 border-2 border-yellow-500 text-yellow-500 hover:text-white rounded-3xl cursor-pointer font-bold outline-none transition duration-300 hover:bg-yellow-500"
-      >
+      >,
         Enviar
       </button>
     </form>
