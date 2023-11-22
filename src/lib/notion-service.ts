@@ -43,37 +43,45 @@ export default class NotionService {
     const database = process.env.NOTION_BLOG_DATABASE_ID ?? "";
 
     // list of blog posts
-    const response = await this.client.databases.query({
-      database_id: database,
-      filter: {
-        property: "Slug",
-        formula: {
-          string: {
-            equals: slug,
+    try {
+      const response = await this.client.databases.query({
+        database_id: database,
+        filter: {
+          property: "Slug",
+          formula: {
+            string: {
+              equals: slug,
+            },
           },
         },
-      },
-    });
+      });
+  
+      if (!response.results[0]) {
+        throw "No results available";
+      }
+  
+      // grag page from notion
+      const page = response.results[0];
+  
+      const mdBlocks = await this.n2m.pageToMarkdown(page.id);
+      markdown = this.n2m.toMarkdownString(mdBlocks);
 
-    if (!response.results[0]) {
-      throw "No results available";
+      console.log('NOTION SERVICES');
+      //console.log('PAGE',page);
+      console.log('mdBlocks',mdBlocks);
+      console.log('MarkDown',markdown);
+  
+      post = NotionService.pageToPostTransformer(page);
+  
+      return {
+        post,
+        markdown,
+        mdBlocks
+      };
+    } catch (err) {
+      console.log('ERROR:',err);
+      throw err
     }
-
-    // grag page from notion
-    const page = response.results[0];
-
-    const mdBlocks = await this.n2m.pageToMarkdown(page.id);
-    markdown = this.n2m.toMarkdownString(mdBlocks);
-
-    //console.log(mdBlocks);
-
-    post = NotionService.pageToPostTransformer(page);
-
-    return {
-      post,
-      markdown,
-      mdBlocks
-    };
   }
 
   private static pageToPostTransformer(page: any): BlogPost {
@@ -99,8 +107,7 @@ export default class NotionService {
       cover: coverUrl,
       title: page.properties.Name?.title[0]?.plain_text,
       tags: page.properties.Tags?.multi_select,
-      description:
-        page.properties.Description?.rich_text?.[0]?.plain_text ?? "",
+      description:page.properties.Description?.rich_text?.[0]?.plain_text ?? "",
       date: page.properties.Updated?.last_edited_time,
       slug: page.properties.Slug?.formula?.string,
     };

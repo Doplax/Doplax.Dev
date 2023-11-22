@@ -1,7 +1,6 @@
 import  NotionService from '../../lib/notion-service'
 import { BlogCard } from '../../components/Blog/BlogCard'
 import { PageTitle } from '../../components/PageTitle/PageTitle'
-export const revalidate = 1; // revalidate the data at most every hour
 
 export default async function blogPage() {
   const notionService = new NotionService()
