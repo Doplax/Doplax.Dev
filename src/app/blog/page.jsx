@@ -2,6 +2,8 @@ import  NotionService from '../../lib/notion-service'
 import { BlogCard } from '../../components/Blog/BlogCard'
 import { PageTitle } from '../../components/PageTitle/PageTitle'
 
+export const revalidate = 10; // In Seconds
+
 export default async function blogPage() {
   const notionService = new NotionService()
   const posts = await notionService.getPublishedBlogPost()

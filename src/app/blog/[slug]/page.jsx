@@ -7,6 +7,9 @@ import { BlogCategories } from "../../../components/Blog/BlogCategories";
 import CodeBlock from "../../../components/UX/CodeBlock";
 import "./page.css";
 
+export const revalidate = 10; // In Seconds
+
+
 async function getSinglePost(slug) {
   const notionService = new NotionService();
   const p = await notionService.getSingleBlogPost(slug);

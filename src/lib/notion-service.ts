@@ -2,7 +2,7 @@ import { Client } from "@notionhq/client";
 import { NotionToMarkdown } from "notion-to-md";
 import { BlogPost, PostPage } from "../@types/schema";
 
-export const revalidate = 1; // revalidate the data at most every hour
+export const revalidate = 10; // In Seconds
 
 export default class NotionService {
   client: Client;
