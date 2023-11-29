@@ -1,8 +1,6 @@
-//'use client'
 import { FunctionComponent } from 'react'
 import { BlogPost } from "../../@types/schema";
 import dayjs from "dayjs"
-//import { BlogCover } from "../../components/UX/BlogCover";
 import { BlogCategories } from "./BlogCategories";
 import Link from 'next/link';
 import { BlogCover } from './BlogCover';
@@ -23,7 +21,7 @@ const BlogCard: FunctionComponent<BlogCardProps> = ({ post }) => {
             {/* Desktop */}
             <div className="hidden md:flex space-y-2">
                 <div className='flex items-end w-1/5 mx-10 ' >
-                    <BlogCover cover={post.cover} />
+                    <BlogCover coverUrl={post.cover} />
                 </div>
                 
                 <div className="flex w-4/5">
@@ -49,7 +47,7 @@ const BlogCard: FunctionComponent<BlogCardProps> = ({ post }) => {
             <div className="flex md:hidden flex-col rounded-xl shadow-lg overflow-hidden">
                 {/* Image */}
                 <div className='flex-shrink-0'>
-                    <BlogCover cover={post.cover}></BlogCover>
+                    <BlogCover coverUrl={post.cover}></BlogCover>
                     {/*<img src={post.cover} className=" w-full object-fit"/>*/}
                 </div>
 

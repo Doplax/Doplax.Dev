@@ -19,6 +19,7 @@ export default class NotionService {
     // list blog post
     const response = await this.client.databases.query({
       database_id: database,
+      page_size:1,
       filter: {
         property: "Published",
         checkbox: { equals: true },
@@ -30,7 +31,7 @@ export default class NotionService {
         },
       ],
     });
-
+    console.log(response);
     return response.results.map((res) => {
       return NotionService.pageToPostTransformer(res);
     });
@@ -91,16 +92,19 @@ export default class NotionService {
     if (cover) {
       switch (cover.type) {
         case "file":
-          coverUrl = cover.file;
+          coverUrl = cover.file.url;
+          console.log('FILE',coverUrl);
           break;
         case "external":
           coverUrl = cover.external.url;
+          console.log('EXTERNAL',coverUrl);
           break;
         default:
           // add default cover image if you want
           coverUrl = "";
       }
     }
+    console.log('PRE',coverUrl);
 
     return {
       id: page.id,
