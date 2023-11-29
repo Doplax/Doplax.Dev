@@ -17,6 +17,7 @@ export function AboutAuthor() {
         {/* About me */}
         <div className="flex flex-col w-3/4 pl-10">
           <h3 className="text-3xl font-bold">Written by Pol Valle</h3>
+          <p>I am particularly drawn to developing applications that are not only functional but also visually appealing and easy to use. I accomplish this by implementing SOLID principles and clean architecture, and applying testing to ensure quality.</p>
         </div>
       </div>
     </>
