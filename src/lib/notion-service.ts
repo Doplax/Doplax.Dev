@@ -19,7 +19,8 @@ export default class NotionService {
     // list blog post
     const response = await this.client.databases.query({
       database_id: database,
-      page_size:1,
+      //start_cursor: '64a48bb2-7542-4473-839d-401682c765ae',
+      page_size:10,
       filter: {
         property: "Published",
         checkbox: { equals: true },
@@ -33,7 +34,35 @@ export default class NotionService {
     });
     console.log(response);
     return response.results.map((res) => {
-      return NotionService.pageToPostTransformer(res);
+      const data = NotionService.pageToPostTransformer(res);
+      console.log('data',data);
+      return data
+    });
+  }
+
+  async getNextPublishedBlogPost(): Promise<BlogPost[]> {
+    const database = process.env.NOTION_BLOG_DATABASE_ID ?? "";
+
+    // list blog post
+    const response = await this.client.databases.query({
+      database_id: database,
+      //start_cursor: '64a48bb2-7542-4473-839d-401682c765ae',
+      page_size:10,
+      filter: {
+        property: "Published",
+        checkbox: { equals: true },
+      },
+      sorts: [
+        {
+          property: "Created",
+          direction: "descending",
+        },
+      ],
+    });
+    return response.results.map((res) => {
+      const data = NotionService.pageToPostTransformer(res);
+      console.log('data',data);
+      return data
     });
   }
 
@@ -93,18 +122,15 @@ export default class NotionService {
       switch (cover.type) {
         case "file":
           coverUrl = cover.file.url;
-          console.log('FILE',coverUrl);
           break;
         case "external":
           coverUrl = cover.external.url;
-          console.log('EXTERNAL',coverUrl);
           break;
         default:
           // add default cover image if you want
           coverUrl = "";
       }
     }
-    console.log('PRE',coverUrl);
 
     return {
       id: page.id,

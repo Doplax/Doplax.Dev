@@ -7,6 +7,7 @@ export const revalidate = 10; // In Seconds
 export default async function blogPage() {
   const notionService = new NotionService()
   const posts = await notionService.getPublishedBlogPost()
+  console.log(posts.data);
 
   return (
     <div>
@@ -16,6 +17,8 @@ export default async function blogPage() {
           <BlogCard key={post.id} post={post}/>
         ))} 
       </div>
+
+      <button>{posts.prove}</button>
     </div>
 
     
