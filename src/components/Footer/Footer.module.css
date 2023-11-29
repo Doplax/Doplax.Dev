@@ -28,14 +28,13 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 10px;
   width: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Aumenta la opacidad a 0.7 para oscurecer el fondo */
+  background-color: rgba(0,0,0); /* Aumenta la opacidad a 0.7 para oscurecer el fondo */
   z-index: 20;
   font-weight: bold;
+}
+
+.copyRight__link p {
+  font-size: 15px;
 }

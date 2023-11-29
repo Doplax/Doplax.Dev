@@ -10,12 +10,14 @@ export default async function blogPage() {
 
   return (
     <div>
-      <PageTitle>{"Ultimos Artículos"}</PageTitle>
-      <div className='mt-12 max-wlg mx-auto grid gap-6 lg:grid-cols-2 lg:max-w-none'>
+      <PageTitle>{"Last Articles"}</PageTitle>
+      <div className='flex flex-col mt-12 max-wlg mx-auto gap-20 lg:grid-cols-2 lg:max-w-none'>
         {posts.map((post) => (
           <BlogCard key={post.id} post={post}/>
         ))} 
       </div>
     </div>
+
+    
   )
 }

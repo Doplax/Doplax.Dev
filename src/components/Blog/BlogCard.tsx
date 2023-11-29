@@ -18,8 +18,35 @@ dayjs.extend(localizedFormat)
 
 const BlogCard: FunctionComponent<BlogCardProps> = ({ post }) => {
     return (
+
         <Link href={`/blog/${post.slug}`} className="transition duraion-300 hover:scale-105">
-            <div className="flex flex-col rounded-xl shadow-lg overflow-hidden">
+            {/* Desktop */}
+            <div className="hidden md:flex space-y-2">
+                <div className='flex items-end w-1/5 mx-10 ' >
+                    <BlogCover cover={post.cover} />
+                </div>
+                
+                <div className="flex w-4/5">
+                    <div className="space-y-6">
+
+                        <div>
+                            <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                                {post.title}
+
+                            </h2>
+                            <BlogCategories tags={post.tags} />
+
+                        </div>
+                        <h4 className='text-base  text-zinc-200'>{post.description}</h4>
+                        <h4 className='text-xs font medium text-gray-400 px-2 py-1'>{dayjs(post.date).format('LL')}</h4>
+
+                    </div>
+  
+                </div>
+            </div >
+
+            {/* Movile */}
+            <div className="flex md:hidden flex-col rounded-xl shadow-lg overflow-hidden">
                 {/* Image */}
                 <div className='flex-shrink-0'>
                     <BlogCover cover={post.cover}></BlogCover>
@@ -49,7 +76,7 @@ const BlogCard: FunctionComponent<BlogCardProps> = ({ post }) => {
                     </div>
                 </div>
             </div>
-        </Link>
+        </Link >
     )
 
 }

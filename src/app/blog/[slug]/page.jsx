@@ -37,7 +37,10 @@ export default async function Post({ params }) {
         {/* Cabecero */}
         <div>
           <BlogCover cover={post.cover} customClass="rounded-3xl" />
-          <BlogCategories tags={post.tags} />
+          
+          <div className="py-5">
+            <BlogCategories tags={post.tags} />
+          </div>
 
           <h1 className="gradientText_gAnimation font-bold">{post.title}</h1>
           {/*<span>{post.Author}</span> //*/}

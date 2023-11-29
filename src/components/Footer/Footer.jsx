@@ -1,12 +1,8 @@
-import React from "react";
 import styles from "./Footer.module.css";
 import { Circles } from "./Circles/Circles";
 import "../../styles/globalTypography.css";
-import { Hub } from "../Hub/Hub";
 
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import Link from "next/link";
 
 //const linkedinIcon = "/img/";
@@ -22,7 +18,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       {/* CONTAINER */}
-      <div className="flex flex-col justify-end items-center h-screen sm:flex md:flex-row sm:justify-around sm:items-end sm:pb-4">
+      <div className="flex flex-col justify-end items-center p-5 h-screen">
         {/* Sobre mi */}
         {/* RRHH */}
 
@@ -33,11 +29,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon
-              icon={faGithub}
-              size={iconSice}
-              style={iconColor}
-            />
+              {/* github */}
+            
           </Link>
           <Link
             className={styles.rrhh__img}
@@ -45,11 +38,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size={iconSice}
-              style={iconColor}
-            />
+              {/* Linkedin */}
           </Link>
           <Link
             className={styles.rrhh__img}
@@ -57,11 +46,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              size={iconSice}
-              style={iconColor}
-            />
+            {/* Mail */}
           </Link>
         </div>
       </div>
