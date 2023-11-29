@@ -1,4 +1,3 @@
-import React from 'react';
 import { PageTitle } from '../../PageTitle/PageTitle';
 import styles from './Button.module.css'; // Asegúrate de importar los estilos adecuados
 import {Image} from "@nextui-org/react";

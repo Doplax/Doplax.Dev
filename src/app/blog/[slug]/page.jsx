@@ -3,6 +3,7 @@ import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import { BlogCover } from "../../../components/Blog/BlogCover";
 import { BlogCategories } from "../../../components/Blog/BlogCategories";
+import { AboutAuthor } from "../components/AboutAuthor.jsx"
 
 import CodeBlock from "../../../components/UX/CodeBlock";
 import "./page.css";
@@ -36,7 +37,7 @@ export default async function Post({ params }) {
       <main className="max-w-4xl mx-auto p-4 md:p-0">
         {/* Cabecero */}
         <div>
-          <BlogCover cover={post.cover} customClass="rounded-3xl" />
+          <BlogCover coverUrl={post.cover} customClass="rounded-3xl" />
           
           <div className="py-5">
             <BlogCategories tags={post.tags} />
@@ -73,6 +74,8 @@ export default async function Post({ params }) {
 
 
         </div>
+
+        <AboutAuthor/>
       </main>
     </>
   );
