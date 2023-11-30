@@ -1,6 +1,7 @@
 import  NotionService from '../../lib/notion-service'
 import { BlogCard } from '../../components/Blog/BlogCard'
 import { PageTitle } from '../../components/PageTitle/PageTitle'
+import {Pagination} from "@nextui-org/react";
 
 export const revalidate = 10; // In Seconds
 
@@ -18,7 +19,10 @@ export default async function blogPage() {
         ))} 
       </div>
 
-      <button>{posts.prove}</button>
+      <div className='flex justify-center pt-20'>
+        <Pagination key="warning" total={10} initialPage={1} color="warning" />
+      </div>
+      {/*<button>{posts.prove}</button>*/}
     </div>
 
     
