@@ -28,7 +28,7 @@ export const Header: React.FC<HeaderProps>  = ({className}) => {
   const toggleModal = () => setIsModalOpen(!isModalOpen);
 
   return (
-    <header className={`flex flex-wrap flex-row justify-between items-center p-5 md:flex-row ${className}`}>
+    <header className={`flex flex-wrap sticky flex-row justify-between items-center p-5 md:flex-row ${className}`}>
       <Logo />
       <DesktopMenu menuItems={menuItems} />
       <MobileMenu 

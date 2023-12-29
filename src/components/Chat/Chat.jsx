@@ -72,7 +72,7 @@ function ChatForm({ input, handleInputChange, handleSubmit }) {
       <button
         type="submit"
         className="px-5 py-2.5 border-2 border-yellow-500 text-yellow-500 hover:text-white rounded-3xl cursor-pointer font-bold outline-none transition duration-300 hover:bg-yellow-500"
-      >,
+      >
         Enviar
       </button>
     </form>
