@@ -1,6 +1,7 @@
 import  NotionService from '../../lib/notion-service'
-import { BlogCard } from '../../components/Blog/BlogCard'
-import { PageTitle } from '../../components/PageTitle/PageTitle'
+import { BlogCard } from './components/BlogCard'
+import { PageTitle } from '@/components'
+//import { PageTitle } from '../../components'
 import {Pagination} from "@nextui-org/react";
 
 export const revalidate = 10; // In Seconds

@@ -23,9 +23,9 @@
         "name": "next"
       }
     ],
+    //"baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@components":["./src/components/*"],
       "@lib":["./src/lib/*"],
 
 
@@ -38,7 +38,7 @@
     ".next/types/**/*.ts",
     "components/UX/CodeBlock.jsx", 
     "pages/api/chat.js", 
-    "src/app/blog/[post]/[slug]/page.jsx", "src/app/page.jsx", "src/components/Pruebas/Pruebas.jsx", "src/app/pruebasPage/page.jsx", "src/components/Porfolio/SkillsSection/SkillSection.jsx", "src/components/Porfolio/ProyectosSection/ProyectosSection.jsx", "src/components/Header/ModalMenu/ModalMenu.jsx", "src/app/api/notion-proxy.js", "src/app/blog/components/AboutAuthor.jsx"],
+    "src/app/blog/[post]/[slug]/page.jsx", "src/app/page.jsx", "src/components/Pruebas/Pruebas.jsx", "src/app/pruebasPage/page.jsx", "src/components/Porfolio/SkillsSection/SkillSection.jsx", "src/components/Porfolio/ProyectosSection/ProyectosSection.jsx", "src/components/Header/ModalMenu/ModalMenu.jsx", "src/app/api/notion-proxy.js", "src/app/blog/components/AboutAuthor.tsx", "src/app/blog/page.jsx"],
   "exclude": [
     "node_modules"
   ],"plugins": [
