@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 pre {
-  color: var(--yellow);  
+  color: var(--yellow);
 }
 
 strong {
@@ -17,10 +17,8 @@ p,
 img,
 pre {
   margin-top: 10px;
-
 }
 
 h1 {
   size: 20px;
 }
-

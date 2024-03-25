@@ -1,7 +1,6 @@
 /* global_bottom_line_animation */
 .underLine_gAnimation {
   position: relative;
-  
 }
 
 .underLine_gAnimation::after {
@@ -15,7 +14,6 @@
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
-
 }
 
 .underLine_gAnimation:hover::after {
@@ -24,7 +22,18 @@
 
 /* ORANGE GRADIENT */
 .gradientText_gAnimation {
-  background-image: linear-gradient(45deg, #ffcc00 0%, #ffb300 15%, #ffa700 30%, #ff8c00 40%, #ff7800 50%, #ff8c00 60%, #ffa700 70%, #ffb300 85%, #ffcc00 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ffcc00 0%,
+    #ffb300 15%,
+    #ffa700 30%,
+    #ff8c00 40%,
+    #ff7800 50%,
+    #ff8c00 60%,
+    #ffa700 70%,
+    #ffb300 85%,
+    #ffcc00 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -41,10 +50,21 @@
   }
 }
 
-
 /* ORANGE BLUE */
 .blueGradientText_gAnimation {
-  background-image: linear-gradient(45deg, #00ccff 0%, #00b3ff 15%, #00a7ff 30%, #008cff 40%, #0078ff 50%, #008cff 60%, #00a7ff 70%, #00b3ff 85%, #00ccff 100%);  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    45deg,
+    #00ccff 0%,
+    #00b3ff 15%,
+    #00a7ff 30%,
+    #008cff 40%,
+    #0078ff 50%,
+    #008cff 60%,
+    #00a7ff 70%,
+    #00b3ff 85%,
+    #00ccff 100%
+  );
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   animation: animateGradientText 10s linear infinite;

@@ -3,13 +3,12 @@ import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import { BlogCover } from "../../../components/Blog/BlogCover";
 import { BlogCategories } from "../../../components/Blog/BlogCategories";
-import { AboutAuthor } from "../components/AboutAuthor.jsx"
+import { AboutAuthor } from "../components/AboutAuthor.jsx";
 
 import CodeBlock from "../../../components/UX/CodeBlock";
 import "./page.css";
 
 export const revalidate = 10; // In Seconds
-
 
 async function getSinglePost(slug) {
   const notionService = new NotionService();
@@ -38,7 +37,7 @@ export default async function Post({ params }) {
         {/* Cabecero */}
         <div>
           <BlogCover coverUrl={post.cover} customClass="rounded-3xl" />
-          
+
           <div className="py-5">
             <BlogCategories tags={post.tags} />
           </div>
@@ -66,16 +65,14 @@ export default async function Post({ params }) {
                 </ReactMarkdown>
               ) : (
                 <div key={block.blockId}>
-                  <br/> 
+                  <br />
                 </div>
-                )
+              )
             )}
           </div>
-
-
         </div>
 
-        <AboutAuthor/>
+        <AboutAuthor />
       </main>
     </>
   );

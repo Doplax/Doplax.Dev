@@ -1,0 +1,21 @@
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 80%; /* Uso de margin-top en lugar de transform */
+  transition: margin-top 0.5s ease-in-out;
+  inset: 0;
+
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(30px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.51);
+  border-radius: 10px 10px 0px 0px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card:hover {
+  margin-top: 0%; /* Cambia el margin-top en hover */
+}
+

@@ -1,15 +1,15 @@
-'use client'
-import { faLocationDot, faCalendarDays } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
+"use client";
+import {
+  faLocationDot,
+  faCalendarDays,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ExperienceCard({ titulo, ubicacion, fecha, tareas }) {
   const iconSice = "1x";
-  const iconColor = { color: 'var(--yellow)' };
+  const iconColor = { color: "var(--yellow)" };
 
   return (
-    
     <div className="border drop-shadow-sm rounded-lg mb-10">
       <div className="divide-y-2">
         <div className="flex items-center px-6 py-4 text-xl">
@@ -20,19 +20,17 @@ function ExperienceCard({ titulo, ubicacion, fecha, tareas }) {
             <FontAwesomeIcon
               icon={faLocationDot}
               size={iconSice}
-              style={iconColor} />
-            <p className="font-semibold pl-2 m-0">
-              {ubicacion}
-            </p>
+              style={iconColor}
+            />
+            <p className="font-semibold pl-2 m-0">{ubicacion}</p>
           </div>
           <div className="flex place-items-center mt-2">
             <FontAwesomeIcon
               icon={faCalendarDays}
               size={iconSice}
-              style={iconColor} />
-            <p className="font-semibold pl-2">
-              {fecha}
-            </p>
+              style={iconColor}
+            />
+            <p className="font-semibold pl-2">{fecha}</p>
           </div>
 
           <div>
@@ -40,29 +38,28 @@ function ExperienceCard({ titulo, ubicacion, fecha, tareas }) {
               Here I learned to...
             </h3>
             <ul>
-              {tareas.map((tarea) => <li key={tarea.id}>{tarea}</li>)}
+              {tareas.map((tarea) => (
+                <li key={tarea.id}>{tarea}</li>
+              ))}
             </ul>
           </div>
         </div>
       </div>
       <style jsx>{`
         ul {
-          list-style: none; 
+          list-style: none;
         }
 
         ul li:before {
           content: "•";
           color: var(--yellow);
-          display: inline-block; 
-          width:20px; 
+          display: inline-block;
+          width: 20px;
           margin-left: -10px;
         }
       `}</style>
-
     </div>
-
-  )
-
+  );
 }
 
-export { ExperienceCard }
+export { ExperienceCard };

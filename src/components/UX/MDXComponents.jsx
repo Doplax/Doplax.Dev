@@ -8,7 +8,6 @@ const MDXComponents = {
 
 export default MDXComponents;
 
-
 /** DOCUMENTACIÓN
  * MDXComponents
  *

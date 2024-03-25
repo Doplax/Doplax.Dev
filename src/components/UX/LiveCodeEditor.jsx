@@ -1,13 +1,21 @@
-import React from 'react';
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
-import CodeBlock from './CodeBlock';
-import PrismTheme from 'prism-react-renderer/themes/nightOwl';
+import React from "react";
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+import CodeBlock from "./CodeBlock";
+import PrismTheme from "prism-react-renderer/themes/nightOwl";
 
 const LiveCodeEditor = ({ code, editable = false }) => {
   return (
     <LiveProvider code={code} theme={PrismTheme} noInline>
-      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
-        <div style={{ marginRight: '1rem' }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          marginTop: "1rem",
+          marginBottom: "1rem",
+        }}
+      >
+        <div style={{ marginRight: "1rem" }}>
           {editable ? (
             <>
               <h3>Código editable:</h3>
@@ -32,7 +40,7 @@ const LiveCodeEditor = ({ code, editable = false }) => {
 
 export { LiveCodeEditor };
 
-/** 
+/**
  * LiveCodeEditor
  *
  * Este componente combina las funcionalidades de mostrar código estático resaltado con sintaxis y

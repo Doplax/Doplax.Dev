@@ -20,7 +20,7 @@ export default class NotionService {
     const response = await this.client.databases.query({
       database_id: database,
       //start_cursor: '64a48bb2-7542-4473-839d-401682c765ae',
-      page_size:10,
+      page_size: 10,
       filter: {
         property: "Published",
         checkbox: { equals: true },
@@ -35,8 +35,8 @@ export default class NotionService {
     console.log(response);
     return response.results.map((res) => {
       const data = NotionService.pageToPostTransformer(res);
-      console.log('data',data);
-      return data
+      console.log("data", data);
+      return data;
     });
   }
 
@@ -47,7 +47,7 @@ export default class NotionService {
     const response = await this.client.databases.query({
       database_id: database,
       //start_cursor: '64a48bb2-7542-4473-839d-401682c765ae',
-      page_size:10,
+      page_size: 10,
       filter: {
         property: "Published",
         checkbox: { equals: true },
@@ -61,8 +61,8 @@ export default class NotionService {
     });
     return response.results.map((res) => {
       const data = NotionService.pageToPostTransformer(res);
-      console.log('data',data);
-      return data
+      console.log("data", data);
+      return data;
     });
   }
 
@@ -85,32 +85,32 @@ export default class NotionService {
           },
         },
       });
-  
+
       if (!response.results[0]) {
         throw "No results available";
       }
-  
+
       // grag page from notion
       const page = response.results[0];
-  
+
       const mdBlocks = await this.n2m.pageToMarkdown(page.id);
       markdown = this.n2m.toMarkdownString(mdBlocks);
 
-      console.log('NOTION SERVICES');
+      console.log("NOTION SERVICES");
       //console.log('PAGE',page);
-      console.log('mdBlocks',mdBlocks);
-      console.log('MarkDown',markdown);
-  
+      console.log("mdBlocks", mdBlocks);
+      console.log("MarkDown", markdown);
+
       post = NotionService.pageToPostTransformer(page);
-  
+
       return {
         post,
         markdown,
-        mdBlocks
+        mdBlocks,
       };
     } catch (err) {
-      console.log('ERROR:',err);
-      throw err
+      console.log("ERROR:", err);
+      throw err;
     }
   }
 
@@ -137,7 +137,8 @@ export default class NotionService {
       cover: coverUrl,
       title: page.properties.Name?.title[0]?.plain_text,
       tags: page.properties.Tags?.multi_select,
-      description:page.properties.Description?.rich_text?.[0]?.plain_text ?? "",
+      description:
+        page.properties.Description?.rich_text?.[0]?.plain_text ?? "",
       date: page.properties.Updated?.last_edited_time,
       slug: page.properties.Slug?.formula?.string,
     };

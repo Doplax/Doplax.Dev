@@ -1,0 +1,89 @@
+.modalBackground {
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  overflow-y: hidden;
+  /* Usar opacity en lugar de visibility */
+  opacity: 0;
+  /* Hacer que el fondo sea transparente inicialmente */
+  background-color: rgba(0, 0, 0, 0);
+  /* Combinar las transiciones */
+  transition: opacity 1s ease-in-out, background-color 1s ease-in-out,
+    visibility 0s 1s;
+  /* Hacer que el modal no sea clickeable cuando está oculto */
+  visibility: hidden;
+}
+
+.modalBackground.active {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: visible;
+
+  /* Remover el delay de la transición de visibility */
+  transition-delay: 0s;
+}
+
+.centerContent {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.menuBox {
+  backdrop-filter: blur(20px) saturate(150%);
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1.5rem;
+  min-width: 100%;
+  min-height: 70vh;
+  padding-top: 1.25rem;
+  /*padding-bottom: 15rem;*/
+  overflow: hidden;
+  transform: translateY(100%);
+  transition: transform 1s ease-in-out;
+}
+
+.menuBox.active {
+  transform: translateY(0%);
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menuList li {
+  width: 100%;
+}
+.menuList li a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  padding: 1.5rem;
+  display: block;
+  position: relative; /* Añadimos posición relativa al elemento padre */
+}
+
+.menuList li a::before {
+  content: "";
+  background-image: url("/gifs/whiteNoise.gif");
+  position: absolute; /* Hacemos que el pseudo-elemento sea posicionado de manera absoluta con respecto al elemento padre */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Reducimos la opacidad solo del pseudo-elemento */
+  pointer-events: none; /* Evitamos que el pseudo-elemento sea interactivo, permitiendo que los eventos pasen al elemento de texto */
+  z-index: -1; /* Colocamos el pseudo-elemento detrás del contenido de texto */
+}
+
+.menuList li a:hover::before {
+  opacity: 0.15; /* Cuando se haga hover sobre el enlace, restauramos la opacidad del pseudo-elemento */
+}
+
+.menuList li a:hover {
+  color: white;
+}

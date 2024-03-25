@@ -1,8 +1,7 @@
-export default function NotFound(){
-    return(
+export default function NotFound() {
+    return (
         <>
-        <h1>Error not found </h1>
-
+            <h1>Error not found </h1>
         </>
     )
 }

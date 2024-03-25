@@ -32,7 +32,7 @@ function MessageList({ messages }) {
     </div>
   );
 }
- 
+
 // Message.js
 function Message({ message }) {
   const isChat = message.role !== "user";
@@ -78,5 +78,3 @@ function ChatForm({ input, handleInputChange, handleSubmit }) {
     </form>
   );
 }
-
-

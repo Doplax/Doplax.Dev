@@ -1,4 +1,5 @@
 import { Divider } from "@nextui-org/react";
+import Image from "next/image";
 
 export function AboutAuthor() {
   return (
@@ -7,7 +8,7 @@ export function AboutAuthor() {
       <div className=" flex flex-row px-5">
         {/* Image */}
         <div className=" flex flex-row w-1/4 ">
-          <img
+          <Image
             className="rounded-md"
             src="/img/pol-valle.webp"
             alt="Profile Image"
