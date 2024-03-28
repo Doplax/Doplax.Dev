@@ -1,9 +1,8 @@
-import Image from "next/image";
 
 const BlogCover = ({ coverUrl }: { coverUrl: string }) => {
 
   return (
-    <Image
+    <img
       src={coverUrl}
       style={{
         width: '100%',

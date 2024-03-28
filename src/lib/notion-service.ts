@@ -32,10 +32,8 @@ export default class NotionService {
         },
       ],
     });
-    console.log(response);
     return response.results.map((res) => {
       const data = NotionService.pageToPostTransformer(res);
-      console.log("data", data);
       return data;
     });
   }
@@ -96,11 +94,6 @@ export default class NotionService {
       const mdBlocks = await this.n2m.pageToMarkdown(page.id);
       markdown = this.n2m.toMarkdownString(mdBlocks);
 
-      console.log("NOTION SERVICES");
-      //console.log('PAGE',page);
-      console.log("mdBlocks", mdBlocks);
-      console.log("MarkDown", markdown);
-
       post = NotionService.pageToPostTransformer(page);
 
       return {
@@ -109,7 +102,7 @@ export default class NotionService {
         mdBlocks,
       };
     } catch (err) {
-      console.log("ERROR:", err);
+      console.error(err);
       throw err;
     }
   }

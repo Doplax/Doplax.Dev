@@ -8,7 +8,6 @@ export const revalidate = 10; // In Seconds
 export default async function blogPage() {
   const notionService = new NotionService();
   const posts = await notionService.getPublishedBlogPost();
-  console.log(posts.data);
 
   return (
     <div>

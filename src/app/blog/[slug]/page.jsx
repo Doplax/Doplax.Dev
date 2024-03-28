@@ -1,9 +1,9 @@
 import NotionService from "../../../lib/notion-service";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
-import { BlogCover } from "../../../components/Blog/BlogCover";
-import { BlogCategories } from "../../../components/Blog/BlogCategories";
-import { AboutAuthor } from "../components/AboutAuthor.jsx";
+import { BlogCover } from "../components/BlogCover";
+import { BlogCategories } from "../components/BlogCategories";
+import { AboutAuthor } from "../components/AboutAuthor";
 
 import CodeBlock from "../../../components/UX/CodeBlock";
 import "./page.css";
@@ -20,8 +20,7 @@ export default async function Post({ params }) {
   const { slug } = params;
   const { post, markdown, mdBlocks } = await getSinglePost(slug);
 
-  //console.log("///////  $$ //////");
-  //console.log(mdBlocks);
+
 
   return (
     <>

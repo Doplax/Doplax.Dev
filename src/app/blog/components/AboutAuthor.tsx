@@ -8,7 +8,7 @@ export function AboutAuthor() {
       <div className=" flex flex-row px-5">
         {/* Image */}
         <div className=" flex flex-row w-1/4 ">
-          <Image
+          <img
             className="rounded-md"
             src="/img/pol-valle.webp"
             alt="Profile Image"
