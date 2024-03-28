@@ -1,8 +1,6 @@
 import styles from "./Footer.module.css";
 import { Circles } from "./Circles/Circles";
 
-
-
 import Link from "next/link";
 
 //const linkedinIcon = "/img/";
@@ -20,8 +18,8 @@ const Footer = () => {
       {/* CONTAINER */}
       <div className="flex flex-col justify-end items-center p-5 h-screen">
         {/* Sobre mi */}
-        {/* RRHH */}
 
+        {/* RRHH */}
         <div className="flex gap-4">
           <Link
             className={styles.rrhh__img}
@@ -29,8 +27,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-              {/* github */}
-            
+            {/* github */}
           </Link>
           <Link
             className={styles.rrhh__img}
@@ -38,7 +35,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-              {/* Linkedin */}
+            {/* Linkedin */}
           </Link>
           <Link
             className={styles.rrhh__img}
