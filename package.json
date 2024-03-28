@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": ". ~/.nvm/nvm.sh && nvm use && next dev",
+    "dev": " next dev",
+    "devMac": ". ~/.nvm/nvm.sh && nvm use && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,7 +12,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@nextui-org/react": "^2.0.19",
     "@notionhq/client": "^2.2.5",
