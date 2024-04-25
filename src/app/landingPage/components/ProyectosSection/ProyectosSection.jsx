@@ -5,23 +5,23 @@ import css from "./ProyectosSection.module.css";
 function ProyectosSection() {
   const projects = [
     {
-      name: "Tesla - Astro",
+      name: "Tesla",
       description: "Tesla Landing Page",
       role: [{ name: "Astro", img: "/svg/astro.svg" }],
       imageUrl: "/img/tesla-cover.webp",
       netlify: "https://tesla-astro.netlify.app/",
       github: "https://github.com/Doplax/Tesla-Astro",
     },
+    //{
+    //  name: "Pokedex - Angular",
+    //  description: "Web application of a pokédex made in Angular",
+    //  role: [{ name: "Angular", img: "/svg/angular.svg" }],
+    //  imageUrl: "/img/pokedex.webp",
+    //  netlify: "https://doplaxpokeangular.netlify.app/",
+    //  github: "https://github.com/Doplax/Pokedex-Angular",
+    //},
     {
-      name: "Pokedex - Angular",
-      description: "Web application of a pokédex made in Angular",
-      role: [{ name: "Angular", img: "/svg/angular.svg" }],
-      imageUrl: "/img/pokedex.webp",
-      netlify: "https://doplaxpokeangular.netlify.app/",
-      github: "https://github.com/Doplax/Pokedex-Angular",
-    },
-    {
-      name: "ToDo App - React",
+      name: "ToDo App",
       description: "Task App with React and storage in LocalStorage",
       role: [{ name: "React", img: "/svg/react.svg" }],
       imageUrl: "/img/todo-react.webp",
@@ -65,19 +65,19 @@ function ProyectosSection() {
       github:
         "https://github.com/Doplax/Doplax.Dev/blob/main/src/app/api/chat/route.js",
     },
-    {
-      name: "TheMovieDB",
-      description:
-        "NOTICE: For this app to work, it must be downloaded from the repository and use the API Key.",
-      role: [
-        { name: "HTML", img: "/svg/html.svg" },
-        { name: "CSS", img: "/svg/css.svg" },
-        { name: "JavaScript", img: "/svg/javascript.svg" },
-      ],
-      imageUrl: "/img/themoviedb.webp",
-      netlify: "https://moviedb-doplax.surge.sh/",
-      github: "https://github.com/Doplax/TheMovieDB-Api",
-    },
+    //{
+    //  name: "TheMovieDB",
+    //  description:
+    //    "NOTICE: For this app to work, it must be downloaded from the repository and use the API Key.",
+    //  role: [
+    //    { name: "HTML", img: "/svg/html.svg" },
+    //    { name: "CSS", img: "/svg/css.svg" },
+    //    { name: "JavaScript", img: "/svg/javascript.svg" },
+    //  ],
+    //  imageUrl: "/img/themoviedb.webp",
+    //  netlify: "https://moviedb-doplax.surge.sh/",
+    //  github: "https://github.com/Doplax/TheMovieDB-Api",
+    //},
     {
       name: "Reproductor de música",
       description: "Example of a web interface of a Music Player",
@@ -103,22 +103,22 @@ function ProyectosSection() {
       netlify: "https://doplax.github.io/TSD-Centradores-Electrodos/",
       github: "https://github.com/Doplax/TSD-Centradores-Electrodos",
     },
-    {
-      name: "Tecsolda.es/carroceria",
-      description: "An online store for body shop welding products.",
-      role: [{ name: "WordPress", img: "/svg/wordpress.svg" }],
-      imageUrl: "/img/tsd-car.webp",
-      netlify: "https://tecsolda.com/carroceria/",
-      github: "https://tecsolda.com/carroceria/",
-    },
-    {
-      name: "Tecsolda/Resistencia",
-      description: "A website in production on Industrial Balancers.",
-      role: [{ name: "WordPress", img: "/svg/wordpress.svg" }],
-      imageUrl: "/img/tsd-res.webp",
-      netlify: "https://www.equilibradores.es/",
-      github: "https://www.equilibradores.es/",
-    },
+    //{
+    //  name: "Tecsolda.es/carroceria",
+    //  description: "An online store for body shop welding products.",
+    //  role: [{ name: "WordPress", img: "/svg/wordpress.svg" }],
+    //  imageUrl: "/img/tsd-car.webp",
+    //  netlify: "https://tecsolda.com/carroceria/",
+    //  github: "https://tecsolda.com/carroceria/",
+    //},
+    //{
+    //  name: "Tecsolda/Resistencia",
+    //  description: "A website in production on Industrial Balancers.",
+    //  role: [{ name: "WordPress", img: "/svg/wordpress.svg" }],
+    //  imageUrl: "/img/tsd-res.webp",
+    //  netlify: "https://www.equilibradores.es/",
+    //  github: "https://www.equilibradores.es/",
+    //},
   ];
 
   return (
