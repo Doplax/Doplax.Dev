@@ -27,3 +27,4 @@ La documentación del proyecto se encuentra en la carpeta `docs`. Puedes encontr
 - [Componentes](docs/components.md): Documentación de cada componente en la carpeta `components`.
 - [Páginas](docs/pages.md): Descripción de cada archivo de página en la carpeta `pages` y cómo se obtienen los datos para cada página.
 - [Página [slug]](docs/slug-page.md) Encargado de renderizar el contenido de los posts en formato MDX.
+
