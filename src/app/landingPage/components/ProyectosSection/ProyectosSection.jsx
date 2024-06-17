@@ -5,6 +5,15 @@ import css from "./ProyectosSection.module.css";
 function ProyectosSection() {
   const projects = [
     {
+      name: "HMI CarPlay (WIP)",
+      description:
+        "Recreation of HMI CarPlay",
+      role: [{ name: "Angular", img: "/svg/angular.svg" }],
+      imageUrl: "/img/hmi-carplay.webp",
+      live: "https://main--hmi-carplay-angular.netlify.app/",
+      github: "https://github.com/Doplax/HMI-CarPlay-Angular",
+    },
+    {
       name: "AdoptaUnPeludo",
       description:
         "Project aimed at facilitating animal adoption. Animal shelters can post ads for pets available for adoption, while potential adopters can search for animals, view details, and contact shelters to start the adoption process.",
