@@ -5,11 +5,38 @@ import css from "./ProyectosSection.module.css";
 function ProyectosSection() {
   const projects = [
     {
+      name: "AdoptaUnPeludo",
+      description:
+        "Project aimed at facilitating animal adoption. Animal shelters can post ads for pets available for adoption, while potential adopters can search for animals, view details, and contact shelters to start the adoption process.",
+      role: [{ name: "React", img: "/svg/react.svg" }],
+      imageUrl: "/img/adopta-un-peludo.webp",
+      live: "https://www.adoptaunpeludo.com/",
+      github: "https://github.com/Adoptaunpeludo/frontend",
+    },
+    {
+      name: "NodePop/Frontend",
+      description:
+        "Frontend inspired by WallaPop site",
+      role: [{ name: "React", img: "/svg/react.svg" }],
+      imageUrl: "/img/nodepop.webp",
+      live: "#",
+      github: "https://github.com/Doplax/NodePop-Frontend.",
+    },
+    {
+      name: "NodePop/Backend",
+      description:
+        "Backend inspired by the WallaPop website.",
+      role: [{ name: "Express", img: "/svg/node.svg" }],
+      imageUrl: "/img/nodepop.webp",
+      live: "#",
+      github: "https://github.com/Doplax/NodePop-Backend",
+    },
+    {
       name: "Tesla",
       description: "Tesla Landing Page",
       role: [{ name: "Astro", img: "/svg/astro.svg" }],
       imageUrl: "/img/tesla-cover.webp",
-      netlify: "https://tesla-astro.netlify.app/",
+      live: "https://tesla-astro.live.app/",
       github: "https://github.com/Doplax/Tesla-Astro",
     },
     //{
@@ -17,7 +44,7 @@ function ProyectosSection() {
     //  description: "Web application of a pokédex made in Angular",
     //  role: [{ name: "Angular", img: "/svg/angular.svg" }],
     //  imageUrl: "/img/pokedex.webp",
-    //  netlify: "https://doplaxpokeangular.netlify.app/",
+    //  live: "https://doplaxpokeangular.live.app/",
     //  github: "https://github.com/Doplax/Pokedex-Angular",
     //},
     {
@@ -25,8 +52,7 @@ function ProyectosSection() {
       description: "Task App with React and storage in LocalStorage",
       role: [{ name: "React", img: "/svg/react.svg" }],
       imageUrl: "/img/todo-react.webp",
-      netlify:
-        "https://64abbad54dd25f31dbc77026--todoreactdoplaxdev.netlify.app/",
+      live: "https://64abbad54dd25f31dbc77026--todoreactdoplaxdev.live.app/",
       github: "https://github.com/Doplax/ToDo-React",
     },
     {
@@ -37,7 +63,7 @@ function ProyectosSection() {
         { name: "CSS", img: "/svg/css.svg" },
       ],
       imageUrl: "/img/cuphead.webp",
-      netlify: "https://cupheadcv.netlify.app/",
+      live: "https://cupheadcv.live.app/",
       github: "https://github.com/Doplax/CupHead",
     },
     {
@@ -49,7 +75,7 @@ function ProyectosSection() {
         { name: "JavaScript", img: "/svg/javascript.svg" },
       ],
       imageUrl: "/img/bc-personel.webp",
-      netlify: "http://bcpersonnelgroup.surge.sh/",
+      live: "http://bcpersonnelgroup.surge.sh/",
       github: "https://github.com/Doplax/bcpersonnelgroup.com",
     },
     {
@@ -61,7 +87,7 @@ function ProyectosSection() {
         { name: "JavaScript", img: "/svg/javascript.svg" },
       ],
       imageUrl: "/img/vercel-sdk.webp",
-      netlify: "https://doplax.dev/chatPage",
+      live: "https://doplax.dev/chatPage",
       github:
         "https://github.com/Doplax/Doplax.Dev/blob/main/src/app/api/chat/route.js",
     },
@@ -75,7 +101,7 @@ function ProyectosSection() {
     //    { name: "JavaScript", img: "/svg/javascript.svg" },
     //  ],
     //  imageUrl: "/img/themoviedb.webp",
-    //  netlify: "https://moviedb-doplax.surge.sh/",
+    //  live: "https://moviedb-doplax.surge.sh/",
     //  github: "https://github.com/Doplax/TheMovieDB-Api",
     //},
     {
@@ -87,7 +113,7 @@ function ProyectosSection() {
         { name: "JavaScript", img: "/svg/javascript.svg" },
       ],
       imageUrl: "/img/mp3-easy-player.webp",
-      netlify: "https://doplax.github.io/MP3-Easy-Player/",
+      live: "https://doplax.github.io/MP3-Easy-Player/",
       github: "https://github.com/Doplax/MP3-Easy-Player",
     },
     {
@@ -100,7 +126,7 @@ function ProyectosSection() {
         { name: "JavaScript", img: "/svg/javascript.svg" },
       ],
       imageUrl: "/img/centradores.webp",
-      netlify: "https://doplax.github.io/TSD-Centradores-Electrodos/",
+      live: "https://doplax.github.io/TSD-Centradores-Electrodos/",
       github: "https://github.com/Doplax/TSD-Centradores-Electrodos",
     },
     //{
@@ -108,7 +134,7 @@ function ProyectosSection() {
     //  description: "An online store for body shop welding products.",
     //  role: [{ name: "WordPress", img: "/svg/wordpress.svg" }],
     //  imageUrl: "/img/tsd-car.webp",
-    //  netlify: "https://tecsolda.com/carroceria/",
+    //  live: "https://tecsolda.com/carroceria/",
     //  github: "https://tecsolda.com/carroceria/",
     //},
     //{
@@ -116,7 +142,7 @@ function ProyectosSection() {
     //  description: "A website in production on Industrial Balancers.",
     //  role: [{ name: "WordPress", img: "/svg/wordpress.svg" }],
     //  imageUrl: "/img/tsd-res.webp",
-    //  netlify: "https://www.equilibradores.es/",
+    //  live: "https://www.equilibradores.es/",
     //  github: "https://www.equilibradores.es/",
     //},
   ];
@@ -135,7 +161,7 @@ function ProyectosSection() {
             className="flex flex-col divide-y divide-gray-200 rounded-lg bg-slate-100 text-center shadow"
           >
             <div className="relative flex flex-col rounded-t-lg overflow-hidden">
-              <a href={project.netlify} target="_blank">
+              <a href={project.live} target="_blank">
                 <Image
                   width="500"
                   height="500"
@@ -196,7 +222,7 @@ function ProyectosSection() {
               </div>
               <div className="flex w-0 flex-1">
                 <a
-                  href={project.netlify}
+                  href={project.live}
                   target="_blank"
                   className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500"
                 >
