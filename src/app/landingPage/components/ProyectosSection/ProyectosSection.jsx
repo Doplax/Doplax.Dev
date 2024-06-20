@@ -88,6 +88,18 @@ function ProyectosSection() {
       github: "https://github.com/Doplax/bcpersonnelgroup.com",
     },
     {
+      name: "AnimationLand",
+      description: "Web for practicing animations with html and css only.",
+      role: [
+        { name: "HTML", img: "/svg/html.svg" },
+        { name: "CSS", img: "/svg/css.svg" },
+      ],
+      imageUrl: "/img/animationland.webp",
+      live: "https://doplax.github.io/animationland",
+      github:
+        "https://github.com/Doplax/animationland",
+    },
+    {
       name: "ChatGPT Web Integration",
       description: "Integration of Vercel AI SDK with GPT Chat API",
       role: [
