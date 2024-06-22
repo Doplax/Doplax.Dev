@@ -1,6 +1,6 @@
 import { PageTitle } from "@/components";
 import styles from "./Button.module.css"; // Asegúrate de importar los estilos adecuados
-import { Image } from "@nextui-org/react";
+import { Button, Image } from "@nextui-org/react";
 
 function HomeSection() {
   return (
@@ -38,9 +38,15 @@ function HomeSection() {
               target="_blank"
               rel="noopener noreferrer" // Agrega esta línea para la seguridad del enlace
               type="button"
-              className={`${styles.btnHover} ${styles.color2}  px-6 py-3 text-white hover:text-white text-xl font-bold shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2`}
+              className="flex flex-1"
             >
-              Download CV
+              <Button
+                color="warning"
+                variant="flat"
+                className="text-gray-100 text-xl font-bold p-10 "
+              >
+                Download CV
+              </Button>
             </a>
           </div>
           <Image
@@ -81,11 +87,17 @@ function HomeSection() {
                 href="/docs/CV-Pol-Valle.pdf"
                 download="CV-Pol-Valle.pdf"
                 target="_blank"
-                rel="noopener noreferrer block" // Agrega esta línea para la seguridad del enlace
+                rel="noopener noreferrer" // Agrega esta línea para la seguridad del enlace
                 type="button"
-                className={`${styles.btnHover} ${styles.color2}  px-6 py-3  text-xl font-bold shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2`}
+                className="flex flex-1 justify-center items-center"
               >
-                Download CV
+                <Button
+                  color="warning"
+                  variant="flat"
+                  className="text-gray-100 text-xl font-bold p-10 "
+                >
+                  Download CV
+                </Button>
               </a>
             </div>
           </div>
