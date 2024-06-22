@@ -1,11 +1,8 @@
 /* global_bottom_line_animation */
-.underLine_gAnimation {
-  position: relative;
-}
 
 .underLine_gAnimation::after {
-  content: "";
   position: absolute;
+  content: "";
   left: 0;
   bottom: 0;
   width: 100%;
