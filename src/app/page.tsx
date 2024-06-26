@@ -1,5 +1,5 @@
-import { Portfolio } from "./landingPage/Porfolio";
+import { LandingPage } from "./landingPage/LandingPage";
 
 export default function Home() {
-  return <Portfolio />;
+  return <LandingPage />;
 }
