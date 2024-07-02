@@ -3,7 +3,7 @@ import { Skill } from "./Skill";
 import { SkillCard } from "./SkillCard";
 import jsonData from "./skills.json";
 
-function SkillSection() {
+function SkillsSection() {
   // Filtrar por TechnologyType y show
   const filteredFrontEndSkills = Object.entries(jsonData).filter(
     ([key, value]) => value.TechnologyType === "Frontend" && value.show
@@ -57,4 +57,4 @@ function SkillSection() {
   );
 }
 
-export { SkillSection };
+export { SkillsSection };

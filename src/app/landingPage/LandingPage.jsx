@@ -1,8 +1,8 @@
 "use client";
 import {
   HomeSection,
-  SkillSection,
-  ProyectosSection,
+  SkillsSection,
+  ProjectsSection,
   ServiciosSection,
 } from "./components/index";
 
@@ -10,8 +10,8 @@ const LandingPage = () => {
   return (
     <>
       <HomeSection />
-      <SkillSection />
-      <ProyectosSection />
+      <SkillsSection />
+      <ProjectsSection />
       <ServiciosSection />
     </>
   );
