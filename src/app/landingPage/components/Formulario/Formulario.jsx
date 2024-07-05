@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Formulario.module.css";
-import { PageTitle } from "../../PageTitle";
+import { PageTitle } from "../../../../components/PageTitle/PageTitle";
 
 export function Formulario() {
   return (

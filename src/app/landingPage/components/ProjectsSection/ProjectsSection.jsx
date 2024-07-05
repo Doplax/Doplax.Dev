@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { PageTitle } from "@/components";
-import css from "./ProyectosSection.module.css";
+import css from "./ProjectsSection.module.css";
 
-function ProyectosSection() {
+function ProjectsSection() {
   const projects = [
     {
       name: "HMI CarPlay (WIP)",
@@ -29,7 +29,7 @@ function ProyectosSection() {
       role: [{ name: "React", img: "/svg/react.svg" }],
       imageUrl: "/img/nodepop.webp",
       live: "#",
-      github: "https://github.com/Doplax/NodePop-Frontend.",
+      github: "https://github.com/Doplax/NodePop-Frontend",
     },
     {
       name: "NodePop/Backend",
@@ -45,7 +45,7 @@ function ProyectosSection() {
       description: "Tesla Landing Page",
       role: [{ name: "Astro", img: "/svg/astro.svg" }],
       imageUrl: "/img/tesla-cover.webp",
-      live: "https://tesla-astro.live.app/",
+      live: "https://tesla-astro.netlify.app/",
       github: "https://github.com/Doplax/Tesla-Astro",
     },
     //{
@@ -265,4 +265,4 @@ function ProyectosSection() {
   );
 }
 
-export { ProyectosSection };
+export { ProjectsSection };
