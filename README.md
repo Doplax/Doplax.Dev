@@ -20,6 +20,5 @@ Este proyecto es una aplicación web desarrollada con Next.js que utiliza archiv
 
 ## Documentación
 
-La documentación del proyecto se encuentra en la carpeta `docs`. Puedes encontrar información detallada sobre los siguientes temas:
 
 
