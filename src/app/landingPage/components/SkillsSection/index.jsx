@@ -1,20 +1,21 @@
 import { PageTitle } from "@/components";
 import { Skill } from "./Skill";
 import { SkillCard } from "./SkillCard";
-import jsonData from "./skills.json";
+import { skillList } from "./skillList";
 
 function SkillsSection() {
-  // Filtrar por TechnologyType y show
-  const filteredFrontEndSkills = Object.entries(jsonData).filter(
-    ([key, value]) => value.TechnologyType === "Frontend" && value.show
+
+  console.log(skillList);
+  const filteredFrontEndSkills = Object.entries(skillList).filter(
+    ([key, value]) => value.TechnologyType === "Frontend"
   );
 
-  const filteredBackEndSkills = Object.entries(jsonData).filter(
-    ([key, value]) => value.TechnologyType === "Backend" && value.show
+  const filteredBackEndSkills = Object.entries(skillList).filter(
+    ([key, value]) => value.TechnologyType === "Backend"
   );
 
-  const filteredToolSkills = Object.entries(jsonData).filter(
-    ([key, value]) => value.TechnologyType === "Tools" && value.show
+  const filteredToolSkills = Object.entries(skillList).filter(
+    ([key, value]) => value.TechnologyType === "Tools"
   );
 
   return (

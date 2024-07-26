@@ -1,11 +1,12 @@
+const skillList =
 {
+    //FRONT END
     "html": {
         "src": "/svg/html.svg",
         "label": "HTML",
         "description": "Standard markup language for creating web pages.",
         "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
         "TechnologyType": "Frontend",
-        "show": true
     },
     "css": {
         "src": "/svg/css.svg",
@@ -13,7 +14,6 @@
         "description": "Cascading Style Sheets used for describing the look and formatting of a document written in HTML.",
         "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
         "TechnologyType": "Frontend",
-        "show": true
     },
     "javascript": {
         "src": "/svg/javascript.svg",
@@ -21,7 +21,6 @@
         "description": "High-level, dynamic, untyped, and interpreted programming language.",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
         "TechnologyType": "Frontend",
-        "show": true
     },
     "typescript": {
         "src": "/svg/typescript.svg",
@@ -29,7 +28,6 @@
         "description": "Typed superset of JavaScript that compiles to plain JavaScript.",
         "url": "https://www.typescriptlang.org/",
         "TechnologyType": "Frontend",
-        "show": true
     },
     "angular": {
         "src": "/svg/angular.svg",
@@ -37,7 +35,6 @@
         "description": "Platform for building mobile and desktop web applications.",
         "url": "https://angular.io/",
         "TechnologyType": "Frontend",
-        "show": true
     },
     "rxjs": {
         "src": "/svg/rxjs.svg",
@@ -45,7 +42,6 @@
         "description": "Library for composing asynchronous and event-based programs by using observable sequences.",
         "url": "https://rxjs.dev/",
         "TechnologyType": "Frontend",
-        "show": true
     },
     "react": {
         "src": "/svg/react.svg",
@@ -53,7 +49,6 @@
         "description": "JavaScript library for building user interfaces.",
         "url": "https://reactjs.org/",
         "TechnologyType": "Frontend",
-        "show": true
     },
     "next.js": {
         "src": "/svg/next-js.svg",
@@ -61,7 +56,6 @@
         "description": "JavaScript framework for production: React, Node.js, server rendering, and more.",
         "url": "https://nextjs.org/",
         "TechnologyType": "Frontend",
-        "show": true
     },
     "bootstrap": {
         "src": "/svg/bootstrap.svg",
@@ -69,39 +63,62 @@
         "description": "Open-source CSS framework directed at responsive, mobile-first web development.",
         "url": "https://getbootstrap.com/",
         "TechnologyType": "Frontend",
-        "show": true
     },
+
     "tailwind": {
         "src": "/svg/tailwind.svg",
         "label": "Tailwind",
         "description": "A utility-first CSS framework for building custom designs.",
         "url": "https://tailwindcss.com/",
         "TechnologyType": "Frontend",
-        "show": true
     },
+
+    // BACKEND 
+    "csharp": {
+        "src": "/svg/csharp.svg",
+        "label": "C Sharp",
+        "description": "Multi-paradigm programming language developed and standardised by the Microsoft company",
+        "url": "https://dotnet.microsoft.com/es-es/languages/csharp",
+        "TechnologyType": "Backend",
+    },
+
+    "dotnet": {
+        "src": "/svg/dotnet.svg",
+        "label": "Dot Net",
+        "description": "cross-platform framework for building modern applications and efficient cloud services.",
+        "url": "https://dotnet.microsoft.com/es-es/",
+        "TechnologyType": "Backend",
+    },
+    
+    "mssql": {
+        "src": "/svg/mssql.svg",
+        "label": "SQL Server",
+        "description": "Relational database management system, developed by Microsoft.",
+        "url": "https://www.microsoft.com/es-es/sql-server/sql-server-downloads",
+        "TechnologyType": "Backend",
+    },
+
+    //"sql": {
+    //    "src": "/svg/sql.svg",
+    //    "label": "SQL",
+    //    "description": "Programming language used for communicating with databases.",
+    //    "url": "https://en.wikipedia.org/wiki/SQL",
+    //    "TechnologyType": "Backend",
+    //},
+
     "nodejs": {
         "src": "/svg/node.svg",
         "label": "Node.js",
         "description": "JavaScript runtime built on Chrome's V8 JavaScript engine.",
         "url": "https://nodejs.org/",
         "TechnologyType": "Backend",
-        "show": true
-    },
-    "nestjs": {
-        "src": "/svg/nest-js.svg",
-        "label": "NestJS",
-        "description": "A framework for building efficient, reliable and scalable server-side applications.",
-        "url": "https://nestjs.com/",
-        "TechnologyType": "Backend",
-        "show": true
     },
     "mongodb": {
         "src": "/svg/mongodb.svg",
         "label": "MongoDB",
         "description": "Open-source, document-oriented NoSQL database.",
         "url": "https://www.mongodb.com/",
-        "TechnologyType": "Backend",
-        "show": true
+        "TechnologyType": "Backend",    
     },
     "linux": {
         "src": "/svg/linux.svg",
@@ -109,31 +126,30 @@
         "description": "Open-source operating system based on the Linux kernel.",
         "url": "https://www.linux.org/",
         "TechnologyType": "Backend",
-        "show": true
     },
-    "python": {
-        "src": "/svg/python.svg",
-        "label": "Python",
-        "description": "High-level programming language designed for readability.",
-        "url": "https://www.python.org/",
-        "TechnologyType": "Backend",
-        "show": true
-    },
-    "sql": {
-        "src": "/svg/sql.svg",
-        "label": "SQL",
-        "description": "Programming language used for communicating with databases.",
-        "url": "https://en.wikipedia.org/wiki/SQL",
-        "TechnologyType": "Backend",
-        "show": true
-    },
+    //"nestjs": {
+    //    "src": "/svg/nest-js.svg",
+    //    "label": "NestJS",
+    //    "description": "A framework for building efficient, reliable and scalable server-side applications.",
+    //    "url": "https://nestjs.com/",
+    //    "TechnologyType": "Backend",
+    //},
+
+    //"python": {
+    //    "src": "/svg/python.svg",
+    //    "label": "Python",
+    //    "description": "High-level programming language designed for readability.",
+    //    "url": "https://www.python.org/",
+    //    "TechnologyType": "Backend",
+    //},
+
+    // TOOLS
     "docker": {
         "src": "/svg/docker.svg",
         "label": "Docker",
         "description": "Development virtual machine.",
         "url": "https://www.docker.com/",
         "TechnologyType": "Tools",
-        "show": true
     },
     "jasmine": {
         "src": "/svg/jasmine.svg",
@@ -141,7 +157,6 @@
         "description": "A behavior-driven development framework for testing JavaScript code.",
         "url": "https://jasmine.github.io/",
         "TechnologyType": "Tools",
-        "show": true
     },
     "git": {
         "src": "/svg/git.svg",
@@ -149,7 +164,6 @@
         "description": "Distributed version control system.",
         "url": "https://git-scm.com/",
         "TechnologyType": "Tools",
-        "show": true
     },
     "figma": {
         "src": "/svg/figma.svg",
@@ -157,7 +171,6 @@
         "description": "Web-based design and prototyping tool.",
         "url": "https://www.figma.com/",
         "TechnologyType": "Tools",
-        "show": true
     },
     "notion": {
         "src": "/svg/notion.svg",
@@ -165,7 +178,6 @@
         "description": "Productivity application that combines kanban boards, databases, tasks, and notes.",
         "url": "https://www.notion.so/",
         "TechnologyType": "Tools",
-        "show": true
     },
     "wordpress": {
         "src": "/svg/wordpress.svg",
@@ -173,7 +185,6 @@
         "description": "Open-source content management system based on PHP and MySQL.",
         "url": "https://wordpress.org/",
         "TechnologyType": "Tools",
-        "show": true
     },
     "chatgpt": {
         "src": "/svg/chatgpt.svg",
@@ -181,6 +192,8 @@
         "description": "AI language model by OpenAI that generates human-like responses.",
         "url": "https://openai.com/research/chatgpt",
         "TechnologyType": "Tools",
-        "show": true
-    }
+    },
 }
+
+
+export { skillList }
